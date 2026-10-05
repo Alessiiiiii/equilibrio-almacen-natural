@@ -5,5 +5,5 @@ echo   Equilibrio Distribuciones - Almacen Natural
 echo   Iniciando Servidor en http://localhost:3000...
 echo ========================================================
 start http://localhost:3000
-node server.js
+node scripts\server.js
 pause
