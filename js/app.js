@@ -531,7 +531,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function createProductCard(product) {
     const card = document.createElement('div');
-    card.className = 'product-card bg-white rounded-2xl p-3.5 sm:p-4 border border-gray-200/90 shadow-2xs flex flex-col justify-between relative overflow-hidden group';
+    card.className = 'product-card bg-white rounded-xl sm:rounded-2xl p-2.5 sm:p-4 border border-gray-200/90 shadow-2xs flex flex-col justify-between relative overflow-hidden group';
 
     const inCartQty = cart.getItemQuantity(product.id);
     const selectedQty = state.productQuantities[product.id] || 1;
@@ -539,14 +539,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Badges flotantes en la imagen
     const sinTaccBadge = product.isSinTacc 
-      ? `<span class="badge-sin-tacc text-[10px] font-bold px-2 py-0.5 rounded-full flex items-center gap-1 shadow-2xs backdrop-blur-xs bg-emerald-50/95">
-           <i data-lucide="wheat-off" class="w-3 h-3"></i> Sin TACC
+      ? `<span class="badge-sin-tacc text-[9px] sm:text-[10px] font-bold px-1.5 sm:px-2 py-0.5 rounded-full flex items-center gap-0.5 sm:gap-1 shadow-2xs backdrop-blur-xs bg-emerald-50/95">
+           <i data-lucide="wheat-off" class="w-2.5 h-2.5 sm:w-3 sm:h-3"></i> Sin TACC
          </span>` 
       : '';
 
     const inCartBadge = inCartQty > 0
-      ? `<span class="bg-brand-900/90 text-white border border-brand-700 text-[10px] font-bold px-2 py-0.5 rounded-full flex items-center gap-1 shadow-2xs backdrop-blur-xs">
-           <i data-lucide="check" class="w-3 h-3 text-brand-200"></i> ${inCartQty} en pedido
+      ? `<span class="bg-brand-900/90 text-white border border-brand-700 text-[9px] sm:text-[10px] font-bold px-1.5 sm:px-2 py-0.5 rounded-full flex items-center gap-0.5 sm:gap-1 shadow-2xs backdrop-blur-xs">
+           <i data-lucide="check" class="w-2.5 h-2.5 sm:w-3 sm:h-3 text-brand-200"></i> ${inCartQty} en pedido
          </span>`
       : '';
 
@@ -554,55 +554,55 @@ document.addEventListener('DOMContentLoaded', () => {
     let mediaBoxHtml = '';
     if (product.imagen) {
       mediaBoxHtml = `
-        <div class="product-media-container relative w-full rounded-xl overflow-hidden mb-3 bg-gradient-to-b from-stone-50 to-emerald-50/20 flex items-center justify-center border border-gray-100 group-hover:border-brand-200 transition-all cursor-pointer">
+        <div class="product-media-container relative w-full rounded-lg sm:rounded-xl overflow-hidden mb-2 sm:mb-3 bg-gradient-to-b from-stone-50 to-emerald-50/20 flex items-center justify-center border border-gray-100 group-hover:border-brand-200 transition-all cursor-pointer">
           <img 
             src="${product.imagen}" 
             alt="${escapeHtml(product.producto)}" 
             loading="lazy" 
-            class="product-thumb-img w-full h-full object-contain p-2 transition-transform duration-300 group-hover:scale-105"
+            class="product-thumb-img w-full h-full object-contain p-1 sm:p-2 transition-transform duration-300 group-hover:scale-105"
             onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');"
           >
           <!-- Fallback en caso de error de carga -->
-          <div class="hidden flex flex-col items-center justify-center text-center p-3 w-full h-full ${theme.bg}">
-            <div class="w-12 h-12 rounded-2xl ${theme.badge} flex items-center justify-center mb-1">
-              <i data-lucide="${product.icon}" class="w-6 h-6 ${theme.iconColor}"></i>
+          <div class="hidden flex flex-col items-center justify-center text-center p-2 sm:p-3 w-full h-full ${theme.bg}">
+            <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl ${theme.badge} flex items-center justify-center mb-1">
+              <i data-lucide="${product.icon}" class="w-5 h-5 sm:w-6 sm:h-6 ${theme.iconColor}"></i>
             </div>
-            <span class="text-[10px] font-bold uppercase tracking-wider text-gray-400">${escapeHtml(product.marca)}</span>
+            <span class="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-gray-400 truncate max-w-full px-1">${escapeHtml(product.marca)}</span>
           </div>
 
           <!-- Badges flotantes en la imagen -->
-          <div class="absolute top-2 left-2 flex items-center gap-1 z-10 pointer-events-none">
+          <div class="absolute top-1.5 left-1.5 sm:top-2 sm:left-2 flex items-center gap-1 z-10 pointer-events-none">
             ${sinTaccBadge}
           </div>
-          <div class="absolute top-2 right-2 flex items-center gap-1 z-10 pointer-events-none">
+          <div class="absolute top-1.5 right-1.5 sm:top-2 sm:right-2 flex items-center gap-1 z-10 pointer-events-none">
             ${inCartBadge}
           </div>
 
           <!-- Lupa para ampliar -->
-          <button type="button" class="btn-card-zoom absolute bottom-2 right-2 w-7 h-7 rounded-lg bg-white/90 hover:bg-white text-gray-700 hover:text-brand-900 shadow-2xs flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all active:scale-90 cursor-pointer" title="Ver foto ampliada">
-            <i data-lucide="zoom-in" class="w-3.5 h-3.5"></i>
+          <button type="button" class="btn-card-zoom absolute bottom-1.5 right-1.5 sm:bottom-2 sm:right-2 w-6 h-6 sm:w-7 sm:h-7 rounded-md sm:rounded-lg bg-white/90 hover:bg-white text-gray-700 hover:text-brand-900 shadow-2xs flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all active:scale-90 cursor-pointer" title="Ver foto ampliada">
+            <i data-lucide="zoom-in" class="w-3 h-3 sm:w-3.5 sm:h-3.5"></i>
           </button>
         </div>
       `;
     } else {
       mediaBoxHtml = `
-        <div class="product-media-container relative w-full rounded-xl overflow-hidden mb-3 ${theme.bg} flex flex-col items-center justify-center text-center p-3 sm:p-4 border ${theme.border} group-hover:border-brand-200 transition-all">
+        <div class="product-media-container relative w-full rounded-lg sm:rounded-xl overflow-hidden mb-2 sm:mb-3 ${theme.bg} flex flex-col items-center justify-center text-center p-2 sm:p-4 border ${theme.border} group-hover:border-brand-200 transition-all">
           <!-- Badges flotantes -->
-          <div class="absolute top-2 left-2 flex items-center gap-1 z-10 pointer-events-none">
+          <div class="absolute top-1.5 left-1.5 sm:top-2 sm:left-2 flex items-center gap-1 z-10 pointer-events-none">
             ${sinTaccBadge}
           </div>
-          <div class="absolute top-2 right-2 flex items-center gap-1 z-10 pointer-events-none">
+          <div class="absolute top-1.5 right-1.5 sm:top-2 sm:right-2 flex items-center gap-1 z-10 pointer-events-none">
             ${inCartBadge}
           </div>
 
           <!-- Círculo decorativo con icono de dietética natural -->
-          <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl ${theme.badge} flex items-center justify-center mb-1.5 shadow-2xs transform group-hover:scale-105 transition-transform duration-300">
-            <i data-lucide="${product.icon}" class="w-6 h-6 sm:w-7 sm:h-7 ${theme.iconColor}"></i>
+          <div class="w-10 h-10 sm:w-14 sm:h-14 rounded-xl sm:rounded-2xl ${theme.badge} flex items-center justify-center mb-1 shadow-2xs transform group-hover:scale-105 transition-transform duration-300">
+            <i data-lucide="${product.icon}" class="w-5 h-5 sm:w-7 sm:h-7 ${theme.iconColor}"></i>
           </div>
-          <span class="text-[11px] font-extrabold uppercase tracking-widest ${theme.brandColor} leading-tight line-clamp-1 max-w-[90%]">
+          <span class="text-[10px] sm:text-[11px] font-extrabold uppercase tracking-wider sm:tracking-widest ${theme.brandColor} leading-tight line-clamp-1 max-w-[95%]">
             ${escapeHtml(product.marca)}
           </span>
-          <span class="text-[9px] font-semibold text-gray-400 uppercase tracking-wider mt-0.5">
+          <span class="text-[8px] sm:text-[9px] font-semibold text-gray-400 uppercase tracking-wider mt-0.5 truncate max-w-full">
             ${escapeHtml(product.categoria)}
           </span>
         </div>
@@ -614,60 +614,60 @@ document.addEventListener('DOMContentLoaded', () => {
       <div>
         ${mediaBoxHtml}
 
-        <div class="flex items-center justify-between text-xs text-gray-500 font-medium mb-1 gap-1">
+        <div class="flex items-center justify-between text-[11px] sm:text-xs text-gray-500 font-medium mb-1 gap-1">
           <span class="text-brand-800 font-bold truncate max-w-[65%]">${escapeHtml(product.marca)}</span>
-          <span class="bg-gray-100 px-2 py-0.5 rounded text-[11px] font-semibold text-gray-600 shrink-0">${escapeHtml(product.presentacion)}</span>
+          <span class="bg-gray-100 px-1.5 sm:px-2 py-0.5 rounded text-[10px] sm:text-[11px] font-semibold text-gray-600 shrink-0">${escapeHtml(product.presentacion)}</span>
         </div>
 
-        <h3 class="font-bold text-gray-900 text-sm sm:text-base leading-snug line-clamp-2 min-h-[2.5rem] group-hover:text-brand-900 transition-colors" title="${escapeHtml(product.producto)}">
+        <h3 class="font-bold text-gray-900 text-xs sm:text-base leading-tight sm:leading-snug line-clamp-2 min-h-[1.9rem] sm:min-h-[2.5rem] group-hover:text-brand-900 transition-colors" title="${escapeHtml(product.producto)}">
           ${escapeHtml(product.producto)}
         </h3>
       </div>
 
       <!-- BOTTOM: PRECIO Y ACCIONES -->
-      <div class="mt-3 pt-2.5 border-t border-gray-100 space-y-2.5">
+      <div class="mt-2 sm:mt-3 pt-2 sm:pt-2.5 border-t border-gray-100 space-y-2 sm:space-y-2.5">
         
         <!-- PRECIO EN ARS -->
         <div class="flex items-baseline justify-between">
-          <span class="text-[10px] uppercase font-bold text-gray-400 tracking-wider">Precio Unitario</span>
-          <span class="text-lg sm:text-xl font-extrabold text-brand-950">${formatPrice(product.precio)}</span>
+          <span class="text-[9px] sm:text-[10px] uppercase font-bold text-gray-400 tracking-wider">Precio Unit.</span>
+          <span class="text-base sm:text-xl font-black text-brand-950">${formatPrice(product.precio)}</span>
         </div>
 
         <!-- SELECTOR DE CANTIDAD Y BOTÓN AGREGAR -->
-        <div class="flex items-center gap-2">
+        <div class="flex items-center gap-1.5 sm:gap-2">
           
           <!-- SELECTOR DE CANTIDAD (+ / -) -->
-          <div class="flex items-center border border-gray-200 rounded-xl bg-gray-50/80 p-0.5 shadow-2xs">
+          <div class="flex items-center border border-gray-200 rounded-lg sm:rounded-xl bg-gray-50/80 p-0.5 shadow-2xs shrink-0">
             <button 
               type="button" 
-              class="btn-qty-minus w-7 h-7 sm:w-8 sm:h-8 flex items-center justify-center text-gray-500 hover:text-brand-900 hover:bg-white rounded-lg transition-colors active:scale-95 cursor-pointer"
+              class="btn-qty-minus w-6 h-6 sm:w-8 sm:h-8 flex items-center justify-center text-gray-500 hover:text-brand-900 hover:bg-white rounded transition-colors active:scale-95 cursor-pointer"
               aria-label="Disminuir cantidad"
             >
-              <i data-lucide="minus" class="w-3.5 h-3.5"></i>
+              <i data-lucide="minus" class="w-3 h-3 sm:w-3.5 sm:h-3.5"></i>
             </button>
             <input 
               type="text" 
               inputmode="numeric" 
               value="${selectedQty}" 
-              class="input-qty w-8 text-center text-xs font-bold bg-transparent text-gray-800 focus:outline-none"
+              class="input-qty w-6 sm:w-8 text-center text-[11px] sm:text-xs font-bold bg-transparent text-gray-800 focus:outline-none"
               readonly
             >
             <button 
               type="button" 
-              class="btn-qty-plus w-7 h-7 sm:w-8 sm:h-8 flex items-center justify-center text-gray-500 hover:text-brand-900 hover:bg-white rounded-lg transition-colors active:scale-95 cursor-pointer"
+              class="btn-qty-plus w-6 h-6 sm:w-8 sm:h-8 flex items-center justify-center text-gray-500 hover:text-brand-900 hover:bg-white rounded transition-colors active:scale-95 cursor-pointer"
               aria-label="Aumentar cantidad"
             >
-              <i data-lucide="plus" class="w-3.5 h-3.5"></i>
+              <i data-lucide="plus" class="w-3 h-3 sm:w-3.5 sm:h-3.5"></i>
             </button>
           </div>
 
           <!-- BOTÓN AGREGAR -->
           <button 
             type="button" 
-            class="btn-add-to-cart flex-1 py-2 px-3 bg-brand-800 hover:bg-brand-900 text-white rounded-xl text-xs font-bold flex items-center justify-center gap-1.5 shadow-sm hover:shadow transition-all active:scale-98 cursor-pointer"
+            class="btn-add-to-cart flex-1 py-1.5 sm:py-2 px-2 sm:px-3 bg-brand-800 hover:bg-brand-900 text-white rounded-lg sm:rounded-xl text-[11px] sm:text-xs font-bold flex items-center justify-center gap-1 shadow-sm hover:shadow transition-all active:scale-98 cursor-pointer"
           >
-            <i data-lucide="plus-circle" class="w-4 h-4"></i>
-            <span>Agregar</span>
+            <i data-lucide="plus-circle" class="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0"></i>
+            <span class="truncate">Agregar</span>
           </button>
 
         </div>

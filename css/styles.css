@@ -249,9 +249,15 @@ body {
   opacity: 1;
 }
 
-/* Contenedor de Medios / Imágenes de Producto */
+/* Contenedor de Medios / Imágenes de Producto - Responsive */
 .product-media-container {
-  aspect-ratio: 16 / 11;
-  max-height: 175px;
+  aspect-ratio: 1 / 1;
+  max-height: 140px;
+}
+@media (min-width: 640px) {
+  .product-media-container {
+    aspect-ratio: 16 / 11;
+    max-height: 175px;
+  }
 }
 
