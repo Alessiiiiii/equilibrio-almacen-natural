@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Equilibrio Distribuciones | Almacén Natural & Catálogo Interactivo</title>
+  
+  <!-- Favicon e Iconos -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌿</text></svg>">
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f2f7f1',
+              100: '#e1ede0',
+              200: '#c5ddc3',
+              300: '#9ec49b',
+              400: '#73a56e',
+              500: '#4e8549',
+              600: '#3c6b38',
+              700: '#31552e',
+              800: '#254423',
+              900: '#1b3419',
+              950: '#0c1d0b',
+            },
+            sintacc: {
+              50: '#ecfdf5',
+              100: '#d1fae5',
+              600: '#059669',
+              700: '#047857',
+            },
+            warmbg: '#f9faf6',
+            warmcard: '#ffffff'
+          },
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Estilos Personalizados -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-warmbg text-gray-800 antialiased min-h-screen flex flex-col">
+
+  <!-- TOP NOTIFICATION BAR -->
+  <div class="bg-brand-900 text-brand-100 text-xs sm:text-sm py-2 px-4 text-center font-medium border-b border-brand-800 flex items-center justify-center gap-2">
+    <i data-lucide="sparkles" class="w-4 h-4 text-amber-300"></i>
+    <span>Catálogo Oficial de <strong>Equilibrio Distribuciones</strong> • Pedidos directos y atención personalizada vía WhatsApp</span>
+  </div>
+
+  <!-- NAVBAR HEADER -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-brand-100 shadow-sm transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between gap-4">
+      
+      <!-- LOGO / BRANDING -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-gradient-to-tr from-brand-800 to-brand-600 flex items-center justify-center text-white shadow-md shadow-brand-900/10 group-hover:scale-105 transition-transform">
+          <i data-lucide="sprout" class="w-6 h-6"></i>
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="text-lg sm:text-2xl font-extrabold tracking-tight text-brand-900">Equilibrio</span>
+            <span class="text-[10px] sm:text-xs font-semibold uppercase tracking-wider bg-brand-100 text-brand-800 px-2 py-0.5 rounded-full">Distribuciones</span>
+          </div>
+          <p class="text-[11px] sm:text-xs text-gray-500 font-medium hidden sm:block">Almacén Natural • Calidad Mayorista & Minorista</p>
+        </div>
+      </a>
+
+      <!-- ACTION BUTTONS RIGHT -->
+      <div class="flex items-center gap-2 sm:gap-3">
+        <!-- BOTÓN ACTUALIZAR DRIVE -->
+        <button 
+          id="btn-sync-drive" 
+          type="button"
+          title="Sincronizar precios y stock desde Google Drive" 
+          class="px-2.5 py-2 sm:px-3 sm:py-2 rounded-xl bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-300 shadow-2xs transition-all text-xs sm:text-sm font-semibold flex items-center gap-1.5 active:scale-95 group cursor-pointer"
+        >
+          <i data-lucide="refresh-cw" class="w-4 h-4 text-emerald-700 transition-transform duration-700" id="icon-sync-drive"></i>
+          <span id="text-sync-drive" class="hidden sm:inline">Actualizar Drive</span>
+        </button>
+
+        <!-- BOTÓN DE CONFIGURACIÓN -->
+        <button id="btn-open-settings" title="Configuración de WhatsApp y Webhook" class="p-2 sm:px-3 sm:py-2 rounded-xl text-gray-600 hover:text-brand-800 hover:bg-brand-50 border border-transparent hover:border-brand-200 transition-all text-xs sm:text-sm font-medium flex items-center gap-1.5 cursor-pointer">
+          <i data-lucide="settings" class="w-4 h-4"></i>
+          <span class="hidden md:inline">Configuración</span>
+        </button>
+
+        <!-- BOTÓN DEL CARRITO EN NAVBAR -->
+        <button id="btn-navbar-cart" class="relative flex items-center gap-2.5 bg-brand-800 hover:bg-brand-900 text-white px-3.5 py-2 sm:px-4 sm:py-2.5 rounded-xl shadow-sm hover:shadow-md transition-all group">
+          <div class="relative">
+            <i data-lucide="shopping-bag" class="w-5 h-5 text-brand-200 group-hover:scale-110 transition-transform"></i>
+            <span id="cart-badge-nav" class="absolute -top-2 -right-2.5 bg-amber-500 text-white text-[11px] font-bold h-4.5 min-w-4.5 px-1 rounded-full flex items-center justify-center border-2 border-white">0</span>
+          </div>
+          <div class="text-left hidden sm:block">
+            <div class="text-[10px] text-brand-200 uppercase font-semibold leading-none">Mi Pedido</div>
+            <div id="cart-total-nav" class="text-xs font-bold leading-tight">$ 0,00</div>
+          </div>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="bg-gradient-to-b from-brand-50/60 to-warmbg border-b border-brand-100/60 py-6 sm:py-9">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-5xl">
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-brand-100/80 text-brand-800 border border-brand-200/60 mb-3">
+          <i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-brand-700"></i> Catálogo Actualizado en Tiempo Real
+        </span>
+        <h1 class="text-2xl sm:text-4xl font-extrabold text-brand-950 tracking-tight leading-tight">
+          Alimentos Conscientes e Insumos para tu&nbsp;Bienestar
+        </h1>
+        <p class="mt-2.5 text-sm sm:text-base text-gray-600 leading-relaxed max-w-4xl">
+          Explorá nuestro catálogo completo, seleccioná tus productos con cantidades exactas y enviá tu pedido en un solo clic directo a WhatsApp con el detalle de precios y datos de entrega.
+        </p>
+
+        <!-- BENEFICIOS CLAVE -->
+        <div class="mt-4 flex flex-wrap items-center gap-2 sm:gap-4 text-xs font-medium text-gray-600">
+          <div class="flex items-center gap-1.5 bg-white px-3 py-1.5 rounded-lg border border-brand-100 shadow-2xs">
+            <i data-lucide="package-check" class="w-4 h-4 text-brand-600"></i>
+            <span id="hero-products-count">1.650 Productos Disponibles</span>
+          </div>
+          <div class="flex items-center gap-1.5 bg-white px-3 py-1.5 rounded-lg border border-emerald-200 shadow-2xs text-emerald-800">
+            <i data-lucide="wheat-off" class="w-4 h-4 text-emerald-600"></i>
+            <span>Sección Especial Sin TACC</span>
+          </div>
+          <div class="flex items-center gap-1.5 bg-white px-3 py-1.5 rounded-lg border border-brand-100 shadow-2xs">
+            <i data-lucide="truck" class="w-4 h-4 text-amber-600"></i>
+            <span>Despacho Inmediato</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FILTERS & SEARCH STICKY BAR -->
+  <section class="sticky top-16 sm:top-20 z-30 bg-white/95 backdrop-blur-md border-b border-gray-200 shadow-2xs py-3">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-3">
+      
+      <!-- BUSCADOR & CONTROLES DE ORDEN -->
+      <div class="flex flex-col sm:flex-row gap-3 items-stretch sm:items-center justify-between">
+        
+        <!-- BUSCADOR REACTIVO -->
+        <div class="relative flex-1">
+          <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-gray-400">
+            <i data-lucide="search" class="w-4 h-4"></i>
+          </div>
+          <input 
+            type="text" 
+            id="search-input" 
+            placeholder="Buscar por nombre, marca o presentación (ej: miel, cumaná, 1 kg, té)..." 
+            class="w-full pl-10 pr-9 py-2.5 bg-gray-50 hover:bg-white text-sm rounded-xl border border-gray-200 focus:bg-white form-input-focus transition-all text-gray-800 placeholder-gray-400"
+          >
+          <button id="btn-clear-search" class="hidden absolute inset-y-0 right-0 pr-3 flex items-center text-gray-400 hover:text-gray-600">
+            <i data-lucide="x" class="w-4 h-4"></i>
+          </button>
+        </div>
+
+        <!-- SELECTOR DE ORDEN Y CONTEO -->
+        <div class="flex items-center gap-2 justify-between sm:justify-end">
+          <span id="results-count" class="text-xs font-semibold text-gray-500 whitespace-nowrap">
+            1.650 productos
+          </span>
+
+          <div class="flex items-center gap-1.5 sm:hidden">
+            <div class="relative">
+              <select id="category-select" class="text-xs bg-gray-50 border border-gray-200 rounded-xl px-2.5 py-2 pr-7 text-gray-700 font-medium focus:bg-white form-input-focus appearance-none cursor-pointer">
+                <!-- Sincronizado dinámicamente -->
+              </select>
+              <i data-lucide="chevron-down" class="w-3.5 h-3.5 text-gray-400 absolute right-2 top-1/2 -translate-y-1/2 pointer-events-none"></i>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-1.5">
+            <label for="sort-select" class="text-xs text-gray-500 font-medium hidden md:inline">Ordenar:</label>
+            <div class="relative">
+              <select id="sort-select" class="text-xs bg-gray-50 border border-gray-200 rounded-xl px-2.5 py-2 pr-7 text-gray-700 font-medium focus:bg-white form-input-focus appearance-none cursor-pointer">
+                <option value="default">Relevancia</option>
+                <option value="price-asc">Precio: Menor a Mayor</option>
+                <option value="price-desc">Precio: Mayor a Menor</option>
+                <option value="name-asc">Nombre (A - Z)</option>
+              </select>
+              <i data-lucide="chevron-down" class="w-3.5 h-3.5 text-gray-400 absolute right-2 top-1/2 -translate-y-1/2 pointer-events-none"></i>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- BARRA DE CATEGORÍAS (TODAS DESPLEGADAS Y 100% VISIBLES) -->
+      <div class="w-full pt-1">
+        <div class="flex flex-wrap items-center gap-2" id="category-pills-container">
+          <!-- Renderizado dinámico desde app.js: Todas, Almacén, Sin TACC, Condimentos, Aromas, Cosmética, Hierbas, Infusiones, Panificados y Galletitas, Repostería -->
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MAIN CATALOG CONTENT -->
+  <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
+    
+    <!-- GRID DE PRODUCTOS -->
+    <div id="products-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
+      <!-- Los productos se inyectan dinámicamente mediante JS -->
+    </div>
+
+    <!-- BOTÓN DE CARGA PROGRESIVA (PAGINACIÓN RÁPIDA) -->
+    <div id="load-more-container" class="mt-8 mb-4 text-center hidden">
+      <button id="btn-load-more" class="px-6 py-3 bg-white hover:bg-brand-50 border border-brand-200 text-brand-900 rounded-2xl text-xs sm:text-sm font-bold shadow-xs hover:shadow transition-all inline-flex items-center gap-2 group">
+        <i data-lucide="chevrons-down" class="w-4 h-4 text-brand-600 group-hover:translate-y-0.5 transition-transform"></i>
+        <span id="load-more-text">Cargar más productos</span>
+      </button>
+    </div>
+
+    <!-- EMPTY STATE CUANDO NO HAY COINCIDENCIAS -->
+    <div id="empty-state" class="hidden text-center py-16 px-4 bg-white rounded-2xl border border-gray-200 shadow-xs max-w-md mx-auto my-8">
+      <div class="w-16 h-16 rounded-full bg-brand-50 text-brand-700 flex items-center justify-center mx-auto mb-4">
+        <i data-lucide="search-x" class="w-8 h-8"></i>
+      </div>
+      <h3 class="text-lg font-bold text-gray-800">No encontramos productos</h3>
+      <p class="text-sm text-gray-500 mt-1 mb-6">No hay resultados para tu criterio de búsqueda o filtro seleccionado.</p>
+      <button id="btn-reset-filters" class="inline-flex items-center gap-2 px-4 py-2 bg-brand-800 hover:bg-brand-900 text-white text-sm font-semibold rounded-xl transition-colors">
+        <i data-lucide="rotate-ccw" class="w-4 h-4"></i>
+        <span>Restablecer Filtros</span>
+      </button>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-white border-t border-gray-200 mt-12 py-8 text-center text-xs text-gray-500">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-2">
+        <i data-lucide="leaf" class="w-4 h-4 text-brand-700"></i>
+        <span class="font-bold text-gray-700">Equilibrio Distribuciones</span>
+        <span>— Almacén Natural & Dietética</span>
+      </div>
+      <p>© 2026 Equilibrio Distribuciones. Catálogo web optimizado para despacho ágil por WhatsApp.</p>
+      <div class="flex items-center gap-4 text-brand-800 font-medium">
+        <a href="javascript:void(0)" id="footer-contact-link" class="hover:underline flex items-center gap-1">
+          <i data-lucide="message-circle" class="w-3.5 h-3.5"></i> Contactar por WhatsApp
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING CART BUTTON (Móvil y Escritorio) -->
+  <button 
+    id="floating-cart-btn" 
+    class="fixed bottom-5 right-5 z-40 bg-brand-800 hover:bg-brand-900 text-white px-4 py-3 sm:px-5 sm:py-3.5 rounded-2xl shadow-xl hover:shadow-2xl transition-all flex items-center gap-3 group border border-brand-700/50"
+    title="Ver mi pedido"
+  >
+    <div class="relative">
+      <i data-lucide="shopping-cart" class="w-6 h-6 text-brand-100 group-hover:scale-110 transition-transform"></i>
+      <span id="cart-badge-float" class="absolute -top-2.5 -right-2.5 bg-amber-500 text-white text-xs font-black h-5 min-w-5 px-1.5 rounded-full flex items-center justify-center border-2 border-white shadow-xs">0</span>
+    </div>
+    <div class="text-left">
+      <div class="text-[10px] uppercase font-bold text-brand-200 tracking-wider leading-none">Mi Pedido</div>
+      <div id="cart-total-float" class="text-sm font-extrabold leading-tight">$ 0,00</div>
+    </div>
+  </button>
+
+  <!-- ======================================================== -->
+  <!-- DRAWER LATERAL DEL CARRITO (OFF-CANVAS)                   -->
+  <!-- ======================================================== -->
+  <div id="cart-backdrop" class="drawer-backdrop fixed inset-0 z-50 bg-black/50 backdrop-blur-xs flex justify-end">
+    <div id="cart-panel" class="drawer-panel bg-white w-full max-w-md h-full shadow-2xl flex flex-col justify-between overflow-hidden">
+      
+      <!-- HEADER DEL DRAWER -->
+      <div class="p-4 sm:p-5 border-b border-gray-100 bg-brand-900 text-white flex items-center justify-between">
+        <div class="flex items-center gap-2.5">
+          <div class="p-2 rounded-xl bg-brand-800 text-brand-200">
+            <i data-lucide="shopping-bag" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h2 class="font-bold text-lg leading-tight">Tu Pedido</h2>
+            <span id="drawer-items-count" class="text-xs text-brand-200">0 ítems agregados</span>
+          </div>
+        </div>
+        <button id="btn-close-cart" class="p-2 text-brand-200 hover:text-white hover:bg-brand-800 rounded-xl transition-colors">
+          <i data-lucide="x" class="w-6 h-6"></i>
+        </button>
+      </div>
+
+      <!-- LISTA DE PRODUCTOS (SCROLLABLE) -->
+      <div class="flex-1 overflow-y-auto p-4 sm:p-5 space-y-3" id="cart-items-container">
+        <!-- Renderizado dinámico de items en el carrito -->
+      </div>
+
+      <!-- VACÍO STATE EN CARRITO -->
+      <div id="cart-empty-view" class="hidden flex-1 flex flex-col items-center justify-center p-8 text-center">
+        <div class="w-16 h-16 rounded-full bg-brand-50 text-brand-700 flex items-center justify-center mb-3">
+          <i data-lucide="shopping-cart" class="w-8 h-8"></i>
+        </div>
+        <h4 class="font-bold text-gray-800 text-base">Tu pedido está vacío</h4>
+        <p class="text-xs text-gray-500 mt-1 mb-5">Agregá productos desde el catálogo para iniciar tu orden de compra.</p>
+        <button id="btn-cart-back-to-shop" class="px-4 py-2 bg-brand-800 text-white text-xs font-semibold rounded-xl hover:bg-brand-900 transition-colors">
+          Explorar Productos
+        </button>
+      </div>
+
+      <!-- FORMULARIO DE CLIENTE Y TOTALES (FIJO AL PIE DEL DRAWER) -->
+      <div id="cart-footer-view" class="border-t border-gray-200 bg-gray-50/80 p-4 sm:p-5 space-y-4 max-h-[58vh] overflow-y-auto">
+        
+        <!-- RESUMEN FINANCIERO -->
+        <div class="space-y-1.5 pb-2 border-b border-gray-200">
+          <div class="flex justify-between text-xs text-gray-500">
+            <span>Subtotal de productos:</span>
+            <span id="drawer-subtotal" class="font-semibold text-gray-700">$ 0,00</span>
+          </div>
+          <div class="flex justify-between text-xs text-gray-500">
+            <span>Despacho / Envío:</span>
+            <span class="text-brand-700 font-medium">A coordinar por WhatsApp</span>
+          </div>
+          <div class="flex justify-between text-base font-extrabold text-brand-950 pt-1">
+            <span>Total Consolidado:</span>
+            <span id="drawer-total" class="text-brand-800 text-lg">$ 0,00</span>
+          </div>
+        </div>
+
+        <!-- FORMULARIO DE DATOS DEL CLIENTE -->
+        <form id="checkout-form" class="space-y-3" onsubmit="return false;">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-bold text-gray-700 uppercase tracking-wider flex items-center gap-1">
+              <i data-lucide="user" class="w-3.5 h-3.5 text-brand-700"></i> Datos de Entrega (Obligatorios)
+            </span>
+            <span class="text-[10px] text-red-500 font-medium">* Requeridos</span>
+          </div>
+
+          <!-- NOMBRE -->
+          <div>
+            <label class="block text-xs font-medium text-gray-700 mb-1" for="cust-name">
+              Nombre y Apellido <span class="text-red-500">*</span>
+            </label>
+            <input 
+              type="text" 
+              id="cust-name" 
+              required 
+              placeholder="Ej: Juan Pérez"
+              class="w-full px-3 py-2 text-xs bg-white border border-gray-300 rounded-lg form-input-focus transition-all"
+            >
+            <p id="err-cust-name" class="hidden text-[11px] text-red-600 mt-0.5 font-medium"></p>
+          </div>
+
+          <!-- TELÉFONO / WHATSAPP -->
+          <div>
+            <label class="block text-xs font-medium text-gray-700 mb-1" for="cust-phone">
+              Teléfono / WhatsApp <span class="text-red-500">*</span>
+            </label>
+            <input 
+              type="tel" 
+              id="cust-phone" 
+              required 
+              placeholder="Ej: 11 2345-6789"
+              class="w-full px-3 py-2 text-xs bg-white border border-gray-300 rounded-lg form-input-focus transition-all"
+            >
+            <p id="err-cust-phone" class="hidden text-[11px] text-red-600 mt-0.5 font-medium"></p>
+          </div>
+
+          <!-- DIRECCIÓN -->
+          <div>
+            <label class="block text-xs font-medium text-gray-700 mb-1" for="cust-address">
+              Dirección de Entrega <span class="text-red-500">*</span>
+            </label>
+            <input 
+              type="text" 
+              id="cust-address" 
+              required 
+              placeholder="Ej: Av. Rivadavia 4520, Piso 3B, CABA"
+              class="w-full px-3 py-2 text-xs bg-white border border-gray-300 rounded-lg form-input-focus transition-all"
+            >
+            <p id="err-cust-address" class="hidden text-[11px] text-red-600 mt-0.5 font-medium"></p>
+          </div>
+
+          <!-- MÉTODO DE PAGO Y NOTAS -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            <div>
+              <label class="block text-[11px] font-medium text-gray-600 mb-1" for="cust-payment">
+                Medio de Pago
+              </label>
+              <select id="cust-payment" class="w-full px-2.5 py-1.5 text-xs bg-white border border-gray-300 rounded-lg form-input-focus text-gray-700">
+                <option value="Transferencia Bancaria / Alias">Transferencia / Alias</option>
+                <option value="Efectivo Contra Entrega">Efectivo al Recibir</option>
+                <option value="Mercado Pago">Mercado Pago</option>
+                <option value="A convenir">A convenir</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-[11px] font-medium text-gray-600 mb-1" for="cust-notes">
+                Notas / Horario (Opcional)
+              </label>
+              <input 
+                type="text" 
+                id="cust-notes" 
+                placeholder="Ej: Tocar timbre 2B"
+                class="w-full px-2.5 py-1.5 text-xs bg-white border border-gray-300 rounded-lg form-input-focus"
+              >
+            </div>
+          </div>
+        </form>
+
+        <!-- SWITCH DE MODO TESTEO / PRUEBA -->
+        <div id="box-test-mode" class="p-2.5 rounded-xl border border-dashed border-amber-300 bg-amber-50/90 flex items-center justify-between gap-2 transition-all">
+          <div class="flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-amber-500 animate-pulse shrink-0"></span>
+            <div>
+              <div class="flex items-center gap-1.5">
+                <span class="text-xs font-bold text-amber-950">Modo Testeo / Prueba</span>
+                <span id="badge-test-active" class="hidden text-[9px] font-extrabold px-1.5 py-0.5 rounded bg-amber-200 text-amber-900 uppercase">Activo</span>
+              </div>
+              <p class="text-[10px] text-amber-800 leading-tight">Marcar pedidos con etiqueta [TEST] para pruebas seguras</p>
+            </div>
+          </div>
+          <label class="relative inline-flex items-center cursor-pointer shrink-0">
+            <input type="checkbox" id="check-test-mode" class="sr-only peer">
+            <div class="w-9 h-5 bg-gray-300 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-amber-600"></div>
+          </label>
+        </div>
+
+        <!-- ACCIONES DE DESPACHO -->
+        <div class="pt-1 space-y-2">
+          <!-- BOTÓN PRINCIPAL: ENVIAR POR WHATSAPP -->
+          <button 
+            id="btn-send-whatsapp" 
+            class="w-full py-3 px-4 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl font-bold text-sm shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2 text-center group"
+          >
+            <i data-lucide="message-circle" class="w-5 h-5 text-emerald-200 group-hover:scale-110 transition-transform"></i>
+            <span id="text-btn-send-whatsapp">Enviar Pedido por WhatsApp</span>
+          </button>
+
+          <!-- BOTÓN SECUNDARIO: GUARDAR / WEBHOOK GOOGLE SHEETS -->
+          <button 
+            id="btn-trigger-webhook" 
+            class="w-full py-2.5 px-4 bg-brand-50 hover:bg-brand-100 text-brand-900 border border-brand-200 rounded-xl font-semibold text-xs transition-colors flex items-center justify-center gap-2"
+          >
+            <i data-lucide="sheet" class="w-4 h-4 text-brand-700"></i>
+            <span>Registrar en Google Sheets / Email (Webhook)</span>
+          </button>
+
+          <!-- BOTÓN VACIAR CARRITO -->
+          <div class="flex justify-center pt-1">
+            <button id="btn-clear-cart" class="text-[11px] text-gray-400 hover:text-red-600 font-medium transition-colors flex items-center gap-1">
+              <i data-lucide="trash-2" class="w-3 h-3"></i> Vaciar Carrito
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ======================================================== -->
+  <!-- MODAL: SIMULADOR DE WEBHOOK Y GOOGLE SHEETS              -->
+  <!-- ======================================================== -->
+  <div id="modal-webhook" class="modal-overlay fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-3 sm:p-4">
+    <div class="modal-box bg-white rounded-2xl shadow-2xl max-w-2xl w-full max-h-[90vh] flex flex-col overflow-hidden border border-gray-200">
+      
+      <!-- HEADER MODAL -->
+      <div class="p-4 sm:p-5 bg-gradient-to-r from-brand-900 to-brand-800 text-white flex items-center justify-between">
+        <div class="flex items-center gap-2.5">
+          <div class="p-2 rounded-xl bg-brand-700 text-brand-100">
+            <i data-lucide="table-2" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-base sm:text-lg">Persistencia del Pedido (Webhook & Sheets)</h3>
+            <p id="modal-order-tag" class="text-xs text-brand-200">Pedido #EQ-2026-0000 procesado con éxito</p>
+          </div>
+        </div>
+        <button id="btn-close-webhook-modal" class="text-brand-200 hover:text-white p-1.5 rounded-lg hover:bg-brand-700 transition-colors">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <!-- TABS DE NAVEGACIÓN -->
+      <div class="flex border-b border-gray-200 bg-gray-50 text-xs font-semibold px-4 pt-2 gap-2">
+        <button id="tab-btn-sheets" class="px-3 py-2 text-brand-900 border-b-2 border-brand-800 flex items-center gap-1.5">
+          <i data-lucide="file-spreadsheet" class="w-4 h-4 text-emerald-600"></i> Fila en Google Sheets
+        </button>
+        <button id="tab-btn-email" class="px-3 py-2 text-gray-500 hover:text-gray-800 border-b-2 border-transparent flex items-center gap-1.5">
+          <i data-lucide="mail" class="w-4 h-4 text-blue-600"></i> Notificación Email
+        </button>
+        <button id="tab-btn-json" class="px-3 py-2 text-gray-500 hover:text-gray-800 border-b-2 border-transparent flex items-center gap-1.5">
+          <i data-lucide="code" class="w-4 h-4 text-purple-600"></i> Payload JSON
+        </button>
+      </div>
+
+      <!-- CONTENIDO DE TABS -->
+      <div class="flex-1 overflow-y-auto p-4 sm:p-5">
+        
+        <!-- TAB 1: GOOGLE SHEETS ROW PREVIEW -->
+        <div id="tab-content-sheets" class="space-y-3">
+          <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-3 flex items-start gap-2.5 text-xs text-emerald-900">
+            <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600 shrink-0 mt-0.5"></i>
+            <div>
+              <p class="font-bold">¡Pedido registrado correctamente en la hoja de cálculo!</p>
+              <p class="text-emerald-700 text-[11px] mt-0.5">Se agregó una nueva fila con el detalle consolidado del cliente, ítems y montos para el equipo de empaque y logística.</p>
+            </div>
+          </div>
+
+          <div class="overflow-x-auto rounded-xl border border-gray-200 shadow-2xs">
+            <table class="sheets-table w-full text-left">
+              <thead>
+                <tr>
+                  <th>ID Pedido</th>
+                  <th>Fecha/Hora</th>
+                  <th>Cliente</th>
+                  <th>Teléfono</th>
+                  <th>Dirección</th>
+                  <th>Ítems</th>
+                  <th>Total ARS</th>
+                  <th>Pago</th>
+                  <th>Estado</th>
+                </tr>
+              </thead>
+              <tbody id="sheets-row-body">
+                <!-- Fila inyectada por JS -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- TAB 2: EMAIL PREVIEW -->
+        <div id="tab-content-email" class="hidden space-y-3">
+          <div class="border border-gray-200 rounded-xl bg-white shadow-2xs overflow-hidden text-xs">
+            <div class="bg-gray-100 p-3 border-b border-gray-200 space-y-1">
+              <div><span class="text-gray-500 font-medium">De:</span> <strong class="text-gray-700">pedidos@equilibriodistribuciones.com</strong></div>
+              <div><span class="text-gray-500 font-medium">Para:</span> <strong class="text-gray-700">ventas@equilibriodistribuciones.com</strong></div>
+              <div><span class="text-gray-500 font-medium">Asunto:</span> <strong id="email-subject-preview" class="text-brand-900">Nuevo Pedido Recibido</strong></div>
+            </div>
+            <div class="p-4 space-y-3" id="email-body-preview">
+              <!-- Renderizado de email -->
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB 3: JSON PAYLOAD -->
+        <div id="tab-content-json" class="hidden space-y-2">
+          <div class="flex items-center justify-between text-xs text-gray-500">
+            <span>Estructura de datos enviada al Webhook:</span>
+            <button id="btn-copy-json" class="text-brand-800 hover:text-brand-900 font-semibold flex items-center gap-1 text-xs">
+              <i data-lucide="copy" class="w-3.5 h-3.5"></i> Copiar JSON
+            </button>
+          </div>
+          <pre id="json-preview-code" class="p-3 bg-gray-900 text-emerald-400 font-mono text-[11px] rounded-xl overflow-x-auto max-h-72 select-all"></pre>
+        </div>
+
+      </div>
+
+      <!-- FOOTER MODAL CON DESCARGAS -->
+      <div class="p-4 bg-gray-50 border-t border-gray-200 flex flex-wrap items-center justify-between gap-2">
+        <div class="flex items-center gap-2">
+          <button id="btn-download-csv" class="px-3 py-2 bg-white border border-gray-300 hover:bg-gray-100 text-gray-700 text-xs font-bold rounded-xl transition-colors flex items-center gap-1.5 shadow-2xs">
+            <i data-lucide="download" class="w-3.5 h-3.5 text-emerald-600"></i> Descargar CSV (Excel)
+          </button>
+          <button id="btn-download-json" class="px-3 py-2 bg-white border border-gray-300 hover:bg-gray-100 text-gray-700 text-xs font-bold rounded-xl transition-colors flex items-center gap-1.5 shadow-2xs">
+            <i data-lucide="file-code" class="w-3.5 h-3.5 text-purple-600"></i> Descargar JSON
+          </button>
+        </div>
+        <button id="btn-done-webhook" class="px-5 py-2 bg-brand-800 hover:bg-brand-900 text-white text-xs font-bold rounded-xl transition-colors">
+          Cerrar
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ======================================================== -->
+  <!-- MODAL: CONFIGURACIÓN DE WHATSAPP Y WEBHOOK                -->
+  <!-- ======================================================== -->
+  <div id="modal-settings" class="modal-overlay fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-3 sm:p-4">
+    <div class="modal-box bg-white rounded-2xl shadow-2xl max-w-md w-full overflow-hidden border border-gray-200">
+      
+      <div class="p-4 bg-brand-900 text-white flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <i data-lucide="sliders" class="w-5 h-5 text-brand-200"></i>
+          <h3 class="font-bold text-base">Configuración de Despacho</h3>
+        </div>
+        <button id="btn-close-settings" class="text-brand-200 hover:text-white p-1 rounded-lg">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <form id="settings-form" class="p-4 sm:p-5 space-y-4" onsubmit="return false;">
+        <div>
+          <div class="flex items-center justify-between mb-1">
+            <label class="block text-xs font-bold text-gray-700" for="setting-whatsapp">
+              Número de WhatsApp Receptor (Distribuidora)
+            </label>
+            <button type="button" id="btn-reset-whatsapp-official" class="text-[10px] text-brand-800 hover:text-brand-950 font-semibold flex items-center gap-1 cursor-pointer">
+              <i data-lucide="rotate-ccw" class="w-3 h-3"></i> Restablecer oficial
+            </button>
+          </div>
+          <div class="relative">
+            <i data-lucide="phone" class="w-4 h-4 text-gray-400 absolute left-3 top-1/2 -translate-y-1/2"></i>
+            <input 
+              type="text" 
+              id="setting-whatsapp" 
+              placeholder="Ej: 5493416945514"
+              class="w-full pl-9 pr-3 py-2 text-xs bg-white border border-gray-300 rounded-lg form-input-focus font-mono"
+            >
+          </div>
+          <p class="text-[11px] text-gray-500 mt-1">Número oficial de Equilibrio Distribuciones: <strong>5493416945514</strong> (Rosario).</p>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-gray-700 mb-1" for="setting-test-phone">
+            Número de WhatsApp para Pruebas (Opcional)
+          </label>
+          <div class="relative">
+            <i data-lucide="flask-conical" class="w-4 h-4 text-amber-500 absolute left-3 top-1/2 -translate-y-1/2"></i>
+            <input 
+              type="text" 
+              id="setting-test-phone" 
+              placeholder="Ej: 549341... (tu celular para recibir tests)"
+              class="w-full pl-9 pr-3 py-2 text-xs bg-white border border-gray-300 rounded-lg form-input-focus font-mono"
+            >
+          </div>
+          <p class="text-[11px] text-gray-500 mt-1">Si se completa, al activar el Modo Testeo los mensajes de prueba te llegarán a este celular en lugar del número oficial.</p>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-gray-700 mb-1" for="setting-webhook">
+            URL del Webhook (Opcional - Google Sheets / Make / Zapier)
+          </label>
+          <div class="relative">
+            <i data-lucide="link" class="w-4 h-4 text-gray-400 absolute left-3 top-1/2 -translate-y-1/2"></i>
+            <input 
+              type="url" 
+              id="setting-webhook" 
+              placeholder="https://hook.eu2.make.com/... o Google Script URL"
+              class="w-full pl-9 pr-3 py-2 text-xs bg-white border border-gray-300 rounded-lg form-input-focus font-mono"
+            >
+          </div>
+          <p class="text-[11px] text-gray-500 mt-1">Si se deja vacío, la aplicación ejecutará la simulación interactiva completa de Sheets y Email.</p>
+        </div>
+
+        <div class="pt-2 flex justify-end gap-2">
+          <button type="button" id="btn-cancel-settings" class="px-4 py-2 border border-gray-300 text-gray-700 rounded-xl text-xs font-semibold hover:bg-gray-50">
+            Cancelar
+          </button>
+          <button type="button" id="btn-save-settings" class="px-5 py-2 bg-brand-800 text-white rounded-xl text-xs font-bold hover:bg-brand-900 transition-colors shadow-xs">
+            Guardar Cambios
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ======================================================== -->
+  <!-- MODAL: ZOOM / VISTA PREVIA DE PRODUCTO                   -->
+  <!-- ======================================================== -->
+  <div id="modal-zoom-image" onclick="if(event.target===this){window.closeZoomModal&&window.closeZoomModal();}" class="modal-overlay fixed inset-0 z-50 bg-black/80 backdrop-blur-xs flex items-center justify-center p-3 sm:p-4">
+    <div class="modal-box bg-white rounded-3xl max-w-md w-full border border-white/20 relative flex flex-col max-h-[90vh]">
+      <!-- Header con foto del producto y botón X de alto contraste -->
+      <div class="relative bg-gradient-to-b from-stone-100 via-stone-50 to-white p-6 flex items-center justify-center min-h-[260px] border-b border-gray-100 rounded-t-3xl">
+        <button id="btn-close-zoom" onclick="window.closeZoomModal&&window.closeZoomModal()" type="button" class="absolute top-3 right-3 sm:top-4 sm:right-4 w-10 h-10 rounded-full bg-stone-900/80 hover:bg-stone-900 text-white flex items-center justify-center shadow-lg active:scale-90 transition-all cursor-pointer z-30 border border-white/40" aria-label="Cerrar vista previa" title="Cerrar (Esc)">
+          <i data-lucide="x" class="w-5 h-5 pointer-events-none"></i>
+        </button>
+        <img id="zoom-img-src" src="" alt="" class="max-h-[280px] max-w-full object-contain drop-shadow-md">
+      </div>
+      <!-- Info del producto y acciones -->
+      <div class="p-5 sm:p-6 bg-white space-y-3.5 flex-1 overflow-y-auto rounded-b-3xl">
+        <div class="flex items-center gap-2 flex-wrap">
+          <span id="zoom-brand" class="text-xs font-bold uppercase tracking-wider text-brand-800 bg-brand-50 px-2.5 py-0.5 rounded-full border border-brand-200"></span>
+          <span id="zoom-pres" class="text-xs text-gray-500 bg-gray-100 px-2 py-0.5 rounded-md font-medium"></span>
+          <span id="zoom-sintacc" class="hidden badge-sin-tacc text-[10px] font-bold px-2 py-0.5 rounded-full flex items-center gap-1 shadow-2xs">
+            <i data-lucide="wheat-off" class="w-3 h-3 pointer-events-none"></i> Sin TACC
+          </span>
+        </div>
+        <h3 id="zoom-title" class="text-base sm:text-lg font-extrabold text-brand-950 leading-snug"></h3>
+        <div class="flex items-center justify-between pt-3 border-t border-gray-100 gap-3">
+          <div>
+            <div class="text-[10px] font-bold uppercase text-gray-400">Precio Unitario</div>
+            <div id="zoom-price" class="text-xl sm:text-2xl font-black text-brand-900"></div>
+          </div>
+          <div class="flex items-center gap-2">
+            <button id="btn-secondary-close-zoom" onclick="window.closeZoomModal&&window.closeZoomModal()" type="button" class="px-4 py-2.5 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-xl font-bold text-xs sm:text-sm transition-all active:scale-95 cursor-pointer" title="Cerrar vista previa">
+              Cerrar
+            </button>
+            <button id="zoom-btn-add" onclick="window.addZoomProductToCart&&window.addZoomProductToCart()" type="button" class="px-4 sm:px-5 py-2.5 bg-brand-800 hover:bg-brand-900 text-white rounded-xl font-bold text-xs sm:text-sm shadow-md flex items-center gap-1.5 active:scale-95 transition-all cursor-pointer">
+              <i data-lucide="plus-circle" class="w-4 h-4 pointer-events-none"></i>
+              <span>Agregar</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST CONTAINER -->
+  <div id="toast-container"></div>
+
+  <!-- SCRIPTS -->
+  <script src="js/data.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/checkout.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

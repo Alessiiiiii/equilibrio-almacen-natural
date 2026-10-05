@@ -1,0 +1,257 @@
+/* 
+ * Equilibrio Distribuciones - Estilos Personalizados
+ * Estética Almacén Natural / Dietética Saludable
+ */
+
+:root {
+  --color-primary: #255328;
+  --color-primary-dark: #1b3d1e;
+  --color-primary-light: #3b7e40;
+  --color-sage: #5a8a65;
+  --color-sage-soft: #edf4ec;
+  --color-earth-amber: #d97706;
+  --color-cream-bg: #f9faf6;
+  --color-card-bg: #ffffff;
+  --color-border: #e2ebd8;
+  --color-text-main: #1f2937;
+  --color-text-muted: #64748b;
+  --color-sintacc: #059669;
+  --color-sintacc-bg: #ecfdf5;
+}
+
+body {
+  background-color: var(--color-cream-bg);
+  color: var(--color-text-main);
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Scrollbar estética */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5ee;
+}
+::-webkit-scrollbar-thumb {
+  background: #c3d6bf;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9ab994;
+}
+
+/* Animación sutil de pulso para agregar al carrito */
+@keyframes cart-bounce {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.18); }
+}
+
+.cart-bump {
+  animation: cart-bounce 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Transiciones del Drawer Lateral */
+.drawer-backdrop {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+}
+.drawer-backdrop.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.drawer-panel {
+  transform: translateX(100%);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.drawer-panel.active {
+  transform: translateX(0);
+}
+
+/* Ocultar barra de scroll en contenedores horizontales preservando deslizamiento */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Tarjetas de Producto */
+.product-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+.product-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px -10px rgba(34, 72, 35, 0.12);
+  border-color: #cbdcc5;
+}
+
+/* Badges temáticos */
+.badge-sin-tacc {
+  background-color: var(--color-sintacc-bg);
+  color: var(--color-sintacc);
+  border: 1px solid rgba(5, 150, 105, 0.2);
+}
+
+.badge-category {
+  background-color: #f3f7f1;
+  color: #3b663e;
+  border: 1px solid #dbe7d7;
+}
+
+/* Botones de categoría (pills) */
+#category-pills-container {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  overflow-x: visible !important;
+}
+
+.cat-pill {
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+}
+.cat-pill.active {
+  background-color: var(--color-primary);
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(37, 83, 40, 0.25);
+  border-color: var(--color-primary);
+}
+.cat-pill:not(.active):hover {
+  background-color: #eaf1e7;
+  border-color: #c9dec4;
+  color: var(--color-primary-dark);
+}
+
+/* Modal y Popups */
+.modal-overlay {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transition: opacity 0.25s ease-out, visibility 0.25s ease-out;
+}
+.modal-overlay.active {
+  opacity: 1 !important;
+  pointer-events: auto !important;
+  visibility: visible !important;
+}
+.modal-box {
+  transform: scale(0.95);
+  opacity: 0;
+  transition: transform 0.25s ease-out, opacity 0.25s ease-out;
+}
+.modal-overlay.active .modal-box {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* Toast container */
+#toast-container {
+  position: fixed;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  pointer-events: none;
+  max-width: 90vw;
+  width: 400px;
+}
+
+.toast-message {
+  pointer-events: auto;
+  animation: toast-in 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.15), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes toast-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Form inputs */
+.form-input-focus:focus {
+  outline: none;
+  border-color: var(--color-sage);
+  box-shadow: 0 0 0 3px rgba(90, 138, 101, 0.15);
+}
+
+/* Vista previa de Google Sheets interactiva */
+.sheets-table th {
+  background-color: #107c41;
+  color: white;
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 8px 12px;
+  border: 1px solid #0b592e;
+}
+.sheets-table td {
+  padding: 8px 12px;
+  font-size: 0.85rem;
+  border: 1px solid #e2e8f0;
+  white-space: nowrap;
+}
+.sheets-table tr:nth-child(even) {
+  background-color: #f8fafc;
+}
+.sheets-table tr:hover {
+  background-color: #eef7ee;
+}
+
+/* Deslizador de Categorías Interactivo */
+.category-scroll-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+#category-pills-container {
+  cursor: grab;
+  user-select: none;
+  scroll-behavior: smooth;
+}
+
+#category-pills-container.grabbing {
+  cursor: grabbing;
+}
+
+/* Modal Zoom de Imagen */
+#modal-zoom-image.active {
+  opacity: 1 !important;
+  pointer-events: auto !important;
+  visibility: visible !important;
+}
+#modal-zoom-image:not(.active) {
+  opacity: 0 !important;
+  pointer-events: none !important;
+  visibility: hidden !important;
+}
+#modal-zoom-image.active .modal-box {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* Contenedor de Medios / Imágenes de Producto */
+.product-media-container {
+  aspect-ratio: 16 / 11;
+  max-height: 175px;
+}
+

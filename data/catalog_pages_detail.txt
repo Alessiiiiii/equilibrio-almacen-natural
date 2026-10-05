@@ -1,0 +1,422 @@
+
+========================================
+PAGE 2 (Images: 13)
+Texts: *PEPAS RÚSTICAS. | *PANES RÚSTICOS. | *PANES ESPECIALES. | *PAN SIN TACC. | Pan con semilla. | Pan clasico. | *PEPAS RÚSTICAS. | *PANES RÚSTICOS. | *COOKIES.
+  data/images/img_50.jpg -> x=19, y=641, w=205, h=90
+  data/images/img_40.jpg -> x=490, y=629, w=91, h=95
+  data/images/img_38.jpg -> x=229, y=620, w=92, h=106
+  data/images/img_41.jpg -> x=326, y=520, w=158, h=206
+  data/images/img_39.jpg -> x=228, y=519, w=92, h=95
+  data/images/img_42.jpg -> x=483, y=515, w=95, h=110
+  data/images/img_44.jpg -> x=18, y=380, w=197, h=99
+  data/images/img_45.jpg -> x=226, y=348, w=262, h=129
+  data/images/img_43.jpg -> x=29, y=217, w=189, h=88
+  data/images/img_47.jpg -> x=385, y=189, w=191, h=117
+  data/images/img_46.jpg -> x=231, y=160, w=147, h=148
+  data/images/img_48.jpg -> x=229, y=61, w=165, h=96
+  data/images/img_49.jpg -> x=412, y=59, w=144, h=123
+
+========================================
+PAGE 3 (Images: 13)
+Texts: *PAN DE HAMBURGUESAS | *COQUITOS | *PASTAFROLA | *MINI BOMBÓN | *MINI COCO | *BROWNIE | *ALFAJOR | *CHIPS | *PIZZETAS | *CRACKERS
+  data/images/img_49.jpg -> x=412, y=738, w=144, h=123
+  data/images/img_64.jpg -> x=20, y=614, w=196, h=120
+  data/images/img_53.jpg -> x=232, y=556, w=346, h=181
+  data/images/img_58.jpg -> x=468, y=417, w=115, h=140
+  data/images/img_54.jpg -> x=222, y=416, w=112, h=141
+  data/images/img_55.jpg -> x=343, y=413, w=123, h=145
+  data/images/img_57.jpg -> x=350, y=301, w=116, h=114
+  data/images/img_59.jpg -> x=463, y=301, w=113, h=118
+  data/images/img_56.jpg -> x=231, y=300, w=115, h=114
+  data/images/img_60.jpg -> x=225, y=170, w=123, h=135
+  data/images/img_62.jpg -> x=346, y=165, w=231, h=141
+  data/images/img_63.jpg -> x=247, y=65, w=199, h=94
+  data/images/img_61.jpg -> x=469, y=65, w=96, h=104
+
+========================================
+PAGE 4 (Images: 14)
+Texts: *ALMOHADITAS RELLENAS. | *BASTONCITOS DE SALVADO. | *BOLITAS DE CHOCOLATE. | *ANILLOS FRUTALES / AVENA Y MIEL. | *COPOS MAIZ CON Y SIN AZUCAR. | *CUADRICOPOS. | *OSITOS FRUTILLA / CHOCOLATE. | *STEVIA EN POLVO. | *STEVIA LIQUIDA. | *STEVIA EN SOBRESITOS. | *QUINOA POP
+  data/images/img_69.jpg -> x=367, y=613, w=101, h=103
+  data/images/img_70.jpg -> x=473, y=609, w=105, h=113
+  data/images/img_68.jpg -> x=228, y=505, w=134, h=216
+  data/images/img_71.jpg -> x=370, y=502, w=97, h=107
+  data/images/img_72.jpg -> x=473, y=498, w=102, h=113
+  data/images/img_74.jpg -> x=212, y=318, w=139, h=176
+  data/images/img_75.jpg -> x=353, y=314, w=130, h=176
+  data/images/img_76.jpg -> x=493, y=305, w=86, h=190
+  data/images/img_77.jpg -> x=52, y=190, w=154, h=115
+  data/images/img_78.jpg -> x=234, y=149, w=159, h=156
+  data/images/img_79.jpg -> x=419, y=145, w=150, h=157
+  data/images/img_82.jpg -> x=355, y=64, w=90, h=82
+  data/images/img_81.jpg -> x=465, y=63, w=97, h=81
+  data/images/img_80.jpg -> x=236, y=62, w=100, h=77
+
+========================================
+PAGE 5 (Images: 16)
+Texts: *FIDEOS MOSTACHOLES DE MAIZ. | *FIDEOS MOSTACHOLES DE ARROZ. | *PREMEZCLA. | *REBOZADOR. | *MASITAS: Vainilla, Coco, Chocolate, | limon, Naranja. | *BOCADITOS.
+  data/images/img_88.jpg -> x=470, y=602, w=104, h=117
+  data/images/img_86.jpg -> x=236, y=600, w=107, h=125
+  data/images/img_87.jpg -> x=353, y=599, w=104, h=122
+  data/images/img_85.jpg -> x=44, y=567, w=177, h=161
+  data/images/img_89.jpg -> x=230, y=470, w=112, h=129
+  data/images/img_90.jpg -> x=350, y=467, w=110, h=130
+  data/images/img_91.jpg -> x=469, y=462, w=103, h=141
+  data/images/img_98.jpg -> x=345, y=324, w=115, h=140
+  data/images/img_100.jpg -> x=463, y=316, w=118, h=147
+  data/images/img_92.jpg -> x=223, y=303, w=118, h=161
+  data/images/img_96.jpg -> x=353, y=201, w=107, h=118
+  data/images/img_94.jpg -> x=229, y=200, w=118, h=118
+  data/images/img_97.jpg -> x=465, y=196, w=114, h=120
+  data/images/img_93.jpg -> x=236, y=67, w=118, h=117
+  data/images/img_99.jpg -> x=465, y=64, w=114, h=126
+  data/images/img_95.jpg -> x=364, y=62, w=90, h=127
+
+========================================
+PAGE 6 (Images: 11)
+Texts: *ALFAJORES INTEGRALES ORGANICOS. | *BOCADITOS DE HIGO. | *TRUFAS INTEGRALES. | *PROPOLEOS. | *CAPSULAS JALEA REAL / PROPOLEO. | *CARAMELOS.
+  data/images/img_103.jpg -> x=23, y=637, w=196, h=96
+  data/images/img_104.jpg -> x=228, y=585, w=181, h=146
+  data/images/img_106.jpg -> x=413, y=571, w=165, h=161
+  data/images/img_105.jpg -> x=224, y=453, w=181, h=122
+  data/images/img_107.jpg -> x=412, y=452, w=158, h=111
+  data/images/img_108.jpg -> x=24, y=294, w=190, h=137
+  data/images/img_110.jpg -> x=407, y=264, w=169, h=166
+  data/images/img_109.jpg -> x=230, y=256, w=172, h=176
+  data/images/img_111.jpg -> x=407, y=72, w=175, h=174
+  data/images/img_113.jpg -> x=225, y=71, w=78, h=143
+  data/images/img_112.jpg -> x=305, y=70, w=103, h=163
+
+========================================
+PAGE 7 (Images: 8)
+Texts: *BARRAS BASE. | *BARRAS PROTEICAS. | *BARRAS SIN TACC. | *BOCADITOS. | *GALLETITAS. | *COOKIES. | *GRANOLAS CLASICAS. | *GRANOLAS SIN TACC.
+  data/images/img_116.jpg -> x=236, y=608, w=168, h=127
+  data/images/img_124.jpg -> x=413, y=604, w=166, h=131
+  data/images/img_118.jpg -> x=421, y=437, w=155, h=161
+  data/images/img_120.jpg -> x=239, y=433, w=170, h=168
+  data/images/img_122.jpg -> x=230, y=280, w=186, h=152
+  data/images/img_117.jpg -> x=430, y=265, w=142, h=168
+  data/images/img_123.jpg -> x=228, y=70, w=149, h=208
+  data/images/img_119.jpg -> x=388, y=69, w=192, h=193
+
+========================================
+PAGE 8 (Images: 14)
+Texts: *MANTECA DE MANI CHOCOLATE. | * MANTECA DE MANI ORIGINAL. | * PASTA DE MANI. | * PASTA DE MANI CRUNCHY. | * PASTA DE MANI NATURAL. | *MANI DULCE. | *MANI SABORIZADO. | *MANI CON Y SIN SAL.
+  data/images/img_138.jpg -> x=486, y=626, w=94, h=93
+  data/images/img_127.jpg -> x=33, y=570, w=185, h=164
+  data/images/img_128.jpg -> x=223, y=545, w=139, h=189
+  data/images/img_129.jpg -> x=363, y=542, w=116, h=192
+  data/images/img_137.jpg -> x=487, y=528, w=94, h=94
+  data/images/img_139.jpg -> x=385, y=369, w=197, h=152
+  data/images/img_130.jpg -> x=221, y=368, w=165, h=168
+  data/images/img_132.jpg -> x=346, y=218, w=116, h=146
+  data/images/img_131.jpg -> x=230, y=217, w=108, h=147
+  data/images/img_133.jpg -> x=468, y=216, w=108, h=149
+  data/images/img_135.jpg -> x=353, y=64, w=96, h=148
+  data/images/img_136.jpg -> x=473, y=62, w=99, h=151
+  data/images/img_134.jpg -> x=235, y=61, w=98, h=147
+  data/images/img_140.jpg -> x=36, y=-107, w=181, h=167
+
+========================================
+PAGE 9 (Images: 16)
+Texts: *DULCE DE LECHE VARIOS. | *GHEE MANTECA. | *MERMELADAS. | *MIEL CREMOSA. | *PASTAS DE MANI. | *TABLETAS DE DULCE DE LECHE. | *BISCUITS. | *BISCOCHITOS. | *BUDINES. | *CEREALES. | *GALLETITAS. | *PAN DULCES. | *PEPAS DE MEMBRILLO. | *POLVORONES. | *SNACKS HORNEADOS.
+  data/images/img_134.jpg -> x=235, y=738, w=98, h=147
+  data/images/img_154.jpg -> x=474, y=579, w=103, h=154
+  data/images/img_144.jpg -> x=359, y=572, w=112, h=160
+  data/images/img_143.jpg -> x=229, y=571, w=114, h=164
+  data/images/img_140.jpg -> x=36, y=570, w=181, h=167
+  data/images/img_146.jpg -> x=316, y=443, w=83, h=123
+  data/images/img_145.jpg -> x=226, y=442, w=90, h=124
+  data/images/img_147.jpg -> x=397, y=438, w=90, h=134
+  data/images/img_155.jpg -> x=499, y=436, w=82, h=139
+  data/images/img_148.jpg -> x=31, y=317, w=186, h=111
+  data/images/img_153.jpg -> x=226, y=252, w=172, h=174
+  data/images/img_150.jpg -> x=405, y=251, w=172, h=180
+  data/images/img_152.jpg -> x=389, y=142, w=190, h=105
+  data/images/img_156.jpg -> x=90, y=101, w=65, h=68
+  data/images/img_149.jpg -> x=226, y=72, w=156, h=173
+  data/images/img_151.jpg -> x=385, y=63, w=196, h=72
+
+========================================
+PAGE 10 (Images: 10)
+Texts: *LECHE DE ALMENDRA. | *LECHE DE AVENA. | *LECHE DE QUINOA. | *EDULCORANTE LIQUIDO 100% STEVIA. | *EDULCORANTE SOBRES.
+  data/images/img_159.jpg -> x=37, y=657, w=182, h=79
+  data/images/img_160.jpg -> x=231, y=484, w=105, h=247
+  data/images/img_161.jpg -> x=349, y=482, w=107, h=251
+  data/images/img_162.jpg -> x=463, y=482, w=105, h=252
+  data/images/img_163.jpg -> x=36, y=305, w=180, h=172
+  data/images/img_164.jpg -> x=229, y=277, w=116, h=197
+  data/images/img_165.jpg -> x=354, y=275, w=75, h=197
+  data/images/img_166.jpg -> x=446, y=240, w=123, h=230
+  data/images/img_168.jpg -> x=225, y=63, w=185, h=201
+  data/images/img_167.jpg -> x=416, y=63, w=163, h=172
+
+========================================
+PAGE 11 (Images: 6)
+Texts: *ACEITES DE OREGANO. | *ALOE VERA. | *CREMAS. | *CAPSULAS. | *COLAGENOS. | *ENDULZANTES APTO VEGANOS. | *GLUTAMINAS | *JUGOS . | *POLEN. | *VITAMINAS. | *VINAGRES. | *JABONES.
+  data/images/img_172.jpg -> x=235, y=550, w=222, h=182
+  data/images/img_174.jpg -> x=462, y=546, w=116, h=182
+  data/images/img_173.jpg -> x=239, y=380, w=334, h=163
+  data/images/img_175.jpg -> x=228, y=210, w=355, h=166
+  data/images/img_176.jpg -> x=230, y=72, w=164, h=124
+  data/images/img_177.jpg -> x=414, y=61, w=129, h=145
+
+========================================
+PAGE 12 (Images: 8)
+Texts: * PASTA FUSILLI. | * PASTA MULTICEREAL. | * PASTA RISONI. | * SALES MARINAS.
+  data/images/img_180.jpg -> x=26, y=627, w=186, h=84
+  data/images/img_182.jpg -> x=353, y=565, w=95, h=161
+  data/images/img_183.jpg -> x=458, y=565, w=121, h=160
+  data/images/img_181.jpg -> x=224, y=564, w=118, h=166
+  data/images/img_184.jpg -> x=228, y=241, w=345, h=319
+  data/images/img_185.jpg -> x=60, y=127, w=156, h=121
+  data/images/img_187.jpg -> x=434, y=66, w=128, h=177
+  data/images/img_186.jpg -> x=250, y=64, w=137, h=175
+
+========================================
+PAGE 13 (Images: 9)
+Texts: *HARINA DE ALMENDRA. | *CONDIMENTOS. | *LEVADURAS
+  data/images/img_190.jpg -> x=24, y=628, w=195, h=106
+  data/images/img_192.jpg -> x=398, y=547, w=170, h=182
+  data/images/img_191.jpg -> x=221, y=546, w=173, h=182
+  data/images/img_193.jpg -> x=236, y=378, w=159, h=164
+  data/images/img_194.jpg -> x=404, y=374, w=159, h=168
+  data/images/img_195.jpg -> x=26, y=302, w=190, h=54
+  data/images/img_197.jpg -> x=402, y=196, w=151, h=175
+  data/images/img_196.jpg -> x=246, y=186, w=151, h=184
+  data/images/img_198.jpg -> x=266, y=65, w=261, h=120
+
+========================================
+PAGE 14 (Images: 8)
+Texts: * SPAGUETTI DE SEMOLIN INTEGRA. | * ACEITE DE OLIVA. | *GALLETAS DE ARROZ. | * PARTY BECK - BATIDO DIET - POLVO. | *AGAR AGAR. | *ALGAS KOMBU. | *ALGAS NORY. | *CALDOS DE VERCDURAS CON Y SIN SAL. | *SALES SIN SODIO. | *SAL ROSADA. | *FIDEOS DE ARROZ FINO.
+  data/images/img_202.jpg -> x=223, y=545, w=187, h=181
+  data/images/img_203.jpg -> x=415, y=531, w=162, h=203
+  data/images/img_205.jpg -> x=423, y=374, w=145, h=158
+  data/images/img_204.jpg -> x=225, y=359, w=182, h=186
+  data/images/img_207.jpg -> x=418, y=192, w=156, h=184
+  data/images/img_206.jpg -> x=228, y=134, w=192, h=203
+  data/images/img_208.jpg -> x=417, y=63, w=75, h=130
+  data/images/img_209.jpg -> x=512, y=63, w=67, h=133
+
+========================================
+PAGE 15 (Images: 7)
+Texts: *ROCIO VEGETAL DIETAFRIT. | *FLANES DIETETICOS. | *GELATINAS DIETETICAS. | *POSTRES DIETETICOS.
+  data/images/img_212.jpg -> x=18, y=683, w=204, h=52
+  data/images/img_215.jpg -> x=240, y=433, w=101, h=289
+  data/images/img_213.jpg -> x=462, y=432, w=112, h=288
+  data/images/img_214.jpg -> x=354, y=432, w=102, h=285
+  data/images/img_216.jpg -> x=224, y=174, w=158, h=248
+  data/images/img_217.jpg -> x=381, y=94, w=201, h=335
+  data/images/img_218.jpg -> x=233, y=62, w=141, h=114
+
+========================================
+PAGE 16 (Images: 12)
+Texts: *ACEITES DE COCO NEUTRO-VIRGEN. | *PASTAS DE MANI. | *PASTAS DE SESAMO. | *PASTA DE TAHINI. | *MERMELADAS DIETETICAS. | *MERMELADAS CON STEVIA.
+  data/images/img_221.jpg -> x=46, y=667, w=168, h=65
+  data/images/img_223.jpg -> x=318, y=584, w=75, h=85
+  data/images/img_224.jpg -> x=391, y=570, w=91, h=140
+  data/images/img_222.jpg -> x=220, y=564, w=96, h=148
+  data/images/img_225.jpg -> x=485, y=563, w=93, h=156
+  data/images/img_226.jpg -> x=19, y=462, w=193, h=74
+  data/images/img_227.jpg -> x=234, y=350, w=344, h=184
+  data/images/img_232.jpg -> x=354, y=193, w=91, h=148
+  data/images/img_231.jpg -> x=237, y=191, w=93, h=148
+  data/images/img_229.jpg -> x=233, y=62, w=102, h=121
+  data/images/img_230.jpg -> x=348, y=62, w=99, h=118
+  data/images/img_228.jpg -> x=458, y=61, w=117, h=284
+
+========================================
+PAGE 17 (Images: 12)
+Texts: *EXTRACTOS Y TINTURAS MADRE. | *YERBAS ORGANICAS-ANTIACIDAS- | COMPUESTAS. | *TE DE HIERVAS.
+  data/images/img_236.jpg -> x=221, y=599, w=181, h=109
+  data/images/img_237.jpg -> x=400, y=598, w=180, h=112
+  data/images/img_235.jpg -> x=44, y=557, w=172, h=178
+  data/images/img_238.jpg -> x=224, y=431, w=116, h=150
+  data/images/img_239.jpg -> x=355, y=428, w=102, h=151
+  data/images/img_245.jpg -> x=458, y=426, w=120, h=159
+  data/images/img_241.jpg -> x=410, y=317, w=174, h=102
+  data/images/img_240.jpg -> x=229, y=314, w=175, h=102
+  data/images/img_242.jpg -> x=411, y=210, w=168, h=101
+  data/images/img_243.jpg -> x=223, y=198, w=161, h=112
+  data/images/img_244.jpg -> x=383, y=65, w=178, h=135
+  data/images/img_246.jpg -> x=228, y=64, w=113, h=135
+
+========================================
+PAGE 18 (Images: 8)
+Texts: *TES. | * THE BLENDERS. | * TOPPING. | *YERBA MATE DE HIERVAS. | * ROOIBOS HEBRAS. | * MATCHA VARIETY .
+  data/images/img_249.jpg -> x=24, y=658, w=196, h=74
+  data/images/img_250.jpg -> x=223, y=562, w=167, h=173
+  data/images/img_251.jpg -> x=382, y=548, w=198, h=185
+  data/images/img_252.jpg -> x=227, y=368, w=173, h=183
+  data/images/img_256.jpg -> x=412, y=348, w=159, h=191
+  data/images/img_255.jpg -> x=227, y=163, w=167, h=196
+  data/images/img_253.jpg -> x=397, y=160, w=185, h=183
+  data/images/img_254.jpg -> x=242, y=65, w=313, h=93
+
+========================================
+PAGE 19 (Images: 11)
+Texts: *PASTA DE MANI.í | *PASTA DE AVELLANAS. | *PASTAS DE TAHINA. | *ACEISTE DE COCO-CHIA-LINO. | *YERBA ORGANICA PREMIUN.
+  data/images/img_260.jpg -> x=228, y=576, w=118, h=145
+  data/images/img_261.jpg -> x=461, y=571, w=121, h=148
+  data/images/img_265.jpg -> x=337, y=492, w=75, h=184
+  data/images/img_264.jpg -> x=412, y=489, w=56, h=189
+  data/images/img_262.jpg -> x=228, y=437, w=121, h=129
+  data/images/img_263.jpg -> x=474, y=435, w=104, h=130
+  data/images/img_268.jpg -> x=430, y=256, w=148, h=177
+  data/images/img_270.jpg -> x=28, y=251, w=191, h=171
+  data/images/img_267.jpg -> x=235, y=135, w=199, h=224
+  data/images/img_269.jpg -> x=431, y=65, w=140, h=181
+  data/images/img_266.jpg -> x=403, y=-158, w=176, h=219
+
+========================================
+PAGE 20 (Images: 9)
+Texts: *YERBAS ORGANICA Y ESTACIONAMITO | NATURAL.
+  data/images/img_266.jpg -> x=403, y=518, w=176, h=219
+  data/images/img_274.jpg -> x=227, y=511, w=173, h=225
+  data/images/img_275.jpg -> x=70, y=396, w=117, h=115
+  data/images/img_277.jpg -> x=239, y=291, w=148, h=217
+  data/images/img_281.jpg -> x=398, y=286, w=173, h=229
+  data/images/img_280.jpg -> x=59, y=286, w=143, h=98
+  data/images/img_276.jpg -> x=65, y=175, w=135, h=101
+  data/images/img_279.jpg -> x=417, y=69, w=150, h=211
+  data/images/img_278.jpg -> x=237, y=62, w=151, h=210
+
+========================================
+PAGE 21 (Images: 10)
+Texts: *CAPSULAS.
+  data/images/img_284.jpg -> x=20, y=659, w=200, h=75
+  data/images/img_286.jpg -> x=229, y=523, w=105, h=203
+  data/images/img_288.jpg -> x=462, y=519, w=119, h=211
+  data/images/img_291.jpg -> x=348, y=518, w=112, h=212
+  data/images/img_285.jpg -> x=230, y=291, w=121, h=204
+  data/images/img_287.jpg -> x=471, y=281, w=105, h=212
+  data/images/img_292.jpg -> x=355, y=275, w=124, h=227
+  data/images/img_289.jpg -> x=356, y=66, w=101, h=188
+  data/images/img_293.jpg -> x=233, y=66, w=107, h=193
+  data/images/img_290.jpg -> x=466, y=63, w=108, h=198
+
+========================================
+PAGE 22 (Images: 11)
+Texts: *ACEITES. | *CAPSULAS. | *CHIA TRITURADA. | *HARINAS. | *MIX DE SEMILAS. | * MIX DE FIBRAS NATURALES. | *PASTA DE MANI. | * PASTA DE GIRASOL. | * PASTA SESAMO. | * PASTA TAHINI. | * PROTEINA VEGETA. | * SESAMO TRITURADO. | *SEMILLAS.
+  data/images/img_296.jpg -> x=27, y=644, w=192, h=90
+  data/images/img_299.jpg -> x=471, y=568, w=106, h=165
+  data/images/img_298.jpg -> x=343, y=568, w=118, h=161
+  data/images/img_297.jpg -> x=225, y=567, w=97, h=168
+  data/images/img_300.jpg -> x=223, y=391, w=130, h=169
+  data/images/img_302.jpg -> x=467, y=391, w=116, h=176
+  data/images/img_301.jpg -> x=356, y=390, w=111, h=161
+  data/images/img_303.jpg -> x=227, y=198, w=173, h=192
+  data/images/img_304.jpg -> x=410, y=197, w=160, h=193
+  data/images/img_305.jpg -> x=247, y=66, w=124, h=135
+  data/images/img_306.jpg -> x=393, y=63, w=181, h=139
+
+========================================
+PAGE 23 (Images: 11)
+Texts: *ADELGA | *BLISTERS | *COMPRIMIDOS. | *POLVOS | *ACEITES DE COCO. | *CHOCOLATES CACAO.
+  data/images/img_311.jpg -> x=333, y=586, w=102, h=149
+  data/images/img_312.jpg -> x=438, y=586, w=134, h=150
+  data/images/img_310.jpg -> x=229, y=582, w=102, h=152
+  data/images/img_313.jpg -> x=226, y=432, w=121, h=149
+  data/images/img_315.jpg -> x=470, y=427, w=93, h=154
+  data/images/img_314.jpg -> x=355, y=426, w=100, h=155
+  data/images/img_318.jpg -> x=477, y=350, w=71, h=69
+  data/images/img_320.jpg -> x=355, y=259, w=97, h=161
+  data/images/img_321.jpg -> x=475, y=257, w=76, h=89
+  data/images/img_317.jpg -> x=232, y=256, w=113, h=162
+  data/images/img_322.jpg -> x=235, y=64, w=341, h=197
+
+========================================
+PAGE 24 (Images: 11)
+Texts: *BOMBONITOS: | SEMI-AMARGO. | BLANCOS. | LUXURY. | *BAÑO REPOSTERIA. | LECHE. | SEMI-AMARGO. | BLANCO. | FRUTILLA. | CELESTE. | SIN AZUCARES.
+  data/images/img_329.jpg -> x=226, y=566, w=221, h=118
+  data/images/img_339.jpg -> x=448, y=558, w=134, h=130
+  data/images/img_331.jpg -> x=347, y=414, w=113, h=131
+  data/images/img_332.jpg -> x=464, y=414, w=113, h=130
+  data/images/img_330.jpg -> x=228, y=413, w=113, h=129
+  data/images/img_335.jpg -> x=467, y=286, w=106, h=125
+  data/images/img_333.jpg -> x=348, y=284, w=110, h=121
+  data/images/img_334.jpg -> x=232, y=282, w=110, h=127
+  data/images/img_336.jpg -> x=22, y=224, w=195, h=59
+  data/images/img_337.jpg -> x=250, y=178, w=304, h=104
+  data/images/img_338.jpg -> x=219, y=71, w=349, h=102
+
+========================================
+PAGE 25 (Images: 11)
+Texts: 
+  data/images/img_342.jpg -> x=61, y=632, w=149, h=84
+  data/images/img_343.jpg -> x=79, y=527, w=126, h=95
+  data/images/img_348.jpg -> x=226, y=520, w=156, h=202
+  data/images/img_349.jpg -> x=406, y=438, w=174, h=273
+  data/images/img_350.jpg -> x=219, y=368, w=175, h=146
+  data/images/img_347.jpg -> x=74, y=300, w=130, h=104
+  data/images/img_353.jpg -> x=225, y=227, w=181, h=138
+  data/images/img_351.jpg -> x=422, y=213, w=157, h=217
+  data/images/img_352.jpg -> x=231, y=66, w=162, h=149
+  data/images/img_345.jpg -> x=81, y=65, w=123, h=94
+  data/images/img_354.jpg -> x=395, y=63, w=182, h=152
+
+========================================
+PAGE 26 (Images: 13)
+Texts: 
+  data/images/img_358.jpg -> x=89, y=665, w=117, h=64
+  data/images/img_359.jpg -> x=225, y=564, w=202, h=170
+  data/images/img_360.jpg -> x=439, y=552, w=132, h=179
+  data/images/img_362.jpg -> x=353, y=423, w=109, h=118
+  data/images/img_363.jpg -> x=464, y=418, w=119, h=119
+  data/images/img_361.jpg -> x=226, y=410, w=127, h=143
+  data/images/img_370.jpg -> x=61, y=265, w=146, h=122
+  data/images/img_366.jpg -> x=224, y=232, w=120, h=161
+  data/images/img_368.jpg -> x=465, y=228, w=117, h=164
+  data/images/img_367.jpg -> x=345, y=227, w=122, h=168
+  data/images/img_364.jpg -> x=223, y=66, w=118, h=160
+  data/images/img_365.jpg -> x=464, y=66, w=119, h=162
+  data/images/img_369.jpg -> x=346, y=65, w=118, h=160
+
+========================================
+PAGE 27 (Images: 16)
+Texts: *9 VARILLAS GRUESAS | *NATURAL | *PALO SANTO CONVINADO | *EN POLVO | *YAGRA
+  data/images/img_373.jpg -> x=45, y=526, w=161, h=149
+  data/images/img_377.jpg -> x=408, y=507, w=66, h=172
+  data/images/img_374.jpg -> x=230, y=506, w=79, h=171
+  data/images/img_375.jpg -> x=317, y=506, w=82, h=170
+  data/images/img_376.jpg -> x=477, y=503, w=79, h=180
+  data/images/img_378.jpg -> x=227, y=368, w=356, h=137
+  data/images/img_388.jpg -> x=501, y=220, w=55, h=127
+  data/images/img_381.jpg -> x=351, y=215, w=41, h=135
+  data/images/img_387.jpg -> x=419, y=215, w=69, h=154
+  data/images/img_379.jpg -> x=242, y=214, w=48, h=145
+  data/images/img_380.jpg -> x=293, y=212, w=49, h=155
+  data/images/img_386.jpg -> x=505, y=58, w=62, h=154
+  data/images/img_385.jpg -> x=430, y=58, w=54, h=155
+  data/images/img_382.jpg -> x=240, y=57, w=51, h=156
+  data/images/img_383.jpg -> x=302, y=57, w=52, h=156
+  data/images/img_384.jpg -> x=372, y=57, w=50, h=155
+
+========================================
+PAGE 28 (Images: 5)
+Texts: *ESFERAS MAGICAS BOMBITAS | *VELAS PARA HORNITO | *ESENCIAS PARA HORNITOS
+  data/images/img_391.jpg -> x=30, y=617, w=183, h=118
+  data/images/img_392.jpg -> x=223, y=495, w=359, h=237
+  data/images/img_396.jpg -> x=474, y=290, w=80, h=201
+  data/images/img_394.jpg -> x=231, y=269, w=220, h=230
+  data/images/img_395.jpg -> x=223, y=64, w=242, h=210
+
+========================================
+PAGE 29 (Images: 9)
+Texts: REFUGIO LUNAR | *CREMAS | *SHAMPOO | *GEL | *SERUM | *CREMAS | *SHAMPOO | *GEL | *SERUM | *JABON | *MASCARAS | *LECHE CORPORAL
+  data/images/img_399.jpg -> x=65, y=621, w=105, h=102
+  data/images/img_400.jpg -> x=226, y=557, w=353, h=170
+  data/images/img_401.jpg -> x=246, y=413, w=118, h=135
+  data/images/img_402.jpg -> x=384, y=392, w=188, h=154
+  data/images/img_404.jpg -> x=226, y=217, w=151, h=172
+  data/images/img_405.jpg -> x=388, y=162, w=81, h=225
+  data/images/img_406.jpg -> x=474, y=160, w=99, h=220
+  data/images/img_408.jpg -> x=381, y=65, w=163, h=89
+  data/images/img_407.jpg -> x=265, y=65, w=78, h=149
+
+========================================
+PAGE 30 (Images: 4)
+Texts: *SHAMPOO / SOLIDOS | *ACONDICIONADOR / SOLIDOS | *DESODORANTES | *JABONES
+  data/images/img_412.jpg -> x=222, y=471, w=351, h=253
+  data/images/img_414.jpg -> x=441, y=344, w=138, h=114
+  data/images/img_413.jpg -> x=221, y=247, w=209, h=215
+  data/images/img_415.jpg -> x=440, y=219, w=139, h=116

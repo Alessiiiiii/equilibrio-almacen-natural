@@ -1,0 +1,3825 @@
+[
+  {
+    "pageNum": 1,
+    "texts": [
+      {
+        "x": 239.62,
+        "y": 701.98,
+        "text": "Equilibrio Distribuciones"
+      },
+      {
+        "x": 224.71,
+        "y": 664.78,
+        "text": "Ventas: Marcela Diaz."
+      },
+      {
+        "x": 224.23,
+        "y": 626.83,
+        "text": "\\(341\\ 6945514"
+      },
+      {
+        "x": 224.23,
+        "y": 611.23,
+        "text": "equilibrio.distribuciones"
+      },
+      {
+        "x": 321,
+        "y": 596.59,
+        "text": "equilibrio.distribuciones@gmail.com"
+      },
+      {
+        "x": 224.71,
+        "y": 547.37,
+        "text": "***Envios sin cargo***"
+      },
+      {
+        "x": 32.64,
+        "y": 362.04,
+        "text": "*LINEA INTEGRAL GALLETITAS DULCES"
+      },
+      {
+        "x": 29.28,
+        "y": 347.64,
+        "text": "*LINEA INTEGRAL GALLETITAS SALADAS"
+      },
+      {
+        "x": 72.264,
+        "y": 333.22,
+        "text": "*LINEA CON GLUTEN"
+      },
+      {
+        "x": 30.96,
+        "y": 318.82,
+        "text": "*LINEA 0% AZUCAR 0% GRASAS TRANS"
+      },
+      {
+        "x": 85.464,
+        "y": 304.42,
+        "text": "*PANIFICADOS"
+      },
+      {
+        "x": 54.96,
+        "y": 290.02,
+        "text": "*PASTAS SECAS INTEGRALES"
+      },
+      {
+        "x": 33.12,
+        "y": 275.62,
+        "text": "*GOLOSINAS SIN AZUCAR AGREGADO"
+      },
+      {
+        "x": 30.48,
+        "y": 261.19,
+        "text": "*ALFAJORES INTEGRALES - CHOCOLATE"
+      },
+      {
+        "x": 32.88,
+        "y": 246.79,
+        "text": "*GRISINES DE GLUTEN / CON - SIN SAL"
+      },
+      {
+        "x": 59.304,
+        "y": 232.39,
+        "text": "*BARRAS DE CHOCOLATES"
+      },
+      {
+        "x": 54.96,
+        "y": 217.99,
+        "text": "*TABLETAS DE CHOCOLATES"
+      },
+      {
+        "x": 77.784,
+        "y": 487.58,
+        "text": "CATALOGO DE MARCAS Y PRODUCTOS"
+      }
+    ],
+    "images": [
+      {
+        "x": 35.494,
+        "y": 515.76,
+        "w": 243.63,
+        "h": 222.24,
+        "objId": "17",
+        "file": "data/images/img_17.jpg"
+      },
+      {
+        "x": 295.2,
+        "y": 608.16,
+        "w": 15.36,
+        "h": 14.88,
+        "objId": "22",
+        "file": "data/images/img_22.jpg"
+      },
+      {
+        "x": 227.76,
+        "y": 152.72,
+        "w": 131.04,
+        "h": 69.764,
+        "objId": "24",
+        "file": "data/images/img_24.jpg"
+      },
+      {
+        "x": 227.76,
+        "y": 60.687,
+        "w": 155.97,
+        "h": 73.473,
+        "objId": "25",
+        "file": "data/images/img_25.jpg"
+      },
+      {
+        "x": 376.08,
+        "y": 63.235,
+        "w": 136.8,
+        "h": 70.882,
+        "objId": "26",
+        "file": "data/images/img_26.jpg"
+      },
+      {
+        "x": 369.36,
+        "y": 157.4,
+        "w": 98.64,
+        "h": 71.083,
+        "objId": "27",
+        "file": "data/images/img_27.jpg"
+      },
+      {
+        "x": 572.27,
+        "y": 58.985,
+        "w": -0.000061035,
+        "h": -0.000061035,
+        "objId": "28",
+        "file": "data/images/img_28.jpg"
+      },
+      {
+        "x": 224.64,
+        "y": 225.23,
+        "w": 188.88,
+        "h": 123.46,
+        "objId": "29",
+        "file": "data/images/img_29.jpg"
+      },
+      {
+        "x": 452.16,
+        "y": 316.65,
+        "w": 123.36,
+        "h": 79.828,
+        "objId": "30",
+        "file": "data/images/img_30.jpg"
+      },
+      {
+        "x": 438,
+        "y": 227.58,
+        "w": 139.2,
+        "h": 85.383,
+        "objId": "31",
+        "file": "data/images/img_31.jpg"
+      },
+      {
+        "x": 423.36,
+        "y": 401.76,
+        "w": 151.64,
+        "h": 60,
+        "objId": "32",
+        "file": "data/images/img_32.jpg"
+      },
+      {
+        "x": 461.02,
+        "y": 158.16,
+        "w": 119.3,
+        "h": 56.4,
+        "objId": "33",
+        "file": "data/images/img_33.jpg"
+      },
+      {
+        "x": 238.8,
+        "y": 393.86,
+        "w": 125.04,
+        "h": 66.216,
+        "objId": "34",
+        "file": "data/images/img_34.jpg"
+      },
+      {
+        "x": 333.12,
+        "y": 341.28,
+        "w": 114.72,
+        "h": 55.735,
+        "objId": "35",
+        "file": "data/images/img_35.jpg"
+      }
+    ]
+  },
+  {
+    "pageNum": 2,
+    "texts": [
+      {
+        "x": 77.544,
+        "y": 625.63,
+        "text": "*PEPAS RÚSTICAS."
+      },
+      {
+        "x": 76.344,
+        "y": 611.23,
+        "text": "*PANES RÚSTICOS."
+      },
+      {
+        "x": 73.224,
+        "y": 596.83,
+        "text": "*PANES ESPECIALES."
+      },
+      {
+        "x": 83.544,
+        "y": 351.96,
+        "text": "*PAN SIN TACC."
+      },
+      {
+        "x": 82.584,
+        "y": 337.54,
+        "text": "Pan con semilla."
+      },
+      {
+        "x": 92.904,
+        "y": 323.14,
+        "text": "Pan clasico."
+      },
+      {
+        "x": 77.544,
+        "y": 162.29,
+        "text": "*PEPAS RÚSTICAS."
+      },
+      {
+        "x": 76.344,
+        "y": 147.89,
+        "text": "*PANES RÚSTICOS."
+      },
+      {
+        "x": 95.304,
+        "y": 133.49,
+        "text": "*COOKIES."
+      }
+    ],
+    "images": [
+      {
+        "x": 228.96,
+        "y": 619.5,
+        "w": 91.92,
+        "h": 105.78,
+        "objId": "38",
+        "file": "data/images/img_38.jpg"
+      },
+      {
+        "x": 228.24,
+        "y": 518.88,
+        "w": 91.911,
+        "h": 94.8,
+        "objId": "39",
+        "file": "data/images/img_39.jpg"
+      },
+      {
+        "x": 489.65,
+        "y": 628.8,
+        "w": 91.113,
+        "h": 94.8,
+        "objId": "40",
+        "file": "data/images/img_40.jpg"
+      },
+      {
+        "x": 326.4,
+        "y": 519.68,
+        "w": 157.84,
+        "h": 205.6,
+        "objId": "41",
+        "file": "data/images/img_41.jpg"
+      },
+      {
+        "x": 483.36,
+        "y": 515.07,
+        "w": 95.04,
+        "h": 110.17,
+        "objId": "42",
+        "file": "data/images/img_42.jpg"
+      },
+      {
+        "x": 29.04,
+        "y": 217.22,
+        "w": 188.69,
+        "h": 87.583,
+        "objId": "43",
+        "file": "data/images/img_43.jpg"
+      },
+      {
+        "x": 18,
+        "y": 379.5,
+        "w": 196.8,
+        "h": 98.578,
+        "objId": "44",
+        "file": "data/images/img_44.jpg"
+      },
+      {
+        "x": 226.47,
+        "y": 348.32,
+        "w": 261.93,
+        "h": 129.28,
+        "objId": "45",
+        "file": "data/images/img_45.jpg"
+      },
+      {
+        "x": 231.36,
+        "y": 160.14,
+        "w": 146.64,
+        "h": 147.54,
+        "objId": "46",
+        "file": "data/images/img_46.jpg"
+      },
+      {
+        "x": 384.72,
+        "y": 188.88,
+        "w": 191.16,
+        "h": 117.12,
+        "objId": "47",
+        "file": "data/images/img_47.jpg"
+      },
+      {
+        "x": 229.44,
+        "y": 60.603,
+        "w": 165.12,
+        "h": 95.877,
+        "objId": "48",
+        "file": "data/images/img_48.jpg"
+      },
+      {
+        "x": 412.32,
+        "y": 58.698,
+        "w": 143.52,
+        "h": 123.41,
+        "objId": "49",
+        "file": "data/images/img_49.jpg"
+      },
+      {
+        "x": 18.72,
+        "y": 641.1,
+        "w": 205.2,
+        "h": 89.701,
+        "objId": "50",
+        "file": "data/images/img_50.jpg"
+      }
+    ]
+  },
+  {
+    "pageNum": 3,
+    "texts": [
+      {
+        "x": 58.584,
+        "y": 582.43,
+        "text": "*PAN DE HAMBURGUESAS"
+      },
+      {
+        "x": 92.184,
+        "y": 568.03,
+        "text": "*COQUITOS"
+      },
+      {
+        "x": 86.664,
+        "y": 553.61,
+        "text": "*PASTAFROLA"
+      },
+      {
+        "x": 82.104,
+        "y": 539.21,
+        "text": "*MINI BOMBÓN"
+      },
+      {
+        "x": 90.984,
+        "y": 524.81,
+        "text": "*MINI COCO"
+      },
+      {
+        "x": 93.864,
+        "y": 510.41,
+        "text": "*BROWNIE"
+      },
+      {
+        "x": 96.504,
+        "y": 496.01,
+        "text": "*ALFAJOR"
+      },
+      {
+        "x": 103.46,
+        "y": 481.58,
+        "text": "*CHIPS"
+      },
+      {
+        "x": 95.784,
+        "y": 467.18,
+        "text": "*PIZZETAS"
+      },
+      {
+        "x": 93.144,
+        "y": 452.78,
+        "text": "*CRACKERS"
+      }
+    ],
+    "images": [
+      {
+        "x": 412.32,
+        "y": 737.9,
+        "w": 143.52,
+        "h": 123.41,
+        "objId": "49",
+        "file": "data/images/img_49.jpg"
+      },
+      {
+        "x": 231.84,
+        "y": 556.08,
+        "w": 346.08,
+        "h": 180.57,
+        "objId": "53",
+        "file": "data/images/img_53.jpg"
+      },
+      {
+        "x": 221.52,
+        "y": 416.29,
+        "w": 111.6,
+        "h": 140.99,
+        "objId": "54",
+        "file": "data/images/img_54.jpg"
+      },
+      {
+        "x": 342.52,
+        "y": 412.8,
+        "w": 123.12,
+        "h": 145.2,
+        "objId": "55",
+        "file": "data/images/img_55.jpg"
+      },
+      {
+        "x": 231.25,
+        "y": 300.38,
+        "w": 114.83,
+        "h": 114.1,
+        "objId": "56",
+        "file": "data/images/img_56.jpg"
+      },
+      {
+        "x": 349.84,
+        "y": 301.22,
+        "w": 115.76,
+        "h": 113.98,
+        "objId": "57",
+        "file": "data/images/img_57.jpg"
+      },
+      {
+        "x": 468,
+        "y": 416.88,
+        "w": 115.26,
+        "h": 139.92,
+        "objId": "58",
+        "file": "data/images/img_58.jpg"
+      },
+      {
+        "x": 462.91,
+        "y": 301.2,
+        "w": 112.84,
+        "h": 117.6,
+        "objId": "59",
+        "file": "data/images/img_59.jpg"
+      },
+      {
+        "x": 225.12,
+        "y": 169.68,
+        "w": 123.38,
+        "h": 135.12,
+        "objId": "60",
+        "file": "data/images/img_60.jpg"
+      },
+      {
+        "x": 469.2,
+        "y": 64.649,
+        "w": 96.48,
+        "h": 103.92,
+        "objId": "61",
+        "file": "data/images/img_61.jpg"
+      },
+      {
+        "x": 346.08,
+        "y": 164.54,
+        "w": 231.12,
+        "h": 140.74,
+        "objId": "62",
+        "file": "data/images/img_62.jpg"
+      },
+      {
+        "x": 246.72,
+        "y": 64.8,
+        "w": 198.54,
+        "h": 93.6,
+        "objId": "63",
+        "file": "data/images/img_63.jpg"
+      },
+      {
+        "x": 20.4,
+        "y": 614.4,
+        "w": 195.73,
+        "h": 120.48,
+        "objId": "64",
+        "file": "data/images/img_64.jpg"
+      }
+    ]
+  },
+  {
+    "pageNum": 4,
+    "texts": [
+      {
+        "x": 56.88,
+        "y": 625.63,
+        "text": "*ALMOHADITAS RELLENAS."
+      },
+      {
+        "x": 52.32,
+        "y": 611.23,
+        "text": "*BASTONCITOS DE SALVADO."
+      },
+      {
+        "x": 59.784,
+        "y": 596.83,
+        "text": "*BOLITAS DE CHOCOLATE."
+      },
+      {
+        "x": 34.56,
+        "y": 582.43,
+        "text": "*ANILLOS FRUTALES / AVENA Y MIEL."
+      },
+      {
+        "x": 41.52,
+        "y": 568.03,
+        "text": "*COPOS MAIZ CON Y SIN AZUCAR."
+      },
+      {
+        "x": 81.624,
+        "y": 553.61,
+        "text": "*CUADRICOPOS."
+      },
+      {
+        "x": 43.44,
+        "y": 539.21,
+        "text": "*OSITOS FRUTILLA / CHOCOLATE."
+      },
+      {
+        "x": 74.664,
+        "y": 366.36,
+        "text": "*STEVIA EN POLVO."
+      },
+      {
+        "x": 78.744,
+        "y": 351.96,
+        "text": "*STEVIA LIQUIDA."
+      },
+      {
+        "x": 62.424,
+        "y": 337.54,
+        "text": "*STEVIA EN SOBRESITOS."
+      },
+      {
+        "x": 86.424,
+        "y": 164.69,
+        "text": "*QUINOA POP"
+      }
+    ],
+    "images": [
+      {
+        "x": 228.24,
+        "y": 505.35,
+        "w": 134.48,
+        "h": 216.45,
+        "objId": "68",
+        "file": "data/images/img_68.jpg"
+      },
+      {
+        "x": 367.47,
+        "y": 612.72,
+        "w": 100.95,
+        "h": 102.64,
+        "objId": "69",
+        "file": "data/images/img_69.jpg"
+      },
+      {
+        "x": 473.31,
+        "y": 608.75,
+        "w": 105.09,
+        "h": 113,
+        "objId": "70",
+        "file": "data/images/img_70.jpg"
+      },
+      {
+        "x": 370.06,
+        "y": 501.77,
+        "w": 97.455,
+        "h": 107.41,
+        "objId": "71",
+        "file": "data/images/img_71.jpg"
+      },
+      {
+        "x": 472.89,
+        "y": 497.79,
+        "w": 101.91,
+        "h": 113.1,
+        "objId": "72",
+        "file": "data/images/img_72.jpg"
+      },
+      {
+        "x": 211.92,
+        "y": 318.33,
+        "w": 139.07,
+        "h": 175.92,
+        "objId": "74",
+        "file": "data/images/img_74.jpg"
+      },
+      {
+        "x": 352.98,
+        "y": 313.59,
+        "w": 130.38,
+        "h": 176.05,
+        "objId": "75",
+        "file": "data/images/img_75.jpg"
+      },
+      {
+        "x": 493.2,
+        "y": 305.12,
+        "w": 86.07,
+        "h": 190.33,
+        "objId": "76",
+        "file": "data/images/img_76.jpg"
+      },
+      {
+        "x": 52.17,
+        "y": 189.92,
+        "w": 154.23,
+        "h": 115.21,
+        "objId": "77",
+        "file": "data/images/img_77.jpg"
+      },
+      {
+        "x": 234.48,
+        "y": 149.19,
+        "w": 159.36,
+        "h": 155.72,
+        "objId": "78",
+        "file": "data/images/img_78.jpg"
+      },
+      {
+        "x": 419.04,
+        "y": 144.55,
+        "w": 150.39,
+        "h": 157.28,
+        "objId": "79",
+        "file": "data/images/img_79.jpg"
+      },
+      {
+        "x": 236.27,
+        "y": 62.206,
+        "w": 99.968,
+        "h": 77.474,
+        "objId": "80",
+        "file": "data/images/img_80.jpg"
+      },
+      {
+        "x": 465.27,
+        "y": 63.16,
+        "w": 97.29,
+        "h": 80.69,
+        "objId": "81",
+        "file": "data/images/img_81.jpg"
+      },
+      {
+        "x": 354.66,
+        "y": 63.6,
+        "w": 89.646,
+        "h": 81.75,
+        "objId": "82",
+        "file": "data/images/img_82.jpg"
+      }
+    ]
+  },
+  {
+    "pageNum": 5,
+    "texts": [
+      {
+        "x": 42.24,
+        "y": 539.21,
+        "text": "*FIDEOS MOSTACHOLES DE MAIZ."
+      },
+      {
+        "x": 38.4,
+        "y": 524.81,
+        "text": "*FIDEOS MOSTACHOLES DE ARROZ."
+      },
+      {
+        "x": 87.864,
+        "y": 510.41,
+        "text": "*PREMEZCLA."
+      },
+      {
+        "x": 86.184,
+        "y": 496.01,
+        "text": "*REBOZADOR."
+      },
+      {
+        "x": 35.52,
+        "y": 481.58,
+        "text": "*MASITAS: Vainilla, Coco, Chocolate,"
+      },
+      {
+        "x": 84.024,
+        "y": 467.18,
+        "text": "limon, Naranja."
+      },
+      {
+        "x": 88.104,
+        "y": 452.78,
+        "text": "*BOCADITOS."
+      }
+    ],
+    "images": [
+      {
+        "x": 44.4,
+        "y": 566.55,
+        "w": 176.81,
+        "h": 161.13,
+        "objId": "85",
+        "file": "data/images/img_85.jpg"
+      },
+      {
+        "x": 236.01,
+        "y": 599.64,
+        "w": 106.95,
+        "h": 125,
+        "objId": "86",
+        "file": "data/images/img_86.jpg"
+      },
+      {
+        "x": 353.28,
+        "y": 599.3,
+        "w": 104.4,
+        "h": 121.72,
+        "objId": "87",
+        "file": "data/images/img_87.jpg"
+      },
+      {
+        "x": 469.92,
+        "y": 601.99,
+        "w": 104.09,
+        "h": 117.29,
+        "objId": "88",
+        "file": "data/images/img_88.jpg"
+      },
+      {
+        "x": 230.01,
+        "y": 469.65,
+        "w": 111.8,
+        "h": 129,
+        "objId": "89",
+        "file": "data/images/img_89.jpg"
+      },
+      {
+        "x": 350.4,
+        "y": 466.64,
+        "w": 109.5,
+        "h": 129.76,
+        "objId": "90",
+        "file": "data/images/img_90.jpg"
+      },
+      {
+        "x": 469.05,
+        "y": 461.81,
+        "w": 103.35,
+        "h": 140.59,
+        "objId": "91",
+        "file": "data/images/img_91.jpg"
+      },
+      {
+        "x": 223.14,
+        "y": 303.13,
+        "w": 117.77,
+        "h": 161.27,
+        "objId": "92",
+        "file": "data/images/img_92.jpg"
+      },
+      {
+        "x": 236.01,
+        "y": 66.93,
+        "w": 118.44,
+        "h": 117.33,
+        "objId": "93",
+        "file": "data/images/img_93.jpg"
+      },
+      {
+        "x": 229.14,
+        "y": 200.4,
+        "w": 117.75,
+        "h": 117.75,
+        "objId": "94",
+        "file": "data/images/img_94.jpg"
+      },
+      {
+        "x": 364.17,
+        "y": 61.65,
+        "w": 90.15,
+        "h": 126.75,
+        "objId": "95",
+        "file": "data/images/img_95.jpg"
+      },
+      {
+        "x": 352.65,
+        "y": 201.08,
+        "w": 107.25,
+        "h": 118.45,
+        "objId": "96",
+        "file": "data/images/img_96.jpg"
+      },
+      {
+        "x": 465.3,
+        "y": 195.6,
+        "w": 113.76,
+        "h": 120.3,
+        "objId": "97",
+        "file": "data/images/img_97.jpg"
+      },
+      {
+        "x": 345.03,
+        "y": 324.15,
+        "w": 114.81,
+        "h": 140.25,
+        "objId": "98",
+        "file": "data/images/img_98.jpg"
+      },
+      {
+        "x": 465.12,
+        "y": 63.6,
+        "w": 114.43,
+        "h": 125.85,
+        "objId": "99",
+        "file": "data/images/img_99.jpg"
+      },
+      {
+        "x": 463.05,
+        "y": 316.37,
+        "w": 117.99,
+        "h": 147.16,
+        "objId": "100",
+        "file": "data/images/img_100.jpg"
+      }
+    ]
+  },
+  {
+    "pageNum": 6,
+    "texts": [
+      {
+        "x": 31.68,
+        "y": 611.23,
+        "text": "*ALFAJORES INTEGRALES ORGANICOS."
+      },
+      {
+        "x": 67.464,
+        "y": 596.83,
+        "text": "*BOCADITOS DE HIGO."
+      },
+      {
+        "x": 68.184,
+        "y": 582.43,
+        "text": "*TRUFAS INTEGRALES."
+      },
+      {
+        "x": 87.624,
+        "y": 279.94,
+        "text": "*PROPOLEOS."
+      },
+      {
+        "x": 34.8,
+        "y": 265.54,
+        "text": "*CAPSULAS JALEA REAL / PROPOLEO."
+      },
+      {
+        "x": 86.424,
+        "y": 251.11,
+        "text": "*CARAMELOS."
+      }
+    ],
+    "images": [
+      {
+        "x": 22.5,
+        "y": 637.2,
+        "w": 195.72,
+        "h": 96.15,
+        "objId": "103",
+        "file": "data/images/img_103.jpg"
+      },
+      {
+        "x": 227.76,
+        "y": 584.88,
+        "w": 181.17,
+        "h": 146.4,
+        "objId": "104",
+        "file": "data/images/img_104.jpg"
+      },
+      {
+        "x": 223.97,
+        "y": 453,
+        "w": 180.55,
+        "h": 122.1,
+        "objId": "105",
+        "file": "data/images/img_105.jpg"
+      },
+      {
+        "x": 412.67,
+        "y": 571.03,
+        "w": 164.53,
+        "h": 160.97,
+        "objId": "106",
+        "file": "data/images/img_106.jpg"
+      },
+      {
+        "x": 412.4,
+        "y": 451.7,
+        "w": 158.32,
+        "h": 111.04,
+        "objId": "107",
+        "file": "data/images/img_107.jpg"
+      },
+      {
+        "x": 24.24,
+        "y": 293.56,
+        "w": 190.11,
+        "h": 137.39,
+        "objId": "108",
+        "file": "data/images/img_108.jpg"
+      },
+      {
+        "x": 230.01,
+        "y": 256.08,
+        "w": 171.57,
+        "h": 175.92,
+        "objId": "109",
+        "file": "data/images/img_109.jpg"
+      },
+      {
+        "x": 406.65,
+        "y": 264.01,
+        "w": 169.35,
+        "h": 166.22,
+        "objId": "110",
+        "file": "data/images/img_110.jpg"
+      },
+      {
+        "x": 407.13,
+        "y": 72,
+        "w": 174.97,
+        "h": 174.48,
+        "objId": "111",
+        "file": "data/images/img_111.jpg"
+      },
+      {
+        "x": 305.04,
+        "y": 70.066,
+        "w": 103.44,
+        "h": 163.21,
+        "objId": "112",
+        "file": "data/images/img_112.jpg"
+      },
+      {
+        "x": 225.4,
+        "y": 71.28,
+        "w": 78.2,
+        "h": 142.52,
+        "objId": "113",
+        "file": "data/images/img_113.jpg"
+      }
+    ]
+  },
+  {
+    "pageNum": 7,
+    "texts": [
+      {
+        "x": 83.784,
+        "y": 625.63,
+        "text": "*BARRAS BASE."
+      },
+      {
+        "x": 70.104,
+        "y": 611.23,
+        "text": "*BARRAS PROTEICAS."
+      },
+      {
+        "x": 74.664,
+        "y": 596.83,
+        "text": "*BARRAS SIN TACC."
+      },
+      {
+        "x": 88.104,
+        "y": 582.43,
+        "text": "*BOCADITOS."
+      },
+      {
+        "x": 88.344,
+        "y": 568.03,
+        "text": "*GALLETITAS."
+      },
+      {
+        "x": 95.304,
+        "y": 553.61,
+        "text": "*COOKIES."
+      },
+      {
+        "x": 67.224,
+        "y": 539.21,
+        "text": "*GRANOLAS CLASICAS."
+      },
+      {
+        "x": 67.944,
+        "y": 524.81,
+        "text": "*GRANOLAS SIN TACC."
+      }
+    ],
+    "images": [
+      {
+        "x": 236.01,
+        "y": 607.69,
+        "w": 167.67,
+        "h": 127.19,
+        "objId": "116",
+        "file": "data/images/img_116.jpg"
+      },
+      {
+        "x": 430.07,
+        "y": 264.69,
+        "w": 141.61,
+        "h": 168.36,
+        "objId": "117",
+        "file": "data/images/img_117.jpg"
+      },
+      {
+        "x": 420.96,
+        "y": 437.19,
+        "w": 154.56,
+        "h": 161.46,
+        "objId": "118",
+        "file": "data/images/img_118.jpg"
+      },
+      {
+        "x": 387.63,
+        "y": 69.049,
+        "w": 191.97,
+        "h": 192.85,
+        "objId": "119",
+        "file": "data/images/img_119.jpg"
+      },
+      {
+        "x": 238.8,
+        "y": 433.48,
+        "w": 170.4,
+        "h": 168.2,
+        "objId": "120",
+        "file": "data/images/img_120.jpg"
+      },
+      {
+        "x": 230.16,
+        "y": 280.08,
+        "w": 185.87,
+        "h": 151.92,
+        "objId": "122",
+        "file": "data/images/img_122.jpg"
+      },
+      {
+        "x": 227.81,
+        "y": 69.559,
+        "w": 149.47,
+        "h": 207.64,
+        "objId": "123",
+        "file": "data/images/img_123.jpg"
+      },
+      {
+        "x": 412.8,
+        "y": 603.98,
+        "w": 166.17,
+        "h": 130.9,
+        "objId": "124",
+        "file": "data/images/img_124.jpg"
+      }
+    ]
+  },
+  {
+    "pageNum": 8,
+    "texts": [
+      {
+        "x": 39.84,
+        "y": 553.61,
+        "text": "*MANTECA DE MANI CHOCOLATE."
+      },
+      {
+        "x": 45.12,
+        "y": 539.21,
+        "text": "* MANTECA DE MANI ORIGINAL."
+      },
+      {
+        "x": 77.304,
+        "y": 524.81,
+        "text": "* PASTA DE MANI."
+      },
+      {
+        "x": 53.76,
+        "y": 510.41,
+        "text": "* PASTA DE MANI CRUNCHY."
+      },
+      {
+        "x": 54,
+        "y": 496.01,
+        "text": "* PASTA DE MANI NATURAL."
+      },
+      {
+        "x": 85.944,
+        "y": 481.58,
+        "text": "*MANI DULCE."
+      },
+      {
+        "x": 70.344,
+        "y": 467.18,
+        "text": "*MANI SABORIZADO."
+      },
+      {
+        "x": 68.424,
+        "y": 452.78,
+        "text": "*MANI CON Y SIN SAL."
+      }
+    ],
+    "images": [
+      {
+        "x": 33.21,
+        "y": 570.42,
+        "w": 184.91,
+        "h": 164.46,
+        "objId": "127",
+        "file": "data/images/img_127.jpg"
+      },
+      {
+        "x": 223.29,
+        "y": 545.28,
+        "w": 138.63,
+        "h": 189.42,
+        "objId": "128",
+        "file": "data/images/img_128.jpg"
+      },
+      {
+        "x": 363.27,
+        "y": 541.68,
+        "w": 115.77,
+        "h": 192.15,
+        "objId": "129",
+        "file": "data/images/img_129.jpg"
+      },
+      {
+        "x": 221.04,
+        "y": 368.36,
+        "w": 165.36,
+        "h": 168.04,
+        "objId": "130",
+        "file": "data/images/img_130.jpg"
+      },
+      {
+        "x": 229.6,
+        "y": 217.2,
+        "w": 107.69,
+        "h": 146.55,
+        "objId": "131",
+        "file": "data/images/img_131.jpg"
+      },
+      {
+        "x": 345.96,
+        "y": 217.68,
+        "w": 115.89,
+        "h": 146.4,
+        "objId": "132",
+        "file": "data/images/img_132.jpg"
+      },
+      {
+        "x": 468.45,
+        "y": 216,
+        "w": 108.27,
+        "h": 149.13,
+        "objId": "133",
+        "file": "data/images/img_133.jpg"
+      },
+      {
+        "x": 234.76,
+        "y": 61.192,
+        "w": 98.36,
+        "h": 146.74,
+        "objId": "134",
+        "file": "data/images/img_134.jpg"
+      },
+      {
+        "x": 352.5,
+        "y": 63.6,
+        "w": 95.947,
+        "h": 148.23,
+        "objId": "135",
+        "file": "data/images/img_135.jpg"
+      },
+      {
+        "x": 472.74,
+        "y": 61.68,
+        "w": 99.013,
+        "h": 150.87,
+        "objId": "136",
+        "file": "data/images/img_136.jpg"
+      },
+      {
+        "x": 487.26,
+        "y": 528,
+        "w": 94.078,
+        "h": 94.23,
+        "objId": "137",
+        "file": "data/images/img_137.jpg"
+      },
+      {
+        "x": 485.61,
+        "y": 626.4,
+        "w": 93.795,
+        "h": 93.18,
+        "objId": "138",
+        "file": "data/images/img_138.jpg"
+      },
+      {
+        "x": 384.87,
+        "y": 368.88,
+        "w": 196.67,
+        "h": 152.25,
+        "objId": "139",
+        "file": "data/images/img_139.jpg"
+      },
+      {
+        "x": 35.637,
+        "y": -106.8,
+        "w": 180.92,
+        "h": 167.43,
+        "objId": "140",
+        "file": "data/images/img_140.jpg"
+      }
+    ]
+  },
+  {
+    "pageNum": 9,
+    "texts": [
+      {
+        "x": 59.304,
+        "y": 553.61,
+        "text": "*DULCE DE LECHE VARIOS."
+      },
+      {
+        "x": 78.264,
+        "y": 539.21,
+        "text": "*GHEE MANTECA."
+      },
+      {
+        "x": 82.104,
+        "y": 524.81,
+        "text": "*MERMELADAS."
+      },
+      {
+        "x": 79.704,
+        "y": 510.41,
+        "text": "*MIEL CREMOSA."
+      },
+      {
+        "x": 76.104,
+        "y": 496.01,
+        "text": "*PASTAS DE MANI."
+      },
+      {
+        "x": 46.56,
+        "y": 481.58,
+        "text": "*TABLETAS DE DULCE DE LECHE."
+      },
+      {
+        "x": 94.824,
+        "y": 294.34,
+        "text": "*BISCUITS."
+      },
+      {
+        "x": 84.744,
+        "y": 279.94,
+        "text": "*BISCOCHITOS."
+      },
+      {
+        "x": 94.824,
+        "y": 265.54,
+        "text": "*BUDINES."
+      },
+      {
+        "x": 93.144,
+        "y": 251.11,
+        "text": "*CEREALES."
+      },
+      {
+        "x": 88.344,
+        "y": 236.71,
+        "text": "*GALLETITAS."
+      },
+      {
+        "x": 86.664,
+        "y": 222.31,
+        "text": "*PAN DULCES."
+      },
+      {
+        "x": 64.104,
+        "y": 207.91,
+        "text": "*PEPAS DE MEMBRILLO."
+      },
+      {
+        "x": 83.784,
+        "y": 193.51,
+        "text": "*POLVORONES."
+      },
+      {
+        "x": 65.304,
+        "y": 179.09,
+        "text": "*SNACKS HORNEADOS."
+      }
+    ],
+    "images": [
+      {
+        "x": 234.76,
+        "y": 737.99,
+        "w": 98.36,
+        "h": 146.74,
+        "objId": "134",
+        "file": "data/images/img_134.jpg"
+      },
+      {
+        "x": 35.637,
+        "y": 570,
+        "w": 180.92,
+        "h": 167.43,
+        "objId": "140",
+        "file": "data/images/img_140.jpg"
+      },
+      {
+        "x": 229.44,
+        "y": 570.76,
+        "w": 113.52,
+        "h": 163.73,
+        "objId": "143",
+        "file": "data/images/img_143.jpg"
+      },
+      {
+        "x": 358.65,
+        "y": 571.53,
+        "w": 112.19,
+        "h": 160.47,
+        "objId": "144",
+        "file": "data/images/img_144.jpg"
+      },
+      {
+        "x": 225.73,
+        "y": 442.07,
+        "w": 90.348,
+        "h": 123.91,
+        "objId": "145",
+        "file": "data/images/img_145.jpg"
+      },
+      {
+        "x": 315.78,
+        "y": 442.79,
+        "w": 83.1,
+        "h": 122.89,
+        "objId": "146",
+        "file": "data/images/img_146.jpg"
+      },
+      {
+        "x": 396.96,
+        "y": 438.12,
+        "w": 90.24,
+        "h": 134.13,
+        "objId": "147",
+        "file": "data/images/img_147.jpg"
+      },
+      {
+        "x": 31.11,
+        "y": 316.8,
+        "w": 186.17,
+        "h": 110.55,
+        "objId": "148",
+        "file": "data/images/img_148.jpg"
+      },
+      {
+        "x": 226.24,
+        "y": 72.48,
+        "w": 156.01,
+        "h": 172.8,
+        "objId": "149",
+        "file": "data/images/img_149.jpg"
+      },
+      {
+        "x": 404.73,
+        "y": 250.8,
+        "w": 171.86,
+        "h": 180,
+        "objId": "150",
+        "file": "data/images/img_150.jpg"
+      },
+      {
+        "x": 385.2,
+        "y": 62.88,
+        "w": 196.18,
+        "h": 71.52,
+        "objId": "151",
+        "file": "data/images/img_151.jpg"
+      },
+      {
+        "x": 389.34,
+        "y": 142.08,
+        "w": 189.53,
+        "h": 104.97,
+        "objId": "152",
+        "file": "data/images/img_152.jpg"
+      },
+      {
+        "x": 225.76,
+        "y": 252.48,
+        "w": 172.49,
+        "h": 173.52,
+        "objId": "153",
+        "file": "data/images/img_153.jpg"
+      },
+      {
+        "x": 474.24,
+        "y": 578.64,
+        "w": 102.96,
+        "h": 153.84,
+        "objId": "154",
+        "file": "data/images/img_154.jpg"
+      },
+      {
+        "x": 498.72,
+        "y": 435.58,
+        "w": 82.32,
+        "h": 139.07,
+        "objId": "155",
+        "file": "data/images/img_155.jpg"
+      },
+      {
+        "x": 89.76,
+        "y": 100.78,
+        "w": 65.04,
+        "h": 68.346,
+        "objId": "156",
+        "file": "data/images/img_156.jpg"
+      }
+    ]
+  },
+  {
+    "pageNum": 10,
+    "texts": [
+      {
+        "x": 66.024,
+        "y": 640.03,
+        "text": "*LECHE DE ALMENDRA."
+      },
+      {
+        "x": 76.584,
+        "y": 625.63,
+        "text": "*LECHE DE AVENA."
+      },
+      {
+        "x": 73.224,
+        "y": 611.23,
+        "text": "*LECHE DE QUINOA."
+      },
+      {
+        "x": 29.52,
+        "y": 279.94,
+        "text": "*EDULCORANTE LIQUIDO 100% STEVIA."
+      },
+      {
+        "x": 62.184,
+        "y": 265.54,
+        "text": "*EDULCORANTE SOBRES."
+      }
+    ],
+    "images": [
+      {
+        "x": 36.81,
+        "y": 657.17,
+        "w": 182.46,
+        "h": 78.914,
+        "objId": "159",
+        "file": "data/images/img_159.jpg"
+      },
+      {
+        "x": 230.71,
+        "y": 484.08,
+        "w": 104.72,
+        "h": 247.2,
+        "objId": "160",
+        "file": "data/images/img_160.jpg"
+      },
+      {
+        "x": 348.54,
+        "y": 481.83,
+        "w": 107.37,
+        "h": 251.37,
+        "objId": "161",
+        "file": "data/images/img_161.jpg"
+      },
+      {
+        "x": 463.14,
+        "y": 481.68,
+        "w": 105.23,
+        "h": 252,
+        "objId": "162",
+        "file": "data/images/img_162.jpg"
+      },
+      {
+        "x": 35.649,
+        "y": 304.91,
+        "w": 180.09,
+        "h": 171.82,
+        "objId": "163",
+        "file": "data/images/img_163.jpg"
+      },
+      {
+        "x": 229.14,
+        "y": 276.63,
+        "w": 115.89,
+        "h": 197.37,
+        "objId": "164",
+        "file": "data/images/img_164.jpg"
+      },
+      {
+        "x": 354.15,
+        "y": 274.89,
+        "w": 75.06,
+        "h": 197.19,
+        "objId": "165",
+        "file": "data/images/img_165.jpg"
+      },
+      {
+        "x": 445.51,
+        "y": 240.27,
+        "w": 122.56,
+        "h": 230.13,
+        "objId": "166",
+        "file": "data/images/img_166.jpg"
+      },
+      {
+        "x": 416.22,
+        "y": 62.698,
+        "w": 162.9,
+        "h": 172.2,
+        "objId": "167",
+        "file": "data/images/img_167.jpg"
+      },
+      {
+        "x": 224.64,
+        "y": 62.877,
+        "w": 185.28,
+        "h": 201.12,
+        "objId": "168",
+        "file": "data/images/img_168.jpg"
+      }
+    ]
+  },
+  {
+    "pageNum": 11,
+    "texts": [
+      {
+        "x": 64.824,
+        "y": 553.61,
+        "text": "*ACEITES DE OREGANO."
+      },
+      {
+        "x": 89.544,
+        "y": 539.21,
+        "text": "*ALOE VERA."
+      },
+      {
+        "x": 95.784,
+        "y": 524.81,
+        "text": "*CREMAS."
+      },
+      {
+        "x": 91.704,
+        "y": 510.41,
+        "text": "*CAPSULAS."
+      },
+      {
+        "x": 86.904,
+        "y": 496.01,
+        "text": "*COLAGENOS."
+      },
+      {
+        "x": 44.4,
+        "y": 481.58,
+        "text": "*ENDULZANTES APTO VEGANOS."
+      },
+      {
+        "x": 85.464,
+        "y": 467.18,
+        "text": "*GLUTAMINAS"
+      },
+      {
+        "x": 98.904,
+        "y": 452.78,
+        "text": "*JUGOS ."
+      },
+      {
+        "x": 100.1,
+        "y": 438.38,
+        "text": "*POLEN."
+      },
+      {
+        "x": 88.584,
+        "y": 423.98,
+        "text": "*VITAMINAS."
+      },
+      {
+        "x": 91.704,
+        "y": 409.56,
+        "text": "*VINAGRES."
+      },
+      {
+        "x": 94.344,
+        "y": 395.16,
+        "text": "*JABONES."
+      }
+    ],
+    "images": [
+      {
+        "x": 234.63,
+        "y": 549.93,
+        "w": 221.85,
+        "h": 182.07,
+        "objId": "172",
+        "file": "data/images/img_172.jpg"
+      },
+      {
+        "x": 239.28,
+        "y": 379.9,
+        "w": 334.32,
+        "h": 162.83,
+        "objId": "173",
+        "file": "data/images/img_173.jpg"
+      },
+      {
+        "x": 462.48,
+        "y": 545.58,
+        "w": 115.92,
+        "h": 181.68,
+        "objId": "174",
+        "file": "data/images/img_174.jpg"
+      },
+      {
+        "x": 227.76,
+        "y": 210.48,
+        "w": 354.85,
+        "h": 166.32,
+        "objId": "175",
+        "file": "data/images/img_175.jpg"
+      },
+      {
+        "x": 229.57,
+        "y": 71.729,
+        "w": 163.97,
+        "h": 123.87,
+        "objId": "176",
+        "file": "data/images/img_176.jpg"
+      },
+      {
+        "x": 413.85,
+        "y": 61.293,
+        "w": 128.55,
+        "h": 145.44,
+        "objId": "177",
+        "file": "data/images/img_177.jpg"
+      }
+    ]
+  },
+  {
+    "pageNum": 12,
+    "texts": [
+      {
+        "x": 81.864,
+        "y": 611.23,
+        "text": "* PASTA FUSILLI."
+      },
+      {
+        "x": 66.024,
+        "y": 596.83,
+        "text": "* PASTA MULTICEREAL."
+      },
+      {
+        "x": 82.104,
+        "y": 582.43,
+        "text": "* PASTA RISONI."
+      },
+      {
+        "x": 77.304,
+        "y": 107.06,
+        "text": "* SALES MARINAS."
+      }
+    ],
+    "images": [
+      {
+        "x": 26.49,
+        "y": 627.45,
+        "w": 185.72,
+        "h": 84.15,
+        "objId": "180",
+        "file": "data/images/img_180.jpg"
+      },
+      {
+        "x": 224.45,
+        "y": 563.53,
+        "w": 117.79,
+        "h": 166.07,
+        "objId": "181",
+        "file": "data/images/img_181.jpg"
+      },
+      {
+        "x": 353.43,
+        "y": 565.45,
+        "w": 95.13,
+        "h": 161.03,
+        "objId": "182",
+        "file": "data/images/img_182.jpg"
+      },
+      {
+        "x": 458.16,
+        "y": 564.73,
+        "w": 121.44,
+        "h": 160.3,
+        "objId": "183",
+        "file": "data/images/img_183.jpg"
+      },
+      {
+        "x": 228.39,
+        "y": 240.73,
+        "w": 345.11,
+        "h": 319.1,
+        "objId": "184",
+        "file": "data/images/img_184.jpg"
+      },
+      {
+        "x": 60.24,
+        "y": 127.26,
+        "w": 155.76,
+        "h": 121.14,
+        "objId": "185",
+        "file": "data/images/img_185.jpg"
+      },
+      {
+        "x": 249.84,
+        "y": 64.248,
+        "w": 136.56,
+        "h": 175.03,
+        "objId": "186",
+        "file": "data/images/img_186.jpg"
+      },
+      {
+        "x": 433.68,
+        "y": 66.455,
+        "w": 128.16,
+        "h": 177.15,
+        "objId": "187",
+        "file": "data/images/img_187.jpg"
+      }
+    ]
+  },
+  {
+    "pageNum": 13,
+    "texts": [
+      {
+        "x": 61.704,
+        "y": 611.23,
+        "text": "*HARINA DE ALMENDRA."
+      },
+      {
+        "x": 79.944,
+        "y": 596.83,
+        "text": "*CONDIMENTOS."
+      },
+      {
+        "x": 89.064,
+        "y": 279.94,
+        "text": "*LEVADURAS"
+      }
+    ],
+    "images": [
+      {
+        "x": 23.978,
+        "y": 627.6,
+        "w": 195.29,
+        "h": 105.88,
+        "objId": "190",
+        "file": "data/images/img_190.jpg"
+      },
+      {
+        "x": 220.6,
+        "y": 545.91,
+        "w": 172.76,
+        "h": 181.77,
+        "objId": "191",
+        "file": "data/images/img_191.jpg"
+      },
+      {
+        "x": 397.59,
+        "y": 546.75,
+        "w": 170.49,
+        "h": 181.85,
+        "objId": "192",
+        "file": "data/images/img_192.jpg"
+      },
+      {
+        "x": 236.01,
+        "y": 378.3,
+        "w": 159.03,
+        "h": 164.43,
+        "objId": "193",
+        "file": "data/images/img_193.jpg"
+      },
+      {
+        "x": 404.4,
+        "y": 373.82,
+        "w": 158.64,
+        "h": 168.01,
+        "objId": "194",
+        "file": "data/images/img_194.jpg"
+      },
+      {
+        "x": 25.92,
+        "y": 301.75,
+        "w": 189.6,
+        "h": 53.935,
+        "objId": "195",
+        "file": "data/images/img_195.jpg"
+      },
+      {
+        "x": 245.71,
+        "y": 186,
+        "w": 151.27,
+        "h": 184.08,
+        "objId": "196",
+        "file": "data/images/img_196.jpg"
+      },
+      {
+        "x": 402.48,
+        "y": 196.27,
+        "w": 151.45,
+        "h": 174.53,
+        "objId": "197",
+        "file": "data/images/img_197.jpg"
+      },
+      {
+        "x": 266.4,
+        "y": 65.28,
+        "w": 260.64,
+        "h": 119.52,
+        "objId": "198",
+        "file": "data/images/img_198.jpg"
+      }
+    ]
+  },
+  {
+    "pageNum": 14,
+    "texts": [
+      {
+        "x": 37.44,
+        "y": 596.83,
+        "text": "* SPAGUETTI DE SEMOLIN INTEGRA."
+      },
+      {
+        "x": 75.624,
+        "y": 582.43,
+        "text": "* ACEITE DE OLIVA."
+      },
+      {
+        "x": 66.744,
+        "y": 568.03,
+        "text": "*GALLETAS DE ARROZ."
+      },
+      {
+        "x": 32.64,
+        "y": 553.61,
+        "text": "* PARTY BECK - BATIDO DIET - POLVO."
+      },
+      {
+        "x": 87.384,
+        "y": 539.21,
+        "text": "*AGAR AGAR."
+      },
+      {
+        "x": 80.664,
+        "y": 524.81,
+        "text": "*ALGAS KOMBU."
+      },
+      {
+        "x": 85.704,
+        "y": 510.41,
+        "text": "*ALGAS NORY."
+      },
+      {
+        "x": 26.88,
+        "y": 496.01,
+        "text": "*CALDOS DE VERCDURAS CON Y SIN SAL."
+      },
+      {
+        "x": 77.064,
+        "y": 481.58,
+        "text": "*SALES SIN SODIO."
+      },
+      {
+        "x": 86.184,
+        "y": 467.18,
+        "text": "*SAL ROSADA."
+      },
+      {
+        "x": 61.944,
+        "y": 452.78,
+        "text": "*FIDEOS DE ARROZ FINO."
+      }
+    ],
+    "images": [
+      {
+        "x": 222.72,
+        "y": 545.28,
+        "w": 187.05,
+        "h": 180.72,
+        "objId": "202",
+        "file": "data/images/img_202.jpg"
+      },
+      {
+        "x": 414.72,
+        "y": 530.67,
+        "w": 162.15,
+        "h": 203.01,
+        "objId": "203",
+        "file": "data/images/img_203.jpg"
+      },
+      {
+        "x": 225.12,
+        "y": 359.17,
+        "w": 182.16,
+        "h": 186.11,
+        "objId": "204",
+        "file": "data/images/img_204.jpg"
+      },
+      {
+        "x": 423.36,
+        "y": 374.4,
+        "w": 145.02,
+        "h": 157.68,
+        "objId": "205",
+        "file": "data/images/img_205.jpg"
+      },
+      {
+        "x": 228.24,
+        "y": 134.4,
+        "w": 192.26,
+        "h": 203.28,
+        "objId": "206",
+        "file": "data/images/img_206.jpg"
+      },
+      {
+        "x": 418.32,
+        "y": 192.48,
+        "w": 156.48,
+        "h": 184.32,
+        "objId": "207",
+        "file": "data/images/img_207.jpg"
+      },
+      {
+        "x": 416.64,
+        "y": 62.87,
+        "w": 74.64,
+        "h": 130.03,
+        "objId": "208",
+        "file": "data/images/img_208.jpg"
+      },
+      {
+        "x": 511.68,
+        "y": 62.87,
+        "w": 67.44,
+        "h": 132.78,
+        "objId": "209",
+        "file": "data/images/img_209.jpg"
+      }
+    ]
+  },
+  {
+    "pageNum": 15,
+    "texts": [
+      {
+        "x": 54,
+        "y": 668.86,
+        "text": "*ROCIO VEGETAL DIETAFRIT."
+      },
+      {
+        "x": 70.824,
+        "y": 654.46,
+        "text": "*FLANES DIETETICOS."
+      },
+      {
+        "x": 62.664,
+        "y": 640.03,
+        "text": "*GELATINAS DIETETICAS."
+      },
+      {
+        "x": 67.464,
+        "y": 625.63,
+        "text": "*POSTRES DIETETICOS."
+      }
+    ],
+    "images": [
+      {
+        "x": 18,
+        "y": 683.28,
+        "w": 203.71,
+        "h": 52.32,
+        "objId": "212",
+        "file": "data/images/img_212.jpg"
+      },
+      {
+        "x": 462,
+        "y": 432.4,
+        "w": 111.6,
+        "h": 288.08,
+        "objId": "213",
+        "file": "data/images/img_213.jpg"
+      },
+      {
+        "x": 354,
+        "y": 432.28,
+        "w": 102.41,
+        "h": 284.6,
+        "objId": "214",
+        "file": "data/images/img_214.jpg"
+      },
+      {
+        "x": 239.93,
+        "y": 432.9,
+        "w": 100.63,
+        "h": 288.78,
+        "objId": "215",
+        "file": "data/images/img_215.jpg"
+      },
+      {
+        "x": 223.92,
+        "y": 174.42,
+        "w": 158.4,
+        "h": 247.98,
+        "objId": "216",
+        "file": "data/images/img_216.jpg"
+      },
+      {
+        "x": 380.88,
+        "y": 94.156,
+        "w": 200.64,
+        "h": 335.44,
+        "objId": "217",
+        "file": "data/images/img_217.jpg"
+      },
+      {
+        "x": 233.28,
+        "y": 62.379,
+        "w": 140.88,
+        "h": 114.02,
+        "objId": "218",
+        "file": "data/images/img_218.jpg"
+      }
+    ]
+  },
+  {
+    "pageNum": 16,
+    "texts": [
+      {
+        "x": 35.28,
+        "y": 654.46,
+        "text": "*ACEITES DE COCO NEUTRO-VIRGEN."
+      },
+      {
+        "x": 76.104,
+        "y": 640.03,
+        "text": "*PASTAS DE MANI."
+      },
+      {
+        "x": 69.624,
+        "y": 625.63,
+        "text": "*PASTAS DE SESAMO."
+      },
+      {
+        "x": 75.624,
+        "y": 611.23,
+        "text": "*PASTA DE TAHINI."
+      },
+      {
+        "x": 54.96,
+        "y": 438.38,
+        "text": "*MERMELADAS DIETETICAS."
+      },
+      {
+        "x": 53.52,
+        "y": 423.98,
+        "text": "*MERMELADAS CON STEVIA."
+      }
+    ],
+    "images": [
+      {
+        "x": 46.32,
+        "y": 667.17,
+        "w": 168.48,
+        "h": 65.311,
+        "objId": "221",
+        "file": "data/images/img_221.jpg"
+      },
+      {
+        "x": 220.04,
+        "y": 564.48,
+        "w": 96.154,
+        "h": 147.6,
+        "objId": "222",
+        "file": "data/images/img_222.jpg"
+      },
+      {
+        "x": 318.48,
+        "y": 583.69,
+        "w": 74.88,
+        "h": 84.707,
+        "objId": "223",
+        "file": "data/images/img_223.jpg"
+      },
+      {
+        "x": 390.72,
+        "y": 570.48,
+        "w": 90.839,
+        "h": 139.92,
+        "objId": "224",
+        "file": "data/images/img_224.jpg"
+      },
+      {
+        "x": 485.28,
+        "y": 563.28,
+        "w": 92.658,
+        "h": 155.52,
+        "objId": "225",
+        "file": "data/images/img_225.jpg"
+      },
+      {
+        "x": 19.2,
+        "y": 461.96,
+        "w": 192.72,
+        "h": 73.722,
+        "objId": "226",
+        "file": "data/images/img_226.jpg"
+      },
+      {
+        "x": 234.48,
+        "y": 350.49,
+        "w": 343.92,
+        "h": 183.99,
+        "objId": "227",
+        "file": "data/images/img_227.jpg"
+      },
+      {
+        "x": 458.16,
+        "y": 61.2,
+        "w": 117.24,
+        "h": 284.4,
+        "objId": "228",
+        "file": "data/images/img_228.jpg"
+      },
+      {
+        "x": 232.56,
+        "y": 62.365,
+        "w": 102.48,
+        "h": 120.52,
+        "objId": "229",
+        "file": "data/images/img_229.jpg"
+      },
+      {
+        "x": 348.48,
+        "y": 61.67,
+        "w": 99.368,
+        "h": 118.33,
+        "objId": "230",
+        "file": "data/images/img_230.jpg"
+      },
+      {
+        "x": 236.88,
+        "y": 191.09,
+        "w": 92.64,
+        "h": 147.87,
+        "objId": "231",
+        "file": "data/images/img_231.jpg"
+      },
+      {
+        "x": 354,
+        "y": 193.4,
+        "w": 91.44,
+        "h": 147.88,
+        "objId": "232",
+        "file": "data/images/img_232.jpg"
+      }
+    ]
+  },
+  {
+    "pageNum": 17,
+    "texts": [
+      {
+        "x": 41.28,
+        "y": 539.21,
+        "text": "*EXTRACTOS Y TINTURAS MADRE."
+      },
+      {
+        "x": 38.64,
+        "y": 524.81,
+        "text": "*YERBAS ORGANICAS-ANTIACIDAS-"
+      },
+      {
+        "x": 86.184,
+        "y": 510.41,
+        "text": "COMPUESTAS."
+      },
+      {
+        "x": 81.384,
+        "y": 496.01,
+        "text": "*TE DE HIERVAS."
+      }
+    ],
+    "images": [
+      {
+        "x": 43.68,
+        "y": 557.28,
+        "w": 172.16,
+        "h": 178.32,
+        "objId": "235",
+        "file": "data/images/img_235.jpg"
+      },
+      {
+        "x": 221.19,
+        "y": 598.8,
+        "w": 181.39,
+        "h": 109.2,
+        "objId": "236",
+        "file": "data/images/img_236.jpg"
+      },
+      {
+        "x": 399.99,
+        "y": 597.6,
+        "w": 180.14,
+        "h": 112.08,
+        "objId": "237",
+        "file": "data/images/img_237.jpg"
+      },
+      {
+        "x": 223.92,
+        "y": 430.8,
+        "w": 116.17,
+        "h": 150,
+        "objId": "238",
+        "file": "data/images/img_238.jpg"
+      },
+      {
+        "x": 354.72,
+        "y": 428.4,
+        "w": 102.01,
+        "h": 151.2,
+        "objId": "239",
+        "file": "data/images/img_239.jpg"
+      },
+      {
+        "x": 229.44,
+        "y": 314.4,
+        "w": 174.88,
+        "h": 102.48,
+        "objId": "240",
+        "file": "data/images/img_240.jpg"
+      },
+      {
+        "x": 409.92,
+        "y": 316.8,
+        "w": 173.61,
+        "h": 102,
+        "objId": "241",
+        "file": "data/images/img_241.jpg"
+      },
+      {
+        "x": 411.12,
+        "y": 209.54,
+        "w": 168.48,
+        "h": 101.26,
+        "objId": "242",
+        "file": "data/images/img_242.jpg"
+      },
+      {
+        "x": 223.44,
+        "y": 198.22,
+        "w": 160.56,
+        "h": 111.86,
+        "objId": "243",
+        "file": "data/images/img_243.jpg"
+      },
+      {
+        "x": 383.33,
+        "y": 64.8,
+        "w": 178.03,
+        "h": 134.79,
+        "objId": "244",
+        "file": "data/images/img_244.jpg"
+      },
+      {
+        "x": 457.68,
+        "y": 426.1,
+        "w": 120.47,
+        "h": 158.86,
+        "objId": "245",
+        "file": "data/images/img_245.jpg"
+      },
+      {
+        "x": 228.21,
+        "y": 63.6,
+        "w": 112.87,
+        "h": 135.07,
+        "objId": "246",
+        "file": "data/images/img_246.jpg"
+      }
+    ]
+  },
+  {
+    "pageNum": 18,
+    "texts": [
+      {
+        "x": 107.3,
+        "y": 640.03,
+        "text": "*TES."
+      },
+      {
+        "x": 80.424,
+        "y": 625.63,
+        "text": "* THE BLENDERS."
+      },
+      {
+        "x": 93.144,
+        "y": 611.23,
+        "text": "* TOPPING."
+      },
+      {
+        "x": 56.88,
+        "y": 596.83,
+        "text": "*YERBA MATE DE HIERVAS."
+      },
+      {
+        "x": 73.224,
+        "y": 582.43,
+        "text": "* ROOIBOS HEBRAS."
+      },
+      {
+        "x": 71.544,
+        "y": 568.03,
+        "text": "* MATCHA VARIETY ."
+      }
+    ],
+    "images": [
+      {
+        "x": 23.52,
+        "y": 658.3,
+        "w": 196.32,
+        "h": 73.698,
+        "objId": "249",
+        "file": "data/images/img_249.jpg"
+      },
+      {
+        "x": 222.72,
+        "y": 561.9,
+        "w": 166.8,
+        "h": 172.98,
+        "objId": "250",
+        "file": "data/images/img_250.jpg"
+      },
+      {
+        "x": 381.6,
+        "y": 548.4,
+        "w": 197.52,
+        "h": 185.28,
+        "objId": "251",
+        "file": "data/images/img_251.jpg"
+      },
+      {
+        "x": 227.04,
+        "y": 368.4,
+        "w": 173.3,
+        "h": 182.88,
+        "objId": "252",
+        "file": "data/images/img_252.jpg"
+      },
+      {
+        "x": 397.44,
+        "y": 160.08,
+        "w": 184.98,
+        "h": 183.12,
+        "objId": "253",
+        "file": "data/images/img_253.jpg"
+      },
+      {
+        "x": 241.68,
+        "y": 65.47,
+        "w": 312.96,
+        "h": 93.411,
+        "objId": "254",
+        "file": "data/images/img_254.jpg"
+      },
+      {
+        "x": 227.04,
+        "y": 163.2,
+        "w": 166.6,
+        "h": 195.6,
+        "objId": "255",
+        "file": "data/images/img_255.jpg"
+      },
+      {
+        "x": 412.32,
+        "y": 348.48,
+        "w": 159.36,
+        "h": 190.65,
+        "objId": "256",
+        "file": "data/images/img_256.jpg"
+      }
+    ]
+  },
+  {
+    "pageNum": 19,
+    "texts": [
+      {
+        "x": 77.304,
+        "y": 654.46,
+        "text": "*PASTA DE MANI.í"
+      },
+      {
+        "x": 65.064,
+        "y": 640.03,
+        "text": "*PASTA DE AVELLANAS."
+      },
+      {
+        "x": 71.304,
+        "y": 625.63,
+        "text": "*PASTAS DE TAHINA."
+      },
+      {
+        "x": 49.68,
+        "y": 611.23,
+        "text": "*ACEISTE DE COCO-CHIA-LINO."
+      },
+      {
+        "x": 50.64,
+        "y": 236.71,
+        "text": "*YERBA ORGANICA PREMIUN."
+      }
+    ],
+    "images": [
+      {
+        "x": 228.24,
+        "y": 575.85,
+        "w": 118.32,
+        "h": 144.63,
+        "objId": "260",
+        "file": "data/images/img_260.jpg"
+      },
+      {
+        "x": 460.84,
+        "y": 571.2,
+        "w": 120.68,
+        "h": 148.08,
+        "objId": "261",
+        "file": "data/images/img_261.jpg"
+      },
+      {
+        "x": 228.24,
+        "y": 436.8,
+        "w": 121.09,
+        "h": 128.94,
+        "objId": "262",
+        "file": "data/images/img_262.jpg"
+      },
+      {
+        "x": 473.52,
+        "y": 434.86,
+        "w": 104.2,
+        "h": 130.34,
+        "objId": "263",
+        "file": "data/images/img_263.jpg"
+      },
+      {
+        "x": 412.32,
+        "y": 488.63,
+        "w": 56.4,
+        "h": 189.37,
+        "objId": "264",
+        "file": "data/images/img_264.jpg"
+      },
+      {
+        "x": 337.44,
+        "y": 492.48,
+        "w": 74.662,
+        "h": 184.32,
+        "objId": "265",
+        "file": "data/images/img_265.jpg"
+      },
+      {
+        "x": 402.96,
+        "y": -158.38,
+        "w": 176.16,
+        "h": 218.86,
+        "objId": "266",
+        "file": "data/images/img_266.jpg"
+      },
+      {
+        "x": 234.96,
+        "y": 134.88,
+        "w": 198.98,
+        "h": 223.92,
+        "objId": "267",
+        "file": "data/images/img_267.jpg"
+      },
+      {
+        "x": 430.08,
+        "y": 255.82,
+        "w": 147.84,
+        "h": 176.66,
+        "objId": "268",
+        "file": "data/images/img_268.jpg"
+      },
+      {
+        "x": 431.28,
+        "y": 65.082,
+        "w": 140.4,
+        "h": 181.4,
+        "objId": "269",
+        "file": "data/images/img_269.jpg"
+      },
+      {
+        "x": 28.32,
+        "y": 250.55,
+        "w": 190.8,
+        "h": 170.65,
+        "objId": "270",
+        "file": "data/images/img_270.jpg"
+      }
+    ]
+  },
+  {
+    "pageNum": 20,
+    "texts": [
+      {
+        "x": 28.56,
+        "y": 654.46,
+        "text": "*YERBAS ORGANICA Y ESTACIONAMITO"
+      },
+      {
+        "x": 95.784,
+        "y": 640.03,
+        "text": "NATURAL."
+      }
+    ],
+    "images": [
+      {
+        "x": 227.04,
+        "y": 510.72,
+        "w": 173.04,
+        "h": 225.36,
+        "objId": "274",
+        "file": "data/images/img_274.jpg"
+      },
+      {
+        "x": 402.96,
+        "y": 518.42,
+        "w": 176.16,
+        "h": 218.86,
+        "objId": "266",
+        "file": "data/images/img_266.jpg"
+      },
+      {
+        "x": 69.6,
+        "y": 396.3,
+        "w": 117.12,
+        "h": 114.9,
+        "objId": "275",
+        "file": "data/images/img_275.jpg"
+      },
+      {
+        "x": 64.56,
+        "y": 175.24,
+        "w": 134.88,
+        "h": 100.9,
+        "objId": "276",
+        "file": "data/images/img_276.jpg"
+      },
+      {
+        "x": 238.8,
+        "y": 290.59,
+        "w": 147.6,
+        "h": 217.49,
+        "objId": "277",
+        "file": "data/images/img_277.jpg"
+      },
+      {
+        "x": 236.88,
+        "y": 61.701,
+        "w": 150.96,
+        "h": 209.98,
+        "objId": "278",
+        "file": "data/images/img_278.jpg"
+      },
+      {
+        "x": 417.12,
+        "y": 69.049,
+        "w": 150.24,
+        "h": 211.03,
+        "objId": "279",
+        "file": "data/images/img_279.jpg"
+      },
+      {
+        "x": 59.04,
+        "y": 286.16,
+        "w": 142.89,
+        "h": 97.842,
+        "objId": "280",
+        "file": "data/images/img_280.jpg"
+      },
+      {
+        "x": 398.16,
+        "y": 286.34,
+        "w": 173.04,
+        "h": 228.77,
+        "objId": "281",
+        "file": "data/images/img_281.jpg"
+      }
+    ]
+  },
+  {
+    "pageNum": 21,
+    "texts": [
+      {
+        "x": 91.704,
+        "y": 640.03,
+        "text": "*CAPSULAS."
+      }
+    ],
+    "images": [
+      {
+        "x": 19.92,
+        "y": 658.9,
+        "w": 199.92,
+        "h": 75.497,
+        "objId": "284",
+        "file": "data/images/img_284.jpg"
+      },
+      {
+        "x": 230.16,
+        "y": 290.65,
+        "w": 120.72,
+        "h": 203.75,
+        "objId": "285",
+        "file": "data/images/img_285.jpg"
+      },
+      {
+        "x": 228.96,
+        "y": 523.44,
+        "w": 104.88,
+        "h": 203.04,
+        "objId": "286",
+        "file": "data/images/img_286.jpg"
+      },
+      {
+        "x": 470.64,
+        "y": 281.44,
+        "w": 105.36,
+        "h": 212.24,
+        "objId": "287",
+        "file": "data/images/img_287.jpg"
+      },
+      {
+        "x": 462.11,
+        "y": 518.88,
+        "w": 119.41,
+        "h": 210.62,
+        "objId": "288",
+        "file": "data/images/img_288.jpg"
+      },
+      {
+        "x": 356.4,
+        "y": 66.48,
+        "w": 101.32,
+        "h": 188.4,
+        "objId": "289",
+        "file": "data/images/img_289.jpg"
+      },
+      {
+        "x": 466.32,
+        "y": 62.638,
+        "w": 108.48,
+        "h": 197.76,
+        "objId": "290",
+        "file": "data/images/img_290.jpg"
+      },
+      {
+        "x": 348.48,
+        "y": 518.4,
+        "w": 111.9,
+        "h": 211.68,
+        "objId": "291",
+        "file": "data/images/img_291.jpg"
+      },
+      {
+        "x": 355.2,
+        "y": 274.6,
+        "w": 123.84,
+        "h": 227,
+        "objId": "292",
+        "file": "data/images/img_292.jpg"
+      },
+      {
+        "x": 233.28,
+        "y": 66,
+        "w": 107.03,
+        "h": 193.2,
+        "objId": "293",
+        "file": "data/images/img_293.jpg"
+      }
+    ]
+  },
+  {
+    "pageNum": 22,
+    "texts": [
+      {
+        "x": 96.984,
+        "y": 625.63,
+        "text": "*ACEITES."
+      },
+      {
+        "x": 91.704,
+        "y": 611.23,
+        "text": "*CAPSULAS."
+      },
+      {
+        "x": 75.864,
+        "y": 596.83,
+        "text": "*CHIA TRITURADA."
+      },
+      {
+        "x": 94.344,
+        "y": 582.43,
+        "text": "*HARINAS."
+      },
+      {
+        "x": 77.784,
+        "y": 568.03,
+        "text": "*MIX DE SEMILAS."
+      },
+      {
+        "x": 51.6,
+        "y": 553.61,
+        "text": "* MIX DE FIBRAS NATURALES."
+      },
+      {
+        "x": 78.504,
+        "y": 539.21,
+        "text": "*PASTA DE MANI."
+      },
+      {
+        "x": 70.584,
+        "y": 524.81,
+        "text": "* PASTA DE GIRASOL."
+      },
+      {
+        "x": 78.264,
+        "y": 510.41,
+        "text": "* PASTA SESAMO."
+      },
+      {
+        "x": 81.864,
+        "y": 496.01,
+        "text": "* PASTA TAHINI."
+      },
+      {
+        "x": 71.064,
+        "y": 481.58,
+        "text": "* PROTEINA VEGETA."
+      },
+      {
+        "x": 65.784,
+        "y": 467.18,
+        "text": "* SESAMO TRITURADO."
+      },
+      {
+        "x": 93.384,
+        "y": 452.78,
+        "text": "*SEMILLAS."
+      }
+    ],
+    "images": [
+      {
+        "x": 26.64,
+        "y": 643.54,
+        "w": 192.48,
+        "h": 90.136,
+        "objId": "296",
+        "file": "data/images/img_296.jpg"
+      },
+      {
+        "x": 224.64,
+        "y": 566.61,
+        "w": 97.11,
+        "h": 167.79,
+        "objId": "297",
+        "file": "data/images/img_297.jpg"
+      },
+      {
+        "x": 342.96,
+        "y": 567.6,
+        "w": 117.77,
+        "h": 161.28,
+        "objId": "298",
+        "file": "data/images/img_298.jpg"
+      },
+      {
+        "x": 471.12,
+        "y": 567.75,
+        "w": 105.6,
+        "h": 165.45,
+        "objId": "299",
+        "file": "data/images/img_299.jpg"
+      },
+      {
+        "x": 223.44,
+        "y": 391.49,
+        "w": 130.41,
+        "h": 168.91,
+        "objId": "300",
+        "file": "data/images/img_300.jpg"
+      },
+      {
+        "x": 355.92,
+        "y": 389.8,
+        "w": 110.86,
+        "h": 161,
+        "objId": "301",
+        "file": "data/images/img_301.jpg"
+      },
+      {
+        "x": 466.8,
+        "y": 391.15,
+        "w": 116.38,
+        "h": 176.45,
+        "objId": "302",
+        "file": "data/images/img_302.jpg"
+      },
+      {
+        "x": 227.04,
+        "y": 197.52,
+        "w": 173.04,
+        "h": 192.3,
+        "objId": "303",
+        "file": "data/images/img_303.jpg"
+      },
+      {
+        "x": 410.4,
+        "y": 196.51,
+        "w": 160.08,
+        "h": 192.5,
+        "objId": "304",
+        "file": "data/images/img_304.jpg"
+      },
+      {
+        "x": 246.72,
+        "y": 65.992,
+        "w": 123.84,
+        "h": 134.62,
+        "objId": "305",
+        "file": "data/images/img_305.jpg"
+      },
+      {
+        "x": 392.64,
+        "y": 62.868,
+        "w": 181.22,
+        "h": 138.73,
+        "objId": "306",
+        "file": "data/images/img_306.jpg"
+      }
+    ]
+  },
+  {
+    "pageNum": 23,
+    "texts": [
+      {
+        "x": 97.944,
+        "y": 611.23,
+        "text": "*ADELGA"
+      },
+      {
+        "x": 96.264,
+        "y": 596.83,
+        "text": "*BLISTERS"
+      },
+      {
+        "x": 80.424,
+        "y": 582.43,
+        "text": "*COMPRIMIDOS."
+      },
+      {
+        "x": 98.184,
+        "y": 568.03,
+        "text": "*POLVOS"
+      },
+      {
+        "x": 75.144,
+        "y": 308.74,
+        "text": "*ACEITES DE COCO."
+      },
+      {
+        "x": 67.464,
+        "y": 135.89,
+        "text": "*CHOCOLATES CACAO."
+      }
+    ],
+    "images": [
+      {
+        "x": 229.44,
+        "y": 582.27,
+        "w": 101.61,
+        "h": 152.13,
+        "objId": "310",
+        "file": "data/images/img_310.jpg"
+      },
+      {
+        "x": 332.64,
+        "y": 585.7,
+        "w": 102.17,
+        "h": 148.7,
+        "objId": "311",
+        "file": "data/images/img_311.jpg"
+      },
+      {
+        "x": 437.52,
+        "y": 585.55,
+        "w": 133.53,
+        "h": 150.05,
+        "objId": "312",
+        "file": "data/images/img_312.jpg"
+      },
+      {
+        "x": 225.84,
+        "y": 432,
+        "w": 121.33,
+        "h": 149.28,
+        "objId": "313",
+        "file": "data/images/img_313.jpg"
+      },
+      {
+        "x": 355.2,
+        "y": 426.44,
+        "w": 100.23,
+        "h": 154.84,
+        "objId": "314",
+        "file": "data/images/img_314.jpg"
+      },
+      {
+        "x": 469.92,
+        "y": 427.09,
+        "w": 93.12,
+        "h": 154.19,
+        "objId": "315",
+        "file": "data/images/img_315.jpg"
+      },
+      {
+        "x": 231.84,
+        "y": 256.08,
+        "w": 113.16,
+        "h": 162,
+        "objId": "317",
+        "file": "data/images/img_317.jpg"
+      },
+      {
+        "x": 477.36,
+        "y": 349.88,
+        "w": 70.56,
+        "h": 69.451,
+        "objId": "318",
+        "file": "data/images/img_318.jpg"
+      },
+      {
+        "x": 354.72,
+        "y": 259.39,
+        "w": 97.44,
+        "h": 161.09,
+        "objId": "320",
+        "file": "data/images/img_320.jpg"
+      },
+      {
+        "x": 474.72,
+        "y": 256.58,
+        "w": 76.08,
+        "h": 89.368,
+        "objId": "321",
+        "file": "data/images/img_321.jpg"
+      },
+      {
+        "x": 234.96,
+        "y": 63.6,
+        "w": 340.73,
+        "h": 197.28,
+        "objId": "322",
+        "file": "data/images/img_322.jpg"
+      }
+    ]
+  },
+  {
+    "pageNum": 24,
+    "texts": [
+      {
+        "x": 82.584,
+        "y": 575.95,
+        "text": "*BOMBONITOS:"
+      },
+      {
+        "x": 83.064,
+        "y": 561.53,
+        "text": "SEMI-AMARGO."
+      },
+      {
+        "x": 96.504,
+        "y": 547.13,
+        "text": "BLANCOS."
+      },
+      {
+        "x": 99.384,
+        "y": 532.73,
+        "text": "LUXURY."
+      },
+      {
+        "x": 72.024,
+        "y": 518.33,
+        "text": "*BAÑO REPOSTERIA."
+      },
+      {
+        "x": 103.94,
+        "y": 503.93,
+        "text": "LECHE."
+      },
+      {
+        "x": 83.064,
+        "y": 489.5,
+        "text": "SEMI-AMARGO."
+      },
+      {
+        "x": 98.904,
+        "y": 475.1,
+        "text": "BLANCO."
+      },
+      {
+        "x": 96.504,
+        "y": 460.7,
+        "text": "FRUTILLA."
+      },
+      {
+        "x": 99.624,
+        "y": 446.3,
+        "text": "CELESTE."
+      },
+      {
+        "x": 84.984,
+        "y": 431.9,
+        "text": "SIN AZUCARES."
+      }
+    ],
+    "images": [
+      {
+        "x": 225.84,
+        "y": 566.4,
+        "w": 221.28,
+        "h": 118.32,
+        "objId": "329",
+        "file": "data/images/img_329.jpg"
+      },
+      {
+        "x": 227.76,
+        "y": 413.28,
+        "w": 113.05,
+        "h": 129.17,
+        "objId": "330",
+        "file": "data/images/img_330.jpg"
+      },
+      {
+        "x": 347.28,
+        "y": 413.93,
+        "w": 112.57,
+        "h": 130.87,
+        "objId": "331",
+        "file": "data/images/img_331.jpg"
+      },
+      {
+        "x": 464.4,
+        "y": 413.67,
+        "w": 112.9,
+        "h": 129.95,
+        "objId": "332",
+        "file": "data/images/img_332.jpg"
+      },
+      {
+        "x": 347.76,
+        "y": 284.31,
+        "w": 109.96,
+        "h": 121.01,
+        "objId": "333",
+        "file": "data/images/img_333.jpg"
+      },
+      {
+        "x": 231.84,
+        "y": 282.18,
+        "w": 109.68,
+        "h": 127.14,
+        "objId": "334",
+        "file": "data/images/img_334.jpg"
+      },
+      {
+        "x": 466.93,
+        "y": 286.1,
+        "w": 105.95,
+        "h": 124.5,
+        "objId": "335",
+        "file": "data/images/img_335.jpg"
+      },
+      {
+        "x": 22.32,
+        "y": 224,
+        "w": 195.12,
+        "h": 58.716,
+        "objId": "336",
+        "file": "data/images/img_336.jpg"
+      },
+      {
+        "x": 250.32,
+        "y": 178.32,
+        "w": 303.6,
+        "h": 104.4,
+        "objId": "337",
+        "file": "data/images/img_337.jpg"
+      },
+      {
+        "x": 219.12,
+        "y": 70.581,
+        "w": 348.96,
+        "h": 102.13,
+        "objId": "338",
+        "file": "data/images/img_338.jpg"
+      },
+      {
+        "x": 447.98,
+        "y": 558,
+        "w": 134.26,
+        "h": 130.32,
+        "objId": "339",
+        "file": "data/images/img_339.jpg"
+      }
+    ]
+  },
+  {
+    "pageNum": 25,
+    "texts": [],
+    "images": [
+      {
+        "x": 61.175,
+        "y": 632.4,
+        "w": 148.82,
+        "h": 84.48,
+        "objId": "342",
+        "file": "data/images/img_342.jpg"
+      },
+      {
+        "x": 78.72,
+        "y": 527.07,
+        "w": 125.76,
+        "h": 95.011,
+        "objId": "343",
+        "file": "data/images/img_343.jpg"
+      },
+      {
+        "x": 81.12,
+        "y": 65.194,
+        "w": 123.08,
+        "h": 93.686,
+        "objId": "345",
+        "file": "data/images/img_345.jpg"
+      },
+      {
+        "x": 73.92,
+        "y": 300.48,
+        "w": 129.77,
+        "h": 104.4,
+        "objId": "347",
+        "file": "data/images/img_347.jpg"
+      },
+      {
+        "x": 226.32,
+        "y": 519.59,
+        "w": 156,
+        "h": 202.09,
+        "objId": "348",
+        "file": "data/images/img_348.jpg"
+      },
+      {
+        "x": 406.08,
+        "y": 438.21,
+        "w": 173.52,
+        "h": 272.6,
+        "objId": "349",
+        "file": "data/images/img_349.jpg"
+      },
+      {
+        "x": 218.64,
+        "y": 367.54,
+        "w": 175.2,
+        "h": 146.27,
+        "objId": "350",
+        "file": "data/images/img_350.jpg"
+      },
+      {
+        "x": 422.16,
+        "y": 212.88,
+        "w": 157.44,
+        "h": 217.2,
+        "objId": "351",
+        "file": "data/images/img_351.jpg"
+      },
+      {
+        "x": 231.36,
+        "y": 65.884,
+        "w": 162.48,
+        "h": 149.4,
+        "objId": "352",
+        "file": "data/images/img_352.jpg"
+      },
+      {
+        "x": 224.64,
+        "y": 227.04,
+        "w": 181.44,
+        "h": 138.24,
+        "objId": "353",
+        "file": "data/images/img_353.jpg"
+      },
+      {
+        "x": 395.04,
+        "y": 62.721,
+        "w": 182.16,
+        "h": 152.08,
+        "objId": "354",
+        "file": "data/images/img_354.jpg"
+      }
+    ]
+  },
+  {
+    "pageNum": 26,
+    "texts": [],
+    "images": [
+      {
+        "x": 88.56,
+        "y": 664.61,
+        "w": 117.12,
+        "h": 63.786,
+        "objId": "358",
+        "file": "data/images/img_358.jpg"
+      },
+      {
+        "x": 224.64,
+        "y": 564,
+        "w": 202.12,
+        "h": 170.4,
+        "objId": "359",
+        "file": "data/images/img_359.jpg"
+      },
+      {
+        "x": 438.72,
+        "y": 552.15,
+        "w": 131.76,
+        "h": 178.56,
+        "objId": "360",
+        "file": "data/images/img_360.jpg"
+      },
+      {
+        "x": 225.57,
+        "y": 409.68,
+        "w": 127.23,
+        "h": 143.29,
+        "objId": "361",
+        "file": "data/images/img_361.jpg"
+      },
+      {
+        "x": 353.28,
+        "y": 423.43,
+        "w": 109.2,
+        "h": 117.81,
+        "objId": "362",
+        "file": "data/images/img_362.jpg"
+      },
+      {
+        "x": 463.52,
+        "y": 418,
+        "w": 118.72,
+        "h": 118.67,
+        "objId": "363",
+        "file": "data/images/img_363.jpg"
+      },
+      {
+        "x": 222.72,
+        "y": 66,
+        "w": 117.87,
+        "h": 159.81,
+        "objId": "364",
+        "file": "data/images/img_364.jpg"
+      },
+      {
+        "x": 463.68,
+        "y": 66,
+        "w": 119.14,
+        "h": 161.5,
+        "objId": "365",
+        "file": "data/images/img_365.jpg"
+      },
+      {
+        "x": 223.74,
+        "y": 232.08,
+        "w": 119.9,
+        "h": 160.8,
+        "objId": "366",
+        "file": "data/images/img_366.jpg"
+      },
+      {
+        "x": 345.36,
+        "y": 226.8,
+        "w": 122.27,
+        "h": 168.48,
+        "objId": "367",
+        "file": "data/images/img_367.jpg"
+      },
+      {
+        "x": 465.12,
+        "y": 228.12,
+        "w": 117.39,
+        "h": 164.28,
+        "objId": "368",
+        "file": "data/images/img_368.jpg"
+      },
+      {
+        "x": 345.97,
+        "y": 65.28,
+        "w": 118.41,
+        "h": 160.32,
+        "objId": "369",
+        "file": "data/images/img_369.jpg"
+      },
+      {
+        "x": 61.342,
+        "y": 265.2,
+        "w": 145.55,
+        "h": 122.4,
+        "objId": "370",
+        "file": "data/images/img_370.jpg"
+      }
+    ]
+  },
+  {
+    "pageNum": 27,
+    "texts": [
+      {
+        "x": 68.664,
+        "y": 505.61,
+        "text": "*9 VARILLAS GRUESAS"
+      },
+      {
+        "x": 94.584,
+        "y": 491.21,
+        "text": "*NATURAL"
+      },
+      {
+        "x": 56.88,
+        "y": 476.78,
+        "text": "*PALO SANTO CONVINADO"
+      },
+      {
+        "x": 93.384,
+        "y": 462.38,
+        "text": "*EN POLVO"
+      },
+      {
+        "x": 100.34,
+        "y": 447.98,
+        "text": "*YAGRA"
+      }
+    ],
+    "images": [
+      {
+        "x": 44.88,
+        "y": 526.14,
+        "w": 160.8,
+        "h": 149.46,
+        "objId": "373",
+        "file": "data/images/img_373.jpg"
+      },
+      {
+        "x": 230.16,
+        "y": 506.4,
+        "w": 78.854,
+        "h": 170.88,
+        "objId": "374",
+        "file": "data/images/img_374.jpg"
+      },
+      {
+        "x": 317.28,
+        "y": 506.4,
+        "w": 81.879,
+        "h": 170.4,
+        "objId": "375",
+        "file": "data/images/img_375.jpg"
+      },
+      {
+        "x": 476.64,
+        "y": 502.8,
+        "w": 79.291,
+        "h": 180,
+        "objId": "376",
+        "file": "data/images/img_376.jpg"
+      },
+      {
+        "x": 408,
+        "y": 506.88,
+        "w": 66.482,
+        "h": 171.6,
+        "objId": "377",
+        "file": "data/images/img_377.jpg"
+      },
+      {
+        "x": 227.04,
+        "y": 367.68,
+        "w": 356.4,
+        "h": 136.8,
+        "objId": "378",
+        "file": "data/images/img_378.jpg"
+      },
+      {
+        "x": 241.73,
+        "y": 214.08,
+        "w": 48.118,
+        "h": 145.2,
+        "objId": "379",
+        "file": "data/images/img_379.jpg"
+      },
+      {
+        "x": 293.28,
+        "y": 212.4,
+        "w": 48.751,
+        "h": 154.8,
+        "objId": "380",
+        "file": "data/images/img_380.jpg"
+      },
+      {
+        "x": 351.45,
+        "y": 215.34,
+        "w": 41.186,
+        "h": 135.06,
+        "objId": "381",
+        "file": "data/images/img_381.jpg"
+      },
+      {
+        "x": 240.27,
+        "y": 57.375,
+        "w": 51.094,
+        "h": 156.23,
+        "objId": "382",
+        "file": "data/images/img_382.jpg"
+      },
+      {
+        "x": 302.24,
+        "y": 57.169,
+        "w": 51.756,
+        "h": 155.71,
+        "objId": "383",
+        "file": "data/images/img_383.jpg"
+      },
+      {
+        "x": 371.6,
+        "y": 57.113,
+        "w": 49.836,
+        "h": 155.29,
+        "objId": "384",
+        "file": "data/images/img_384.jpg"
+      },
+      {
+        "x": 430.05,
+        "y": 57.6,
+        "w": 54.028,
+        "h": 155.28,
+        "objId": "385",
+        "file": "data/images/img_385.jpg"
+      },
+      {
+        "x": 505.15,
+        "y": 58.062,
+        "w": 62.207,
+        "h": 154.34,
+        "objId": "386",
+        "file": "data/images/img_386.jpg"
+      },
+      {
+        "x": 419.04,
+        "y": 215.28,
+        "w": 69.36,
+        "h": 153.6,
+        "objId": "387",
+        "file": "data/images/img_387.jpg"
+      },
+      {
+        "x": 500.92,
+        "y": 219.58,
+        "w": 54.919,
+        "h": 126.5,
+        "objId": "388",
+        "file": "data/images/img_388.jpg"
+      }
+    ]
+  },
+  {
+    "pageNum": 28,
+    "texts": [
+      {
+        "x": 48.24,
+        "y": 596.83,
+        "text": "*ESFERAS MAGICAS BOMBITAS"
+      },
+      {
+        "x": 65.544,
+        "y": 351.96,
+        "text": "*VELAS PARA HORNITO"
+      },
+      {
+        "x": 55.44,
+        "y": 337.54,
+        "text": "*ESENCIAS PARA HORNITOS"
+      }
+    ],
+    "images": [
+      {
+        "x": 30.041,
+        "y": 616.8,
+        "w": 183.08,
+        "h": 118.08,
+        "objId": "391",
+        "file": "data/images/img_391.jpg"
+      },
+      {
+        "x": 223.44,
+        "y": 494.88,
+        "w": 359.28,
+        "h": 237.12,
+        "objId": "392",
+        "file": "data/images/img_392.jpg"
+      },
+      {
+        "x": 231.36,
+        "y": 269.23,
+        "w": 220.08,
+        "h": 230.45,
+        "objId": "394",
+        "file": "data/images/img_394.jpg"
+      },
+      {
+        "x": 223.44,
+        "y": 63.518,
+        "w": 241.68,
+        "h": 210.08,
+        "objId": "395",
+        "file": "data/images/img_395.jpg"
+      },
+      {
+        "x": 473.52,
+        "y": 290.38,
+        "w": 79.679,
+        "h": 200.9,
+        "objId": "396",
+        "file": "data/images/img_396.jpg"
+      }
+    ]
+  },
+  {
+    "pageNum": 29,
+    "texts": [
+      {
+        "x": 71.064,
+        "y": 594.19,
+        "text": "REFUGIO LUNAR"
+      },
+      {
+        "x": 97.224,
+        "y": 578.83,
+        "text": "*CREMAS"
+      },
+      {
+        "x": 92.184,
+        "y": 564.41,
+        "text": "*SHAMPOO"
+      },
+      {
+        "x": 108.26,
+        "y": 550.01,
+        "text": "*GEL"
+      },
+      {
+        "x": 99.864,
+        "y": 535.61,
+        "text": "*SERUM"
+      },
+      {
+        "x": 97.224,
+        "y": 247.51,
+        "text": "*CREMAS"
+      },
+      {
+        "x": 92.184,
+        "y": 233.11,
+        "text": "*SHAMPOO"
+      },
+      {
+        "x": 108.26,
+        "y": 218.71,
+        "text": "*GEL"
+      },
+      {
+        "x": 99.864,
+        "y": 204.31,
+        "text": "*SERUM"
+      },
+      {
+        "x": 101.06,
+        "y": 189.91,
+        "text": "*JABON"
+      },
+      {
+        "x": 90.744,
+        "y": 175.49,
+        "text": "*MASCARAS"
+      },
+      {
+        "x": 76.344,
+        "y": 161.09,
+        "text": "*LECHE CORPORAL"
+      }
+    ],
+    "images": [
+      {
+        "x": 64.56,
+        "y": 620.88,
+        "w": 104.5,
+        "h": 101.52,
+        "objId": "399",
+        "file": "data/images/img_399.jpg"
+      },
+      {
+        "x": 225.84,
+        "y": 557.28,
+        "w": 352.84,
+        "h": 170.4,
+        "objId": "400",
+        "file": "data/images/img_400.jpg"
+      },
+      {
+        "x": 246,
+        "y": 412.78,
+        "w": 118.32,
+        "h": 134.66,
+        "objId": "401",
+        "file": "data/images/img_401.jpg"
+      },
+      {
+        "x": 384,
+        "y": 391.67,
+        "w": 188.42,
+        "h": 153.61,
+        "objId": "402",
+        "file": "data/images/img_402.jpg"
+      },
+      {
+        "x": 225.84,
+        "y": 217.19,
+        "w": 151.45,
+        "h": 172.09,
+        "objId": "404",
+        "file": "data/images/img_404.jpg"
+      },
+      {
+        "x": 387.77,
+        "y": 162,
+        "w": 81.435,
+        "h": 224.88,
+        "objId": "405",
+        "file": "data/images/img_405.jpg"
+      },
+      {
+        "x": 474,
+        "y": 159.6,
+        "w": 98.889,
+        "h": 219.6,
+        "objId": "406",
+        "file": "data/images/img_406.jpg"
+      },
+      {
+        "x": 264.96,
+        "y": 64.8,
+        "w": 77.875,
+        "h": 149.28,
+        "objId": "407",
+        "file": "data/images/img_407.jpg"
+      },
+      {
+        "x": 380.88,
+        "y": 65.408,
+        "w": 163.2,
+        "h": 88.714,
+        "objId": "408",
+        "file": "data/images/img_408.jpg"
+      }
+    ]
+  },
+  {
+    "pageNum": 30,
+    "texts": [
+      {
+        "x": 67.704,
+        "y": 582.43,
+        "text": "*SHAMPOO / SOLIDOS"
+      },
+      {
+        "x": 48.24,
+        "y": 568.03,
+        "text": "*ACONDICIONADOR / SOLIDOS"
+      },
+      {
+        "x": 78.984,
+        "y": 553.61,
+        "text": "*DESODORANTES"
+      },
+      {
+        "x": 95.784,
+        "y": 539.21,
+        "text": "*JABONES"
+      }
+    ],
+    "images": [
+      {
+        "x": 221.52,
+        "y": 470.64,
+        "w": 351.36,
+        "h": 252.96,
+        "objId": "412",
+        "file": "data/images/img_412.jpg"
+      },
+      {
+        "x": 221.04,
+        "y": 247.2,
+        "w": 208.58,
+        "h": 215.28,
+        "objId": "413",
+        "file": "data/images/img_413.jpg"
+      },
+      {
+        "x": 440.66,
+        "y": 343.66,
+        "w": 138.49,
+        "h": 114.02,
+        "objId": "414",
+        "file": "data/images/img_414.jpg"
+      },
+      {
+        "x": 440.4,
+        "y": 218.62,
+        "w": 139.2,
+        "h": 116.11,
+        "objId": "415",
+        "file": "data/images/img_415.jpg"
+      }
+    ]
+  },
+  {
+    "pageNum": 31,
+    "texts": [],
+    "images": []
+  },
+  {
+    "pageNum": 32,
+    "texts": [],
+    "images": []
+  }
+]

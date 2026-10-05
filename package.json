@@ -1,0 +1,20 @@
+{
+  "name": "equilibrio-almacen-natural",
+  "version": "1.0.0",
+  "description": "Catálogo web interactivo y despacho por WhatsApp para Equilibrio Distribuciones",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "build": "echo Static site ready"
+  },
+  "keywords": [
+    "catalogo",
+    "dietetica",
+    "almacen-natural",
+    "sin-tacc",
+    "whatsapp",
+    "ecommerce"
+  ],
+  "author": "Equilibrio Distribuciones",
+  "license": "MIT"
+}
