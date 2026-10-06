@@ -1,5 +1,6 @@
 # Servidor local Node (solo para desarrollo offline en PC)
 server.js
+package.json
 
 # Videos y descargas pesadas locales
 *.mp4
