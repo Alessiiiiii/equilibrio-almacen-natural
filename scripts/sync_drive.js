@@ -7,6 +7,7 @@ const https = require('https');
 const fs = require('fs');
 const path = require('path');
 const zlib = require('zlib');
+const { execSync } = require('child_process');
 
 const FILES = [
   { name: 'Aromas y Fragancias - Equilibrio.pdf', id: '1PYgN5t_JnkfqNoU1-cpk6tQvjSeLmGi8' },
@@ -45,6 +46,19 @@ function downloadFile(id, destPath) {
     }
     get(`https://drive.google.com/uc?export=download&id=${id}`);
   });
+}
+
+async function downloadFileWithRetry(id, destPath, maxRetries = 3) {
+  for (let attempt = 1; attempt <= maxRetries; attempt++) {
+    try {
+      await downloadFile(id, destPath);
+      return;
+    } catch (err) {
+      if (attempt === maxRetries) throw err;
+      console.log(`(reintentando intento ${attempt + 1}/${maxRetries})... `);
+      await new Promise(r => setTimeout(r, 2000 * attempt));
+    }
+  }
 }
 
 function parsePdfText(filePath) {
@@ -235,7 +249,28 @@ function refineProduct(rawItem, fileName, currentSection) {
   };
 }
 
-async function syncCatalog() {
+function getGitExecutable() {
+  const custom = 'C:\\Users\\Alexis\\AppData\\Local\\GitHubDesktop\\app-3.6.6\\resources\\app\\git\\cmd\\git.exe';
+  if (fs.existsSync(custom)) return `"${custom}"`;
+  return 'git';
+}
+
+function pushChangesToGit(total, updatedPrices, removedCount, addedCount) {
+  try {
+    const git = getGitExecutable();
+    const rootDir = path.resolve(__dirname, '..');
+    console.log('\n🚀 Desplegando cambios a GitHub, Vercel y GitHub Pages...');
+    execSync(`${git} add data/products.json js/data.js data/images/logo.jpg index.html`, { cwd: rootDir, stdio: 'inherit' });
+    const msg = `Actualizar catálogo desde Google Drive: ${total} productos (${updatedPrices} precios, -${removedCount} elim, +${addedCount} nuevos)`;
+    execSync(`${git} commit -m "${msg}"`, { cwd: rootDir, stdio: 'inherit' });
+    execSync(`${git} push origin main`, { cwd: rootDir, stdio: 'inherit' });
+    console.log('✅ Despliegue completado con éxito. El sitio se actualizará en vivo en pocos segundos.');
+  } catch (err) {
+    console.log('ℹ️ Nota de Git:', err.message);
+  }
+}
+
+async function syncCatalog(autoPush = false) {
   console.log('🌿 Sincronizando catálogo con Google Drive...');
   
   const extractedItems = [];
@@ -245,7 +280,7 @@ async function syncCatalog() {
     const dest = path.join(tempDir, item.name);
     process.stdout.write(`  📥 Descargando ${item.name}... `);
     try {
-      await downloadFile(item.id, dest);
+      await downloadFileWithRetry(item.id, dest);
       const text = parsePdfText(dest);
       const lines = text.split('\n').map(l => l.trim()).filter(l => l.length > 0);
       let currentSection = '';
@@ -280,64 +315,70 @@ async function syncCatalog() {
     }
   }
 
-  // Cargar catálogo actual para merge sin pérdidas
+  // Cargar catálogo actual para preservar IDs e imágenes mapeadas
   const catalogPath = path.join(__dirname, '../data/products.json');
-  const currentCatalog = JSON.parse(fs.readFileSync(catalogPath, 'utf-8'));
+  const currentCatalog = fs.existsSync(catalogPath) ? JSON.parse(fs.readFileSync(catalogPath, 'utf-8')) : [];
 
-  const newExtractedMap = new Map();
-  extractedItems.forEach(p => {
+  const oldMap = new Map();
+  let maxId = 0;
+  currentCatalog.forEach(p => {
     const k = (p.producto + '__' + p.marca).toLowerCase().replace(/[^a-z0-9]/g, '');
-    newExtractedMap.set(k, p);
+    oldMap.set(k, p);
+    if (p.id && p.id > maxId) maxId = p.id;
   });
 
   let updatedPrices = 0;
-  const merged = currentCatalog.map(p => {
-    const k = (p.producto + '__' + p.marca).toLowerCase().replace(/[^a-z0-9]/g, '');
-    const match = newExtractedMap.get(k);
-    if (match) {
-      if (match.precio !== p.precio) updatedPrices++;
+  let updatedPres = 0;
+  let addedCount = 0;
+  let preservedImages = 0;
+
+  // Sincronización exacta: el catálogo reflejará SOLO los productos activos actuales de Drive
+  const newCatalog = extractedItems.map(item => {
+    const k = (item.producto + '__' + item.marca).toLowerCase().replace(/[^a-z0-9]/g, '');
+    const old = oldMap.get(k);
+
+    if (old) {
+      if (old.precio !== item.precio) updatedPrices++;
+      if (old.presentacion !== item.presentacion) updatedPres++;
+      if (old.imagen) preservedImages++;
+
       return {
-        ...p,
-        precio: match.precio,
-        presentacion: match.presentacion || p.presentacion,
-        categoria: match.categoria || p.categoria
+        id: old.id,
+        categoria: item.categoria,
+        marca: item.marca,
+        producto: item.producto,
+        presentacion: item.presentacion,
+        precio: item.precio,
+        imagen: old.imagen || null
+      };
+    } else {
+      addedCount++;
+      return {
+        id: ++maxId,
+        categoria: item.categoria,
+        marca: item.marca,
+        producto: item.producto,
+        presentacion: item.presentacion,
+        precio: item.precio,
+        imagen: null
       };
     }
-    return p;
   });
 
-  const existingKeys = new Set(currentCatalog.map(p => (p.producto + '__' + p.marca).toLowerCase().replace(/[^a-z0-9]/g, '')));
-  let addedCount = 0;
-  let maxId = Math.max(...merged.map(p => p.id));
-
-  extractedItems.forEach(p => {
-    const k = (p.producto + '__' + p.marca).toLowerCase().replace(/[^a-z0-9]/g, '');
-    if (!existingKeys.has(k)) {
-      addedCount++;
-      existingKeys.add(k);
-      merged.push({
-        id: ++maxId,
-        categoria: p.categoria,
-        marca: p.marca,
-        producto: p.producto,
-        presentacion: p.presentacion,
-        precio: p.precio
-      });
-    }
-  });
+  const removedCount = currentCatalog.length - (newCatalog.length - addedCount);
 
   // Guardar data/products.json
-  fs.writeFileSync(catalogPath, JSON.stringify(merged, null, 2), 'utf-8');
+  fs.writeFileSync(catalogPath, JSON.stringify(newCatalog, null, 2), 'utf-8');
 
   // Guardar js/data.js
   const jsPath = path.join(__dirname, '../js/data.js');
   const jsContent = `/**
  * Catálogo Oficial Completo de Productos y Configuración de Categorías
  * Equilibrio Distribuciones - Almacén Natural
- * Total de productos: ${merged.length}
+ * Total de productos: ${newCatalog.length}
  */
 
-const RAW_PRODUCTS = ${JSON.stringify(merged, null, 2)};
+const RAW_PRODUCTS = ${JSON.stringify(newCatalog, null, 2)};
 
 // Enriquecemos cada producto con metadatos de búsqueda, sin TACC y categorías
 function enrichProducts(rawList) {
@@ -412,21 +453,31 @@ function formatPrice(amount) {
   fs.writeFileSync(jsPath, jsContent, 'utf-8');
 
   console.log(`\n🎉 Sincronización completada con éxito:`);
-  console.log(`   - Total productos en catálogo: ${merged.length}`);
+  console.log(`   - Total productos en catálogo activo: ${newCatalog.length}`);
   console.log(`   - Precios actualizados: ${updatedPrices}`);
+  console.log(`   - Presentaciones modificadas: ${updatedPres}`);
+  console.log(`   - Productos eliminados por el cliente: ${removedCount}`);
   console.log(`   - Nuevos productos agregados: ${addedCount}`);
+  console.log(`   - Fotos de productos preservadas: ${preservedImages}`);
+
+  if (autoPush) {
+    pushChangesToGit(newCatalog.length, updatedPrices, removedCount, addedCount);
+  }
 
   return {
     success: true,
-    total: merged.length,
+    total: newCatalog.length,
     updatedPrices,
+    updatedPres,
+    removedCount,
     addedCount,
-    products: merged
+    preservedImages,
+    products: newCatalog
   };
 }
 
 module.exports = { syncCatalog };
 
 if (require.main === module) {
-  syncCatalog().catch(console.error);
+  syncCatalog(true).catch(console.error);
 }

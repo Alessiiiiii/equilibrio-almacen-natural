@@ -142,6 +142,10 @@ document.addEventListener('DOMContentLoaded', () => {
     renderProducts();
     updateCartUI(cart.getItems(), cart.getSummary());
 
+    if (dom.heroProductsCount) {
+      dom.heroProductsCount.textContent = `${PRODUCTS.length.toLocaleString('es-AR')} Productos Disponibles`;
+    }
+
     // Cargar datos previos de cliente si existen
     loadCustomerDraft();
 
