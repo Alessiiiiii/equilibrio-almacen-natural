@@ -1,370 +1,10 @@
 /**
  * Catálogo Oficial Completo de Productos y Configuración de Categorías
  * Equilibrio Distribuciones - Almacén Natural
- * Total de productos: 1650
+ * Total de productos: 1430
  */
 
 const RAW_PRODUCTS = [
-  {
-    "id": 1,
-    "categoria": "Almacén",
-    "marca": "Doña Magdalena",
-    "producto": "Miel Cremosa",
-    "presentacion": "500 g",
-    "precio": 5200,
-    "imagen": null
-  },
-  {
-    "id": 2,
-    "categoria": "Almacén",
-    "marca": "Doña Magdalena",
-    "producto": "Pasta de Maní con Stevia",
-    "presentacion": "450 g",
-    "precio": 4760,
-    "imagen": null
-  },
-  {
-    "id": 3,
-    "categoria": "Almacén",
-    "marca": "Doña Magdalena",
-    "producto": "Pasta de Maní Crunchy",
-    "presentacion": "400 g",
-    "precio": 4760,
-    "imagen": "data/images/img_144.jpg"
-  },
-  {
-    "id": 4,
-    "categoria": "Almacén",
-    "marca": "Doña Magdalena",
-    "producto": "Pasta de Maní Tradicional",
-    "presentacion": "400 g",
-    "precio": 4760,
-    "imagen": null
-  },
-  {
-    "id": 5,
-    "categoria": "Almacén",
-    "marca": "Doña Magdalena",
-    "producto": "Dulce de Leche con Stevia",
-    "presentacion": "400 g",
-    "precio": 6480,
-    "imagen": "data/images/img_143.jpg"
-  },
-  {
-    "id": 6,
-    "categoria": "Almacén",
-    "marca": "Doña Magdalena",
-    "producto": "Ghee Manteca Clarificada",
-    "presentacion": "270 g",
-    "precio": 9800,
-    "imagen": "data/images/img_154.jpg"
-  },
-  {
-    "id": 7,
-    "categoria": "Almacén",
-    "marca": "Doña Magdalena",
-    "producto": "Mermelada de Frutilla con Stevia",
-    "presentacion": "360 g",
-    "precio": 7400,
-    "imagen": null
-  },
-  {
-    "id": 8,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Doña Pacha",
-    "producto": "Harina de Arroz",
-    "presentacion": "500 g",
-    "precio": 2097.16,
-    "imagen": null
-  },
-  {
-    "id": 9,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Doña Pacha",
-    "producto": "Premezcla Bizcochuelo Chocolate",
-    "presentacion": "350 g",
-    "precio": 4300,
-    "imagen": null
-  },
-  {
-    "id": 10,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Doña Pacha",
-    "producto": "Premezcla Universal Repostería",
-    "presentacion": "500 g",
-    "precio": 3700,
-    "imagen": null
-  },
-  {
-    "id": 11,
-    "categoria": "Aromas y Fragancias",
-    "marca": "Sagrada Madre",
-    "producto": "Sahumerio Incienso Blanco (9 Varillas)",
-    "presentacion": "1 un",
-    "precio": 1850,
-    "imagen": "data/images/img_377.jpg"
-  },
-  {
-    "id": 12,
-    "categoria": "Aromas y Fragancias",
-    "marca": "Sagrada Madre",
-    "producto": "Sahumerio Palo Santo con Vainilla",
-    "presentacion": "1 un",
-    "precio": 1850,
-    "imagen": null
-  },
-  {
-    "id": 13,
-    "categoria": "Aromas y Fragancias",
-    "marca": "Aromanza",
-    "producto": "Esferas Mágicas Bombitas Armonía",
-    "presentacion": "4 un",
-    "precio": 900,
-    "imagen": "data/images/img_392.jpg"
-  },
-  {
-    "id": 14,
-    "categoria": "Aromas y Fragancias",
-    "marca": "Iluminarte",
-    "producto": "Esencia Concentrada Sándalo",
-    "presentacion": "10 ml",
-    "precio": 1080,
-    "imagen": "data/images/img_395.jpg"
-  },
-  {
-    "id": 15,
-    "categoria": "Condimentos",
-    "marca": "Cumaná",
-    "producto": "Ají Molido",
-    "presentacion": "Por Kilo (1 kg)",
-    "precio": 13150,
-    "imagen": "data/images/img_194.jpg"
-  },
-  {
-    "id": 16,
-    "categoria": "Condimentos",
-    "marca": "Cumaná",
-    "producto": "Ajo Deshidratado (Sin TACC)",
-    "presentacion": "Por Kilo (1 kg)",
-    "precio": 14000,
-    "imagen": null
-  },
-  {
-    "id": 17,
-    "categoria": "Condimentos",
-    "marca": "Cumaná",
-    "producto": "Canela Molida (Sin TACC)",
-    "presentacion": "Por Kilo (1 kg)",
-    "precio": 19000,
-    "imagen": null
-  },
-  {
-    "id": 18,
-    "categoria": "Condimentos",
-    "marca": "Cumaná",
-    "producto": "Coriandro Molido",
-    "presentacion": "Por Kilo (1 kg)",
-    "precio": 4580,
-    "imagen": null
-  },
-  {
-    "id": 19,
-    "categoria": "Condimentos",
-    "marca": "Cumaná",
-    "producto": "Provenzal Premium con Ajo Chino",
-    "presentacion": "Por Kilo (1 kg)",
-    "precio": 16500,
-    "imagen": "data/images/img_192.jpg"
-  },
-  {
-    "id": 20,
-    "categoria": "Cosmética Natural",
-    "marca": "Refugio Lunar",
-    "producto": "Crema Contorno de Ojos",
-    "presentacion": "1 un",
-    "precio": 9000,
-    "imagen": null
-  },
-  {
-    "id": 21,
-    "categoria": "Cosmética Natural",
-    "marca": "Refugio Lunar",
-    "producto": "Sérum Antioxidante Hialurónico",
-    "presentacion": "1 un",
-    "precio": 10800,
-    "imagen": null
-  },
-  {
-    "id": 22,
-    "categoria": "Cosmética Natural",
-    "marca": "Veganis",
-    "producto": "Acondicionador Ácido Hialurónico",
-    "presentacion": "400 ml",
-    "precio": 7826.46,
-    "imagen": null
-  },
-  {
-    "id": 23,
-    "categoria": "Cosmética Natural",
-    "marca": "Veganis",
-    "producto": "Leche Corporal Palta y Oliva",
-    "presentacion": "500 g",
-    "precio": 10820,
-    "imagen": "data/images/img_406.jpg"
-  },
-  {
-    "id": 24,
-    "categoria": "Cosmética Natural",
-    "marca": "Frenzzi",
-    "producto": "Shampoo Sin Sulfatos Almendras & Chía",
-    "presentacion": "350 ml",
-    "precio": 11016.62,
-    "imagen": null
-  },
-  {
-    "id": 25,
-    "categoria": "Hierbas Medicinales",
-    "marca": "Sueltas / A Granel",
-    "producto": "Ácoro (Cálamo)",
-    "presentacion": "Por Kilo (1 kg)",
-    "precio": 22000,
-    "imagen": null
-  },
-  {
-    "id": 26,
-    "categoria": "Hierbas Medicinales",
-    "marca": "Sueltas / A Granel",
-    "producto": "Alcachofa",
-    "presentacion": "Por Kilo (1 kg)",
-    "precio": 6800,
-    "imagen": null
-  },
-  {
-    "id": 27,
-    "categoria": "Hierbas Medicinales",
-    "marca": "Sueltas / A Granel",
-    "producto": "Anís Estrellado Entero",
-    "presentacion": "Por Kilo (1 kg)",
-    "precio": 60000,
-    "imagen": null
-  },
-  {
-    "id": 28,
-    "categoria": "Hierbas Medicinales",
-    "marca": "Sueltas / A Granel",
-    "producto": "Caléndula",
-    "presentacion": "Por Kilo (1 kg)",
-    "precio": 24500,
-    "imagen": null
-  },
-  {
-    "id": 29,
-    "categoria": "Infusiones",
-    "marca": "Heredia",
-    "producto": "Té Cúrcuma y Jengibre",
-    "presentacion": "25 saquitos",
-    "precio": 5700,
-    "imagen": null
-  },
-  {
-    "id": 30,
-    "categoria": "Infusiones",
-    "marca": "Heredia",
-    "producto": "Hierbas Sueltas Hibiscus Flor",
-    "presentacion": "100 g",
-    "precio": 10700,
-    "imagen": null
-  },
-  {
-    "id": 31,
-    "categoria": "Panificados y Galletitas",
-    "marca": "La Francia",
-    "producto": "Pepas Rústicas Membrillo y Chía",
-    "presentacion": "1 kg",
-    "precio": 8400,
-    "imagen": "data/images/img_41.jpg"
-  },
-  {
-    "id": 32,
-    "categoria": "Panificados y Galletitas",
-    "marca": "La Francia",
-    "producto": "Pan Rústico Multicereal",
-    "presentacion": "560 g",
-    "precio": 3720,
-    "imagen": "data/images/img_38.jpg"
-  },
-  {
-    "id": 33,
-    "categoria": "Panificados y Galletitas",
-    "marca": "Murke",
-    "producto": "Galletitas Integrales Algarroba y Maní",
-    "presentacion": "250 g",
-    "precio": 1880,
-    "imagen": null
-  },
-  {
-    "id": 34,
-    "categoria": "Panificados y Galletitas",
-    "marca": "Mylen",
-    "producto": "Cookies Integrales Vainilla con Chips",
-    "presentacion": "240 g",
-    "precio": 1700,
-    "imagen": "data/images/img_48.jpg"
-  },
-  {
-    "id": 35,
-    "categoria": "Panificados (Sin TACC)",
-    "marca": "Destaccados",
-    "producto": "Pan Natural Sin TACC",
-    "presentacion": "500 g",
-    "precio": 4700,
-    "imagen": "data/images/img_45.jpg"
-  },
-  {
-    "id": 36,
-    "categoria": "Repostería",
-    "marca": "Insumos Varios",
-    "producto": "Granas de Color",
-    "presentacion": "1 kg",
-    "precio": 4700,
-    "imagen": "data/images/img_365.jpg"
-  },
-  {
-    "id": 37,
-    "categoria": "Repostería",
-    "marca": "Arcor",
-    "producto": "Rocklet / Mini Rocklet",
-    "presentacion": "1 kg",
-    "precio": 24000,
-    "imagen": "data/images/img_359.jpg"
-  },
-  {
-    "id": 38,
-    "categoria": "Repostería",
-    "marca": "El Serranito",
-    "producto": "Dulce de Leche Repostero",
-    "presentacion": "10 kg",
-    "precio": 38000,
-    "imagen": "data/images/img_354.jpg"
-  },
-  {
-    "id": 39,
-    "categoria": "Repostería",
-    "marca": "Arco de Oro",
-    "producto": "Dulce de Membrillo",
-    "presentacion": "5kg",
-    "precio": 14700,
-    "imagen": "data/images/img_338.jpg"
-  },
-  {
-    "id": 40,
-    "categoria": "Repostería",
-    "marca": "Mapsa",
-    "producto": "Cuber Chocolate con Leche / Semi Amargo",
-    "presentacion": "500 g",
-    "precio": 7700,
-    "imagen": "data/images/img_331.jpg"
-  },
   {
     "id": 41,
     "categoria": "Aromas y Fragancias",
@@ -848,7 +488,7 @@ const RAW_PRODUCTS = [
     "marca": "Cumaná",
     "producto": "Chimichurri x KG",
     "presentacion": "Por Kilo (1 kg)",
-    "precio": 12500,
+    "precio": 14500,
     "imagen": null
   },
   {
@@ -1182,6 +822,15 @@ const RAW_PRODUCTS = [
     "producto": "Romero (Sin TACC x KG",
     "presentacion": "Por Kilo (1 kg)",
     "precio": 11800,
+    "imagen": null
+  },
+  {
+    "id": 20,
+    "categoria": "Cosmética Natural",
+    "marca": "Refugio Lunar",
+    "producto": "CREMA CONTORNO DE OJOS",
+    "presentacion": "1 un",
+    "precio": 9000,
     "imagen": null
   },
   {
@@ -1649,7 +1298,7 @@ const RAW_PRODUCTS = [
     "marca": "Botanika",
     "producto": "ACEITE DE ARNICA X 30 ML - APTO VEGANO - SIN TACC",
     "presentacion": "30 ML",
-    "precio": 16650,
+    "precio": 18000,
     "imagen": null
   },
   {
@@ -1757,7 +1406,7 @@ const RAW_PRODUCTS = [
     "marca": "Botanika",
     "producto": "CREMA MANOS Y CUERPO X 250 GRS - ALOE Y CALENDULA",
     "presentacion": "250 g",
-    "precio": 5911.18,
+    "precio": 12450,
     "imagen": null
   },
   {
@@ -1829,7 +1478,7 @@ const RAW_PRODUCTS = [
     "marca": "Botanika",
     "producto": "GEL ANTICELULITICO LIPO REDUCTOR X 200 ML",
     "presentacion": "200 ML",
-    "precio": 8904.19,
+    "precio": 18600,
     "imagen": null
   },
   {
@@ -1856,7 +1505,7 @@ const RAW_PRODUCTS = [
     "marca": "Botanika",
     "producto": "MASCARA CAPILAR REPARADORA X 250 ML",
     "presentacion": "250 ML",
-    "precio": 9550,
+    "precio": 16600,
     "imagen": null
   },
   {
@@ -1883,7 +1532,7 @@ const RAW_PRODUCTS = [
     "marca": "Botanika",
     "producto": "SHAMPOO SOLIDO X 90 GRS - CAIDA",
     "presentacion": "90 g",
-    "precio": 16650,
+    "precio": 20000,
     "imagen": "data/images/img_414.jpg"
   },
   {
@@ -1892,7 +1541,7 @@ const RAW_PRODUCTS = [
     "marca": "Botanika",
     "producto": "SHAMPOO SOLIDO X 90 GRS - DETOX USO DIARIO",
     "presentacion": "90 g",
-    "precio": 16650,
+    "precio": 20000,
     "imagen": null
   },
   {
@@ -1901,7 +1550,7 @@ const RAW_PRODUCTS = [
     "marca": "Botanika",
     "producto": "SHAMPOO SOLIDO X 90 GRS - NUTRITIVO",
     "presentacion": "90 g",
-    "precio": 16650,
+    "precio": 20000,
     "imagen": null
   },
   {
@@ -1986,6 +1635,6504 @@ const RAW_PRODUCTS = [
     "imagen": null
   },
   {
+    "id": 1651,
+    "categoria": "Cosmética Natural",
+    "marca": "Equilibrio",
+    "producto": "ACEITE DE ALMENDRA X 50 CC AQUA NATURAL - MEDINATURAL",
+    "presentacion": "50 ml",
+    "precio": 4500,
+    "imagen": null
+  },
+  {
+    "id": 1652,
+    "categoria": "Cosmética Natural",
+    "marca": "Equilibrio",
+    "producto": "ACEITE DE ARGAN X 50 CC AQUA NATURAL - MEDINATURAL",
+    "presentacion": "50 ml",
+    "precio": 4500,
+    "imagen": null
+  },
+  {
+    "id": 1653,
+    "categoria": "Cosmética Natural",
+    "marca": "Equilibrio",
+    "producto": "ACEITE DE ARNICA X 50 CC AQUA NATURAL - MEDINATURAL",
+    "presentacion": "50 ml",
+    "precio": 4500,
+    "imagen": null
+  },
+  {
+    "id": 1654,
+    "categoria": "Cosmética Natural",
+    "marca": "Equilibrio",
+    "producto": "ACEITE DE AZAHAR X 50 CC AQUA NATURAL - MEDINATURAL",
+    "presentacion": "50 ml",
+    "precio": 4500,
+    "imagen": null
+  },
+  {
+    "id": 1655,
+    "categoria": "Cosmética Natural",
+    "marca": "Equilibrio",
+    "producto": "ACEITE DE CALENDULA X 50 CC AQUA NATURAL - MEDINATURAL",
+    "presentacion": "50 ml",
+    "precio": 4500,
+    "imagen": null
+  },
+  {
+    "id": 1656,
+    "categoria": "Cosmética Natural",
+    "marca": "Equilibrio",
+    "producto": "ACEITE DE COCO X 50 CC AQUA NATURAL - MEDINATURAL",
+    "presentacion": "50 ml",
+    "precio": 4500,
+    "imagen": null
+  },
+  {
+    "id": 1657,
+    "categoria": "Cosmética Natural",
+    "marca": "Equilibrio",
+    "producto": "ACEITE DE GERMEN DE TRIGO X 50 CC AQUA NATURAL - MEDINATURAL",
+    "presentacion": "50 ml",
+    "precio": 4500,
+    "imagen": null
+  },
+  {
+    "id": 1658,
+    "categoria": "Cosmética Natural",
+    "marca": "Equilibrio",
+    "producto": "ACEITE DE HAMAMELIS X 50 CC AQUA NATURAL - MEDINATURAL",
+    "presentacion": "50 ml",
+    "precio": 4500,
+    "imagen": null
+  },
+  {
+    "id": 1659,
+    "categoria": "Cosmética Natural",
+    "marca": "Equilibrio",
+    "producto": "ACEITE DE JOJOBA X 50 CC AQUA NATURAL - MEDINATURAL",
+    "presentacion": "50 ml",
+    "precio": 4500,
+    "imagen": null
+  },
+  {
+    "id": 1660,
+    "categoria": "Cosmética Natural",
+    "marca": "Equilibrio",
+    "producto": "ACEITE DE LAVANDA X 50 CC AQUA NATURAL - MEDINATURAL",
+    "presentacion": "50 ml",
+    "precio": 4500,
+    "imagen": null
+  },
+  {
+    "id": 1661,
+    "categoria": "Cosmética Natural",
+    "marca": "Equilibrio",
+    "producto": "ACEITE DE MELISA X 50 CC AQUA NATURAL - MEDINATURAL",
+    "presentacion": "50 ml",
+    "precio": 4500,
+    "imagen": null
+  },
+  {
+    "id": 1662,
+    "categoria": "Cosmética Natural",
+    "marca": "Equilibrio",
+    "producto": "ACEITE DE MENTA Y EUCALIPTO - 50CC - MEDINATURAL",
+    "presentacion": "50ml",
+    "precio": 4500,
+    "imagen": null
+  },
+  {
+    "id": 1663,
+    "categoria": "Cosmética Natural",
+    "marca": "Equilibrio",
+    "producto": "ACEITE DE OREGANO CON ACEITE DE COCO - 30ML - MEDINATURAL",
+    "presentacion": "30ML",
+    "precio": 12000,
+    "imagen": null
+  },
+  {
+    "id": 1664,
+    "categoria": "Cosmética Natural",
+    "marca": "Equilibrio",
+    "producto": "ACEITE DE ROMERO X 50 CC AQUA NATURAL - MEDINATURAL",
+    "presentacion": "50 ml",
+    "precio": 4500,
+    "imagen": null
+  },
+  {
+    "id": 1665,
+    "categoria": "Cosmética Natural",
+    "marca": "Equilibrio",
+    "producto": "ACEITE DE ROMERO Y CITRONELA X 50 CC AQUA NATURAL - MEDINATURAL",
+    "presentacion": "50 ml",
+    "precio": 4500,
+    "imagen": null
+  },
+  {
+    "id": 1666,
+    "categoria": "Cosmética Natural",
+    "marca": "Equilibrio",
+    "producto": "ACEITE DE ROSA MOSQUETA X 50 CC AQUA NATURAL - MEDINATURAL",
+    "presentacion": "50 ml",
+    "precio": 4500,
+    "imagen": null
+  },
+  {
+    "id": 1667,
+    "categoria": "Cosmética Natural",
+    "marca": "Equilibrio",
+    "producto": "ACEITE DE SESAMO X 50 CC AQUA NATURAL - MEDINATURAL",
+    "presentacion": "50 ml",
+    "precio": 4500,
+    "imagen": null
+  },
+  {
+    "id": 1668,
+    "categoria": "Cosmética Natural",
+    "marca": "Equilibrio",
+    "producto": "ACEITE DE VAINILLA X 50 CC AQUA NATURAL - MEDINATURAL",
+    "presentacion": "50 ml",
+    "precio": 4500,
+    "imagen": null
+  },
+  {
+    "id": 874,
+    "categoria": "Panificados (Sin TACC)",
+    "marca": "Destaccados",
+    "producto": "Pan s/tacc natural x 500grs",
+    "presentacion": "500g",
+    "precio": 5300,
+    "imagen": "data/images/img_45.jpg"
+  },
+  {
+    "id": 875,
+    "categoria": "Panificados (Sin TACC)",
+    "marca": "Destaccados",
+    "producto": "Pan s/tacc c/semillas x 500grs",
+    "presentacion": "500g",
+    "precio": 5500,
+    "imagen": "data/images/img_45.jpg"
+  },
+  {
+    "id": 876,
+    "categoria": "Panificados y Galletitas",
+    "marca": "La Francia",
+    "producto": "Membrillo y Chía 1KG",
+    "presentacion": "1KG",
+    "precio": 8400,
+    "imagen": "data/images/img_41.jpg"
+  },
+  {
+    "id": 877,
+    "categoria": "Panificados y Galletitas",
+    "marca": "La Francia",
+    "producto": "Algarroba y Membrillo 1KG",
+    "presentacion": "1KG",
+    "precio": 8400,
+    "imagen": null
+  },
+  {
+    "id": 878,
+    "categoria": "Panificados y Galletitas",
+    "marca": "La Francia",
+    "producto": "Batata y Chía 1KG",
+    "presentacion": "1KG",
+    "precio": 8400,
+    "imagen": null
+  },
+  {
+    "id": 879,
+    "categoria": "Panificados y Galletitas",
+    "marca": "La Francia",
+    "producto": "Membrillo y Chía 250G",
+    "presentacion": "250G",
+    "precio": 2530,
+    "imagen": null
+  },
+  {
+    "id": 880,
+    "categoria": "Panificados y Galletitas",
+    "marca": "La Francia",
+    "producto": "Algarroba y Membrillo 250G",
+    "presentacion": "250G",
+    "precio": 2530,
+    "imagen": null
+  },
+  {
+    "id": 881,
+    "categoria": "Panificados y Galletitas",
+    "marca": "La Francia",
+    "producto": "Batata y Chía 250G",
+    "presentacion": "250G",
+    "precio": 2530,
+    "imagen": null
+  },
+  {
+    "id": 882,
+    "categoria": "Panificados y Galletitas",
+    "marca": "La Francia",
+    "producto": "Tradicional 560G",
+    "presentacion": "560G",
+    "precio": 3720,
+    "imagen": null
+  },
+  {
+    "id": 883,
+    "categoria": "Panificados y Galletitas",
+    "marca": "La Francia",
+    "producto": "Multicereal 560G",
+    "presentacion": "560G",
+    "precio": 3720,
+    "imagen": null
+  },
+  {
+    "id": 884,
+    "categoria": "Panificados y Galletitas",
+    "marca": "La Francia",
+    "producto": "Doble Integral 560G",
+    "presentacion": "560G",
+    "precio": 3720,
+    "imagen": null
+  },
+  {
+    "id": 885,
+    "categoria": "Panificados y Galletitas",
+    "marca": "La Francia",
+    "producto": "Doble Salvado 560G",
+    "presentacion": "560G",
+    "precio": 3750,
+    "imagen": "data/images/img_42.jpg"
+  },
+  {
+    "id": 886,
+    "categoria": "Panificados y Galletitas",
+    "marca": "La Francia",
+    "producto": "Sin Sal 560G",
+    "presentacion": "560G",
+    "precio": 3720,
+    "imagen": null
+  },
+  {
+    "id": 887,
+    "categoria": "Panificados y Galletitas",
+    "marca": "La Francia",
+    "producto": "Tres Harinas",
+    "presentacion": "1 un",
+    "precio": 3720,
+    "imagen": null
+  },
+  {
+    "id": 888,
+    "categoria": "Panificados y Galletitas",
+    "marca": "La Francia",
+    "producto": "Selección Boniato y Bechamel",
+    "presentacion": "1 un",
+    "precio": 5150,
+    "imagen": null
+  },
+  {
+    "id": 889,
+    "categoria": "Panificados y Galletitas",
+    "marca": "La Francia",
+    "producto": "Selección Calabaza y Mascabo",
+    "presentacion": "1 un",
+    "precio": 5150,
+    "imagen": null
+  },
+  {
+    "id": 890,
+    "categoria": "Panificados y Galletitas",
+    "marca": "La Francia",
+    "producto": "Selección Zapallo y Curcuma",
+    "presentacion": "1 un",
+    "precio": 5150,
+    "imagen": null
+  },
+  {
+    "id": 891,
+    "categoria": "Panificados y Galletitas",
+    "marca": "Murke",
+    "producto": "Algarroba y Maní 25OG",
+    "presentacion": "1 un",
+    "precio": 1880,
+    "imagen": null
+  },
+  {
+    "id": 892,
+    "categoria": "Panificados y Galletitas",
+    "marca": "Murke",
+    "producto": "Algarroba y Maní 1000G",
+    "presentacion": "1000G",
+    "precio": 7250,
+    "imagen": null
+  },
+  {
+    "id": 893,
+    "categoria": "Panificados y Galletitas",
+    "marca": "Murke",
+    "producto": "Coco 250G",
+    "presentacion": "250G",
+    "precio": 1830,
+    "imagen": null
+  },
+  {
+    "id": 894,
+    "categoria": "Panificados y Galletitas",
+    "marca": "Murke",
+    "producto": "Coco 1000G",
+    "presentacion": "1000G",
+    "precio": 7150,
+    "imagen": null
+  },
+  {
+    "id": 895,
+    "categoria": "Panificados y Galletitas",
+    "marca": "Murke",
+    "producto": "Corazones de Jengibre y Miel 250G",
+    "presentacion": "250G",
+    "precio": 1880,
+    "imagen": null
+  },
+  {
+    "id": 896,
+    "categoria": "Panificados y Galletitas",
+    "marca": "Murke",
+    "producto": "Corazones de Jengibre y Miel 1000G",
+    "presentacion": "1000G",
+    "precio": 7250,
+    "imagen": null
+  },
+  {
+    "id": 897,
+    "categoria": "Panificados y Galletitas",
+    "marca": "Murke",
+    "producto": "Limón 250G",
+    "presentacion": "250G",
+    "precio": 1830,
+    "imagen": null
+  },
+  {
+    "id": 898,
+    "categoria": "Panificados y Galletitas",
+    "marca": "Murke",
+    "producto": "Limón 1000G",
+    "presentacion": "1000G",
+    "precio": 7150,
+    "imagen": null
+  },
+  {
+    "id": 899,
+    "categoria": "Panificados y Galletitas",
+    "marca": "Murke",
+    "producto": "Naranja 250G",
+    "presentacion": "250G",
+    "precio": 1830,
+    "imagen": null
+  },
+  {
+    "id": 900,
+    "categoria": "Panificados y Galletitas",
+    "marca": "Murke",
+    "producto": "Naranja 1000G",
+    "presentacion": "1000G",
+    "precio": 7150,
+    "imagen": null
+  },
+  {
+    "id": 901,
+    "categoria": "Panificados y Galletitas",
+    "marca": "Murke",
+    "producto": "Muesli 250G",
+    "presentacion": "250G",
+    "precio": 2050,
+    "imagen": null
+  },
+  {
+    "id": 902,
+    "categoria": "Panificados y Galletitas",
+    "marca": "Murke",
+    "producto": "Muesli 1000G",
+    "presentacion": "1000G",
+    "precio": 7750,
+    "imagen": null
+  },
+  {
+    "id": 903,
+    "categoria": "Panificados y Galletitas",
+    "marca": "Murke",
+    "producto": "Palitos de Anís 250G",
+    "presentacion": "250G",
+    "precio": 1830,
+    "imagen": null
+  },
+  {
+    "id": 904,
+    "categoria": "Panificados y Galletitas",
+    "marca": "Murke",
+    "producto": "Palitos de Anís 1000G",
+    "presentacion": "1000G",
+    "precio": 7150,
+    "imagen": null
+  },
+  {
+    "id": 905,
+    "categoria": "Panificados y Galletitas",
+    "marca": "Murke",
+    "producto": "Pepas Integrales 250G",
+    "presentacion": "250G",
+    "precio": 1830,
+    "imagen": null
+  },
+  {
+    "id": 906,
+    "categoria": "Panificados y Galletitas",
+    "marca": "Murke",
+    "producto": "Pepas Integrales 1000G",
+    "presentacion": "1000G",
+    "precio": 7150,
+    "imagen": null
+  },
+  {
+    "id": 907,
+    "categoria": "Panificados y Galletitas",
+    "marca": "Murke",
+    "producto": "Galletas Integrales Con Sal 250G",
+    "presentacion": "250G",
+    "precio": 1830,
+    "imagen": null
+  },
+  {
+    "id": 908,
+    "categoria": "Panificados y Galletitas",
+    "marca": "Murke",
+    "producto": "Galletas Integrales Sin Sal 250G",
+    "presentacion": "250G",
+    "precio": 1830,
+    "imagen": null
+  },
+  {
+    "id": 909,
+    "categoria": "Panificados y Galletitas",
+    "marca": "Murke",
+    "producto": "Grisines de Gluten Con Sal 200G",
+    "presentacion": "200G",
+    "precio": 1830,
+    "imagen": null
+  },
+  {
+    "id": 910,
+    "categoria": "Panificados y Galletitas",
+    "marca": "Murke",
+    "producto": "Grisines de Gluten Sin Sal 200G",
+    "presentacion": "200G",
+    "precio": 1830,
+    "imagen": null
+  },
+  {
+    "id": 911,
+    "categoria": "Panificados y Galletitas",
+    "marca": "Murke",
+    "producto": "Avena, Germen de Trigo y Lino 200G",
+    "presentacion": "200G",
+    "precio": 2750,
+    "imagen": null
+  },
+  {
+    "id": 912,
+    "categoria": "Panificados y Galletitas",
+    "marca": "Murke",
+    "producto": "Galletitas de Gluten sabor Vainilla 200G",
+    "presentacion": "200G",
+    "precio": 2480,
+    "imagen": null
+  },
+  {
+    "id": 913,
+    "categoria": "Panificados y Galletitas",
+    "marca": "Murke",
+    "producto": "Muesli  0% Azúcar, 0% Grasas Trans 200G",
+    "presentacion": "200G",
+    "precio": 3150,
+    "imagen": null
+  },
+  {
+    "id": 914,
+    "categoria": "Panificados y Galletitas",
+    "marca": "Murke",
+    "producto": "Alfajores Int 0% Azúcar 0% Grasas Trans 12UNID",
+    "presentacion": "12unidades",
+    "precio": 12000,
+    "imagen": null
+  },
+  {
+    "id": 915,
+    "categoria": "Panificados y Galletitas",
+    "marca": "Murke",
+    "producto": "Alfajores Int Chocolate 0% Azúcar 0%  Grasas Trans 12UNID",
+    "presentacion": "12unidades",
+    "precio": 16000,
+    "imagen": null
+  },
+  {
+    "id": 916,
+    "categoria": "Panificados y Galletitas",
+    "marca": "Murke",
+    "producto": "Budín 0% Azúcar, 0% Grasas Trans C/Frutas 230G",
+    "presentacion": "230G",
+    "precio": 3200,
+    "imagen": null
+  },
+  {
+    "id": 917,
+    "categoria": "Panificados y Galletitas",
+    "marca": "Murke",
+    "producto": "Budín 0% Azúcar, 0% Grasas Trans S/Frutas 230G",
+    "presentacion": "230G",
+    "precio": 3200,
+    "imagen": null
+  },
+  {
+    "id": 918,
+    "categoria": "Panificados y Galletitas",
+    "marca": "Murke",
+    "producto": "Pan integral",
+    "presentacion": "1 un",
+    "precio": 2950,
+    "imagen": null
+  },
+  {
+    "id": 919,
+    "categoria": "Panificados y Galletitas",
+    "marca": "Murke",
+    "producto": "Pan Multicereal",
+    "presentacion": "1 un",
+    "precio": 2950,
+    "imagen": null
+  },
+  {
+    "id": 920,
+    "categoria": "Panificados y Galletitas",
+    "marca": "Murke",
+    "producto": "Pre-Pizza Integral 350G",
+    "presentacion": "350G",
+    "precio": 1760,
+    "imagen": null
+  },
+  {
+    "id": 921,
+    "categoria": "Panificados y Galletitas",
+    "marca": "Murke",
+    "producto": "Pre-Pizzeta Integral 150G",
+    "presentacion": "150G",
+    "precio": 1050,
+    "imagen": null
+  },
+  {
+    "id": 922,
+    "categoria": "Panificados y Galletitas",
+    "marca": "Murke",
+    "producto": "Bollitos con Pasas de Uvas y Miel 500G",
+    "presentacion": "500G",
+    "precio": 3100,
+    "imagen": null
+  },
+  {
+    "id": 923,
+    "categoria": "Almacén",
+    "marca": "Murke",
+    "producto": "Tagliatelle Integrales 100% 400G",
+    "presentacion": "400G",
+    "precio": 2650,
+    "imagen": null
+  },
+  {
+    "id": 924,
+    "categoria": "Almacén",
+    "marca": "Murke",
+    "producto": "Tagliatelle Integrales de Espinaca 400G",
+    "presentacion": "400G",
+    "precio": 3050,
+    "imagen": null
+  },
+  {
+    "id": 925,
+    "categoria": "Panificados y Galletitas",
+    "marca": "Murke",
+    "producto": "Barra de chocolate S/ Azúcar Agregado C/Almendras x 85 g 1U",
+    "presentacion": "85 g",
+    "precio": 3420,
+    "imagen": null
+  },
+  {
+    "id": 926,
+    "categoria": "Panificados y Galletitas",
+    "marca": "Murke",
+    "producto": "Barra de chocolate S/ Azúcar Agregado C/Nueces x 85 g 1U",
+    "presentacion": "85 g",
+    "precio": 3200,
+    "imagen": null
+  },
+  {
+    "id": 927,
+    "categoria": "Panificados y Galletitas",
+    "marca": "Murke",
+    "producto": "Barra de chocolate S/ Azúcar Agregado C/Maní x 85 g 1U",
+    "presentacion": "85 g",
+    "precio": 2900,
+    "imagen": null
+  },
+  {
+    "id": 928,
+    "categoria": "Panificados y Galletitas",
+    "marca": "Murke",
+    "producto": "Tableta de chocolate S/ Azúcar Agregado x 77 g 1U",
+    "presentacion": "77 g",
+    "precio": 3050,
+    "imagen": null
+  },
+  {
+    "id": 929,
+    "categoria": "Panificados y Galletitas",
+    "marca": "Murke",
+    "producto": "Barrita Arroz Chocolate Blanco S/Azúcar SIN TACC 24U",
+    "presentacion": "1 un",
+    "precio": 18600,
+    "imagen": null
+  },
+  {
+    "id": 930,
+    "categoria": "Panificados y Galletitas",
+    "marca": "Murke",
+    "producto": "Barrita Arroz Chocolate  S/Azúcar SIN TACC 24U",
+    "presentacion": "1 un",
+    "precio": 18600,
+    "imagen": null
+  },
+  {
+    "id": 931,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Jalea real (envase 10 grs c/cucharita",
+    "presentacion": "10 g",
+    "precio": 4500,
+    "imagen": null
+  },
+  {
+    "id": 932,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Miel a granel Sólida de Alfalfa",
+    "presentacion": "1 kg",
+    "precio": 3279,
+    "imagen": null
+  },
+  {
+    "id": 933,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Miel a granel Líquida de Alfalfa",
+    "presentacion": "1 kg",
+    "precio": 3279,
+    "imagen": null
+  },
+  {
+    "id": 934,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Miel fraccionada con envase de 1Kg",
+    "presentacion": "1Kg",
+    "precio": 4900,
+    "imagen": null
+  },
+  {
+    "id": 935,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Miel fraccionada con envase de 1/2Kg",
+    "presentacion": "2Kg",
+    "precio": 3600,
+    "imagen": null
+  },
+  {
+    "id": 936,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Miel fraccionada con envase de 1/4Kg",
+    "presentacion": "4Kg",
+    "precio": 2900,
+    "imagen": null
+  },
+  {
+    "id": 937,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Polen Multifloral x kg",
+    "presentacion": "1 kg",
+    "precio": 34000,
+    "imagen": null
+  },
+  {
+    "id": 938,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Polen reconvertido Crinway x 5U",
+    "presentacion": "1 un",
+    "precio": 6200,
+    "imagen": null
+  },
+  {
+    "id": 939,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Propoleo bebible BIOBEE x 125 CC",
+    "presentacion": "125 ml",
+    "precio": 6900,
+    "imagen": null
+  },
+  {
+    "id": 940,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Propoleo bebible al 10 % x 60CC",
+    "presentacion": "60ml",
+    "precio": 7600,
+    "imagen": null
+  },
+  {
+    "id": 941,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "PALITO MIELERO X UN.",
+    "presentacion": "1 un",
+    "precio": 800,
+    "imagen": null
+  },
+  {
+    "id": 942,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Arroz Bco. doble Carolina x KG (MIN 2Kg",
+    "presentacion": "2Kg",
+    "precio": 2650,
+    "imagen": null
+  },
+  {
+    "id": 943,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Arroz Bco. largo fino 00000 x KG (MIN 2Kg",
+    "presentacion": "2Kg",
+    "precio": 1100,
+    "imagen": null
+  },
+  {
+    "id": 944,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Arroz Basmati x kg (Nacional",
+    "presentacion": "1 kg",
+    "precio": 3290,
+    "imagen": null
+  },
+  {
+    "id": 945,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Arroz Carnaroli x KG (MIN 2Kg",
+    "presentacion": "2Kg",
+    "precio": 5100,
+    "imagen": null
+  },
+  {
+    "id": 946,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Arroz Mochi x KG (MIN 2Kg",
+    "presentacion": "2Kg",
+    "precio": 2300,
+    "imagen": null
+  },
+  {
+    "id": 947,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Arroz Negro x KG (MIN 2Kg",
+    "presentacion": "2Kg",
+    "precio": 4000,
+    "imagen": null
+  },
+  {
+    "id": 948,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Arroz Koshihari (p/sushix KG (MIN 2Kg",
+    "presentacion": "2Kg",
+    "precio": 2850,
+    "imagen": null
+  },
+  {
+    "id": 949,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Arroz Integral Largo Fino (B.B.x KG (MIN 2Kg",
+    "presentacion": "2Kg",
+    "precio": 1550,
+    "imagen": null
+  },
+  {
+    "id": 950,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Arroz integral Yamaní x KG (MIN 2Kg",
+    "presentacion": "2Kg",
+    "precio": 1950,
+    "imagen": null
+  },
+  {
+    "id": 951,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Azúcar integral / Mascabo (MIN 2 Kg",
+    "presentacion": "2 Kg",
+    "precio": 4800,
+    "imagen": null
+  },
+  {
+    "id": 952,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Azúcar integral / Mascabo x 10Kg",
+    "presentacion": "10Kg",
+    "precio": 46000,
+    "imagen": null
+  },
+  {
+    "id": 1669,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Azúcar de Coco x 180grs",
+    "presentacion": "180g",
+    "precio": 4750,
+    "imagen": null
+  },
+  {
+    "id": 1670,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Azúcar de Caña Orgánica Oasis x 500grs",
+    "presentacion": "500g",
+    "precio": 4700,
+    "imagen": null
+  },
+  {
+    "id": 955,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Azúcar rubia x KG (MIN 2Kg",
+    "presentacion": "2Kg",
+    "precio": 2300,
+    "imagen": null
+  },
+  {
+    "id": 956,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Azúcar rubia x 10Kg",
+    "presentacion": "10Kg",
+    "precio": 20500,
+    "imagen": null
+  },
+  {
+    "id": 957,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Eritritol x kg",
+    "presentacion": "1 kg",
+    "precio": 24300,
+    "imagen": null
+  },
+  {
+    "id": 958,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Arándano granulado x 1Kg",
+    "presentacion": "1Kg",
+    "precio": 13200,
+    "imagen": null
+  },
+  {
+    "id": 960,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Lecitina de soja granulada x 1Kg",
+    "presentacion": "1Kg",
+    "precio": 20000,
+    "imagen": null
+  },
+  {
+    "id": 1671,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Sal marina fina x 500grs Fruto de mi tierra",
+    "presentacion": "500g",
+    "precio": 1460,
+    "imagen": null
+  },
+  {
+    "id": 1672,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Sal marina gruesa x 500grs Fruto de mi tierra",
+    "presentacion": "500g",
+    "precio": 1460,
+    "imagen": null
+  },
+  {
+    "id": 963,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Sal rosada fina suelta x Kg",
+    "presentacion": "1 kg",
+    "precio": 3800,
+    "imagen": null
+  },
+  {
+    "id": 964,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Sal rosada gruesa suelta x Kg",
+    "presentacion": "1 kg",
+    "precio": 3800,
+    "imagen": null
+  },
+  {
+    "id": 965,
+    "categoria": "Almacén",
+    "marca": "Lafor",
+    "producto": "Almohaditas 2 Salvados x 1,5Kg",
+    "presentacion": "1,5Kg",
+    "precio": 8200,
+    "imagen": null
+  },
+  {
+    "id": 966,
+    "categoria": "Almacén",
+    "marca": "Lafor",
+    "producto": "Almohaditas rellenas avellana x 2,5Kg",
+    "presentacion": "2,5Kg",
+    "precio": 22500,
+    "imagen": null
+  },
+  {
+    "id": 967,
+    "categoria": "Almacén",
+    "marca": "Lafor",
+    "producto": "Almohaditas rellenas chocolate x 2,5Kg",
+    "presentacion": "2,5Kg",
+    "precio": 22500,
+    "imagen": null
+  },
+  {
+    "id": 968,
+    "categoria": "Almacén",
+    "marca": "Lafor",
+    "producto": "Almohaditas rellenas chocolate blanco x 2,5Kg",
+    "presentacion": "2,5Kg",
+    "precio": 22500,
+    "imagen": null
+  },
+  {
+    "id": 969,
+    "categoria": "Almacén",
+    "marca": "Lafor",
+    "producto": "Almohaditas rellenas frutilla x 2,5Kg",
+    "presentacion": "2,5Kg",
+    "precio": 20000,
+    "imagen": null
+  },
+  {
+    "id": 970,
+    "categoria": "Almacén",
+    "marca": "Lafor",
+    "producto": "Almohaditas rellenas limón x 2,5Kg",
+    "presentacion": "2,5Kg",
+    "precio": 20000,
+    "imagen": null
+  },
+  {
+    "id": 971,
+    "categoria": "Almacén",
+    "marca": "Lafor",
+    "producto": "Almohaditas rellenas maní x 2,5Kg",
+    "presentacion": "2,5Kg",
+    "precio": 20000,
+    "imagen": null
+  },
+  {
+    "id": 972,
+    "categoria": "Almacén",
+    "marca": "Lafor",
+    "producto": "Anillitos avena y miel x 2Kg",
+    "presentacion": "2Kg",
+    "precio": 11300,
+    "imagen": null
+  },
+  {
+    "id": 973,
+    "categoria": "Almacén",
+    "marca": "Lafor",
+    "producto": "Anillitos frutales x 2.5Kg",
+    "presentacion": "2.5Kg",
+    "precio": 18000,
+    "imagen": "data/images/img_72.jpg"
+  },
+  {
+    "id": 974,
+    "categoria": "Almacén",
+    "marca": "Lafor",
+    "producto": "Bastoncitos de salvado x 2,5Kg",
+    "presentacion": "2,5Kg",
+    "precio": 13000,
+    "imagen": "data/images/img_80.jpg"
+  },
+  {
+    "id": 975,
+    "categoria": "Almacén",
+    "marca": "Lafor",
+    "producto": "Bolita de chocolate x 2Kg",
+    "presentacion": "2Kg",
+    "precio": 13000,
+    "imagen": "data/images/img_81.jpg"
+  },
+  {
+    "id": 976,
+    "categoria": "Almacén",
+    "marca": "Lafor",
+    "producto": "Copos de maiz azucarados x 2,5Kg",
+    "presentacion": "2,5Kg",
+    "precio": 13600,
+    "imagen": null
+  },
+  {
+    "id": 977,
+    "categoria": "Almacén",
+    "marca": "Lafor",
+    "producto": "Copos de maiz sin azucarados x 3,5Kg",
+    "presentacion": "3,5Kg",
+    "precio": 13500,
+    "imagen": null
+  },
+  {
+    "id": 978,
+    "categoria": "Almacén",
+    "marca": "Lafor",
+    "producto": "Cuadricopos sin azúcar x 2Kg",
+    "presentacion": "2Kg",
+    "precio": 10500,
+    "imagen": null
+  },
+  {
+    "id": 979,
+    "categoria": "Almacén",
+    "marca": "Lafor",
+    "producto": "Osito de avena y miel x 2Kg",
+    "presentacion": "2Kg",
+    "precio": 13000,
+    "imagen": "data/images/img_71.jpg"
+  },
+  {
+    "id": 980,
+    "categoria": "Almacén",
+    "marca": "Lafor",
+    "producto": "Osito de frutilla x 2 kg",
+    "presentacion": "2 kg",
+    "precio": 13000,
+    "imagen": "data/images/img_70.jpg"
+  },
+  {
+    "id": 981,
+    "categoria": "Almacén",
+    "marca": "Lafor",
+    "producto": "Osito de chocolate x 2,5 kg",
+    "presentacion": "2,5 kg",
+    "precio": 13000,
+    "imagen": null
+  },
+  {
+    "id": 982,
+    "categoria": "Almacén",
+    "marca": "Ying Yang",
+    "producto": "Quinoa pop x kg",
+    "presentacion": "1 kg",
+    "precio": 8500,
+    "imagen": null
+  },
+  {
+    "id": 983,
+    "categoria": "Almacén",
+    "marca": "Ying Yang",
+    "producto": "Quinoa pop x 3kg",
+    "presentacion": "3kg",
+    "precio": 24000,
+    "imagen": "data/images/img_79.jpg"
+  },
+  {
+    "id": 984,
+    "categoria": "Almacén",
+    "marca": "Ying Yang",
+    "producto": "Quinoa pop C/Algarroba x Kg",
+    "presentacion": "1 kg",
+    "precio": 8200,
+    "imagen": null
+  },
+  {
+    "id": 985,
+    "categoria": "Almacén",
+    "marca": "Ying Yang",
+    "producto": "Quinoa pop C/Algarroba x 3Kg",
+    "presentacion": "3Kg",
+    "precio": 24000,
+    "imagen": "data/images/img_78.jpg"
+  },
+  {
+    "id": 986,
+    "categoria": "Almacén",
+    "marca": "Ying Yang",
+    "producto": "Quinoa pop C/Frutos rojos x Kg",
+    "presentacion": "1 kg",
+    "precio": 8200,
+    "imagen": null
+  },
+  {
+    "id": 987,
+    "categoria": "Almacén",
+    "marca": "Ying Yang",
+    "producto": "Quinoa pop C/Frutos rojos x 3Kg",
+    "presentacion": "3Kg",
+    "precio": 24000,
+    "imagen": null
+  },
+  {
+    "id": 1673,
+    "categoria": "Almacén",
+    "marca": "Ying Yang",
+    "producto": "Quinoa pop C/ Algarroba x 100grs",
+    "presentacion": "100g",
+    "precio": 1100,
+    "imagen": null
+  },
+  {
+    "id": 1674,
+    "categoria": "Almacén",
+    "marca": "Ying Yang",
+    "producto": "Quinoa pop x 100grs",
+    "presentacion": "100g",
+    "precio": 1100,
+    "imagen": null
+  },
+  {
+    "id": 1675,
+    "categoria": "Almacén",
+    "marca": "Ying Yang",
+    "producto": "Quinoa pop Kids x 80grs",
+    "presentacion": "80g",
+    "precio": 550,
+    "imagen": null
+  },
+  {
+    "id": 1676,
+    "categoria": "Almacén",
+    "marca": "Ying Yang",
+    "producto": "Harina de maiz blanca p/ arepas x 500grs",
+    "presentacion": "500g",
+    "precio": 1650,
+    "imagen": null
+  },
+  {
+    "id": 992,
+    "categoria": "Almacén",
+    "marca": "Ying Yang",
+    "producto": "Polenta organica",
+    "presentacion": "1 un",
+    "precio": 1450,
+    "imagen": null
+  },
+  {
+    "id": 993,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Maíz inflado (Tutucax KG",
+    "presentacion": "1 un",
+    "precio": 5000,
+    "imagen": null
+  },
+  {
+    "id": 994,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Maíz inflado diet (Tutucax 800grs",
+    "presentacion": "800g",
+    "precio": 5000,
+    "imagen": null
+  },
+  {
+    "id": 995,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Arroz inflado x Kg",
+    "presentacion": "1 kg",
+    "precio": 8300,
+    "imagen": null
+  },
+  {
+    "id": 996,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Bolitas frutales de maiz x Kg",
+    "presentacion": "1 kg",
+    "precio": 7200,
+    "imagen": null
+  },
+  {
+    "id": 997,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Balon de cereal C/chocolate x kg",
+    "presentacion": "1 kg",
+    "precio": 31000,
+    "imagen": null
+  },
+  {
+    "id": 1677,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Hojuelas de arroz Patagonia G. S/ TACC x 500grs Avellanas",
+    "presentacion": "500g",
+    "precio": 4200,
+    "imagen": null
+  },
+  {
+    "id": 1678,
+    "categoria": "Almacén (Sin TACC)",
+    "marca": "Equilibrio",
+    "producto": "Hojuelas de arroz Patagonia G. S/TACC x 500grs Limon",
+    "presentacion": "500g",
+    "precio": 4200,
+    "imagen": null
+  },
+  {
+    "id": 1679,
+    "categoria": "Almacén (Sin TACC)",
+    "marca": "Equilibrio",
+    "producto": "Hojuelas de arroz Patagonia G. S/TACC x 500grs Futilla",
+    "presentacion": "500g",
+    "precio": 4200,
+    "imagen": null
+  },
+  {
+    "id": 1680,
+    "categoria": "Almacén (Sin TACC)",
+    "marca": "Equilibrio",
+    "producto": "Hojuelas de arroz Patagonia G. S/TACC x 500grs Chocolate",
+    "presentacion": "500g",
+    "precio": 4200,
+    "imagen": null
+  },
+  {
+    "id": 1002,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Coco en escamas x KG",
+    "presentacion": "1 kg",
+    "precio": 26000,
+    "imagen": null
+  },
+  {
+    "id": 1003,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Coco rallado",
+    "presentacion": "1 un",
+    "precio": 10000,
+    "imagen": null
+  },
+  {
+    "id": 1004,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Harina de coco x KG",
+    "presentacion": "1 kg",
+    "precio": 7500,
+    "imagen": null
+  },
+  {
+    "id": 1005,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Leche de coco en polvo x KG",
+    "presentacion": "1 kg",
+    "precio": 40000,
+    "imagen": null
+  },
+  {
+    "id": 1006,
+    "categoria": "Repostería",
+    "marca": "Equilibrio",
+    "producto": "Almendras con chocolate x Kg",
+    "presentacion": "1 kg",
+    "precio": 33000,
+    "imagen": null
+  },
+  {
+    "id": 1007,
+    "categoria": "Repostería",
+    "marca": "Equilibrio",
+    "producto": "Almendras con chocolate blanco x Kg",
+    "presentacion": "1 kg",
+    "precio": 24830,
+    "imagen": null
+  },
+  {
+    "id": 1008,
+    "categoria": "Repostería",
+    "marca": "Equilibrio",
+    "producto": "Avellanas con chocolate x Kg",
+    "presentacion": "1 kg",
+    "precio": 23300,
+    "imagen": null
+  },
+  {
+    "id": 1009,
+    "categoria": "Repostería",
+    "marca": "Equilibrio",
+    "producto": "Garrapiñada de girasol x Kg",
+    "presentacion": "1 kg",
+    "precio": 9300,
+    "imagen": null
+  },
+  {
+    "id": 1010,
+    "categoria": "Repostería",
+    "marca": "Equilibrio",
+    "producto": "Garrapiñada de maní x Kg",
+    "presentacion": "1 kg",
+    "precio": 9700,
+    "imagen": null
+  },
+  {
+    "id": 1011,
+    "categoria": "Repostería",
+    "marca": "Equilibrio",
+    "producto": "Garrapiñada de almendras x Kg",
+    "presentacion": "1 kg",
+    "precio": 24500,
+    "imagen": null
+  },
+  {
+    "id": 1012,
+    "categoria": "Repostería",
+    "marca": "Equilibrio",
+    "producto": "Pasas de uva con chocolate x Kg",
+    "presentacion": "1 kg",
+    "precio": 24800,
+    "imagen": null
+  },
+  {
+    "id": 1013,
+    "categoria": "Repostería",
+    "marca": "Equilibrio",
+    "producto": "Mani con chocolate x Kg",
+    "presentacion": "1 kg",
+    "precio": 18800,
+    "imagen": null
+  },
+  {
+    "id": 1014,
+    "categoria": "Repostería",
+    "marca": "Equilibrio",
+    "producto": "Maíz frito y salado x Kg",
+    "presentacion": "1 kg",
+    "precio": 14500,
+    "imagen": null
+  },
+  {
+    "id": 1015,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Almendras Guara x kg",
+    "presentacion": "1 kg",
+    "precio": 24800,
+    "imagen": null
+  },
+  {
+    "id": 1016,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Almendras Nonpareil x Kg",
+    "presentacion": "1 kg",
+    "precio": 25800,
+    "imagen": null
+  },
+  {
+    "id": 1017,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Ananá en rodajas x Kg",
+    "presentacion": "1 kg",
+    "precio": 25000,
+    "imagen": null
+  },
+  {
+    "id": 1018,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Ananá en cubos x Kg Natural",
+    "presentacion": "1 kg",
+    "precio": 20500,
+    "imagen": null
+  },
+  {
+    "id": 1019,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Ananá en cubos x Kg Verde",
+    "presentacion": "1 kg",
+    "precio": 20500,
+    "imagen": null
+  },
+  {
+    "id": 1020,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Ananá en cubos x Kg Rojo",
+    "presentacion": "1 kg",
+    "precio": 20500,
+    "imagen": null
+  },
+  {
+    "id": 1021,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Arándano deshidratado Rojo x Kg",
+    "presentacion": "1 kg",
+    "precio": 20000,
+    "imagen": null
+  },
+  {
+    "id": 1022,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Avellanas peladas x Kg",
+    "presentacion": "1 kg",
+    "precio": 39990,
+    "imagen": null
+  },
+  {
+    "id": 1023,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Banana deshidratada x Kg",
+    "presentacion": "1 kg",
+    "precio": 14600,
+    "imagen": null
+  },
+  {
+    "id": 1024,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Cáscara de naranja glaseada x 2 Kg",
+    "presentacion": "2 Kg",
+    "precio": 23500,
+    "imagen": null
+  },
+  {
+    "id": 1025,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Cascara de naranja glaseada x Kg",
+    "presentacion": "1 kg",
+    "precio": 12200,
+    "imagen": null
+  },
+  {
+    "id": 1026,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Castañas de cajú naturales x Kg",
+    "presentacion": "1 kg",
+    "precio": 18000,
+    "imagen": null
+  },
+  {
+    "id": 1027,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Ciruelas sin carozo bombón ( MIN 2 Kg",
+    "presentacion": "2 Kg",
+    "precio": 9500,
+    "imagen": null
+  },
+  {
+    "id": 1028,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Ciruelas sin carozo bombón x 5Kg",
+    "presentacion": "5Kg",
+    "precio": 45500,
+    "imagen": null
+  },
+  {
+    "id": 1029,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Ciruelas Presidente grandes x 5Kg Hfrut",
+    "presentacion": "5Kg",
+    "precio": 73500,
+    "imagen": null
+  },
+  {
+    "id": 1030,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Ciruelas Presidente grandes (MIN 2Kg",
+    "presentacion": "2Kg",
+    "precio": 15500,
+    "imagen": null
+  },
+  {
+    "id": 1031,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Datiles Egipcios x kg",
+    "presentacion": "1 kg",
+    "precio": 10500,
+    "imagen": null
+  },
+  {
+    "id": 1032,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Dulce de Membrillo Artesanal Pons x 5Kg",
+    "presentacion": "5Kg",
+    "precio": 19860,
+    "imagen": null
+  },
+  {
+    "id": 1033,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Dulce de Membrillo Artesanal Pons x 600GR",
+    "presentacion": "600GR",
+    "precio": 3800,
+    "imagen": null
+  },
+  {
+    "id": 1034,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Dulce de Membrillo bocadito Pons x 24UNID",
+    "presentacion": "24unidades",
+    "precio": 11500,
+    "imagen": null
+  },
+  {
+    "id": 1604,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Fruta Nevada x 2KG",
+    "presentacion": "2KG",
+    "precio": 18000,
+    "imagen": null
+  },
+  {
+    "id": 1035,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Frutilla desidratada x KG",
+    "presentacion": "1 kg",
+    "precio": 24500,
+    "imagen": null
+  },
+  {
+    "id": 1036,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Frutas Escurridas x 10KG",
+    "presentacion": "10KG",
+    "precio": 52000,
+    "imagen": null
+  },
+  {
+    "id": 1037,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Frutas Escurridas x KG",
+    "presentacion": "1 kg",
+    "precio": 6000,
+    "imagen": null
+  },
+  {
+    "id": 1038,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Frutas Glaseadas Mupay x 2KG",
+    "presentacion": "2KG",
+    "precio": 23000,
+    "imagen": null
+  },
+  {
+    "id": 1039,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Frutas Glaseadas Mupay x KG",
+    "presentacion": "1 kg",
+    "precio": 12000,
+    "imagen": null
+  },
+  {
+    "id": 1040,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Higos Negros x 5 kg",
+    "presentacion": "5 kg",
+    "precio": 74000,
+    "imagen": null
+  },
+  {
+    "id": 1041,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Higos Negros x KG",
+    "presentacion": "1 kg",
+    "precio": 15300,
+    "imagen": null
+  },
+  {
+    "id": 1042,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Jengibre glaseado x KG",
+    "presentacion": "1 kg",
+    "precio": 20600,
+    "imagen": null
+  },
+  {
+    "id": 1681,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Manzana deshidratada x 500 grs",
+    "presentacion": "500 g",
+    "precio": 10800,
+    "imagen": null
+  },
+  {
+    "id": 1044,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Medallón de Durazno x kg",
+    "presentacion": "1 kg",
+    "precio": 15500,
+    "imagen": null
+  },
+  {
+    "id": 1045,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Nueces Mariposas extra light  x KG",
+    "presentacion": "1 kg",
+    "precio": 17000,
+    "imagen": null
+  },
+  {
+    "id": 1046,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Nueces Pecan mariposas x KG",
+    "presentacion": "1 kg",
+    "precio": 28500,
+    "imagen": null
+  },
+  {
+    "id": 1047,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Castañas de Para/ Nuez Brasil X KG",
+    "presentacion": "1 kg",
+    "precio": 45800,
+    "imagen": null
+  },
+  {
+    "id": 1048,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Papaya en cubos,trozos o gajos x KG",
+    "presentacion": "1 kg",
+    "precio": 17300,
+    "imagen": null
+  },
+  {
+    "id": 1049,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Pasas de Uva Rubias x KG",
+    "presentacion": "1 kg",
+    "precio": 11400,
+    "imagen": null
+  },
+  {
+    "id": 1050,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Pasas de Uva S/S Jumbo x 10KG",
+    "presentacion": "10KG",
+    "precio": 58600,
+    "imagen": null
+  },
+  {
+    "id": 1051,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Pasas de Uva S/S Jumbo (MIN 2 KG",
+    "presentacion": "2 KG",
+    "precio": 7000,
+    "imagen": null
+  },
+  {
+    "id": 1052,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Pasas de Uva S/S Sultanina x 10KG",
+    "presentacion": "10KG",
+    "precio": 44500,
+    "imagen": null
+  },
+  {
+    "id": 1053,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Pasas de Uva S/S Sultanina( MIN 2 KG",
+    "presentacion": "2 KG",
+    "precio": 4900,
+    "imagen": null
+  },
+  {
+    "id": 1054,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Cerezas Glaseadas x KG",
+    "presentacion": "1 kg",
+    "precio": 20000,
+    "imagen": null
+  },
+  {
+    "id": 1055,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "(PREMIUM",
+    "presentacion": "1 un",
+    "precio": 17000,
+    "imagen": null
+  },
+  {
+    "id": 1056,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Pistachio salado x KG",
+    "presentacion": "1 kg",
+    "precio": 44950,
+    "imagen": null
+  },
+  {
+    "id": 1057,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Pistachio S/Cascara Tostado x KG",
+    "presentacion": "1 kg",
+    "precio": 74500,
+    "imagen": null
+  },
+  {
+    "id": 1058,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Pomelo en cáscara glaseado x KG",
+    "presentacion": "1 kg",
+    "precio": 15500,
+    "imagen": null
+  },
+  {
+    "id": 1059,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Datiles Israel x KG",
+    "presentacion": "1 kg",
+    "precio": 19900,
+    "imagen": null
+  },
+  {
+    "id": 1060,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Mix Frutos Secos (sin pasas, sin mani",
+    "presentacion": "1 un",
+    "precio": 24200,
+    "imagen": null
+  },
+  {
+    "id": 1061,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "nueces, alm. y mani",
+    "presentacion": "1 un",
+    "precio": 12000,
+    "imagen": null
+  },
+  {
+    "id": 1062,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "y mani",
+    "presentacion": "1 un",
+    "precio": 18200,
+    "imagen": null
+  },
+  {
+    "id": 1063,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "avell., nueces, alm.",
+    "presentacion": "1 un",
+    "precio": 15300,
+    "imagen": null
+  },
+  {
+    "id": 1064,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "pasas, mani, anana y ban.",
+    "presentacion": "1 un",
+    "precio": 12000,
+    "imagen": null
+  },
+  {
+    "id": 1065,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "mani salado, semilla zapallo y girasol",
+    "presentacion": "1 un",
+    "precio": 12000,
+    "imagen": null
+  },
+  {
+    "id": 1066,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "mani con choco, almendras, banana",
+    "presentacion": "1 un",
+    "precio": 17500,
+    "imagen": null
+  },
+  {
+    "id": 1067,
+    "categoria": "Almacén",
+    "marca": "Andiamo",
+    "producto": "Fideo moñito de avena y remolacha x 350 grs",
+    "presentacion": "350 g",
+    "precio": 3700,
+    "imagen": null
+  },
+  {
+    "id": 1068,
+    "categoria": "Almacén",
+    "marca": "Andiamo",
+    "producto": "Fideo tirabuzon de avena y zanahoria x 350 grs",
+    "presentacion": "350 g",
+    "precio": 3350,
+    "imagen": null
+  },
+  {
+    "id": 1069,
+    "categoria": "Almacén",
+    "marca": "Andiamo",
+    "producto": "Fideo tirabuzon de avena y remolacha x 350 grs",
+    "presentacion": "350 g",
+    "precio": 3350,
+    "imagen": null
+  },
+  {
+    "id": 1070,
+    "categoria": "Almacén",
+    "marca": "Andiamo",
+    "producto": "Fideo tirabuzon de avena integral x 350 grs",
+    "presentacion": "350 g",
+    "precio": 3350,
+    "imagen": null
+  },
+  {
+    "id": 1071,
+    "categoria": "Almacén (Sin TACC)",
+    "marca": "Equilibrio",
+    "producto": "Fideos de arroz fino natural x 280 grs",
+    "presentacion": "280 g",
+    "precio": 2830,
+    "imagen": null
+  },
+  {
+    "id": 1072,
+    "categoria": "Almacén (Sin TACC)",
+    "marca": "Equilibrio",
+    "producto": "Fideos de arroz fino espinaca x 280 grs",
+    "presentacion": "280 g",
+    "precio": 2830,
+    "imagen": null
+  },
+  {
+    "id": 1073,
+    "categoria": "Almacén (Sin TACC)",
+    "marca": "Equilibrio",
+    "producto": "Fideos de arroz fino morron x 280 grs",
+    "presentacion": "280 g",
+    "precio": 2830,
+    "imagen": null
+  },
+  {
+    "id": 1682,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Fideos mostacholes de maiz x 350 grs",
+    "presentacion": "350 g",
+    "precio": 2800,
+    "imagen": null
+  },
+  {
+    "id": 1683,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Fideos mostacholes de arroz al huevo x 350 grs",
+    "presentacion": "350 g",
+    "precio": 2800,
+    "imagen": null
+  },
+  {
+    "id": 1684,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Fideos mostacholes de arroz espinaca x 350 grs",
+    "presentacion": "350 g",
+    "precio": 2800,
+    "imagen": null
+  },
+  {
+    "id": 1685,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Fideos mostacholes de arroz morron x 350 grs",
+    "presentacion": "350 g",
+    "precio": 2800,
+    "imagen": null
+  },
+  {
+    "id": 1686,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Fideos mostacholes de arroz natural x 350 grs",
+    "presentacion": "350 g",
+    "precio": 2800,
+    "imagen": null
+  },
+  {
+    "id": 1687,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Panko X 300 grs",
+    "presentacion": "300 g",
+    "precio": 4800,
+    "imagen": null
+  },
+  {
+    "id": 1080,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "(para pan",
+    "presentacion": "1 un",
+    "precio": 3350,
+    "imagen": null
+  },
+  {
+    "id": 1688,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Rebozador x 500 grs",
+    "presentacion": "500 g",
+    "precio": 1750,
+    "imagen": null
+  },
+  {
+    "id": 1082,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Fécula de maíz x 5 KG",
+    "presentacion": "5 KG",
+    "precio": 9600,
+    "imagen": null
+  },
+  {
+    "id": 1083,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Fécula de mandioca x KG (MIN 2KG",
+    "presentacion": "2KG",
+    "precio": 3200,
+    "imagen": null
+  },
+  {
+    "id": 1084,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Germen de trigo x KG (MIN 2KG",
+    "presentacion": "2KG",
+    "precio": 2000,
+    "imagen": null
+  },
+  {
+    "id": 1085,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Harina de Algarroba x KG",
+    "presentacion": "1 kg",
+    "precio": 4300,
+    "imagen": null
+  },
+  {
+    "id": 1086,
+    "categoria": "Almacén (Sin TACC)",
+    "marca": "Equilibrio",
+    "producto": "Harina de Almendra x KG Cumana sin tacc",
+    "presentacion": "1 kg",
+    "precio": 33500,
+    "imagen": "data/images/img_190.jpg"
+  },
+  {
+    "id": 1087,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Harina de Almendra C/piel x KG",
+    "presentacion": "1 kg",
+    "precio": 27900,
+    "imagen": null
+  },
+  {
+    "id": 1088,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Harina de Arroz integral x KG (MIN 2KG",
+    "presentacion": "2KG",
+    "precio": 1800,
+    "imagen": null
+  },
+  {
+    "id": 1089,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Harina de Arroz x KG (MIN 2KG",
+    "presentacion": "2KG",
+    "precio": 1700,
+    "imagen": null
+  },
+  {
+    "id": 1090,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Harina de soja ( MIN 2 KG",
+    "presentacion": "2 KG",
+    "precio": 2100,
+    "imagen": null
+  },
+  {
+    "id": 1091,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Harina de Avena x KG (MIN 2KG",
+    "presentacion": "2KG",
+    "precio": 2200,
+    "imagen": null
+  },
+  {
+    "id": 1092,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Harina de Centeno x KG (MIN 2KG",
+    "presentacion": "2KG",
+    "precio": 2400,
+    "imagen": null
+  },
+  {
+    "id": 1093,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Harina de Chía x KG (MIN 2KG",
+    "presentacion": "2KG",
+    "precio": 3200,
+    "imagen": null
+  },
+  {
+    "id": 1094,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Harina de Garbanzos x KG (MIN 2KG",
+    "presentacion": "2KG",
+    "precio": 1800,
+    "imagen": null
+  },
+  {
+    "id": 1095,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Harina de Lino (Linazax KG (MIN 2KG",
+    "presentacion": "2KG",
+    "precio": 4000,
+    "imagen": null
+  },
+  {
+    "id": 1096,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Harina para arepas \"MI PAN\" x KG (MIN 2KG",
+    "presentacion": "2KG",
+    "precio": 2700,
+    "imagen": null
+  },
+  {
+    "id": 1097,
+    "categoria": "Almacén (Sin TACC)",
+    "marca": "Equilibrio",
+    "producto": "Harina de trigo sarraceno x 500GR (Sin TACC",
+    "presentacion": "500GR",
+    "precio": 3600,
+    "imagen": null
+  },
+  {
+    "id": 1098,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Harina Integral Fina organica (Min 2KG",
+    "presentacion": "2KG",
+    "precio": 1200,
+    "imagen": null
+  },
+  {
+    "id": 1099,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Harina Paraguaya x KG (MIN 2KG",
+    "presentacion": "2KG",
+    "precio": 2350,
+    "imagen": null
+  },
+  {
+    "id": 1605,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Harina La Picara X 10 KG (ORGANICA",
+    "presentacion": "10 KG",
+    "precio": 9600,
+    "imagen": null
+  },
+  {
+    "id": 1606,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Psylium molido x 1 KG",
+    "presentacion": "1 KG",
+    "precio": 45620,
+    "imagen": null
+  },
+  {
+    "id": 1102,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Salvado de avena x KG (MIN 2KG",
+    "presentacion": "2KG",
+    "precio": 2300,
+    "imagen": null
+  },
+  {
+    "id": 1103,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Salvado de trigo x KG (MIN 2KG",
+    "presentacion": "2KG",
+    "precio": 1700,
+    "imagen": null
+  },
+  {
+    "id": 1104,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Harina de centeno Costal xKG",
+    "presentacion": "1 un",
+    "precio": 2390,
+    "imagen": null
+  },
+  {
+    "id": 1105,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Semolin x KG (MIN 2KG",
+    "presentacion": "2KG",
+    "precio": 2400,
+    "imagen": null
+  },
+  {
+    "id": 1106,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Harina de arveja X KG",
+    "presentacion": "1 kg",
+    "precio": 1750,
+    "imagen": null
+  },
+  {
+    "id": 1107,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Albumina de huevo X KG",
+    "presentacion": "1 kg",
+    "precio": 46000,
+    "imagen": null
+  },
+  {
+    "id": 1108,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "THAING - Harina de tapioca X 500 grs",
+    "presentacion": "500 g",
+    "precio": 6600,
+    "imagen": null
+  },
+  {
+    "id": 1109,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Avena Instantánea x KG (MIN 2KG",
+    "presentacion": "2KG",
+    "precio": 2100,
+    "imagen": null
+  },
+  {
+    "id": 1110,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Avena Tradicional x KG (MIN 2KG",
+    "presentacion": "2KG",
+    "precio": 2100,
+    "imagen": null
+  },
+  {
+    "id": 1111,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Avena Gruesa x KG (MIN 2KG",
+    "presentacion": "2KG",
+    "precio": 2100,
+    "imagen": null
+  },
+  {
+    "id": 1112,
+    "categoria": "Almacén (Sin TACC)",
+    "marca": "Equilibrio",
+    "producto": "Avena Cumana x 400GR S/TACC",
+    "presentacion": "400GR",
+    "precio": 2500,
+    "imagen": null
+  },
+  {
+    "id": 1689,
+    "categoria": "Almacén (Sin TACC)",
+    "marca": "Equilibrio",
+    "producto": "Harina de avena Cumana x 400 grs S/TACC",
+    "presentacion": "400 g",
+    "precio": 2500,
+    "imagen": null
+  },
+  {
+    "id": 1114,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Arrope de Chañar x 660GR (Mupay",
+    "presentacion": "660GR",
+    "precio": 5260,
+    "imagen": null
+  },
+  {
+    "id": 1115,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Arrope de Tuna x 660GR (Mupay",
+    "presentacion": "660GR",
+    "precio": 5100,
+    "imagen": null
+  },
+  {
+    "id": 1116,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Tomates disecados 1° calidad x KG",
+    "presentacion": "1 kg",
+    "precio": 18500,
+    "imagen": null
+  },
+  {
+    "id": 1117,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Tomates disecados 1° calidad x 500GR",
+    "presentacion": "500GR",
+    "precio": 11000,
+    "imagen": null
+  },
+  {
+    "id": 1118,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Hongos de pino x KG",
+    "presentacion": "1 kg",
+    "precio": 35000,
+    "imagen": null
+  },
+  {
+    "id": 1119,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Hongos de pino x 500GR",
+    "presentacion": "500GR",
+    "precio": 18500,
+    "imagen": null
+  },
+  {
+    "id": 1120,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Flan dietetico chocolate caja x 48GR",
+    "presentacion": "48GR",
+    "precio": 2837,
+    "imagen": null
+  },
+  {
+    "id": 1121,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Flan dietetico dulce de leche caja x 32GR",
+    "presentacion": "32GR",
+    "precio": 2260,
+    "imagen": null
+  },
+  {
+    "id": 1122,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Flan dietetico vainilla caja x 32GR",
+    "presentacion": "32GR",
+    "precio": 2450,
+    "imagen": null
+  },
+  {
+    "id": 1123,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "pomelo",
+    "presentacion": "1 un",
+    "precio": 2400,
+    "imagen": null
+  },
+  {
+    "id": 1124,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Postre dietetico de chocolate caja x 42GR",
+    "presentacion": "42GR",
+    "precio": 3100,
+    "imagen": null
+  },
+  {
+    "id": 1125,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Postre dietetico de dulce de leche caja x 36GR",
+    "presentacion": "36GR",
+    "precio": 3000,
+    "imagen": null
+  },
+  {
+    "id": 1126,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Postre dietetico de vainilla caja x 36GR",
+    "presentacion": "36GR",
+    "precio": 3000,
+    "imagen": null
+  },
+  {
+    "id": 1127,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Rocio vegetal dietafrit oliva",
+    "presentacion": "1 un",
+    "precio": 7000,
+    "imagen": "data/images/img_215.jpg"
+  },
+  {
+    "id": 1128,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Rocio vegetal dietafrit manteca",
+    "presentacion": "1 un",
+    "precio": 5705,
+    "imagen": "data/images/img_214.jpg"
+  },
+  {
+    "id": 1129,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Rocio vegetal dietafrit girasol",
+    "presentacion": "1 un",
+    "precio": 5850,
+    "imagen": "data/images/img_213.jpg"
+  },
+  {
+    "id": 1130,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Mijo pelado x KG",
+    "presentacion": "1 kg",
+    "precio": 4000,
+    "imagen": null
+  },
+  {
+    "id": 1131,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Mix de semillas x KG (chía, sesamo, girasol tostado y lino",
+    "presentacion": "1 kg",
+    "precio": 4600,
+    "imagen": null
+  },
+  {
+    "id": 1132,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Semillas de Amapola x KG",
+    "presentacion": "1 kg",
+    "precio": 17200,
+    "imagen": null
+  },
+  {
+    "id": 1133,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Semillas de Amaranto x KG",
+    "presentacion": "1 kg",
+    "precio": 4600,
+    "imagen": null
+  },
+  {
+    "id": 1134,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Semillas de Chía x KG",
+    "presentacion": "1 kg",
+    "precio": 8900,
+    "imagen": null
+  },
+  {
+    "id": 1135,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Semillas de Girasol pelado x KG (MIN 2KG",
+    "presentacion": "2KG",
+    "precio": 4300,
+    "imagen": null
+  },
+  {
+    "id": 1136,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Semillas de Lino x KG (MIN 2KG",
+    "presentacion": "2KG",
+    "precio": 3500,
+    "imagen": null
+  },
+  {
+    "id": 1137,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Semillas de Lino Dorado X KG",
+    "presentacion": "1 kg",
+    "precio": 14000,
+    "imagen": null
+  },
+  {
+    "id": 1138,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Semillas de Quinoa ROJA x KG",
+    "presentacion": "1 kg",
+    "precio": 11800,
+    "imagen": null
+  },
+  {
+    "id": 1139,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Semillas de Quinua X KG",
+    "presentacion": "1 kg",
+    "precio": 11800,
+    "imagen": null
+  },
+  {
+    "id": 1140,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Semillas de Zapallo x KG",
+    "presentacion": "1 kg",
+    "precio": 21200,
+    "imagen": null
+  },
+  {
+    "id": 1141,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Semillas Zaragatona o Psyllium x KG",
+    "presentacion": "1 kg",
+    "precio": 22000,
+    "imagen": null
+  },
+  {
+    "id": 1142,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Sesamo negro x KG",
+    "presentacion": "1 kg",
+    "precio": 10700,
+    "imagen": null
+  },
+  {
+    "id": 1143,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Sésamo blanco pelado x KG",
+    "presentacion": "1 kg",
+    "precio": 7850,
+    "imagen": null
+  },
+  {
+    "id": 1144,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Sésamo Integral x KG",
+    "presentacion": "1 kg",
+    "precio": 3950,
+    "imagen": null
+  },
+  {
+    "id": 1145,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Arveja verde partida x KG (MIN 2KG",
+    "presentacion": "2KG",
+    "precio": 1400,
+    "imagen": null
+  },
+  {
+    "id": 1146,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Arveja verde entera x KG (MIN 2KG",
+    "presentacion": "2KG",
+    "precio": 1100,
+    "imagen": null
+  },
+  {
+    "id": 1147,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Garbanzo mediano 9MM x KG (MIN 2KG",
+    "presentacion": "2KG",
+    "precio": 3000,
+    "imagen": null
+  },
+  {
+    "id": 1148,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Lenteja nacional x KG (MIN 2KG",
+    "presentacion": "2KG",
+    "precio": 2700,
+    "imagen": null
+  },
+  {
+    "id": 1149,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Lentejón nacional 6MM x KG (MIN 2KG",
+    "presentacion": "2KG",
+    "precio": 2900,
+    "imagen": null
+  },
+  {
+    "id": 1150,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Lentejas turcas x KG (MIN 2KG",
+    "presentacion": "2KG",
+    "precio": 5920,
+    "imagen": null
+  },
+  {
+    "id": 1151,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Lupines x KG (MIN 2KG",
+    "presentacion": "2KG",
+    "precio": 5000,
+    "imagen": null
+  },
+  {
+    "id": 1152,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Maíz pisado blanco x KG (MIN 2KG",
+    "presentacion": "2KG",
+    "precio": 3000,
+    "imagen": null
+  },
+  {
+    "id": 1153,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Maíz pisado colorado x KG (MIN 2KG",
+    "presentacion": "2KG",
+    "precio": 1400,
+    "imagen": null
+  },
+  {
+    "id": 1154,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Maíz pisingallo x KG (MIN 2KG",
+    "presentacion": "2KG",
+    "precio": 1950,
+    "imagen": null
+  },
+  {
+    "id": 1155,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Poroto Adzuki x KG (MIN 2KG",
+    "presentacion": "2KG",
+    "precio": 4500,
+    "imagen": null
+  },
+  {
+    "id": 1156,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Poroto Alubia x KG (MIN 2KG",
+    "presentacion": "2KG",
+    "precio": 3870,
+    "imagen": null
+  },
+  {
+    "id": 1157,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Poroto Colorado x KG (MIN 2KG",
+    "presentacion": "2KG",
+    "precio": 3800,
+    "imagen": null
+  },
+  {
+    "id": 1158,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Poroto de Soja entera  x KG (MIN 2KG",
+    "presentacion": "2KG",
+    "precio": 1300,
+    "imagen": null
+  },
+  {
+    "id": 1159,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Poroto manteca x KG (MIN 2KG",
+    "presentacion": "2KG",
+    "precio": 4100,
+    "imagen": null
+  },
+  {
+    "id": 1160,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Poroto Mung x KG (MIN 2KG",
+    "presentacion": "2KG",
+    "precio": 1950,
+    "imagen": null
+  },
+  {
+    "id": 1161,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Poroto Negro x KG (MIN 2KG",
+    "presentacion": "2KG",
+    "precio": 3000,
+    "imagen": null
+  },
+  {
+    "id": 1162,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Poroto Pallares x KG (MIN 2KG",
+    "presentacion": "2KG",
+    "precio": 6000,
+    "imagen": null
+  },
+  {
+    "id": 1163,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Trigo burgol fino x KG (MIN 2KG",
+    "presentacion": "2KG",
+    "precio": 4200,
+    "imagen": null
+  },
+  {
+    "id": 1164,
+    "categoria": "Almacén (Sin TACC)",
+    "marca": "Equilibrio",
+    "producto": "Trigo sarraceno x 500GR Sin Tacc",
+    "presentacion": "500GR",
+    "precio": 4200,
+    "imagen": null
+  },
+  {
+    "id": 1165,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Cous Cous francés x kG",
+    "presentacion": "1 kg",
+    "precio": 11200,
+    "imagen": null
+  },
+  {
+    "id": 1166,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Levadura Nutrileva natural x 500 grs",
+    "presentacion": "500 g",
+    "precio": 13800,
+    "imagen": null
+  },
+  {
+    "id": 1167,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Levadura Nutrileva natural x 200 grs",
+    "presentacion": "200 g",
+    "precio": 7400,
+    "imagen": null
+  },
+  {
+    "id": 1168,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Levadura Nutrileva manzana x 200 grs",
+    "presentacion": "200 g",
+    "precio": 8400,
+    "imagen": null
+  },
+  {
+    "id": 1169,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Levadura Nutrileva queso x 200 grs",
+    "presentacion": "200 g",
+    "precio": 8900,
+    "imagen": null
+  },
+  {
+    "id": 1170,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Levadura Levex Masa Madre caja x 25 sobres",
+    "presentacion": "25 sobres",
+    "precio": 36500,
+    "imagen": null
+  },
+  {
+    "id": 1171,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Levadura Levex caja x 25 sobres",
+    "presentacion": "25 sobres",
+    "precio": 29600,
+    "imagen": null
+  },
+  {
+    "id": 1172,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Levadura Titán x 200 grs",
+    "presentacion": "200 g",
+    "precio": 13400,
+    "imagen": null
+  },
+  {
+    "id": 1173,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Agar Agar x 12 sobres de 10 grs c/u (Cajita exhibidora",
+    "presentacion": "12 sobres",
+    "precio": 25600,
+    "imagen": null
+  },
+  {
+    "id": 1174,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Algas Kombu x 100grs",
+    "presentacion": "100g",
+    "precio": 8900,
+    "imagen": null
+  },
+  {
+    "id": 1175,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Algas Nory en escamas x 100 grs",
+    "presentacion": "100 g",
+    "precio": 6200,
+    "imagen": null
+  },
+  {
+    "id": 1176,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Caldo de verdura con sal x 10 sobres",
+    "presentacion": "10 sobres",
+    "precio": 1350,
+    "imagen": null
+  },
+  {
+    "id": 1177,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Caldo de verdura con sal x kg",
+    "presentacion": "1 kg",
+    "precio": 7700,
+    "imagen": null
+  },
+  {
+    "id": 1178,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Caldo de verdura sin sal x 10 sobres",
+    "presentacion": "10 sobres",
+    "precio": 1350,
+    "imagen": null
+  },
+  {
+    "id": 1179,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Caldo de verdura sin sal x kg",
+    "presentacion": "1 kg",
+    "precio": 7700,
+    "imagen": null
+  },
+  {
+    "id": 1180,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Sal marina fina Macrozen x 500 grs",
+    "presentacion": "500 g",
+    "precio": 2050,
+    "imagen": "data/images/img_186.jpg"
+  },
+  {
+    "id": 1181,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Sal marina gruesa Macrozen x 500 grs",
+    "presentacion": "500 g",
+    "precio": 2050,
+    "imagen": "data/images/img_187.jpg"
+  },
+  {
+    "id": 1182,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Sal sin sodio 4 pimientas x 70 grs",
+    "presentacion": "70 g",
+    "precio": 3380,
+    "imagen": null
+  },
+  {
+    "id": 1183,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Sal sin sodio con apio x 70 grs",
+    "presentacion": "70 g",
+    "precio": 3380,
+    "imagen": null
+  },
+  {
+    "id": 1184,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Sal sin sodio con especias x 70 grs",
+    "presentacion": "70 g",
+    "precio": 3380,
+    "imagen": null
+  },
+  {
+    "id": 1185,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Sal sin sodio con hierbas x 70 grs",
+    "presentacion": "70 g",
+    "precio": 3380,
+    "imagen": null
+  },
+  {
+    "id": 1186,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Sal sin sodio natural x 70 grs",
+    "presentacion": "70 g",
+    "precio": 3380,
+    "imagen": null
+  },
+  {
+    "id": 1187,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Sal rosada del Himalaya x 500 grs",
+    "presentacion": "500 g",
+    "precio": 3100,
+    "imagen": null
+  },
+  {
+    "id": 1188,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Sopa crema x 5 Sobres",
+    "presentacion": "5 Sobres",
+    "precio": 1550,
+    "imagen": null
+  },
+  {
+    "id": 1189,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Sopa juliana x kG",
+    "presentacion": "1 kg",
+    "precio": 19200,
+    "imagen": null
+  },
+  {
+    "id": 1190,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Algas Nori planchas x 6 un",
+    "presentacion": "6 un",
+    "precio": 9000,
+    "imagen": null
+  },
+  {
+    "id": 1191,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Algas Nori planchas x 12 un",
+    "presentacion": "12 un",
+    "precio": 16250,
+    "imagen": null
+  },
+  {
+    "id": 1192,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Esterillas de bambú para sushi",
+    "presentacion": "1 un",
+    "precio": 3100,
+    "imagen": null
+  },
+  {
+    "id": 1193,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Arroz Koshihari (para sushix kg (mínimo 2 kg",
+    "presentacion": "2 kg",
+    "precio": 2370,
+    "imagen": null
+  },
+  {
+    "id": 1194,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Vinagre de arroz CHI HOUSE x 250 CC",
+    "presentacion": "250 ml",
+    "precio": 5200,
+    "imagen": null
+  },
+  {
+    "id": 1195,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Aceite de chía Nutrasen x 250 ml",
+    "presentacion": "250 ml",
+    "precio": 10800,
+    "imagen": null
+  },
+  {
+    "id": 1196,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Aceite de coco Cosaco x 360 ml (Neutro",
+    "presentacion": "360 ml",
+    "precio": 6450,
+    "imagen": null
+  },
+  {
+    "id": 1197,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Aceite de lino organico x 250 cc Nutrasen",
+    "presentacion": "250 ml",
+    "precio": 6400,
+    "imagen": null
+  },
+  {
+    "id": 1198,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Aceite de Oliva extra virgen x 500 cc Olivi (PET",
+    "presentacion": "500 ml",
+    "precio": 10700,
+    "imagen": null
+  },
+  {
+    "id": 1199,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Aceite de Oliva extra virgen x 500 cc Olivi (vidrio",
+    "presentacion": "500 ml",
+    "precio": 14000,
+    "imagen": null
+  },
+  {
+    "id": 1200,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Aceite de Sésamo x 250 cc Nutrasen",
+    "presentacion": "250 ml",
+    "precio": 6850,
+    "imagen": null
+  },
+  {
+    "id": 1201,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Aceite de Palta Extra x 250 CC",
+    "presentacion": "250 ml",
+    "precio": 12400,
+    "imagen": null
+  },
+  {
+    "id": 1202,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Aceite de Uva x 500 cc Olivi (vidrio",
+    "presentacion": "500 ml",
+    "precio": 6800,
+    "imagen": null
+  },
+  {
+    "id": 1203,
+    "categoria": "Almacén",
+    "marca": "Casalta",
+    "producto": "Aceto balsámico ahumado x 400 ml",
+    "presentacion": "400 ml",
+    "precio": 3300,
+    "imagen": null
+  },
+  {
+    "id": 1204,
+    "categoria": "Almacén",
+    "marca": "Casalta",
+    "producto": "Aceto balsámico clásico x 400 ml",
+    "presentacion": "400 ml",
+    "precio": 5300,
+    "imagen": null
+  },
+  {
+    "id": 1205,
+    "categoria": "Almacén",
+    "marca": "Casalta",
+    "producto": "Aceto balsámico reducción x 400 ml",
+    "presentacion": "400 ml",
+    "precio": 6900,
+    "imagen": null
+  },
+  {
+    "id": 1206,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Salsa de soja Fumeiga x 500 ml",
+    "presentacion": "500 ml",
+    "precio": 4600,
+    "imagen": null
+  },
+  {
+    "id": 1207,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Salsa de soja bajo sodio Fumeiga x 500 ml",
+    "presentacion": "500 ml",
+    "precio": 4600,
+    "imagen": null
+  },
+  {
+    "id": 1208,
+    "categoria": "Almacén",
+    "marca": "Sakanashi",
+    "producto": "Salsa de soja x 450cc",
+    "presentacion": "450ml",
+    "precio": 4600,
+    "imagen": null
+  },
+  {
+    "id": 1209,
+    "categoria": "Almacén",
+    "marca": "Napus",
+    "producto": "Neutro x 360 cc",
+    "presentacion": "360 ml",
+    "precio": 7180,
+    "imagen": null
+  },
+  {
+    "id": 1210,
+    "categoria": "Almacén",
+    "marca": "Napus",
+    "producto": "Neutro x 660 cc",
+    "presentacion": "660 ml",
+    "precio": 9970,
+    "imagen": null
+  },
+  {
+    "id": 1211,
+    "categoria": "Almacén",
+    "marca": "Napus",
+    "producto": "Virgen x 200 cc",
+    "presentacion": "200 ml",
+    "precio": 7452,
+    "imagen": null
+  },
+  {
+    "id": 1212,
+    "categoria": "Almacén",
+    "marca": "Napus",
+    "producto": "Virgen x 360 cc",
+    "presentacion": "360 ml",
+    "precio": 11300,
+    "imagen": null
+  },
+  {
+    "id": 1213,
+    "categoria": "Almacén",
+    "marca": "Entrenuts",
+    "producto": "Neutro x 200 cc",
+    "presentacion": "200 ml",
+    "precio": 4200,
+    "imagen": null
+  },
+  {
+    "id": 1214,
+    "categoria": "Almacén",
+    "marca": "Entrenuts",
+    "producto": "Neutro x 360 cc",
+    "presentacion": "360 ml",
+    "precio": 6200,
+    "imagen": "data/images/img_224.jpg"
+  },
+  {
+    "id": 1215,
+    "categoria": "Almacén",
+    "marca": "Entrenuts",
+    "producto": "Virgen x 200 cc",
+    "presentacion": "200 ml",
+    "precio": 6900,
+    "imagen": "data/images/img_223.jpg"
+  },
+  {
+    "id": 1216,
+    "categoria": "Almacén",
+    "marca": "Entrenuts",
+    "producto": "Virgen x 360 cc",
+    "presentacion": "360 ml",
+    "precio": 11800,
+    "imagen": null
+  },
+  {
+    "id": 1217,
+    "categoria": "Almacén",
+    "marca": "Integra",
+    "producto": "surtidos x 12 unid.",
+    "presentacion": "12 unidades",
+    "precio": 21350,
+    "imagen": null
+  },
+  {
+    "id": 1218,
+    "categoria": "Almacén",
+    "marca": "Integra",
+    "producto": "Bocaditos de higo c/nuez x 36 unid. (apto celiacos",
+    "presentacion": "36 unidades",
+    "precio": 23500,
+    "imagen": null
+  },
+  {
+    "id": 1219,
+    "categoria": "Almacén",
+    "marca": "Integra",
+    "producto": "Bocaditos de higo bañado en chocolate x 36 unid.",
+    "presentacion": "36 unidades",
+    "precio": 23500,
+    "imagen": null
+  },
+  {
+    "id": 1220,
+    "categoria": "Almacén",
+    "marca": "Integra",
+    "producto": "Trufas Integrales de chocolate x 36 unid.",
+    "presentacion": "36 unidades",
+    "precio": 32600,
+    "imagen": null
+  },
+  {
+    "id": 1221,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Caramelos ácidos x 750 grs",
+    "presentacion": "750 g",
+    "precio": 5800,
+    "imagen": null
+  },
+  {
+    "id": 1222,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Caramelos Ambay x 750 grs",
+    "presentacion": "750 g",
+    "precio": 9000,
+    "imagen": null
+  },
+  {
+    "id": 1223,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Caramelos arándanos x 750 grs",
+    "presentacion": "750 g",
+    "precio": 9000,
+    "imagen": null
+  },
+  {
+    "id": 1224,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Caramelos caramentol x 750 grs",
+    "presentacion": "750 g",
+    "precio": 8800,
+    "imagen": null
+  },
+  {
+    "id": 1225,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Caramelos Caramiel x 750 grs",
+    "presentacion": "750 g",
+    "precio": 7700,
+    "imagen": null
+  },
+  {
+    "id": 1226,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Caramelos Garganprol x 750 grs",
+    "presentacion": "750 g",
+    "precio": 13500,
+    "imagen": null
+  },
+  {
+    "id": 1227,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Caramelos jengibre x 750 grs",
+    "presentacion": "750 g",
+    "precio": 7300,
+    "imagen": null
+  },
+  {
+    "id": 1228,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Caramelos manzanilla y miel x 750 grs",
+    "presentacion": "750 g",
+    "precio": 4260,
+    "imagen": null
+  },
+  {
+    "id": 1229,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Caramelos tilo x 750 grs",
+    "presentacion": "750 g",
+    "precio": 9450,
+    "imagen": null
+  },
+  {
+    "id": 1230,
+    "categoria": "Almacén",
+    "marca": "Dulri",
+    "producto": "Stevia en polvo x 90 grs",
+    "presentacion": "90 g",
+    "precio": 5880,
+    "imagen": "data/images/img_75.jpg"
+  },
+  {
+    "id": 1231,
+    "categoria": "Almacén",
+    "marca": "Dulri",
+    "producto": "Stevia líquida x 120 cc",
+    "presentacion": "120 ml",
+    "precio": 4600,
+    "imagen": "data/images/img_76.jpg"
+  },
+  {
+    "id": 1232,
+    "categoria": "Almacén",
+    "marca": "Dulri",
+    "producto": "Stevia caja x 60 grs especial para cocinar",
+    "presentacion": "60 g",
+    "precio": 4660,
+    "imagen": null
+  },
+  {
+    "id": 1233,
+    "categoria": "Almacén",
+    "marca": "Dulri",
+    "producto": "Stevia en sobresitos (cajas por 50 un.",
+    "presentacion": "50 un",
+    "precio": 2700,
+    "imagen": null
+  },
+  {
+    "id": 1234,
+    "categoria": "Almacén",
+    "marca": "Dulri",
+    "producto": "Stevia en sobresitos (cajas por 100 un.",
+    "presentacion": "100 un",
+    "precio": 3900,
+    "imagen": "data/images/img_74.jpg"
+  },
+  {
+    "id": 1235,
+    "categoria": "Almacén",
+    "marca": "Dulri",
+    "producto": "Stevia en sobresitos cristalizada (cajas por 30 un.",
+    "presentacion": "30 un",
+    "precio": 3400,
+    "imagen": null
+  },
+  {
+    "id": 1236,
+    "categoria": "Almacén",
+    "marca": "Dulri",
+    "producto": "Stevia cristalizada x 300 grs",
+    "presentacion": "300 g",
+    "precio": 9350,
+    "imagen": null
+  },
+  {
+    "id": 1237,
+    "categoria": "Almacén",
+    "marca": "Yeruti",
+    "producto": "Bloques de fruta Nro. 1 x 100 Un. de 9,5 grs. c/u",
+    "presentacion": "100 Un",
+    "precio": 17660,
+    "imagen": null
+  },
+  {
+    "id": 1238,
+    "categoria": "Almacén",
+    "marca": "Yeruti",
+    "producto": "Bloques de fruta Nro. 1 x UNIDAD",
+    "presentacion": "1 un",
+    "precio": 260,
+    "imagen": null
+  },
+  {
+    "id": 1239,
+    "categoria": "Almacén",
+    "marca": "Yeruti",
+    "producto": "Torta de Fruta",
+    "presentacion": "15 Un",
+    "precio": 26200,
+    "imagen": null
+  },
+  {
+    "id": 1240,
+    "categoria": "Almacén (Sin TACC)",
+    "marca": "Entrenuts",
+    "producto": "Pasta de maní Yeruti x 380 grs (Vegana y sin TACC",
+    "presentacion": "380 g",
+    "precio": 3445,
+    "imagen": null
+  },
+  {
+    "id": 1241,
+    "categoria": "Almacén",
+    "marca": "Entrenuts",
+    "producto": "Pasta de maní nutrasem x350 grs",
+    "presentacion": "350 g",
+    "precio": 3830,
+    "imagen": null
+  },
+  {
+    "id": 1242,
+    "categoria": "Almacén",
+    "marca": "Entrenuts",
+    "producto": "Pasta de sésamo Nutrasem x 350 grs",
+    "presentacion": "350 g",
+    "precio": 6000,
+    "imagen": null
+  },
+  {
+    "id": 1243,
+    "categoria": "Almacén",
+    "marca": "Entrenuts",
+    "producto": "Pasta de tahini Nutrasem x 350 gms",
+    "presentacion": "1 un",
+    "precio": 9500,
+    "imagen": null
+  },
+  {
+    "id": 1244,
+    "categoria": "Almacén",
+    "marca": "Entrenuts",
+    "producto": "Pasta de mani",
+    "presentacion": "1 un",
+    "precio": 3300,
+    "imagen": null
+  },
+  {
+    "id": 1690,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Maní boliviano con cascara tostado x KG",
+    "presentacion": "1 kg",
+    "precio": 6400,
+    "imagen": null
+  },
+  {
+    "id": 1246,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Maní crudo x KG",
+    "presentacion": "1 kg",
+    "precio": 5200,
+    "imagen": null
+  },
+  {
+    "id": 1247,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Maní japones x KG",
+    "presentacion": "1 kg",
+    "precio": 6600,
+    "imagen": null
+  },
+  {
+    "id": 1248,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Maní repelado con sal x KG",
+    "presentacion": "1 kg",
+    "precio": 3500,
+    "imagen": null
+  },
+  {
+    "id": 1249,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Maní repelado sin sal x KG",
+    "presentacion": "1 kg",
+    "precio": 3500,
+    "imagen": null
+  },
+  {
+    "id": 1250,
+    "categoria": "Almacén (Sin TACC)",
+    "marca": "Equilibrio",
+    "producto": "Mermelada Singluko Arándano, Frutilla (Con SplendaSin tacc",
+    "presentacion": "1 un",
+    "precio": 5350,
+    "imagen": null
+  },
+  {
+    "id": 1251,
+    "categoria": "Almacén (Sin TACC)",
+    "marca": "Equilibrio",
+    "producto": "Mermelada Singluko naranja, higo, durazno, (Con SplendaSin tacc",
+    "presentacion": "1 un",
+    "precio": 3700,
+    "imagen": null
+  },
+  {
+    "id": 1252,
+    "categoria": "Almacén (Sin TACC)",
+    "marca": "Equilibrio",
+    "producto": "Mermelada Singluko C/STEVIA (Higo, Durazno, Naranja, Ciruela, ZapalloSin tacc",
+    "presentacion": "1 un",
+    "precio": 3700,
+    "imagen": null
+  },
+  {
+    "id": 1607,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Mermelada Singluko C/STEVIA Arándano",
+    "presentacion": "1 un",
+    "precio": 5350,
+    "imagen": null
+  },
+  {
+    "id": 1608,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Mermelada Singluco C/STEVIA Frutilla",
+    "presentacion": "1 un",
+    "precio": 4300,
+    "imagen": null
+  },
+  {
+    "id": 1254,
+    "categoria": "Almacén (Sin TACC)",
+    "marca": "Equilibrio",
+    "producto": "Dulce de leche Singluko C/STEVIA x 440 gs Sin tacc",
+    "presentacion": "440 g",
+    "precio": 6100,
+    "imagen": null
+  },
+  {
+    "id": 1256,
+    "categoria": "Hierbas Medicinales",
+    "marca": "Oasis",
+    "producto": "Extracto de café verde x 66 cc.",
+    "presentacion": "66 ml",
+    "precio": 4300,
+    "imagen": null
+  },
+  {
+    "id": 1257,
+    "categoria": "Hierbas Medicinales",
+    "marca": "Oasis",
+    "producto": "Tintura madre de Arándano x 66 cc.",
+    "presentacion": "66 ml",
+    "precio": 3600,
+    "imagen": null
+  },
+  {
+    "id": 1258,
+    "categoria": "Hierbas Medicinales",
+    "marca": "Oasis",
+    "producto": "Tintura madre de Cardo Mariano x 66 cc.",
+    "presentacion": "66 ml",
+    "precio": 5350,
+    "imagen": null
+  },
+  {
+    "id": 1259,
+    "categoria": "Hierbas Medicinales",
+    "marca": "Oasis",
+    "producto": "Tintura madre de Carqueja x 66 cc.",
+    "presentacion": "66 ml",
+    "precio": 3170,
+    "imagen": "data/images/img_244.jpg"
+  },
+  {
+    "id": 1260,
+    "categoria": "Hierbas Medicinales",
+    "marca": "Oasis",
+    "producto": "Tintura madre de Centella Asiatica x 66 cc.",
+    "presentacion": "66 ml",
+    "precio": 3200,
+    "imagen": null
+  },
+  {
+    "id": 1261,
+    "categoria": "Hierbas Medicinales",
+    "marca": "Oasis",
+    "producto": "Tintura madre de Cola de caballo x 66 cc.",
+    "presentacion": "66 ml",
+    "precio": 3600,
+    "imagen": null
+  },
+  {
+    "id": 1262,
+    "categoria": "Hierbas Medicinales",
+    "marca": "Oasis",
+    "producto": "Tintura madre de Curcuma x 66 cc.",
+    "presentacion": "66 ml",
+    "precio": 3850,
+    "imagen": null
+  },
+  {
+    "id": 1263,
+    "categoria": "Hierbas Medicinales",
+    "marca": "Oasis",
+    "producto": "Tintura madre de Damiana x 66 cc",
+    "presentacion": "66 ml",
+    "precio": 3850,
+    "imagen": null
+  },
+  {
+    "id": 1264,
+    "categoria": "Hierbas Medicinales",
+    "marca": "Oasis",
+    "producto": "Tintura madre de Diente de León x 66 cc",
+    "presentacion": "66 ml",
+    "precio": 3600,
+    "imagen": null
+  },
+  {
+    "id": 1265,
+    "categoria": "Hierbas Medicinales",
+    "marca": "Oasis",
+    "producto": "Tintura madre de Fucus x 66 cc.",
+    "presentacion": "66 ml",
+    "precio": 3400,
+    "imagen": "data/images/img_244.jpg"
+  },
+  {
+    "id": 1266,
+    "categoria": "Hierbas Medicinales",
+    "marca": "Oasis",
+    "producto": "Tintura madre de Garcinia x 66 cc.",
+    "presentacion": "66 ml",
+    "precio": 5350,
+    "imagen": null
+  },
+  {
+    "id": 1267,
+    "categoria": "Hierbas Medicinales",
+    "marca": "Oasis",
+    "producto": "Tintura madre de Ginko Biloba x 66 cc.",
+    "presentacion": "66 ml",
+    "precio": 4300,
+    "imagen": "data/images/img_244.jpg"
+  },
+  {
+    "id": 1268,
+    "categoria": "Hierbas Medicinales",
+    "marca": "Oasis",
+    "producto": "Tintura madre de Ginseng x 66 cc.",
+    "presentacion": "66 ml",
+    "precio": 3850,
+    "imagen": null
+  },
+  {
+    "id": 1269,
+    "categoria": "Hierbas Medicinales",
+    "marca": "Oasis",
+    "producto": "Tintura madre de Hisopo x 66 cc.",
+    "presentacion": "66 ml",
+    "precio": 3400,
+    "imagen": null
+  },
+  {
+    "id": 1270,
+    "categoria": "Hierbas Medicinales",
+    "marca": "Oasis",
+    "producto": "Tintura madre de Jengibre x 66 cc.",
+    "presentacion": "66 ml",
+    "precio": 4300,
+    "imagen": null
+  },
+  {
+    "id": 1271,
+    "categoria": "Hierbas Medicinales",
+    "marca": "Oasis",
+    "producto": "Tintura madre de Lapacho x 66 cc.",
+    "presentacion": "66 ml",
+    "precio": 3600,
+    "imagen": null
+  },
+  {
+    "id": 1272,
+    "categoria": "Hierbas Medicinales",
+    "marca": "Oasis",
+    "producto": "Tintura madre de Malva x 66 cc.",
+    "presentacion": "66 ml",
+    "precio": 3850,
+    "imagen": null
+  },
+  {
+    "id": 1273,
+    "categoria": "Hierbas Medicinales",
+    "marca": "Oasis",
+    "producto": "Tintura madre de Manzanilla x 66 cc",
+    "presentacion": "66 ml",
+    "precio": 3600,
+    "imagen": null
+  },
+  {
+    "id": 1274,
+    "categoria": "Hierbas Medicinales",
+    "marca": "Oasis",
+    "producto": "Tintura Melena de Leon x 66 cc",
+    "presentacion": "66 ml",
+    "precio": 10730,
+    "imagen": null
+  },
+  {
+    "id": 1275,
+    "categoria": "Hierbas Medicinales",
+    "marca": "Oasis",
+    "producto": "Tintura madre de Melisa x 66 cc.",
+    "presentacion": "66 ml",
+    "precio": 3800,
+    "imagen": null
+  },
+  {
+    "id": 1276,
+    "categoria": "Hierbas Medicinales",
+    "marca": "Oasis",
+    "producto": "Tintura madre de Ortiga x 66 cc.",
+    "presentacion": "66 ml",
+    "precio": 3600,
+    "imagen": null
+  },
+  {
+    "id": 1277,
+    "categoria": "Hierbas Medicinales",
+    "marca": "Oasis",
+    "producto": "Tintura madre de Pasionaria x 66 cc.",
+    "presentacion": "66 ml",
+    "precio": 4270,
+    "imagen": null
+  },
+  {
+    "id": 1278,
+    "categoria": "Hierbas Medicinales",
+    "marca": "Oasis",
+    "producto": "Tintura madre de Regaliz x 66 cc.",
+    "presentacion": "66 ml",
+    "precio": 2586,
+    "imagen": null
+  },
+  {
+    "id": 1279,
+    "categoria": "Hierbas Medicinales",
+    "marca": "Oasis",
+    "producto": "Tintura madre de Sen x 66 cc.",
+    "presentacion": "66 ml",
+    "precio": 4300,
+    "imagen": null
+  },
+  {
+    "id": 1280,
+    "categoria": "Hierbas Medicinales",
+    "marca": "Oasis",
+    "producto": "Tintura madre de Spirulina x 66 cc.",
+    "presentacion": "66 ml",
+    "precio": 5350,
+    "imagen": null
+  },
+  {
+    "id": 1281,
+    "categoria": "Hierbas Medicinales",
+    "marca": "Oasis",
+    "producto": "Tintura madre de Tilo x 66 cc",
+    "presentacion": "66 ml",
+    "precio": 4270,
+    "imagen": null
+  },
+  {
+    "id": 1282,
+    "categoria": "Hierbas Medicinales",
+    "marca": "Oasis",
+    "producto": "Tintura madre de Uva ursi x 66 cc.",
+    "presentacion": "66 ml",
+    "precio": 4300,
+    "imagen": null
+  },
+  {
+    "id": 1283,
+    "categoria": "Hierbas Medicinales",
+    "marca": "Oasis",
+    "producto": "Tintura madre de Valeriana x 66 cc.",
+    "presentacion": "66 ml",
+    "precio": 5350,
+    "imagen": null
+  },
+  {
+    "id": 1284,
+    "categoria": "Hierbas Medicinales",
+    "marca": "Oasis",
+    "producto": "Tintura madre de Yacon x 66 cc.",
+    "presentacion": "66 ml",
+    "precio": 5350,
+    "imagen": null
+  },
+  {
+    "id": 1285,
+    "categoria": "Almacén",
+    "marca": "Cuarto Creciente",
+    "producto": "Jugo de arándano x 1,5 lts. c/stevia (apto celiacos",
+    "presentacion": "1,5 L",
+    "precio": 2380,
+    "imagen": "data/images/img_228.jpg"
+  },
+  {
+    "id": 1286,
+    "categoria": "Almacén",
+    "marca": "Cuarto Creciente",
+    "producto": "Jugo de arándano c/chía x 1,5 lts. c/stevia (apto",
+    "presentacion": "1,5 L",
+    "precio": 2380,
+    "imagen": null
+  },
+  {
+    "id": 1287,
+    "categoria": "Almacén",
+    "marca": "Cuarto Creciente",
+    "producto": "Mermelada de arandano con stevia x 280 grs",
+    "presentacion": "280 g",
+    "precio": 4950,
+    "imagen": null
+  },
+  {
+    "id": 1288,
+    "categoria": "Almacén",
+    "marca": "Cuarto Creciente",
+    "producto": "Mermelada de durazno con stevia x 280 grs",
+    "presentacion": "280 g",
+    "precio": 4500,
+    "imagen": null
+  },
+  {
+    "id": 1289,
+    "categoria": "Almacén",
+    "marca": "Cuarto Creciente",
+    "producto": "Mermelada de higo con stevia x 280 grs",
+    "presentacion": "280 g",
+    "precio": 4500,
+    "imagen": "data/images/img_230.jpg"
+  },
+  {
+    "id": 1290,
+    "categoria": "Almacén",
+    "marca": "Cuarto Creciente",
+    "producto": "Mermelada de ciruela con stevia x 280 grs",
+    "presentacion": "280 g",
+    "precio": 4500,
+    "imagen": null
+  },
+  {
+    "id": 1291,
+    "categoria": "Almacén",
+    "marca": "Cuarto Creciente",
+    "producto": "Mermelada de frutos rojos con stevia x 280 grs",
+    "presentacion": "280 g",
+    "precio": 4950,
+    "imagen": null
+  },
+  {
+    "id": 1292,
+    "categoria": "Almacén",
+    "marca": "Cuarto Creciente",
+    "producto": "Mermelada de frutilla con stevia x 280 grs",
+    "presentacion": "280 g",
+    "precio": 4200,
+    "imagen": "data/images/img_229.jpg"
+  },
+  {
+    "id": 1293,
+    "categoria": "Almacén",
+    "marca": "Cuarto Creciente",
+    "producto": "Mermelada de durazno con semillas dietéticas x 400 grs",
+    "presentacion": "400 g",
+    "precio": 3900,
+    "imagen": null
+  },
+  {
+    "id": 1294,
+    "categoria": "Almacén",
+    "marca": "Cuarto Creciente",
+    "producto": "Mermelada de higo con semillas dietéticas x 400 grs",
+    "presentacion": "400 g",
+    "precio": 3900,
+    "imagen": null
+  },
+  {
+    "id": 1295,
+    "categoria": "Almacén",
+    "marca": "Cuarto Creciente",
+    "producto": "Mermelada de ciruela con semillas dietéticas x 400 grs",
+    "presentacion": "400 g",
+    "precio": 3900,
+    "imagen": null
+  },
+  {
+    "id": 1296,
+    "categoria": "Almacén",
+    "marca": "Cuarto Creciente",
+    "producto": "Mermelada de frutos rojos con semillas dietéticas x 400 grs",
+    "presentacion": "400 g",
+    "precio": 4300,
+    "imagen": null
+  },
+  {
+    "id": 1297,
+    "categoria": "Almacén",
+    "marca": "Cuarto Creciente",
+    "producto": "Mermelada de frutilla con semillas dietéticas x 400 grs",
+    "presentacion": "400 g",
+    "precio": 4300,
+    "imagen": null
+  },
+  {
+    "id": 1298,
+    "categoria": "Almacén",
+    "marca": "Cuarto Creciente",
+    "producto": "Mermelada de arandanocon semillas dietéticas x 400 grs",
+    "presentacion": "400 g",
+    "precio": 4300,
+    "imagen": "data/images/img_232.jpg"
+  },
+  {
+    "id": 1299,
+    "categoria": "Almacén",
+    "marca": "Lens",
+    "producto": "Humo líquido x 120 ml",
+    "presentacion": "120 ml",
+    "precio": 5300,
+    "imagen": null
+  },
+  {
+    "id": 1300,
+    "categoria": "Almacén",
+    "marca": "Lens",
+    "producto": "Humo líquido x 500 ml",
+    "presentacion": "500 ml",
+    "precio": 7530,
+    "imagen": null
+  },
+  {
+    "id": 1301,
+    "categoria": "Infusiones",
+    "marca": "Equilibrio",
+    "producto": "Té verde BAN - CHA x 100 grs.",
+    "presentacion": "100 g",
+    "precio": 3450,
+    "imagen": null
+  },
+  {
+    "id": 1302,
+    "categoria": "Infusiones",
+    "marca": "Equilibrio",
+    "producto": "Té verde MATCHA x 50 grs.",
+    "presentacion": "50 g",
+    "precio": 4600,
+    "imagen": null
+  },
+  {
+    "id": 1303,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Harina de vino x 50 grs.",
+    "presentacion": "50 g",
+    "precio": 3000,
+    "imagen": null
+  },
+  {
+    "id": 1304,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Capsulas de graviola + noni x 90 comp.",
+    "presentacion": "90 comprimidos",
+    "precio": 12300,
+    "imagen": "data/images/img_286.jpg"
+  },
+  {
+    "id": 1305,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Capsulas de graviola x 90 comp.",
+    "presentacion": "90 comprimidos",
+    "precio": 12300,
+    "imagen": null
+  },
+  {
+    "id": 1306,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Capsulas de maca + polen x 90 comp.",
+    "presentacion": "90 comprimidos",
+    "precio": 12300,
+    "imagen": null
+  },
+  {
+    "id": 1307,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Capsulas de maca x 90 comp.",
+    "presentacion": "90 comprimidos",
+    "precio": 12300,
+    "imagen": null
+  },
+  {
+    "id": 1308,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Capsulas de moringa x 90 comp.",
+    "presentacion": "90 comprimidos",
+    "precio": 12300,
+    "imagen": "data/images/img_291.jpg"
+  },
+  {
+    "id": 1309,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Capsulas de noni x 90 comp.",
+    "presentacion": "90 comprimidos",
+    "precio": 12300,
+    "imagen": null
+  },
+  {
+    "id": 1310,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Capsulas de prostasan x 90 comp.",
+    "presentacion": "90 comprimidos",
+    "precio": 12300,
+    "imagen": "data/images/img_285.jpg"
+  },
+  {
+    "id": 1311,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Capsulas de uña de gato x 90 comp.",
+    "presentacion": "90 comprimidos",
+    "precio": 12300,
+    "imagen": null
+  },
+  {
+    "id": 1312,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Capsulas de uña de gato + cartilago x 90 comp.",
+    "presentacion": "90 comprimidos",
+    "precio": 12300,
+    "imagen": null
+  },
+  {
+    "id": 1313,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Capsulas de yacon x 90 comp.",
+    "presentacion": "90 comprimidos",
+    "precio": 12300,
+    "imagen": "data/images/img_288.jpg"
+  },
+  {
+    "id": 1314,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Cartílago de tiburón x 100 grs",
+    "presentacion": "100 g",
+    "precio": 1200,
+    "imagen": null
+  },
+  {
+    "id": 1315,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Colágeno en polvo x 100 grs",
+    "presentacion": "100 g",
+    "precio": 1200,
+    "imagen": null
+  },
+  {
+    "id": 1316,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Graviola en polvo x 90 grs",
+    "presentacion": "90 g",
+    "precio": 1200,
+    "imagen": null
+  },
+  {
+    "id": 1317,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Harina de coca en polvo 150 grs",
+    "presentacion": "150 g",
+    "precio": 1200,
+    "imagen": null
+  },
+  {
+    "id": 1318,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Jarabe de graviola x 500 ml.",
+    "presentacion": "500 ml",
+    "precio": 15800,
+    "imagen": null
+  },
+  {
+    "id": 1319,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Maca Kalpa x 500 grs",
+    "presentacion": "500 g",
+    "precio": 3000,
+    "imagen": null
+  },
+  {
+    "id": 1320,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Maca Negra x 150 grs",
+    "presentacion": "150 g",
+    "precio": 2800,
+    "imagen": null
+  },
+  {
+    "id": 1321,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Moringa en polvo x un",
+    "presentacion": "1 un",
+    "precio": 1200,
+    "imagen": null
+  },
+  {
+    "id": 1322,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "CANNABIS POLVO",
+    "presentacion": "1 un",
+    "precio": 1380,
+    "imagen": null
+  },
+  {
+    "id": 1323,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "natural x 500 grs. x un.",
+    "presentacion": "500 g",
+    "precio": 2800,
+    "imagen": null
+  },
+  {
+    "id": 1324,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "natural x 500 grs. pack x 12 un",
+    "presentacion": "500 g",
+    "precio": 32000,
+    "imagen": null
+  },
+  {
+    "id": 1325,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Yerba antiácida \"Ajedrez\" x 500 grs. x un.",
+    "presentacion": "500 g",
+    "precio": 2500,
+    "imagen": null
+  },
+  {
+    "id": 1326,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Yerba antiácida \"Ajedrez\" x 500 grs. x Pack x 10 un.",
+    "presentacion": "500 g",
+    "precio": 21800,
+    "imagen": null
+  },
+  {
+    "id": 1327,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Yerba Organica Taihang x 500 grs. x un.",
+    "presentacion": "500 g",
+    "precio": 4700,
+    "imagen": null
+  },
+  {
+    "id": 1691,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Yerba Organica Tucangua x 1 Kg",
+    "presentacion": "1 Kg",
+    "precio": 8000,
+    "imagen": null
+  },
+  {
+    "id": 1329,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Yerba antiácida Sin palos, solo hoja \"Ajedrez\" x 500 grs. x un.",
+    "presentacion": "500 g",
+    "precio": 2500,
+    "imagen": null
+  },
+  {
+    "id": 1330,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Yerba antiácida Sin palos, solo hoja \"Ajedrez\" x 500 grs. pack x 10 un.",
+    "presentacion": "500 g",
+    "precio": 21800,
+    "imagen": null
+  },
+  {
+    "id": 1331,
+    "categoria": "Almacén",
+    "marca": "Oasis",
+    "producto": "Yerba mate Compuesta con cedron y stevia x 500 grs",
+    "presentacion": "500 g",
+    "precio": 4000,
+    "imagen": null
+  },
+  {
+    "id": 1332,
+    "categoria": "Almacén",
+    "marca": "Oasis",
+    "producto": "Yerba mate Con Arándano x 500 grs",
+    "presentacion": "500 g",
+    "precio": 4100,
+    "imagen": null
+  },
+  {
+    "id": 1333,
+    "categoria": "Almacén",
+    "marca": "Oasis",
+    "producto": "Yerba mate Detox x 500 grs",
+    "presentacion": "500 g",
+    "precio": 4000,
+    "imagen": null
+  },
+  {
+    "id": 1334,
+    "categoria": "Almacén",
+    "marca": "Oasis",
+    "producto": "Yerba mate Orgánica x 500 grs",
+    "presentacion": "500 g",
+    "precio": 5900,
+    "imagen": null
+  },
+  {
+    "id": 1335,
+    "categoria": "Almacén",
+    "marca": "Oasis",
+    "producto": "Yerba mate Tostada (Antiácida.x 500 grs.",
+    "presentacion": "500 g",
+    "precio": 4780,
+    "imagen": null
+  },
+  {
+    "id": 1336,
+    "categoria": "Almacén",
+    "marca": "Oasis",
+    "producto": "Yerba mate Dieta x 500 grs.",
+    "presentacion": "500 g",
+    "precio": 4000,
+    "imagen": null
+  },
+  {
+    "id": 1337,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Yerba mate c/palo x 10kg Ajedrez",
+    "presentacion": "10kg",
+    "precio": 37000,
+    "imagen": null
+  },
+  {
+    "id": 1338,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Yerba mate s/palo x 10kg Ajedrez",
+    "presentacion": "10kg",
+    "precio": 43000,
+    "imagen": null
+  },
+  {
+    "id": 1339,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Yerba mate orgánica Tucanguá x 500grs",
+    "presentacion": "500g",
+    "precio": 4400,
+    "imagen": null
+  },
+  {
+    "id": 1340,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Yerba mate Tucanguá x 1 kg",
+    "presentacion": "1 kg",
+    "precio": 4650,
+    "imagen": null
+  },
+  {
+    "id": 1341,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Yerba mate Tucanguá x 500grs",
+    "presentacion": "500g",
+    "precio": 2750,
+    "imagen": null
+  },
+  {
+    "id": 1342,
+    "categoria": "Infusiones",
+    "marca": "Oasis",
+    "producto": "Te África x 25 saq. (Melisa, coriandro, tomillo, cedrón",
+    "presentacion": "25 saq",
+    "precio": 3900,
+    "imagen": null
+  },
+  {
+    "id": 1343,
+    "categoria": "Infusiones",
+    "marca": "Oasis",
+    "producto": "Te Arabia x 25 saq. (Jengibre, menta, limón, cáscara de naranja",
+    "presentacion": "25 saq",
+    "precio": 3900,
+    "imagen": null
+  },
+  {
+    "id": 1344,
+    "categoria": "Infusiones",
+    "marca": "Oasis",
+    "producto": "Te Asia x 20 saq. (Té verde, Anís y jengibre",
+    "presentacion": "20 saq",
+    "precio": 4500,
+    "imagen": null
+  },
+  {
+    "id": 1345,
+    "categoria": "Infusiones",
+    "marca": "Oasis",
+    "producto": "Té Citricos x 20 saq. (Cáscara de naranja, Pomelo y Limón",
+    "presentacion": "20 saq",
+    "precio": 3900,
+    "imagen": null
+  },
+  {
+    "id": 1346,
+    "categoria": "Infusiones",
+    "marca": "Oasis",
+    "producto": "Te de Arándano x 20 saq.",
+    "presentacion": "20 saq",
+    "precio": 3900,
+    "imagen": "data/images/img_243.jpg"
+  },
+  {
+    "id": 1347,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "(Nuevo",
+    "presentacion": "1 un",
+    "precio": 3120,
+    "imagen": null
+  },
+  {
+    "id": 1348,
+    "categoria": "Infusiones",
+    "marca": "Equilibrio",
+    "producto": "Te de Frutilla x 20 saq.",
+    "presentacion": "20 saq",
+    "precio": 3900,
+    "imagen": null
+  },
+  {
+    "id": 1349,
+    "categoria": "Infusiones",
+    "marca": "Equilibrio",
+    "producto": "Té de Jazmín x 20 saq.",
+    "presentacion": "20 saq",
+    "precio": 3900,
+    "imagen": null
+  },
+  {
+    "id": 1350,
+    "categoria": "Infusiones",
+    "marca": "Equilibrio",
+    "producto": "Té de Manzana, Canela y Miel x 20 saq.",
+    "presentacion": "20 saq",
+    "precio": 3900,
+    "imagen": null
+  },
+  {
+    "id": 1351,
+    "categoria": "Infusiones",
+    "marca": "Equilibrio",
+    "producto": "Té de Vainilla y Coco x 20 saq.",
+    "presentacion": "20 saq",
+    "precio": 3900,
+    "imagen": null
+  },
+  {
+    "id": 1352,
+    "categoria": "Infusiones",
+    "marca": "Equilibrio",
+    "producto": "Te Encuentros x 20 saq. (Naranja, Canela y Pimienta de Jamaica",
+    "presentacion": "20 saq",
+    "precio": 3900,
+    "imagen": null
+  },
+  {
+    "id": 1353,
+    "categoria": "Infusiones",
+    "marca": "Equilibrio",
+    "producto": "Té Flores Rojas x 20 saq. (Pétalos de Rosa y Rosa Mosqueta",
+    "presentacion": "20 saq",
+    "precio": 3900,
+    "imagen": null
+  },
+  {
+    "id": 1354,
+    "categoria": "Infusiones",
+    "marca": "Equilibrio",
+    "producto": "Té Frutos Amarillos x 20 saq. (Ananá, Durazno y Maracuyá",
+    "presentacion": "20 saq",
+    "precio": 3900,
+    "imagen": null
+  },
+  {
+    "id": 1355,
+    "categoria": "Infusiones",
+    "marca": "Equilibrio",
+    "producto": "Té Frutos Azules x 20 saq. (Arándano, Cassis, Sauco y Calafate",
+    "presentacion": "20 saq",
+    "precio": 3900,
+    "imagen": null
+  },
+  {
+    "id": 1356,
+    "categoria": "Infusiones",
+    "marca": "Equilibrio",
+    "producto": "Té Frutos Rojos x 20 saq. (Frutilla y Frambuesa",
+    "presentacion": "20 saq",
+    "precio": 3900,
+    "imagen": null
+  },
+  {
+    "id": 1357,
+    "categoria": "Infusiones",
+    "marca": "Equilibrio",
+    "producto": "Te India x 25 saq. (Jengibre, cardamomo, canela",
+    "presentacion": "25 saq",
+    "precio": 4900,
+    "imagen": null
+  },
+  {
+    "id": 1358,
+    "categoria": "Infusiones",
+    "marca": "Equilibrio",
+    "producto": "Te Jamaica x 25 saq. (Melisa, hibisco, cascara de naranja",
+    "presentacion": "25 saq",
+    "precio": 3900,
+    "imagen": null
+  },
+  {
+    "id": 1359,
+    "categoria": "Infusiones",
+    "marca": "Equilibrio",
+    "producto": "Te Verde con Maracuyá x 20 saq.",
+    "presentacion": "20 saq",
+    "precio": 3900,
+    "imagen": null
+  },
+  {
+    "id": 1360,
+    "categoria": "Infusiones",
+    "marca": "Oasis",
+    "producto": "Café verde x 25 saq.",
+    "presentacion": "25 saq",
+    "precio": 5300,
+    "imagen": null
+  },
+  {
+    "id": 1361,
+    "categoria": "Infusiones",
+    "marca": "Oasis",
+    "producto": "Dieta fruta x 25 saq.",
+    "presentacion": "25 saq",
+    "precio": 3900,
+    "imagen": null
+  },
+  {
+    "id": 1362,
+    "categoria": "Infusiones",
+    "marca": "Oasis",
+    "producto": "Mate Cocido Orgánico x 25 saq.",
+    "presentacion": "25 saq",
+    "precio": 3140,
+    "imagen": null
+  },
+  {
+    "id": 1363,
+    "categoria": "Infusiones",
+    "marca": "Oasis",
+    "producto": "Stevia en saquitos x 25 un",
+    "presentacion": "25 un",
+    "precio": 2070,
+    "imagen": null
+  },
+  {
+    "id": 1364,
+    "categoria": "Infusiones",
+    "marca": "Oasis",
+    "producto": "Té Detox x 25 saq. (moringa,  diente de leon, anis, hinojo y regaliz",
+    "presentacion": "25 saq",
+    "precio": 3000,
+    "imagen": null
+  },
+  {
+    "id": 1365,
+    "categoria": "Infusiones",
+    "marca": "Oasis",
+    "producto": "Té de alcachofa x 25 saq.",
+    "presentacion": "25 saq",
+    "precio": 2270,
+    "imagen": null
+  },
+  {
+    "id": 1366,
+    "categoria": "Infusiones",
+    "marca": "Oasis",
+    "producto": "Té de boldo x 25 saq.",
+    "presentacion": "25 saq",
+    "precio": 2270,
+    "imagen": null
+  },
+  {
+    "id": 1367,
+    "categoria": "Infusiones",
+    "marca": "Oasis",
+    "producto": "Té de carqueja x 25 saq.",
+    "presentacion": "25 saq",
+    "precio": 2270,
+    "imagen": null
+  },
+  {
+    "id": 1368,
+    "categoria": "Infusiones",
+    "marca": "Oasis",
+    "producto": "Té de canela x 25 saq.",
+    "presentacion": "25 saq",
+    "precio": 3150,
+    "imagen": null
+  },
+  {
+    "id": 1369,
+    "categoria": "Infusiones",
+    "marca": "Oasis",
+    "producto": "Té de cedrón x 25 saq.",
+    "presentacion": "25 saq",
+    "precio": 2270,
+    "imagen": null
+  },
+  {
+    "id": 1370,
+    "categoria": "Infusiones",
+    "marca": "Oasis",
+    "producto": "Té de jengibre x 25 saq.",
+    "presentacion": "25 saq",
+    "precio": 3200,
+    "imagen": null
+  },
+  {
+    "id": 1371,
+    "categoria": "Infusiones",
+    "marca": "Oasis",
+    "producto": "Té de manzanilla x 25 saq.",
+    "presentacion": "25 saq",
+    "precio": 2270,
+    "imagen": null
+  },
+  {
+    "id": 1372,
+    "categoria": "Infusiones",
+    "marca": "Oasis",
+    "producto": "Té de melisa x 25 saq.",
+    "presentacion": "25 saq",
+    "precio": 2900,
+    "imagen": null
+  },
+  {
+    "id": 1373,
+    "categoria": "Infusiones",
+    "marca": "Oasis",
+    "producto": "Té de menta x 25 saq.",
+    "presentacion": "25 saq",
+    "precio": 2270,
+    "imagen": null
+  },
+  {
+    "id": 1374,
+    "categoria": "Infusiones",
+    "marca": "Oasis",
+    "producto": "Té de moringa x 25 saq.",
+    "presentacion": "25 saq",
+    "precio": 3000,
+    "imagen": null
+  },
+  {
+    "id": 1375,
+    "categoria": "Infusiones",
+    "marca": "Oasis",
+    "producto": "Té de pasionaria x 25 saq.",
+    "presentacion": "25 saq",
+    "precio": 2270,
+    "imagen": null
+  },
+  {
+    "id": 1376,
+    "categoria": "Infusiones",
+    "marca": "Oasis",
+    "producto": "Té de rosa mosqueta x 25 saq.",
+    "presentacion": "25 saq",
+    "precio": 3300,
+    "imagen": null
+  },
+  {
+    "id": 1377,
+    "categoria": "Infusiones",
+    "marca": "Oasis",
+    "producto": "Té de spirulina + naranja x 25 saq.",
+    "presentacion": "25 saq",
+    "precio": 2350,
+    "imagen": null
+  },
+  {
+    "id": 1378,
+    "categoria": "Infusiones",
+    "marca": "Oasis",
+    "producto": "Té de tilo x 25 saq.",
+    "presentacion": "25 saq",
+    "precio": 2350,
+    "imagen": null
+  },
+  {
+    "id": 1379,
+    "categoria": "Infusiones",
+    "marca": "Oasis",
+    "producto": "Té mezcla Nro.  1 x 25 saq. (Sedante",
+    "presentacion": "25 saq",
+    "precio": 3900,
+    "imagen": "data/images/img_242.jpg"
+  },
+  {
+    "id": 1380,
+    "categoria": "Infusiones",
+    "marca": "Oasis",
+    "producto": "Té mezcla Nro.  2 x 25 saq. (Adelgazante",
+    "presentacion": "25 saq",
+    "precio": 3900,
+    "imagen": "data/images/img_241.jpg"
+  },
+  {
+    "id": 1381,
+    "categoria": "Infusiones",
+    "marca": "Oasis",
+    "producto": "Té mezcla Nro.  3 x 25 saq. (Digestivo",
+    "presentacion": "25 saq",
+    "precio": 3900,
+    "imagen": null
+  },
+  {
+    "id": 1382,
+    "categoria": "Infusiones",
+    "marca": "Oasis",
+    "producto": "Té mezcla Nro.  4 x 25 saq. (Anticelulitico",
+    "presentacion": "25 saq",
+    "precio": 3900,
+    "imagen": null
+  },
+  {
+    "id": 1383,
+    "categoria": "Infusiones",
+    "marca": "Oasis",
+    "producto": "Té mezcla Nro.  5 x 25 saq. (Circulatorio",
+    "presentacion": "25 saq",
+    "precio": 3900,
+    "imagen": null
+  },
+  {
+    "id": 1384,
+    "categoria": "Infusiones",
+    "marca": "Oasis",
+    "producto": "Té mezcla Nro.  6 x 25 saq. (Energizante",
+    "presentacion": "25 saq",
+    "precio": 3900,
+    "imagen": null
+  },
+  {
+    "id": 1385,
+    "categoria": "Infusiones",
+    "marca": "Oasis",
+    "producto": "Té mezcla Nro.  7 x 25 saq. (Est. Sexual",
+    "presentacion": "25 saq",
+    "precio": 3900,
+    "imagen": null
+  },
+  {
+    "id": 1386,
+    "categoria": "Infusiones",
+    "marca": "Oasis",
+    "producto": "Té mezcla Nro.  8 x 25 saq. (Antigripal",
+    "presentacion": "25 saq",
+    "precio": 3900,
+    "imagen": null
+  },
+  {
+    "id": 1387,
+    "categoria": "Infusiones",
+    "marca": "Oasis",
+    "producto": "Té mezcla Nro.  9 x 25 saq. (Artritis",
+    "presentacion": "25 saq",
+    "precio": 3900,
+    "imagen": null
+  },
+  {
+    "id": 1388,
+    "categoria": "Infusiones",
+    "marca": "Oasis",
+    "producto": "Té mezcla Nro. 10 x 25 saq. (Diurético",
+    "presentacion": "25 saq",
+    "precio": 3900,
+    "imagen": null
+  },
+  {
+    "id": 1389,
+    "categoria": "Infusiones",
+    "marca": "Oasis",
+    "producto": "Té mezcla Nro. 11 x 25 saq. (Colesterol",
+    "presentacion": "25 saq",
+    "precio": 3900,
+    "imagen": null
+  },
+  {
+    "id": 1390,
+    "categoria": "Infusiones",
+    "marca": "Oasis",
+    "producto": "Té mezcla Nro. 12 x 25 saq. (Antidiabético",
+    "presentacion": "25 saq",
+    "precio": 3900,
+    "imagen": null
+  },
+  {
+    "id": 1391,
+    "categoria": "Infusiones",
+    "marca": "Oasis",
+    "producto": "Té mezcla Nro. 13 x 25 saq. (Presión alta",
+    "presentacion": "25 saq",
+    "precio": 3900,
+    "imagen": null
+  },
+  {
+    "id": 1392,
+    "categoria": "Infusiones",
+    "marca": "Oasis",
+    "producto": "Té mezcla Nro. 14 x 25 saq. (Laxante suave",
+    "presentacion": "25 saq",
+    "precio": 3900,
+    "imagen": null
+  },
+  {
+    "id": 1393,
+    "categoria": "Infusiones",
+    "marca": "Oasis",
+    "producto": "Té mezcla Nro. 15 x 25 saq. (Dejar de fumar",
+    "presentacion": "25 saq",
+    "precio": 3900,
+    "imagen": null
+  },
+  {
+    "id": 1394,
+    "categoria": "Infusiones",
+    "marca": "Oasis",
+    "producto": "Té negro Orgánico x 25 saq.",
+    "presentacion": "25 saq",
+    "precio": 3500,
+    "imagen": "data/images/img_240.jpg"
+  },
+  {
+    "id": 1395,
+    "categoria": "Infusiones",
+    "marca": "Oasis",
+    "producto": "Té rojo x 25 saq.",
+    "presentacion": "25 saq",
+    "precio": 2270,
+    "imagen": null
+  },
+  {
+    "id": 1396,
+    "categoria": "Infusiones",
+    "marca": "Oasis",
+    "producto": "Te verde Orgánico x 25 saq.",
+    "presentacion": "25 saq",
+    "precio": 3400,
+    "imagen": "data/images/img_246.jpg"
+  },
+  {
+    "id": 1397,
+    "categoria": "Infusiones",
+    "marca": "Oasis",
+    "producto": "Té verde x 25 saq.",
+    "presentacion": "25 saq",
+    "precio": 2460,
+    "imagen": null
+  },
+  {
+    "id": 1692,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "GRANOLA C/COPOS DE MAIZ Y COCO X 1KG",
+    "presentacion": "1KG",
+    "precio": 13800,
+    "imagen": null
+  },
+  {
+    "id": 1693,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "GRANOLA CROCANTE LNE X 1KG",
+    "presentacion": "1KG",
+    "precio": 14500,
+    "imagen": null
+  },
+  {
+    "id": 1694,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "GRANOLA TRADICIONAL C/PASAS X 1KG",
+    "presentacion": "1KG",
+    "precio": 13200,
+    "imagen": null
+  },
+  {
+    "id": 1695,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "GRANOLA TRADICIONAL S/PASAS X 1KG",
+    "presentacion": "1KG",
+    "precio": 13200,
+    "imagen": null
+  },
+  {
+    "id": 1696,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Granola Bulka c/ chocolate X 1KG",
+    "presentacion": "1KG",
+    "precio": 10000,
+    "imagen": null
+  },
+  {
+    "id": 1697,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Granola Bulka c/ banana X 1KG",
+    "presentacion": "1KG",
+    "precio": 10000,
+    "imagen": null
+  },
+  {
+    "id": 1698,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Granola Bulka varias X 1KG",
+    "presentacion": "1KG",
+    "precio": 9200,
+    "imagen": null
+  },
+  {
+    "id": 1699,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "GRANOLA GRANOMAX ARANDANOS X 1KG",
+    "presentacion": "1KG",
+    "precio": 13000,
+    "imagen": null
+  },
+  {
+    "id": 1700,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "GRANOLA GRANOMAX CHOCOLATE X 1KG",
+    "presentacion": "1KG",
+    "precio": 13000,
+    "imagen": null
+  },
+  {
+    "id": 1701,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "GRANOLA GRANOMAX FITMAX S/AZ.X 1KG",
+    "presentacion": "1KG",
+    "precio": 13000,
+    "imagen": null
+  },
+  {
+    "id": 1702,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "GRANOLA GRANOMAX MANZANA X 1KG",
+    "presentacion": "1KG",
+    "precio": 13000,
+    "imagen": null
+  },
+  {
+    "id": 1703,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "GRANOLA GRANOMAX NATURAL X 1KG",
+    "presentacion": "1KG",
+    "precio": 13000,
+    "imagen": null
+  },
+  {
+    "id": 1704,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "GRANOLA GRANOMAX PASAS DE UVA X 1KG",
+    "presentacion": "1KG",
+    "precio": 13000,
+    "imagen": null
+  },
+  {
+    "id": 1705,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "GRANOLA GRANOMAX PASTA MANI-CHOC.X 1KG",
+    "presentacion": "1KG",
+    "precio": 13000,
+    "imagen": null
+  },
+  {
+    "id": 1706,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "GRANOLA GRANOMAX POWERMAX X 1KG",
+    "presentacion": "1KG",
+    "precio": 13000,
+    "imagen": null
+  },
+  {
+    "id": 1707,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "GRANOLA GRANOMAX VEGANMAX X 1KG",
+    "presentacion": "1KG",
+    "precio": 13000,
+    "imagen": null
+  },
+  {
+    "id": 1404,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "MIEL 300gr Nosellas",
+    "presentacion": "300gr",
+    "precio": 2750,
+    "imagen": null
+  },
+  {
+    "id": 1405,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "MIEL 500gr Nosellas",
+    "presentacion": "500gr",
+    "precio": 3840,
+    "imagen": null
+  },
+  {
+    "id": 1406,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "MIEL 1 Kg Nosellas",
+    "presentacion": "1 Kg",
+    "precio": 6840,
+    "imagen": null
+  },
+  {
+    "id": 1407,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Tostadas de arroz original",
+    "presentacion": "1 un",
+    "precio": 2100,
+    "imagen": null
+  },
+  {
+    "id": 1408,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Tostadas de arroz con sal",
+    "presentacion": "1 un",
+    "precio": 2100,
+    "imagen": null
+  },
+  {
+    "id": 1409,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Tostadas de arroz sin sal",
+    "presentacion": "1 un",
+    "precio": 2100,
+    "imagen": null
+  },
+  {
+    "id": 1410,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Galleta de arroz con sal",
+    "presentacion": "1 un",
+    "precio": 1450,
+    "imagen": null
+  },
+  {
+    "id": 1411,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Galleta de arroz sin sal",
+    "presentacion": "1 un",
+    "precio": 1450,
+    "imagen": null
+  },
+  {
+    "id": 1412,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Galleta de arroz dulce",
+    "presentacion": "1 un",
+    "precio": 1450,
+    "imagen": null
+  },
+  {
+    "id": 1413,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Mayonesa Organica x 290grs",
+    "presentacion": "290g",
+    "precio": 5410,
+    "imagen": null
+  },
+  {
+    "id": 1414,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Salsa barbacoa premiun x 300grs",
+    "presentacion": "300g",
+    "precio": 3700,
+    "imagen": null
+  },
+  {
+    "id": 1415,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Salsa sweet chilli x 310grs",
+    "presentacion": "310g",
+    "precio": 5200,
+    "imagen": null
+  },
+  {
+    "id": 1416,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Salsa teriyaki C/vino x 285grs",
+    "presentacion": "285g",
+    "precio": 6300,
+    "imagen": null
+  },
+  {
+    "id": 1708,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Vinagre de manzana organico x 500cc",
+    "presentacion": "500ml",
+    "precio": 13500,
+    "imagen": null
+  },
+  {
+    "id": 1418,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Vinagre de manzana organico x 250cc",
+    "presentacion": "250ml",
+    "precio": 7500,
+    "imagen": null
+  },
+  {
+    "id": 1419,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Aceite de oliva Identidad X 500cc",
+    "presentacion": "500ml",
+    "precio": 10500,
+    "imagen": null
+  },
+  {
+    "id": 1420,
+    "categoria": "Almacén",
+    "marca": "Oasis",
+    "producto": "Aceite de Almendra x 30 cc.",
+    "presentacion": "30 ml",
+    "precio": 3880,
+    "imagen": null
+  },
+  {
+    "id": 1421,
+    "categoria": "Almacén",
+    "marca": "Oasis",
+    "producto": "Aceite de Argan x 30 cc.",
+    "presentacion": "30 ml",
+    "precio": 6200,
+    "imagen": null
+  },
+  {
+    "id": 1422,
+    "categoria": "Almacén",
+    "marca": "Oasis",
+    "producto": "Aceite de Coco x 150 cc.",
+    "presentacion": "150 ml",
+    "precio": 5200,
+    "imagen": null
+  },
+  {
+    "id": 1423,
+    "categoria": "Almacén",
+    "marca": "Oasis",
+    "producto": "Aceite de Germen de Trigo x 30 cc.",
+    "presentacion": "30 ml",
+    "precio": 3800,
+    "imagen": null
+  },
+  {
+    "id": 1424,
+    "categoria": "Almacén",
+    "marca": "Oasis",
+    "producto": "Aceite de Jojoba x 30 cc",
+    "presentacion": "30 ml",
+    "precio": 5150,
+    "imagen": null
+  },
+  {
+    "id": 1425,
+    "categoria": "Almacén",
+    "marca": "Oasis",
+    "producto": "Aceite de Rosa Mosqueta x 15 cc.",
+    "presentacion": "15 ml",
+    "precio": 4300,
+    "imagen": null
+  },
+  {
+    "id": 1426,
+    "categoria": "Almacén",
+    "marca": "Oasis",
+    "producto": "Aceite de Uva x 15 cc",
+    "presentacion": "15 ml",
+    "precio": 4300,
+    "imagen": null
+  },
+  {
+    "id": 1709,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Mermelada light S/AZ  x 360g Arándano - L. Nueva Estrella",
+    "presentacion": "360g",
+    "precio": 4250,
+    "imagen": null
+  },
+  {
+    "id": 1710,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Mermelada light S/AZ  x 360g Durazno - L. Nueva Estrella",
+    "presentacion": "360g",
+    "precio": 3300,
+    "imagen": null
+  },
+  {
+    "id": 1711,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Mermelada light S/AZ  x 360g Higo - L. Nueva Estrella",
+    "presentacion": "360g",
+    "precio": 3300,
+    "imagen": null
+  },
+  {
+    "id": 1712,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Mermelada light S/AZ  x 360g Naranja - L. Nueva Estrella",
+    "presentacion": "360g",
+    "precio": 3300,
+    "imagen": null
+  },
+  {
+    "id": 1713,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Mermelada light S/AZ  x 360g frutilla - L. Nueva Estrella",
+    "presentacion": "360g",
+    "precio": 4250,
+    "imagen": null
+  },
+  {
+    "id": 1714,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Dulce de leche S/AZ - c/stevia x 454grs - L. Nueva Estrella",
+    "presentacion": "454g",
+    "precio": 5200,
+    "imagen": null
+  },
+  {
+    "id": 1715,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Fideos integrales C/Espinaca x 400grs - L. Nueva Estrella",
+    "presentacion": "400g",
+    "precio": 2000,
+    "imagen": null
+  },
+  {
+    "id": 1716,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Fideos integrales C/Morrón x 4000grs - L. Nueva Estrella",
+    "presentacion": "4000g",
+    "precio": 2000,
+    "imagen": null
+  },
+  {
+    "id": 1717,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Fideos integrales x 400grs - L. Nueva Estrella",
+    "presentacion": "400g",
+    "precio": 2000,
+    "imagen": null
+  },
+  {
+    "id": 1718,
+    "categoria": "Panificados y Galletitas",
+    "marca": "Equilibrio",
+    "producto": "Maria E.",
+    "presentacion": "1 un",
+    "precio": 2270,
+    "imagen": null
+  },
+  {
+    "id": 1719,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Citrato de magnesio x 100 GS - L. MG",
+    "presentacion": "100 g",
+    "precio": 8250,
+    "imagen": null
+  },
+  {
+    "id": 1720,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Zeolita Micronizada x 100 GS - L. MG",
+    "presentacion": "100 g",
+    "precio": 8250,
+    "imagen": null
+  },
+  {
+    "id": 1721,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Aceite de oregano x 20 CM3 - L. MG",
+    "presentacion": "20 ml",
+    "precio": 11900,
+    "imagen": null
+  },
+  {
+    "id": 1443,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Probiotoco Kyojin",
+    "presentacion": "1 un",
+    "precio": 13700,
+    "imagen": null
+  },
+  {
+    "id": 1444,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Aceite de canabis 5% x 10ML",
+    "presentacion": "10ML",
+    "precio": 5600,
+    "imagen": null
+  },
+  {
+    "id": 1722,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Cookies Algarroba y coco x 160grs - LIMBO",
+    "presentacion": "160g",
+    "precio": 1660,
+    "imagen": null
+  },
+  {
+    "id": 1723,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Cookies Almendra y nuez x 160grs  - LIMBO",
+    "presentacion": "160g",
+    "precio": 1660,
+    "imagen": null
+  },
+  {
+    "id": 1724,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Cookies Chips y  avena x 160grs - LIMBO",
+    "presentacion": "160g",
+    "precio": 1660,
+    "imagen": null
+  },
+  {
+    "id": 1725,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Cookies Pasas y avena x 160grs - LIMBO",
+    "presentacion": "160g",
+    "precio": 1660,
+    "imagen": null
+  },
+  {
+    "id": 1726,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Cookies Jenjibre y avena x 160grs - LIMBO",
+    "presentacion": "160g",
+    "precio": 1660,
+    "imagen": null
+  },
+  {
+    "id": 1727,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Cookies Proteicas x 150grs - LIMBO",
+    "presentacion": "150g",
+    "precio": 1950,
+    "imagen": null
+  },
+  {
+    "id": 1451,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Hongo Melena de Leon x KG",
+    "presentacion": "1 kg",
+    "precio": 62000,
+    "imagen": null
+  },
+  {
+    "id": 1452,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Hongo Reishi x KG",
+    "presentacion": "1 kg",
+    "precio": 72000,
+    "imagen": null
+  },
+  {
+    "id": 1453,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Tirabuzon al huevo x 250grs",
+    "presentacion": "250g",
+    "precio": 2360,
+    "imagen": null
+  },
+  {
+    "id": 1454,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Tirabuzon de arvejas x 250grs",
+    "presentacion": "250g",
+    "precio": 2360,
+    "imagen": null
+  },
+  {
+    "id": 1455,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Tirabuzon de garbanzo x 250grs",
+    "presentacion": "250g",
+    "precio": 2360,
+    "imagen": null
+  },
+  {
+    "id": 1456,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Tirabuzon de lenteja x 250grs",
+    "presentacion": "250g",
+    "precio": 2360,
+    "imagen": null
+  },
+  {
+    "id": 1457,
+    "categoria": "Repostería",
+    "marca": "Equilibrio",
+    "producto": "Cacao x 200grs",
+    "presentacion": "200g",
+    "precio": 2200,
+    "imagen": null
+  },
+  {
+    "id": 1458,
+    "categoria": "Repostería",
+    "marca": "Equilibrio",
+    "producto": "Cacao x 450grs",
+    "presentacion": "450g",
+    "precio": 4000,
+    "imagen": null
+  },
+  {
+    "id": 1459,
+    "categoria": "Repostería",
+    "marca": "Equilibrio",
+    "producto": "Cacao x 900grs",
+    "presentacion": "900g",
+    "precio": 5200,
+    "imagen": null
+  },
+  {
+    "id": 1463,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Papel de Arroz x 300grs",
+    "presentacion": "300g",
+    "precio": 9700,
+    "imagen": null
+  },
+  {
+    "id": 1464,
+    "categoria": "Almacén",
+    "marca": "Integra",
+    "producto": "Tostadas clasicas x 210grs",
+    "presentacion": "210g",
+    "precio": 1540,
+    "imagen": null
+  },
+  {
+    "id": 1465,
+    "categoria": "Almacén",
+    "marca": "Integra",
+    "producto": "Tostadas S/sal x 210grs",
+    "presentacion": "210g",
+    "precio": 1540,
+    "imagen": null
+  },
+  {
+    "id": 1466,
+    "categoria": "Almacén",
+    "marca": "Integra",
+    "producto": "Tostadas Dulces x 220grs",
+    "presentacion": "220g",
+    "precio": 1540,
+    "imagen": null
+  },
+  {
+    "id": 1467,
+    "categoria": "Almacén",
+    "marca": "Integra",
+    "producto": "Tostadas Integrales x 220grs",
+    "presentacion": "220g",
+    "precio": 1540,
+    "imagen": null
+  },
+  {
+    "id": 1468,
+    "categoria": "Almacén",
+    "marca": "Integra",
+    "producto": "Tostadas Multisemillas x 210grs",
+    "presentacion": "210g",
+    "precio": 1680,
+    "imagen": null
+  },
+  {
+    "id": 1469,
+    "categoria": "Almacén",
+    "marca": "Integra",
+    "producto": "Marineritas Clasicas x 150grs",
+    "presentacion": "150g",
+    "precio": 1200,
+    "imagen": null
+  },
+  {
+    "id": 1470,
+    "categoria": "Almacén",
+    "marca": "Integra",
+    "producto": "Marineritas S/sal x 150grs",
+    "presentacion": "150g",
+    "precio": 1200,
+    "imagen": null
+  },
+  {
+    "id": 1471,
+    "categoria": "Almacén",
+    "marca": "Integra",
+    "producto": "Marineritas con lino y girasol x 150grs",
+    "presentacion": "150g",
+    "precio": 1200,
+    "imagen": null
+  },
+  {
+    "id": 1472,
+    "categoria": "Almacén",
+    "marca": "Integra",
+    "producto": "Marineritas Con lino y girasol S/sal x 150grs",
+    "presentacion": "150g",
+    "precio": 1200,
+    "imagen": null
+  },
+  {
+    "id": 1473,
+    "categoria": "Almacén",
+    "marca": "Integra",
+    "producto": "CHIQUI LIGHT - Galletita Limon x 190grs",
+    "presentacion": "190g",
+    "precio": 1600,
+    "imagen": null
+  },
+  {
+    "id": 1474,
+    "categoria": "Almacén",
+    "marca": "Integra",
+    "producto": "CHIQUI LIGHT - Galletita Vainilla x 190grs",
+    "presentacion": "190g",
+    "precio": 1600,
+    "imagen": null
+  },
+  {
+    "id": 1475,
+    "categoria": "Almacén",
+    "marca": "Integra",
+    "producto": "CHIQUI LIGHT - Galletita Coco x 190grs",
+    "presentacion": "190g",
+    "precio": 1600,
+    "imagen": null
+  },
+  {
+    "id": 1476,
+    "categoria": "Almacén",
+    "marca": "Integra",
+    "producto": "CHIQUI LIGHT - Galletita Naranja x 190grs",
+    "presentacion": "190g",
+    "precio": 1600,
+    "imagen": null
+  },
+  {
+    "id": 1477,
+    "categoria": "Almacén",
+    "marca": "Integra",
+    "producto": "CHIQUI LIGHT - Galletita Frutilla x 190grs",
+    "presentacion": "190g",
+    "precio": 1600,
+    "imagen": null
+  },
+  {
+    "id": 1478,
+    "categoria": "Almacén",
+    "marca": "Integra",
+    "producto": "CHIQUI LIGHT - Galletita Manzana x 190grs",
+    "presentacion": "190g",
+    "precio": 1600,
+    "imagen": null
+  },
+  {
+    "id": 1479,
+    "categoria": "Almacén",
+    "marca": "Integra",
+    "producto": "CHIQUI LIGHT - Galletita C/Arandano x 190grs",
+    "presentacion": "190g",
+    "precio": 1750,
+    "imagen": null
+  },
+  {
+    "id": 1480,
+    "categoria": "Almacén",
+    "marca": "Integra",
+    "producto": "CHIQUI LIGHT - Galletita C/Chips chocolate x 190grs",
+    "presentacion": "190g",
+    "precio": 1750,
+    "imagen": null
+  },
+  {
+    "id": 1481,
+    "categoria": "Almacén",
+    "marca": "Integra",
+    "producto": "CHIQUI LIGHT - Galletita Cacao x 190grs",
+    "presentacion": "190g",
+    "precio": 1750,
+    "imagen": null
+  },
+  {
+    "id": 1482,
+    "categoria": "Almacén",
+    "marca": "Integra",
+    "producto": "CHIQUI LIGHT - Galletita Algarroba x 190grs",
+    "presentacion": "190g",
+    "precio": 1750,
+    "imagen": null
+  },
+  {
+    "id": 1483,
+    "categoria": "Almacén",
+    "marca": "Integra",
+    "producto": "Mini Galletitas C/stevia Algarroba y mani x 190grs",
+    "presentacion": "190g",
+    "precio": 1930,
+    "imagen": null
+  },
+  {
+    "id": 1484,
+    "categoria": "Almacén",
+    "marca": "Integra",
+    "producto": "Mini Galletitas C/stevia Cascarilla Cacao y Nueces x 190grs",
+    "presentacion": "190g",
+    "precio": 1930,
+    "imagen": null
+  },
+  {
+    "id": 1485,
+    "categoria": "Almacén",
+    "marca": "Integra",
+    "producto": "Mini Galletitas C/stevia Avena y coco rallado x 190grs",
+    "presentacion": "190g",
+    "precio": 1930,
+    "imagen": null
+  },
+  {
+    "id": 1486,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Manteca ghee x 200 ML",
+    "presentacion": "200 ML",
+    "precio": 4200,
+    "imagen": null
+  },
+  {
+    "id": 1487,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Manteca ghee x 350 ML",
+    "presentacion": "350 ML",
+    "precio": 7200,
+    "imagen": null
+  },
+  {
+    "id": 1488,
+    "categoria": "Almacén",
+    "marca": "Copani",
+    "producto": "Chocolate al 100%",
+    "presentacion": "1 un",
+    "precio": 6400,
+    "imagen": null
+  },
+  {
+    "id": 1489,
+    "categoria": "Almacén",
+    "marca": "Copani",
+    "producto": "Chocolate al 80%",
+    "presentacion": "1 un",
+    "precio": 5000,
+    "imagen": null
+  },
+  {
+    "id": 1490,
+    "categoria": "Almacén",
+    "marca": "Copani",
+    "producto": "Chocolate al 70%",
+    "presentacion": "1 un",
+    "precio": 5000,
+    "imagen": null
+  },
+  {
+    "id": 1491,
+    "categoria": "Almacén",
+    "marca": "Copani",
+    "producto": "Chocolate al 70% C/stevia/C coco",
+    "presentacion": "1 un",
+    "precio": 5200,
+    "imagen": null
+  },
+  {
+    "id": 1492,
+    "categoria": "Almacén",
+    "marca": "Copani",
+    "producto": "Cacao en polvo al 100% x 200grs",
+    "presentacion": "200g",
+    "precio": 8300,
+    "imagen": null
+  },
+  {
+    "id": 1493,
+    "categoria": "Almacén",
+    "marca": "Copani",
+    "producto": "LECHE DE CABRA -LA PRIMERA (en polvo entera/descremada",
+    "presentacion": "1 un",
+    "precio": 12300,
+    "imagen": null
+  },
+  {
+    "id": 1728,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "BLISTERAS Cascara Sagrada+ Magnesio X 100 COMP.",
+    "presentacion": "100 comprimidos",
+    "precio": 23500,
+    "imagen": null
+  },
+  {
+    "id": 1729,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "BLISTERAS Bacalao Max X 100CAPS.",
+    "presentacion": "100cápsulas",
+    "precio": 42500,
+    "imagen": null
+  },
+  {
+    "id": 1730,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "BLISTERAS Citrato de magnesio x 100 CAPS.",
+    "presentacion": "100 cápsulas",
+    "precio": 25700,
+    "imagen": null
+  },
+  {
+    "id": 1731,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "BLISTERAS Valeriana X 100 COMP.",
+    "presentacion": "100 comprimidos",
+    "precio": 23500,
+    "imagen": null
+  },
+  {
+    "id": 1732,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "BLISTERAS Curcuma y Pimienta Negra X 100 CAPS.",
+    "presentacion": "100 cápsulas",
+    "precio": 23500,
+    "imagen": null
+  },
+  {
+    "id": 1733,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "BLISTERAS Colageno H+VIT E X 100 CAPS.",
+    "presentacion": "100 cápsulas",
+    "precio": 23500,
+    "imagen": null
+  },
+  {
+    "id": 1734,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "BLISTERAS Cartilago de Tiburon X 100 CAPS.",
+    "presentacion": "100 cápsulas",
+    "precio": 23500,
+    "imagen": null
+  },
+  {
+    "id": 1735,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "BLISTERAS Ginkgo 100+ Magnesio X 100 COMP.",
+    "presentacion": "100 comprimidos",
+    "precio": 23500,
+    "imagen": null
+  },
+  {
+    "id": 1736,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "BLISTERAS ALGA DIET (plus maxX 100 COMP.",
+    "presentacion": "100 comprimidos",
+    "precio": 24000,
+    "imagen": null
+  },
+  {
+    "id": 1737,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "BLISTERAS Magnesio 600 X 100 CAPS.",
+    "presentacion": "100 cápsulas",
+    "precio": 14500,
+    "imagen": null
+  },
+  {
+    "id": 1502,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Avenitas  x Kilo",
+    "presentacion": "1 un",
+    "precio": 9700,
+    "imagen": null
+  },
+  {
+    "id": 1503,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Avena y chip de chocolate x Kilo",
+    "presentacion": "1 un",
+    "precio": 9700,
+    "imagen": null
+  },
+  {
+    "id": 1504,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Galletitas saladas C/Chia x Kilo",
+    "presentacion": "1 un",
+    "precio": 9700,
+    "imagen": null
+  },
+  {
+    "id": 1505,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Galletitas saladas C/Lino x Kilo",
+    "presentacion": "1 un",
+    "precio": 9700,
+    "imagen": null
+  },
+  {
+    "id": 1506,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Galletitas saladas C/Sesamo x Kilo",
+    "presentacion": "1 un",
+    "precio": 9700,
+    "imagen": null
+  },
+  {
+    "id": 1507,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Pepas integrales C/Membrillo x Kilo",
+    "presentacion": "1 un",
+    "precio": 10000,
+    "imagen": null
+  },
+  {
+    "id": 1508,
+    "categoria": "Almacén (Sin TACC)",
+    "marca": "Natuzen",
+    "producto": "Natuzen Premezcla p/pan/ reposteria X 1 Kg",
+    "presentacion": "1 Kg",
+    "precio": 5200,
+    "imagen": null
+  },
+  {
+    "id": 1611,
+    "categoria": "Almacén (Sin TACC)",
+    "marca": "Natuzen",
+    "producto": "Natuzen Premezcla p/ bizcohuelo X 450 grs",
+    "presentacion": "450 g",
+    "precio": 3000,
+    "imagen": null
+  },
+  {
+    "id": 1612,
+    "categoria": "Almacén (Sin TACC)",
+    "marca": "Natuzen",
+    "producto": "Natuzen Almidon de Maiz X 1 kg",
+    "presentacion": "1 kg",
+    "precio": 4300,
+    "imagen": null
+  },
+  {
+    "id": 1613,
+    "categoria": "Almacén (Sin TACC)",
+    "marca": "Natuzen",
+    "producto": "Natuzen Galletitas limon/naranja/ coco X 200 grs",
+    "presentacion": "200 g",
+    "precio": 2200,
+    "imagen": null
+  },
+  {
+    "id": 1512,
+    "categoria": "Almacén",
+    "marca": "Sanamundi",
+    "producto": "Premezcla universal con proteina vegetal x 500 grs",
+    "presentacion": "500 g",
+    "precio": 4100,
+    "imagen": null
+  },
+  {
+    "id": 1614,
+    "categoria": "Almacén",
+    "marca": "Dicomere",
+    "producto": "Bicarbonato de sodio x 200 grs",
+    "presentacion": "200 g",
+    "precio": 1700,
+    "imagen": null
+  },
+  {
+    "id": 1615,
+    "categoria": "Almacén",
+    "marca": "Dicomere",
+    "producto": "Cacao Amargo 100 % x 200 grs",
+    "presentacion": "200 g",
+    "precio": 3900,
+    "imagen": null
+  },
+  {
+    "id": 1616,
+    "categoria": "Almacén",
+    "marca": "Dicomere",
+    "producto": "Arveja Texturizada X 350 grs",
+    "presentacion": "350 g",
+    "precio": 2200,
+    "imagen": null
+  },
+  {
+    "id": 1617,
+    "categoria": "Almacén",
+    "marca": "Dicomere",
+    "producto": "Fecula de Papa x 450 grs",
+    "presentacion": "450 g",
+    "precio": 3500,
+    "imagen": null
+  },
+  {
+    "id": 1618,
+    "categoria": "Almacén",
+    "marca": "Dicomere",
+    "producto": "Harina de Caju x 180 grs",
+    "presentacion": "180 g",
+    "precio": 4900,
+    "imagen": null
+  },
+  {
+    "id": 1619,
+    "categoria": "Almacén",
+    "marca": "Dicomere",
+    "producto": "Harina de Trigo Sarraceno x 450 grs",
+    "presentacion": "450 g",
+    "precio": 3900,
+    "imagen": null
+  },
+  {
+    "id": 1620,
+    "categoria": "Almacén",
+    "marca": "Dicomere",
+    "producto": "Harina de Lentejas x 450 grs",
+    "presentacion": "450 g",
+    "precio": 2700,
+    "imagen": null
+  },
+  {
+    "id": 1621,
+    "categoria": "Almacén",
+    "marca": "Dicomere",
+    "producto": "Polenta Organica x 450 grs",
+    "presentacion": "450 g",
+    "precio": 1500,
+    "imagen": null
+  },
+  {
+    "id": 1521,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Premezcla Proteica Harina de Avena Sabor Chocolate",
+    "presentacion": "1 un",
+    "precio": 7300,
+    "imagen": null
+  },
+  {
+    "id": 1522,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Premezcla Proteica Harina de Avena sabor Vainilla",
+    "presentacion": "1 un",
+    "precio": 7300,
+    "imagen": null
+  },
+  {
+    "id": 1523,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Premezcla Proteica Harina de Arroz sabor Chocolate",
+    "presentacion": "1 un",
+    "precio": 6400,
+    "imagen": null
+  },
+  {
+    "id": 1524,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Premezcla Proteica Harina de Arroz sabor vainilla",
+    "presentacion": "1 un",
+    "precio": 6400,
+    "imagen": null
+  },
+  {
+    "id": 1525,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Premezcla Proteica Harina de Almendras sabor Chocolate/ Vainilla",
+    "presentacion": "1 un",
+    "precio": 11000,
+    "imagen": null
+  },
+  {
+    "id": 1526,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Alfajor Vento DDL B/N X 6 unidades",
+    "presentacion": "6 unidadesades",
+    "precio": 15500,
+    "imagen": null
+  },
+  {
+    "id": 1738,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Pan para hamburguesas X 2 unidades - Libre de gluten",
+    "presentacion": "2 unidadesades",
+    "precio": 4500,
+    "imagen": null
+  },
+  {
+    "id": 1739,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Prepizzaetas X 4 unidades - Libre de gluten",
+    "presentacion": "4 unidadesades",
+    "precio": 4645,
+    "imagen": null
+  },
+  {
+    "id": 1740,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Pan Chip X 4 unidades - Libre de gluten",
+    "presentacion": "4 unidadesades",
+    "precio": 4500,
+    "imagen": null
+  },
+  {
+    "id": 1741,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Minicoco X 150 grs - Libre de gluten",
+    "presentacion": "150 g",
+    "precio": 4400,
+    "imagen": null
+  },
+  {
+    "id": 1742,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Minibombon X 150 grs - Libre de gluten",
+    "presentacion": "150 g",
+    "precio": 4400,
+    "imagen": null
+  },
+  {
+    "id": 1743,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Pastafrola X 90 grs - Libre de gluten",
+    "presentacion": "90 g",
+    "precio": 3350,
+    "imagen": null
+  },
+  {
+    "id": 1744,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Brownie X 90 grs - Libre de gluten",
+    "presentacion": "90 g",
+    "precio": 3800,
+    "imagen": null
+  },
+  {
+    "id": 1745,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Coquitos X 90 grs - Libre de gluten",
+    "presentacion": "90 g",
+    "precio": 3800,
+    "imagen": null
+  },
+  {
+    "id": 1746,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Alfajor de Maizena X 60 grs - Libre de gluten",
+    "presentacion": "60 g",
+    "precio": 2800,
+    "imagen": null
+  },
+  {
+    "id": 1747,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Crakers X 80 grs - Libre de gluten",
+    "presentacion": "80 g",
+    "precio": 3000,
+    "imagen": null
+  },
+  {
+    "id": 1748,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Kefir poleo-naranja-pomelo x 1L",
+    "presentacion": "1L",
+    "precio": 7000,
+    "imagen": null
+  },
+  {
+    "id": 1749,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Kefir aguaribay-jengibre -miel x 1L",
+    "presentacion": "1L",
+    "precio": 7000,
+    "imagen": null
+  },
+  {
+    "id": 1750,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Kefir frutos rojos x 1L",
+    "presentacion": "1L",
+    "precio": 7000,
+    "imagen": null
+  },
+  {
+    "id": 1751,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Kombucha tradicional x 1L",
+    "presentacion": "1L",
+    "precio": 7000,
+    "imagen": null
+  },
+  {
+    "id": 1752,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Kombucha flor de jamaica (hibiscusx 1L",
+    "presentacion": "1L",
+    "precio": 7000,
+    "imagen": null
+  },
+  {
+    "id": 1753,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Kombucha cedron-naranja-pomelo x 1L",
+    "presentacion": "1L",
+    "precio": 7000,
+    "imagen": null
+  },
+  {
+    "id": 1754,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Kombucha limon-jemgibre x 1L",
+    "presentacion": "1L",
+    "precio": 7000,
+    "imagen": null
+  },
+  {
+    "id": 1755,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Proteinas - Suero LacticoNeutro X 1L",
+    "presentacion": "1L",
+    "precio": 10000,
+    "imagen": null
+  },
+  {
+    "id": 1756,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Proteinas - Neutra X 500ml",
+    "presentacion": "500ml",
+    "precio": 8000,
+    "imagen": null
+  },
+  {
+    "id": 1546,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Vinagre de sidra de manzana organico X 250CC",
+    "presentacion": "250ml",
+    "precio": 7000,
+    "imagen": null
+  },
+  {
+    "id": 1757,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Nodulo para cultivos de Kefir de Agua X 5gms",
+    "presentacion": "1 un",
+    "precio": 7200,
+    "imagen": null
+  },
+  {
+    "id": 1758,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Nodulo para cultivos de Kefir de Leche X 5gms",
+    "presentacion": "1 un",
+    "precio": 7200,
+    "imagen": null
+  },
+  {
+    "id": 1549,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Baked Chip- Horneados X 50gms (consultar sabores disponobles",
+    "presentacion": "1 un",
+    "precio": 1000,
+    "imagen": null
+  },
+  {
+    "id": 1550,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Green Crops -Horneados X 45gms (consultar sabores disponibles",
+    "presentacion": "1 un",
+    "precio": 1100,
+    "imagen": null
+  },
+  {
+    "id": 1551,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Nuestros Sabores - Chips X 50 gms (consultar sabores disponibles",
+    "presentacion": "1 un",
+    "precio": 1560,
+    "imagen": null
+  },
+  {
+    "id": 1759,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Premezcla Kapac Panaderia y Reposteria X 500 grs",
+    "presentacion": "500 g",
+    "precio": 3000,
+    "imagen": null
+  },
+  {
+    "id": 1760,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Premezcla Kapac para Pizza X 500 grs",
+    "presentacion": "500 g",
+    "precio": 4000,
+    "imagen": null
+  },
+  {
+    "id": 1761,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Vainillas Kapac X  300 grs",
+    "presentacion": "300 g",
+    "precio": 4800,
+    "imagen": null
+  },
+  {
+    "id": 1632,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Tostadas Ceral con Chia X 200 gms",
+    "presentacion": "1 un",
+    "precio": 1900,
+    "imagen": null
+  },
+  {
+    "id": 1633,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Tostadas Ceral Dulce X 200 gms",
+    "presentacion": "1 un",
+    "precio": 1750,
+    "imagen": null
+  },
+  {
+    "id": 1634,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Tostadas Ceral de Mesa X 200 gms",
+    "presentacion": "1 un",
+    "precio": 1750,
+    "imagen": null
+  },
+  {
+    "id": 1635,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Tostadas Ceral Sin Sal X 200 gms",
+    "presentacion": "1 un",
+    "precio": 1750,
+    "imagen": null
+  },
+  {
+    "id": 1636,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Marineras Ceral con Sal X 200 gms",
+    "presentacion": "1 un",
+    "precio": 7800,
+    "imagen": null
+  },
+  {
+    "id": 1637,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Marineras Ceral Sin Sal X 200 gms",
+    "presentacion": "1 un",
+    "precio": 1800,
+    "imagen": null
+  },
+  {
+    "id": 1638,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Galletitas Ceral de Coco X 190 gms",
+    "presentacion": "1 un",
+    "precio": 1900,
+    "imagen": null
+  },
+  {
+    "id": 1639,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Galletitas Ceral de Limon X 190 gms",
+    "presentacion": "1 un",
+    "precio": 1900,
+    "imagen": null
+  },
+  {
+    "id": 1640,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Galletitas Ceral de Vainilla X 190 gms",
+    "presentacion": "1 un",
+    "precio": 1900,
+    "imagen": null
+  },
+  {
+    "id": 1641,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Galletitas Ceral de Naranja X 190 gms",
+    "presentacion": "1 un",
+    "precio": 1900,
+    "imagen": null
+  },
+  {
+    "id": 1642,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Pastas Tirabuzon Integral Natural Ceral X 300 gms",
+    "presentacion": "1 un",
+    "precio": 2660,
+    "imagen": null
+  },
+  {
+    "id": 1643,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Pastas Tirabuzon Integral Espinaca Ceral X 300 gms",
+    "presentacion": "1 un",
+    "precio": 2660,
+    "imagen": null
+  },
+  {
+    "id": 1552,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Ajo negro (x dos cabezas",
+    "presentacion": "1 un",
+    "precio": 4440,
+    "imagen": null
+  },
+  {
+    "id": 1553,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Plata coloidal x 125 ml",
+    "presentacion": "125 ml",
+    "precio": 6000,
+    "imagen": null
+  },
+  {
+    "id": 1554,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Soja texturizada x kg",
+    "presentacion": "1 kg",
+    "precio": 2200,
+    "imagen": null
+  },
+  {
+    "id": 1555,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Barritas Granola Real ( ex mayas x 60 grs",
+    "presentacion": "60 g",
+    "precio": 1200,
+    "imagen": null
+  },
+  {
+    "id": 1556,
+    "categoria": "Almacén",
+    "marca": "Equilibrio",
+    "producto": "Pan rallado Aldana X 380 grs",
+    "presentacion": "380 g",
+    "precio": 5300,
+    "imagen": null
+  },
+  {
     "id": 221,
     "categoria": "Almacén (Sin TACC)",
     "marca": "Alwa",
@@ -2018,7 +8165,7 @@ const RAW_PRODUCTS = [
     "marca": "Biba",
     "producto": "LECHE DE ALMENDRA SIN AZUCAR - 1L",
     "presentacion": "1L",
-    "precio": 3400,
+    "precio": 3600,
     "imagen": "data/images/img_160.jpg"
   },
   {
@@ -2189,7 +8336,7 @@ const RAW_PRODUCTS = [
     "marca": "Doña Magdalena",
     "producto": "DULCE DE LECHE CON STEVIA X 400 G",
     "presentacion": "400 G",
-    "precio": 6480,
+    "precio": 6500,
     "imagen": "data/images/img_143.jpg"
   },
   {
@@ -2362,366 +8509,6 @@ const RAW_PRODUCTS = [
     "presentacion": "25 G",
     "precio": 14600,
     "imagen": "data/images/img_155.jpg"
-  },
-  {
-    "id": 263,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Doña Pacha",
-    "producto": "HARINA DE ARROZ X 500 GRS",
-    "presentacion": "500 g",
-    "precio": 2097.16,
-    "imagen": null
-  },
-  {
-    "id": 264,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Doña Pacha",
-    "producto": "HARINA DE ARVEJAS X 500 GRS",
-    "presentacion": "500 g",
-    "precio": 2948.81,
-    "imagen": null
-  },
-  {
-    "id": 265,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Doña Pacha",
-    "producto": "HARINA DE GARBANZOS X 500 GRS",
-    "presentacion": "500 g",
-    "precio": 2223.39,
-    "imagen": null
-  },
-  {
-    "id": 266,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Doña Pacha",
-    "producto": "PREMEZCLA BIZCOCHUELO X 350 GRS - CHOCOLATE",
-    "presentacion": "350 g",
-    "precio": 4300,
-    "imagen": null
-  },
-  {
-    "id": 267,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Doña Pacha",
-    "producto": "PREMEZCLA BIZCOCHUELO X 350 GRS - VAINILLA",
-    "presentacion": "350 g",
-    "precio": 3250,
-    "imagen": null
-  },
-  {
-    "id": 268,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Doña Pacha",
-    "producto": "PREMEZCLA BROWNIE X 500 GRS",
-    "presentacion": "500 g",
-    "precio": 3066.63,
-    "imagen": null
-  },
-  {
-    "id": 269,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Doña Pacha",
-    "producto": "PREMEZCLA PIZZA X 500 GRS",
-    "presentacion": "500 g",
-    "precio": 3350,
-    "imagen": null
-  },
-  {
-    "id": 270,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Doña Pacha",
-    "producto": "PREMEZCLA TORTA MATERA - 500G",
-    "presentacion": "500G",
-    "precio": 2580.21,
-    "imagen": null
-  },
-  {
-    "id": 271,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Doña Pacha",
-    "producto": "PREMEZCLA UNIVERSAL REPOSTERIA X 500 GRS",
-    "presentacion": "500 g",
-    "precio": 3700,
-    "imagen": null
-  },
-  {
-    "id": 272,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Doña Pacha",
-    "producto": "REBOZADOR X 500 GRS",
-    "presentacion": "500 g",
-    "precio": 2573.48,
-    "imagen": null
-  },
-  {
-    "id": 273,
-    "categoria": "Cosmética Natural",
-    "marca": "Frenzzi",
-    "producto": "ACONDICIONADOR ALMENDRAS & CHIA X 350 ML - REPARADOR",
-    "presentacion": "350 ML",
-    "precio": 8416.22,
-    "imagen": null
-  },
-  {
-    "id": 274,
-    "categoria": "Cosmética Natural",
-    "marca": "Frenzzi",
-    "producto": "ACONDICIONADOR ARANDANOS X 350 ML - ANTIOXIDANTE",
-    "presentacion": "350 ML",
-    "precio": 8416.22,
-    "imagen": null
-  },
-  {
-    "id": 275,
-    "categoria": "Cosmética Natural",
-    "marca": "Frenzzi",
-    "producto": "ACONDICIONADOR X 350 ML - CEBOLLA & GINSENG - FORTALECEDOR",
-    "presentacion": "350 ML",
-    "precio": 8416.22,
-    "imagen": null
-  },
-  {
-    "id": 276,
-    "categoria": "Cosmética Natural",
-    "marca": "Frenzzi",
-    "producto": "ACONDICIONADOR X 500 ML ALOE/SALVIA - CABELLOS TEÑIDOS",
-    "presentacion": "500 ML",
-    "precio": 14988.43,
-    "imagen": null
-  },
-  {
-    "id": 277,
-    "categoria": "Cosmética Natural",
-    "marca": "Frenzzi",
-    "producto": "CASCADA DE PROTEINAS X 120 ML - ALOE Y TE VERDE",
-    "presentacion": "120 ML",
-    "precio": 8228.39,
-    "imagen": null
-  },
-  {
-    "id": 278,
-    "categoria": "Cosmética Natural",
-    "marca": "Frenzzi",
-    "producto": "CASCADA DE PROTEINAS X 120 ML - CHIA",
-    "presentacion": "120 ML",
-    "precio": 8228.39,
-    "imagen": null
-  },
-  {
-    "id": 279,
-    "categoria": "Cosmética Natural",
-    "marca": "Frenzzi",
-    "producto": "CASCADA DE PROTEINAS X 120 ML - COCO & KIWI",
-    "presentacion": "120 ML",
-    "precio": 8228.39,
-    "imagen": null
-  },
-  {
-    "id": 280,
-    "categoria": "Cosmética Natural",
-    "marca": "Frenzzi",
-    "producto": "CASCADA DE PROTEINAS X 120 ML - GINSENG & BAMBU",
-    "presentacion": "120 ML",
-    "precio": 8228.39,
-    "imagen": null
-  },
-  {
-    "id": 281,
-    "categoria": "Cosmética Natural",
-    "marca": "Frenzzi",
-    "producto": "CASCADA DE PROTEINAS X 120 ML - MANZANILLA & VAINILLA",
-    "presentacion": "120 ML",
-    "precio": 8228.39,
-    "imagen": null
-  },
-  {
-    "id": 282,
-    "categoria": "Cosmética Natural",
-    "marca": "Frenzzi",
-    "producto": "CREMA CORPORAL X 300 ML - CEBOLLA & GINSENG",
-    "presentacion": "300 ML",
-    "precio": 9900,
-    "imagen": null
-  },
-  {
-    "id": 283,
-    "categoria": "Cosmética Natural",
-    "marca": "Frenzzi",
-    "producto": "CREMA CORPORAL X 300 ML - COCO & ARANDANOS",
-    "presentacion": "300 ML",
-    "precio": 9900,
-    "imagen": null
-  },
-  {
-    "id": 284,
-    "categoria": "Cosmética Natural",
-    "marca": "Frenzzi",
-    "producto": "CREMA CORPORAL X 300 ML - COCO, ALMENDRAS & CHIA",
-    "presentacion": "300 ML",
-    "precio": 9900,
-    "imagen": null
-  },
-  {
-    "id": 285,
-    "categoria": "Cosmética Natural",
-    "marca": "Frenzzi",
-    "producto": "CREMA DE PEINAR X 200 ML - ALMENDRAS & CHIA",
-    "presentacion": "200 ML",
-    "precio": 5700,
-    "imagen": null
-  },
-  {
-    "id": 286,
-    "categoria": "Cosmética Natural",
-    "marca": "Frenzzi",
-    "producto": "CREMA DE PEINAR X 200 ML - ARANDANOS",
-    "presentacion": "200 ML",
-    "precio": 5700,
-    "imagen": null
-  },
-  {
-    "id": 287,
-    "categoria": "Cosmética Natural",
-    "marca": "Frenzzi",
-    "producto": "CREMA DE PEINAR X 200 ML - CEBOLLA & GINSENG",
-    "presentacion": "200 ML",
-    "precio": 5700,
-    "imagen": null
-  },
-  {
-    "id": 288,
-    "categoria": "Cosmética Natural",
-    "marca": "Frenzzi",
-    "producto": "CREMA DE PEINAR X 250 ML - ALOE Y SALVIA",
-    "presentacion": "250 ML",
-    "precio": 6985.24,
-    "imagen": null
-  },
-  {
-    "id": 289,
-    "categoria": "Cosmética Natural",
-    "marca": "Frenzzi",
-    "producto": "GEL DE LINO FINALIZADOR - X 350 ML - C/ FILTRO SOLAR",
-    "presentacion": "350 ML",
-    "precio": 8775.73,
-    "imagen": null
-  },
-  {
-    "id": 290,
-    "categoria": "Cosmética Natural",
-    "marca": "Frenzzi",
-    "producto": "SHAMPOO SIN SULFATOS X 350 ML - ALMENDRAS & CHIA",
-    "presentacion": "350 ML",
-    "precio": 11016.62,
-    "imagen": null
-  },
-  {
-    "id": 291,
-    "categoria": "Cosmética Natural",
-    "marca": "Frenzzi",
-    "producto": "SHAMPOO SIN SULFATOS X 350 ML - ARANDANOS",
-    "presentacion": "350 ML",
-    "precio": 11016.62,
-    "imagen": null
-  },
-  {
-    "id": 292,
-    "categoria": "Cosmética Natural",
-    "marca": "Frenzzi",
-    "producto": "SHAMPOO SIN SULFATOS X 350 ML - CEBOLLA & GINSENG",
-    "presentacion": "350 ML",
-    "precio": 11016.62,
-    "imagen": null
-  },
-  {
-    "id": 293,
-    "categoria": "Cosmética Natural",
-    "marca": "Frenzzi",
-    "producto": "SHAMPOO X 350 ML - ALMENDRAS & CHIA - REPARADOR",
-    "presentacion": "350 ML",
-    "precio": 11016.62,
-    "imagen": null
-  },
-  {
-    "id": 294,
-    "categoria": "Cosmética Natural",
-    "marca": "Frenzzi",
-    "producto": "SHAMPOO X 350 ML - ARANDANOS - ANTIOXIDANTE",
-    "presentacion": "350 ML",
-    "precio": 11016.62,
-    "imagen": null
-  },
-  {
-    "id": 295,
-    "categoria": "Cosmética Natural",
-    "marca": "Frenzzi",
-    "producto": "SHAMPOO X 350 ML - CEBOLLA & GINSENG - FORTALECEDOR - SIN SAL",
-    "presentacion": "350 ML",
-    "precio": 11016.62,
-    "imagen": null
-  },
-  {
-    "id": 296,
-    "categoria": "Cosmética Natural",
-    "marca": "Frenzzi",
-    "producto": "FRENZZI SPECIF",
-    "presentacion": "1 un",
-    "precio": 15297.45,
-    "imagen": null
-  },
-  {
-    "id": 297,
-    "categoria": "Cosmética Natural",
-    "marca": "Frenzzi",
-    "producto": "SHAMPOO X 500 ML - CABELLOS TEÑIDOS Y SECOS - ALOE/SALVIA",
-    "presentacion": "500 ML",
-    "precio": 14988.43,
-    "imagen": null
-  },
-  {
-    "id": 298,
-    "categoria": "Cosmética Natural",
-    "marca": "Frenzzi",
-    "producto": "SPECIFIC",
-    "presentacion": "1 un",
-    "precio": 15698.37,
-    "imagen": null
-  },
-  {
-    "id": 299,
-    "categoria": "Cosmética Natural",
-    "marca": "Frenzzi",
-    "producto": "FRENZZI SPECIFIC",
-    "presentacion": "1 un",
-    "precio": 15665.05,
-    "imagen": null
-  },
-  {
-    "id": 300,
-    "categoria": "Cosmética Natural",
-    "marca": "Frenzzi",
-    "producto": "TRATAMIENTO CAPILAR X 250 ML - ALMENDRAS & CHIA",
-    "presentacion": "250 ML",
-    "precio": 9650,
-    "imagen": null
-  },
-  {
-    "id": 301,
-    "categoria": "Cosmética Natural",
-    "marca": "Frenzzi",
-    "producto": "TRATAMIENTO CAPILAR X 250 ML - ARANDANOS & CHIA",
-    "presentacion": "250 ML",
-    "precio": 9650,
-    "imagen": null
-  },
-  {
-    "id": 302,
-    "categoria": "Cosmética Natural",
-    "marca": "Frenzzi",
-    "producto": "TRATAMIENTO CAPILAR X 250 ML - CEBOLLA & GINSENG",
-    "presentacion": "250 ML",
-    "precio": 9650,
-    "imagen": null
   },
   {
     "id": 303,
@@ -2940,21 +8727,21 @@ const RAW_PRODUCTS = [
     "imagen": null
   },
   {
-    "id": 327,
+    "id": 1762,
     "categoria": "Infusiones",
     "marca": "Heredia",
-    "producto": "TE EN HEBRAS - CHOCO CAKE",
+    "producto": "TE EN HEBRAS - ROIBOS TROPICAL",
     "presentacion": "1 un",
-    "precio": 4691.5,
+    "precio": 7700,
     "imagen": null
   },
   {
-    "id": 328,
+    "id": 1763,
     "categoria": "Infusiones",
     "marca": "Heredia",
-    "producto": "TE EN HEBRAS - CHOCOLATE Y MENTA",
+    "producto": "TE EN HEBRAS - ROIBOS SINNAMON APLEE",
     "presentacion": "1 un",
-    "precio": 4691.5,
+    "precio": 7700,
     "imagen": null
   },
   {
@@ -3660,12 +9447,12 @@ const RAW_PRODUCTS = [
     "imagen": null
   },
   {
-    "id": 407,
+    "id": 1644,
     "categoria": "Hierbas Medicinales",
     "marca": "Hierbas Y",
-    "producto": "ACEITE ESENCIAL LAVANDIN GROSSO - 10 CC",
+    "producto": "ACEITE ESENCIAL LAVANDA - 10 CC",
     "presentacion": "10 ml",
-    "precio": 13000,
+    "precio": 18300,
     "imagen": null
   },
   {
@@ -4371,84 +10158,48 @@ const RAW_PRODUCTS = [
     "imagen": "data/images/img_165.jpg"
   },
   {
+    "id": 1645,
+    "categoria": "Almacén",
+    "marca": "Kony",
+    "producto": "EDULCORANTE LIQUIDO X 500 ML",
+    "presentacion": "500 ML",
+    "precio": 6700,
+    "imagen": "data/images/img_166.jpg"
+  },
+  {
+    "id": 1646,
+    "categoria": "Almacén",
+    "marca": "Kony",
+    "producto": "EDULCORANTE X 100 SOBRES",
+    "presentacion": "100 SOBRES",
+    "precio": 4300,
+    "imagen": "data/images/img_168.jpg"
+  },
+  {
+    "id": 1647,
+    "categoria": "Almacén",
+    "marca": "Kony",
+    "producto": "EDULCORANTE X 50 SOBRES",
+    "presentacion": "50 SOBRES",
+    "precio": 3400,
+    "imagen": "data/images/img_167.jpg"
+  },
+  {
+    "id": 1648,
+    "categoria": "Almacén (Sin TACC)",
+    "marca": "Kony",
+    "producto": "KONY LIFE - EDULCORANTE 100% STEVIA X 100 ML - SIN TACC",
+    "presentacion": "100 ML",
+    "precio": 4900,
+    "imagen": null
+  },
+  {
     "id": 486,
     "categoria": "Almacén (Sin TACC)",
     "marca": "Kony",
     "producto": "KONY LIFE - EDULCORANTE 100% STEVIA X 200 ML - SIN TACC",
     "presentacion": "200 ML",
     "precio": 6300,
-    "imagen": null
-  },
-  {
-    "id": 487,
-    "categoria": "Almacén",
-    "marca": "Le-Fit",
-    "producto": "MANTEQUILLA DE MANI CACAO - 360GR - LE FIT",
-    "presentacion": "360GR",
-    "precio": 3197.91,
-    "imagen": null
-  },
-  {
-    "id": 488,
-    "categoria": "Almacén",
-    "marca": "Le-Fit",
-    "producto": "MANTEQUILLA DE MANI CANELA - 360GR - LE FIT - OFERTA SIN CAMBIO",
-    "presentacion": "360GR",
-    "precio": 3197.91,
-    "imagen": null
-  },
-  {
-    "id": 489,
-    "categoria": "Almacén",
-    "marca": "Le-Fit",
-    "producto": "MANTEQUILLA DE MANI COCO - 360G - LE FIT",
-    "presentacion": "360G",
-    "precio": 3197.91,
-    "imagen": null
-  },
-  {
-    "id": 490,
-    "categoria": "Almacén",
-    "marca": "Le-Fit",
-    "producto": "MANTEQUILLA DE MANI CON FRAMBUESAS- LE FIT",
-    "presentacion": "1 un",
-    "precio": 7800,
-    "imagen": null
-  },
-  {
-    "id": 491,
-    "categoria": "Almacén",
-    "marca": "Le-Fit",
-    "producto": "MANTEQUILLA DE MANI CRUNCH - 360GR - LE FIT",
-    "presentacion": "360GR",
-    "precio": 3197.91,
-    "imagen": null
-  },
-  {
-    "id": 492,
-    "categoria": "Almacén",
-    "marca": "Le-Fit",
-    "producto": "MANTEQUILLA DE MANI NATURAL - 360GR - LE FIT",
-    "presentacion": "360GR",
-    "precio": 3250,
-    "imagen": null
-  },
-  {
-    "id": 493,
-    "categoria": "Almacén",
-    "marca": "Le-Fit",
-    "producto": "MANTEQUILLA DE MANI STEVIA - 360GR - LE FIT",
-    "presentacion": "360GR",
-    "precio": 3197.91,
-    "imagen": null
-  },
-  {
-    "id": 494,
-    "categoria": "Almacén",
-    "marca": "Le-Fit",
-    "producto": "MANTEQUILLA DE MANI VAINILLA - 360GR - LE FIT",
-    "presentacion": "360GR",
-    "precio": 3197.91,
     "imagen": null
   },
   {
@@ -4524,165 +10275,12 @@ const RAW_PRODUCTS = [
     "imagen": null
   },
   {
-    "id": 503,
-    "categoria": "Almacén",
-    "marca": "Macrosalud",
-    "producto": "ADELGA VERDE + ROJO - 30/30 COMP.",
-    "presentacion": "30 comprimidos",
-    "precio": 13281.42,
-    "imagen": null
-  },
-  {
-    "id": 504,
-    "categoria": "Almacén",
-    "marca": "Macrosalud",
-    "producto": "ALCACHOFA 12 BLISTERS X 10 COMP.",
-    "presentacion": "12 BLISTERS",
-    "precio": 25322.4,
-    "imagen": null
-  },
-  {
-    "id": 505,
-    "categoria": "Almacén",
-    "marca": "Macrosalud",
-    "producto": "ALCACHOFA X 200 COMP.",
-    "presentacion": "200 comprimidos",
-    "precio": 38615.59,
-    "imagen": null
-  },
-  {
-    "id": 506,
-    "categoria": "Almacén",
-    "marca": "Macrosalud",
-    "producto": "ALCACHOFA X 30 COMP.",
-    "presentacion": "30 comprimidos",
-    "precio": 7723.8,
-    "imagen": null
-  },
-  {
-    "id": 507,
-    "categoria": "Almacén",
-    "marca": "Macrosalud",
-    "producto": "GINKGO X 200 COMP.",
-    "presentacion": "200 comprimidos",
-    "precio": 43229,
-    "imagen": null
-  },
-  {
-    "id": 508,
-    "categoria": "Almacén",
-    "marca": "Macrosalud",
-    "producto": "GINKGO X 30 COMP.",
-    "presentacion": "30 comprimidos",
-    "precio": 8646.14,
-    "imagen": null
-  },
-  {
-    "id": 509,
-    "categoria": "Almacén",
-    "marca": "Macrosalud",
-    "producto": "GINSENG X 30 COMP.",
-    "presentacion": "30 comprimidos",
-    "precio": 12352.35,
-    "imagen": null
-  },
-  {
-    "id": 510,
-    "categoria": "Almacén",
-    "marca": "Macrosalud",
-    "producto": "MAGNESIO 12 BLISTERS X 10 COMP.",
-    "presentacion": "12 BLISTERS",
-    "precio": 18468.77,
-    "imagen": null
-  },
-  {
-    "id": 511,
-    "categoria": "Almacén",
-    "marca": "Macrosalud",
-    "producto": "MAGNESIO POLVO X 100 GRS",
-    "presentacion": "100 g",
-    "precio": 16430.52,
-    "imagen": null
-  },
-  {
-    "id": 512,
-    "categoria": "Almacén",
-    "marca": "Macrosalud",
-    "producto": "MAGNESIO X 200 COMP.",
-    "presentacion": "200 comprimidos",
-    "precio": 22237.25,
-    "imagen": null
-  },
-  {
-    "id": 513,
-    "categoria": "Almacén",
-    "marca": "Macrosalud",
-    "producto": "MAGNESIO X 60 COMP.",
-    "presentacion": "60 comprimidos",
-    "precio": 10500,
-    "imagen": null
-  },
-  {
-    "id": 514,
-    "categoria": "Almacén",
-    "marca": "Macrosalud",
-    "producto": "OLIVO 12 BLISTERS X 10 COMP.",
-    "presentacion": "12 BLISTERS",
-    "precio": 25322.4,
-    "imagen": null
-  },
-  {
-    "id": 515,
-    "categoria": "Almacén",
-    "marca": "Macrosalud",
-    "producto": "OLIVO X 30 COMP.",
-    "presentacion": "30 comprimidos",
-    "precio": 10500.93,
-    "imagen": null
-  },
-  {
-    "id": 516,
-    "categoria": "Almacén",
-    "marca": "Macrosalud",
-    "producto": "SPIRULINA 12 BLISTERS X 10 COMP.",
-    "presentacion": "12 BLISTERS",
-    "precio": 25322.4,
-    "imagen": null
-  },
-  {
-    "id": 517,
-    "categoria": "Almacén",
-    "marca": "Macrosalud",
-    "producto": "SPIRULINA POLVO X 50 GRS",
-    "presentacion": "50 g",
-    "precio": 14823.15,
-    "imagen": null
-  },
-  {
-    "id": 518,
-    "categoria": "Almacén",
-    "marca": "Macrosalud",
-    "producto": "SPIRULINA X 200 COMP.",
-    "presentacion": "200 comprimidos",
-    "precio": 38911.82,
-    "imagen": null
-  },
-  {
-    "id": 519,
-    "categoria": "Almacén",
-    "marca": "Macrosalud",
-    "producto": "SPIRULINA X 60 COMP.",
-    "presentacion": "60 comprimidos",
-    "precio": 12970.05,
-    "imagen": null
-  },
-  {
     "id": 520,
     "categoria": "Almacén (Sin TACC)",
     "marca": "Mani King",
     "producto": "MANTECA DE MANI CHOCOLATE - 350G",
     "presentacion": "350G",
-    "precio": 3900,
+    "precio": 4000,
     "imagen": "data/images/img_130.jpg"
   },
   {
@@ -4691,7 +10289,7 @@ const RAW_PRODUCTS = [
     "marca": "Mani King",
     "producto": "MANTECA DE MANI ORIGINAL - 350G",
     "presentacion": "350G",
-    "precio": 3900,
+    "precio": 4000,
     "imagen": "data/images/img_128.jpg"
   },
   {
@@ -4700,7 +10298,7 @@ const RAW_PRODUCTS = [
     "marca": "Mani King",
     "producto": "PASTA DE MANI - 485G",
     "presentacion": "485G",
-    "precio": 3900,
+    "precio": 4000,
     "imagen": "data/images/img_129.jpg"
   },
   {
@@ -4709,7 +10307,7 @@ const RAW_PRODUCTS = [
     "marca": "Mani King",
     "producto": "PASTA DE MANI CRUNCHY - 350G",
     "presentacion": "350G",
-    "precio": 3900,
+    "precio": 4000,
     "imagen": null
   },
   {
@@ -4719,231 +10317,6 @@ const RAW_PRODUCTS = [
     "producto": "PASTA DE MANI NATURAL - 245G",
     "presentacion": "245G",
     "precio": 2700,
-    "imagen": null
-  },
-  {
-    "id": 525,
-    "categoria": "Almacén",
-    "marca": "Medinatural",
-    "producto": "ACEITE DE ALMENDRA X 50 CC AQUA NATURAL",
-    "presentacion": "50 ml",
-    "precio": 4500,
-    "imagen": null
-  },
-  {
-    "id": 526,
-    "categoria": "Almacén",
-    "marca": "Medinatural",
-    "producto": "ACEITE DE ARGAN X 50 CC AQUA NATURAL",
-    "presentacion": "50 ml",
-    "precio": 4500,
-    "imagen": null
-  },
-  {
-    "id": 527,
-    "categoria": "Almacén",
-    "marca": "Medinatural",
-    "producto": "ACEITE DE ARNICA X 50 CC AQUA NATURAL",
-    "presentacion": "50 ml",
-    "precio": 4500,
-    "imagen": null
-  },
-  {
-    "id": 528,
-    "categoria": "Almacén",
-    "marca": "Medinatural",
-    "producto": "ACEITE DE AZAHAR X 50 CC AQUA NATURAL",
-    "presentacion": "50 ml",
-    "precio": 4500,
-    "imagen": null
-  },
-  {
-    "id": 529,
-    "categoria": "Almacén",
-    "marca": "Medinatural",
-    "producto": "ACEITE DE CALENDULA X 50 CC AQUA NATURAL",
-    "presentacion": "50 ml",
-    "precio": 4500,
-    "imagen": null
-  },
-  {
-    "id": 530,
-    "categoria": "Almacén",
-    "marca": "Medinatural",
-    "producto": "ACEITE DE COCO X 50 CC AQUA NATURAL",
-    "presentacion": "50 ml",
-    "precio": 4500,
-    "imagen": null
-  },
-  {
-    "id": 531,
-    "categoria": "Almacén",
-    "marca": "Medinatural",
-    "producto": "ACEITE DE GERMEN DE TRIGO X 50 CC AQUA NATURAL",
-    "presentacion": "50 ml",
-    "precio": 4500,
-    "imagen": null
-  },
-  {
-    "id": 532,
-    "categoria": "Almacén",
-    "marca": "Medinatural",
-    "producto": "ACEITE DE HAMAMELIS X 50 CC AQUA NATURAL",
-    "presentacion": "50 ml",
-    "precio": 4500,
-    "imagen": null
-  },
-  {
-    "id": 533,
-    "categoria": "Almacén",
-    "marca": "Medinatural",
-    "producto": "ACEITE DE JOJOBA X 50 CC AQUA NATURAL",
-    "presentacion": "50 ml",
-    "precio": 4500,
-    "imagen": null
-  },
-  {
-    "id": 534,
-    "categoria": "Almacén",
-    "marca": "Medinatural",
-    "producto": "ACEITE DE LAVANDA X 50 CC AQUA NATURAL",
-    "presentacion": "50 ml",
-    "precio": 4500,
-    "imagen": null
-  },
-  {
-    "id": 535,
-    "categoria": "Almacén",
-    "marca": "Medinatural",
-    "producto": "ACEITE DE MELISA X 50 CC AQUA NATURAL",
-    "presentacion": "50 ml",
-    "precio": 4500,
-    "imagen": null
-  },
-  {
-    "id": 536,
-    "categoria": "Almacén",
-    "marca": "Medinatural",
-    "producto": "ACEITE DE MENTA Y EUCALIPTO - 50CC",
-    "presentacion": "50ml",
-    "precio": 4500,
-    "imagen": null
-  },
-  {
-    "id": 537,
-    "categoria": "Almacén",
-    "marca": "Medinatural",
-    "producto": "ACEITE DE OREGANO CON ACEITE DE COCO - 30ML",
-    "presentacion": "30ML",
-    "precio": 12000,
-    "imagen": null
-  },
-  {
-    "id": 538,
-    "categoria": "Almacén",
-    "marca": "Medinatural",
-    "producto": "ACEITE DE ROMERO X 50 CC AQUA NATURAL",
-    "presentacion": "50 ml",
-    "precio": 4500,
-    "imagen": null
-  },
-  {
-    "id": 539,
-    "categoria": "Almacén",
-    "marca": "Medinatural",
-    "producto": "ACEITE DE ROMERO Y CITRONELA X 50 CC AQUA NATURAL",
-    "presentacion": "50 ml",
-    "precio": 4500,
-    "imagen": null
-  },
-  {
-    "id": 540,
-    "categoria": "Almacén",
-    "marca": "Medinatural",
-    "producto": "ACEITE DE ROSA MOSQUETA X 50 CC AQUA NATURAL",
-    "presentacion": "50 ml",
-    "precio": 4500,
-    "imagen": null
-  },
-  {
-    "id": 541,
-    "categoria": "Almacén",
-    "marca": "Medinatural",
-    "producto": "ACEITE DE SESAMO X 50 CC AQUA NATURAL",
-    "presentacion": "50 ml",
-    "precio": 4500,
-    "imagen": null
-  },
-  {
-    "id": 542,
-    "categoria": "Almacén",
-    "marca": "Medinatural",
-    "producto": "ACEITE DE VAINILLA X 50 CC AQUA NATURAL",
-    "presentacion": "50 ml",
-    "precio": 4500,
-    "imagen": null
-  },
-  {
-    "id": 543,
-    "categoria": "Almacén",
-    "marca": "Medinatural",
-    "producto": "HEPAT AMARGO DE ALCACHOFA - 60CC",
-    "presentacion": "60ml",
-    "precio": 3268.6,
-    "imagen": null
-  },
-  {
-    "id": 544,
-    "categoria": "Almacén",
-    "marca": "Medinatural",
-    "producto": "JARABE DE ALOE Y CURCUMA - 250CC",
-    "presentacion": "250ml",
-    "precio": 2295.76,
-    "imagen": null
-  },
-  {
-    "id": 545,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Medinatural",
-    "producto": "JARABE DE PROPOLEO X 250 ML C/ EUCALIPTO Y VIT.C - SIN TACC",
-    "presentacion": "250 ML",
-    "precio": 3115.43,
-    "imagen": null
-  },
-  {
-    "id": 546,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Medinatural",
-    "producto": "JARABE DE PROPOLEO X 250 ML C/ EUCALIPTO, VIT.C Y STEVIA - SIN TACC",
-    "presentacion": "250 ML",
-    "precio": 3115.43,
-    "imagen": null
-  },
-  {
-    "id": 547,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Medinatural",
-    "producto": "JARABE DE PROPOLEO X 250 ML C/ JENGIBRE, MENTOL Y VIT.C - SIN TACC",
-    "presentacion": "250 ML",
-    "precio": 3115.43,
-    "imagen": null
-  },
-  {
-    "id": 548,
-    "categoria": "Almacén",
-    "marca": "Medinatural",
-    "producto": "JARABE DE PROPOLEO Y ARANDANOS - 250CC",
-    "presentacion": "250ml",
-    "precio": 2499.65,
-    "imagen": null
-  },
-  {
-    "id": 549,
-    "categoria": "Almacén",
-    "marca": "Medinatural",
-    "producto": "SOLUCION HIDROALCOHOLICA DE PROPOLEO - 60CC",
-    "presentacion": "60ml",
-    "precio": 4729.54,
     "imagen": null
   },
   {
@@ -5420,7 +10793,7 @@ const RAW_PRODUCTS = [
     "marca": "Natier",
     "producto": "CAPSULAS DE RELAX BLEND X 50",
     "presentacion": "1 un",
-    "precio": 18200,
+    "precio": 19400,
     "imagen": null
   },
   {
@@ -5800,573 +11173,6 @@ const RAW_PRODUCTS = [
     "presentacion": "125 ml",
     "precio": 13700,
     "imagen": "data/images/img_110.jpg"
-  },
-  {
-    "id": 645,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Organikal",
-    "producto": "ORGANIKAL ACEROLA X 60 CAPSULAS - HG",
-    "presentacion": "1 un",
-    "precio": 12095.09,
-    "imagen": null
-  },
-  {
-    "id": 646,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Organikal",
-    "producto": "ORGANIKAL ALGAS MARINAS X 60 CAPSULAS - HG",
-    "presentacion": "1 un",
-    "precio": 9578.19,
-    "imagen": null
-  },
-  {
-    "id": 647,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Organikal",
-    "producto": "ORGANIKAL CHLORELLA CAPSULAS X 60 - HG",
-    "presentacion": "1 un",
-    "precio": 10941.51,
-    "imagen": null
-  },
-  {
-    "id": 648,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Organikal",
-    "producto": "ORGANIKAL CURCUMA Y PIMIENTA NEGRA CAPSULAS X 60 - HG",
-    "presentacion": "1 un",
-    "precio": 9578.19,
-    "imagen": null
-  },
-  {
-    "id": 649,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Organikal",
-    "producto": "ORGANIKAL GRAVIOLA CAPSULAS X 60 - HG",
-    "presentacion": "1 un",
-    "precio": 9578.19,
-    "imagen": null
-  },
-  {
-    "id": 650,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Organikal",
-    "producto": "ORGANIKAL GUARANA X 60 CAPSULAS - HG",
-    "presentacion": "1 un",
-    "precio": 10452.11,
-    "imagen": null
-  },
-  {
-    "id": 651,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Organikal",
-    "producto": "ORGANIKAL JENGIBRE + CURCUMA X 60 CAPSULAS - HG",
-    "presentacion": "1 un",
-    "precio": 9578.19,
-    "imagen": null
-  },
-  {
-    "id": 652,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Organikal",
-    "producto": "ORGANIKAL MATCHA TE VERDE X 60 CAPSULAS - HG",
-    "presentacion": "1 un",
-    "precio": 9578.19,
-    "imagen": null
-  },
-  {
-    "id": 653,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Organikal",
-    "producto": "ORGANIKAL MORINGA X 60 CAPSULAS - HG",
-    "presentacion": "1 un",
-    "precio": 9578.19,
-    "imagen": null
-  },
-  {
-    "id": 654,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Organikal",
-    "producto": "ORGANIKAL SPIRULINA AZUL X 30 CAPSULAS - HG",
-    "presentacion": "1 un",
-    "precio": 17688.19,
-    "imagen": null
-  },
-  {
-    "id": 655,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Organikal",
-    "producto": "ORGANIKAL SPIRULINA X 60 CAPSULAS - HG",
-    "presentacion": "1 un",
-    "precio": 9578.19,
-    "imagen": null
-  },
-  {
-    "id": 656,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Organikal",
-    "producto": "ORGANIKAL SPIRULINA Y CHLORELLA X 60 CAPSULAS - HG",
-    "presentacion": "1 un",
-    "precio": 10941.51,
-    "imagen": null
-  },
-  {
-    "id": 657,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Organikal",
-    "producto": "ORGANIKAL SUPERFOODS (POUCH X 500 GRS - CACAO NIBS AL 100% - HG",
-    "presentacion": "500 g",
-    "precio": 32988.96,
-    "imagen": null
-  },
-  {
-    "id": 658,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Organikal",
-    "producto": "ORGANIKAL SUPERFOODS (POUCH X 500 GRS - CHLORELLA - HG",
-    "presentacion": "500 g",
-    "precio": 93002.84,
-    "imagen": null
-  },
-  {
-    "id": 659,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Organikal",
-    "producto": "ORGANIKAL SUPERFOODS (POUCH X 500 GRS - CURCUMA - HG",
-    "presentacion": "500 g",
-    "precio": 34021.81,
-    "imagen": null
-  },
-  {
-    "id": 660,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Organikal",
-    "producto": "ORGANIKAL SUPERFOODS (POUCH X 500 GRS - JENGIBRE - HG",
-    "presentacion": "500 g",
-    "precio": 27939.63,
-    "imagen": null
-  },
-  {
-    "id": 661,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Organikal",
-    "producto": "ORGANIKAL SUPERFOODS POLVO X 50 GRS - AJI CAYENA ROJO (RED CHILI - HG",
-    "presentacion": "50 g",
-    "precio": 4002.57,
-    "imagen": null
-  },
-  {
-    "id": 662,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Organikal",
-    "producto": "ORGANIKAL SUPERFOODS POLVO X 50 GRS - AJO - HG",
-    "presentacion": "50 g",
-    "precio": 4002.57,
-    "imagen": null
-  },
-  {
-    "id": 663,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Organikal",
-    "producto": "ORGANIKAL SUPERFOODS POLVO X 50 GRS - CACAO AL 100% - HG",
-    "presentacion": "50 g",
-    "precio": 5050,
-    "imagen": null
-  },
-  {
-    "id": 664,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Organikal",
-    "producto": "ORGANIKAL SUPERFOODS POLVO X 50 GRS - CANELA - HG",
-    "presentacion": "50 g",
-    "precio": 4002.57,
-    "imagen": null
-  },
-  {
-    "id": 665,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Organikal",
-    "producto": "ORGANIKAL SUPERFOODS POLVO X 50 GRS - CHLORELLA POUCH - HG",
-    "presentacion": "50 g",
-    "precio": 15600,
-    "imagen": null
-  },
-  {
-    "id": 666,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Organikal",
-    "producto": "ORGANIKAL SUPERFOODS POLVO X 50 GRS - CURCUMA - HG",
-    "presentacion": "50 g",
-    "precio": 4002.57,
-    "imagen": null
-  },
-  {
-    "id": 667,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Organikal",
-    "producto": "ORGANIKAL SUPERFOODS POLVO X 50 GRS - ESPINACA - HG",
-    "presentacion": "50 g",
-    "precio": 4002.57,
-    "imagen": null
-  },
-  {
-    "id": 668,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Organikal",
-    "producto": "ORGANIKAL SUPERFOODS POLVO X 50 GRS - HIBISCUS - HG",
-    "presentacion": "50 g",
-    "precio": 5383.36,
-    "imagen": null
-  },
-  {
-    "id": 669,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Organikal",
-    "producto": "ORGANIKAL SUPERFOODS POLVO X 50 GRS - JENGIBRE - HG",
-    "presentacion": "50 g",
-    "precio": 4002.57,
-    "imagen": null
-  },
-  {
-    "id": 670,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Organikal",
-    "producto": "ORGANIKAL SUPERFOODS POLVO X 50 GRS - MATCHA - HG",
-    "presentacion": "50 g",
-    "precio": 11500,
-    "imagen": null
-  },
-  {
-    "id": 671,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Organikal",
-    "producto": "ORGANIKAL SUPERFOODS POLVO X 50 GRS - MATCHA CON HIBISCUS Y ROSA MOSQUETA - HG",
-    "presentacion": "50 g",
-    "precio": 7909,
-    "imagen": null
-  },
-  {
-    "id": 672,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Organikal",
-    "producto": "ORGANIKAL SUPERFOODS POLVO X 50 GRS - MATCHA CON JENGIBRE Y LIMON - HG",
-    "presentacion": "50 g",
-    "precio": 8395,
-    "imagen": null
-  },
-  {
-    "id": 673,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Organikal",
-    "producto": "ORGANIKAL SUPERFOODS POLVO X 50 GRS - MATCHA CON MANZANA Y CANELA  - HG",
-    "presentacion": "50 g",
-    "precio": 7909,
-    "imagen": null
-  },
-  {
-    "id": 674,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Organikal",
-    "producto": "ORGANIKAL SUPERFOODS POLVO X 50 GRS - MATCHA CON MANZANILLA Y MELISA - HG",
-    "presentacion": "50 g",
-    "precio": 8395,
-    "imagen": null
-  },
-  {
-    "id": 675,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Organikal",
-    "producto": "ORGANIKAL SUPERFOODS POLVO X 50 GRS - MATCHA CON MENTA, CEDRON Y LEMONGRASS - HG",
-    "presentacion": "50 g",
-    "precio": 7909,
-    "imagen": null
-  },
-  {
-    "id": 676,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Organikal",
-    "producto": "ORGANIKAL SUPERFOODS POLVO X 50 GRS - MATCHA CON NARANJA Y CARDAMOMO - HG",
-    "presentacion": "50 g",
-    "precio": 7909,
-    "imagen": null
-  },
-  {
-    "id": 677,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Organikal",
-    "producto": "ORGANIKAL SUPERFOODS POLVO X 50 GRS - MATCHA CON VAINILLA BOURBON - HG",
-    "presentacion": "50 g",
-    "precio": 11300,
-    "imagen": null
-  },
-  {
-    "id": 678,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Organikal",
-    "producto": "ORGANIKAL SUPERFOODS POLVO X 50 GRS - MATCHA EARL GREY - HG",
-    "presentacion": "50 g",
-    "precio": 7909,
-    "imagen": null
-  },
-  {
-    "id": 679,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Organikal",
-    "producto": "ORGANIKAL SUPERFOODS POLVO X 50 GRS - MATCHA MASALA CHAI - HG",
-    "presentacion": "50 g",
-    "precio": 7909,
-    "imagen": null
-  },
-  {
-    "id": 680,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Organikal",
-    "producto": "ORGANIKAL SUPERFOODS POLVO X 50 GRS - MORINGA - HG",
-    "presentacion": "50 g",
-    "precio": 6700,
-    "imagen": null
-  },
-  {
-    "id": 681,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Organikal",
-    "producto": "ORGANIKAL SUPERFOODS POLVO X 50 GRS - NORI - HG",
-    "presentacion": "50 g",
-    "precio": 5942.67,
-    "imagen": null
-  },
-  {
-    "id": 682,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Organikal",
-    "producto": "ORGANIKAL SUPERFOODS POLVO X 50 GRS - REMOLACHA - HG",
-    "presentacion": "50 g",
-    "precio": 4002.57,
-    "imagen": null
-  },
-  {
-    "id": 683,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Organikal",
-    "producto": "ORGANIKAL SUPERFOODS POLVO X 50 GRS - SPIRULINA - HG",
-    "presentacion": "50 g",
-    "precio": 13600,
-    "imagen": null
-  },
-  {
-    "id": 684,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Organikal",
-    "producto": "ORGANIKAL SUPERFOODS POLVO X 50 GRS - WAKAME - HG",
-    "presentacion": "50 g",
-    "precio": 5505.72,
-    "imagen": null
-  },
-  {
-    "id": 685,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Organikal",
-    "producto": "ORGANIKAL SUPERFOODS X 50 GRS - CACAO NIBS AL 100% - HG",
-    "presentacion": "50 g",
-    "precio": 8500,
-    "imagen": null
-  },
-  {
-    "id": 686,
-    "categoria": "Infusiones",
-    "marca": "Piper Pol",
-    "producto": "BOLDO X 25 SAQ.",
-    "presentacion": "25 SAQ",
-    "precio": 1624.16,
-    "imagen": null
-  },
-  {
-    "id": 687,
-    "categoria": "Infusiones",
-    "marca": "Piper Pol",
-    "producto": "CEDRON X 25 SAQ.",
-    "presentacion": "25 SAQ",
-    "precio": 1478.55,
-    "imagen": null
-  },
-  {
-    "id": 688,
-    "categoria": "Infusiones",
-    "marca": "Piper Pol",
-    "producto": "COLAGOGO - MEZCLA DE HIERBAS X 25 SAQ.",
-    "presentacion": "25 SAQ",
-    "precio": 3030,
-    "imagen": null
-  },
-  {
-    "id": 689,
-    "categoria": "Infusiones",
-    "marca": "Piper Pol",
-    "producto": "DIABETES - MEZCLA DE HIERBAS X 25 SAQ.",
-    "presentacion": "25 SAQ",
-    "precio": 3030,
-    "imagen": null
-  },
-  {
-    "id": 690,
-    "categoria": "Infusiones",
-    "marca": "Piper Pol",
-    "producto": "DIGESTIVO - MEZCLA DE HIERBAS X 25 SAQ.",
-    "presentacion": "25 SAQ",
-    "precio": 3030,
-    "imagen": null
-  },
-  {
-    "id": 691,
-    "categoria": "Infusiones",
-    "marca": "Piper Pol",
-    "producto": "DIURETICO - MEZCLA DE HIERBAS X 25 SAQ.",
-    "presentacion": "25 SAQ",
-    "precio": 3030,
-    "imagen": null
-  },
-  {
-    "id": 692,
-    "categoria": "Infusiones",
-    "marca": "Piper Pol",
-    "producto": "HIERBAS SERRANAS CON YERBA MATE X 500 GRS - VALLE VERDE",
-    "presentacion": "500 g",
-    "precio": 1276.93,
-    "imagen": null
-  },
-  {
-    "id": 693,
-    "categoria": "Infusiones",
-    "marca": "Piper Pol",
-    "producto": "JENGIBRE CON LIMON X 25 SAQ.",
-    "presentacion": "25 SAQ",
-    "precio": 2341.04,
-    "imagen": null
-  },
-  {
-    "id": 694,
-    "categoria": "Infusiones",
-    "marca": "Piper Pol",
-    "producto": "LAXANTE - MEZCLA DE HIERBAS X 25 SAQ.",
-    "presentacion": "25 SAQ",
-    "precio": 3030,
-    "imagen": null
-  },
-  {
-    "id": 695,
-    "categoria": "Infusiones",
-    "marca": "Piper Pol",
-    "producto": "MANZANILLA X 25 SAQ.",
-    "presentacion": "25 SAQ",
-    "precio": 1335.18,
-    "imagen": null
-  },
-  {
-    "id": 696,
-    "categoria": "Infusiones",
-    "marca": "Piper Pol",
-    "producto": "MENTA X 25 SAQ.",
-    "presentacion": "25 SAQ",
-    "precio": 1191.8,
-    "imagen": null
-  },
-  {
-    "id": 697,
-    "categoria": "Infusiones",
-    "marca": "Piper Pol",
-    "producto": "REDUCTORA - MEZCLA DE HIERBAS X 25 SAQ.",
-    "presentacion": "25 SAQ",
-    "precio": 3203.52,
-    "imagen": null
-  },
-  {
-    "id": 698,
-    "categoria": "Infusiones",
-    "marca": "Piper Pol",
-    "producto": "SEDANTE - MEZCLA DE HIERBAS X 25 SAQ.",
-    "presentacion": "25 SAQ",
-    "precio": 3598,
-    "imagen": null
-  },
-  {
-    "id": 699,
-    "categoria": "Infusiones",
-    "marca": "Piper Pol",
-    "producto": "TE NEGRO X 25 SAQ- VALLE VERDE",
-    "presentacion": "25 SAQ",
-    "precio": 1481.14,
-    "imagen": null
-  },
-  {
-    "id": 700,
-    "categoria": "Infusiones",
-    "marca": "Piper Pol",
-    "producto": "TE ROJO X 25 SAQ.",
-    "presentacion": "25 SAQ",
-    "precio": 1191.8,
-    "imagen": null
-  },
-  {
-    "id": 701,
-    "categoria": "Infusiones",
-    "marca": "Piper Pol",
-    "producto": "TE VERDE X 25 SAQ.",
-    "presentacion": "25 SAQ",
-    "precio": 1191.8,
-    "imagen": null
-  },
-  {
-    "id": 702,
-    "categoria": "Infusiones",
-    "marca": "Piper Pol",
-    "producto": "TILO X 25 SAQ.",
-    "presentacion": "25 SAQ",
-    "precio": 3490.27,
-    "imagen": null
-  },
-  {
-    "id": 703,
-    "categoria": "Infusiones",
-    "marca": "Piper Pol",
-    "producto": "YERBA MATE COMPUESTA X 50 SAQ. CON HIERBAS SERRANAS",
-    "presentacion": "50 SAQ",
-    "precio": 1289.03,
-    "imagen": null
-  },
-  {
-    "id": 704,
-    "categoria": "Infusiones",
-    "marca": "Piper Pol",
-    "producto": "YERBA MATE COMPUESTA X 500 GRS CON HIERBAS SERRANAS",
-    "presentacion": "500 g",
-    "precio": 1834.59,
-    "imagen": null
-  },
-  {
-    "id": 705,
-    "categoria": "Infusiones",
-    "marca": "Piper Pol",
-    "producto": "YERBA MATE X 25 SAQ. CON PEPERINA - VALLE VERDE",
-    "presentacion": "25 SAQ",
-    "precio": 1289.03,
-    "imagen": null
-  },
-  {
-    "id": 706,
-    "categoria": "Infusiones",
-    "marca": "Piper Pol",
-    "producto": "YERBA MATE X 500 GRS CON JENGIBRE",
-    "presentacion": "500 g",
-    "precio": 1770,
-    "imagen": null
-  },
-  {
-    "id": 707,
-    "categoria": "Infusiones",
-    "marca": "Piper Pol",
-    "producto": "YERBA MATE X 500 GRS CON NARANJA Y LIMON",
-    "presentacion": "500 g",
-    "precio": 1770,
-    "imagen": null
   },
   {
     "id": 708,
@@ -6981,12 +11787,30 @@ const RAW_PRODUCTS = [
     "imagen": "data/images/img_299.jpg"
   },
   {
+    "id": 1649,
+    "categoria": "Almacén (Sin TACC)",
+    "marca": "Sol Azteca",
+    "producto": "ACEITE DE SEMILLAS DE CALABAZA X 100 CC - SIN TACC",
+    "presentacion": "100 ml",
+    "precio": 19000,
+    "imagen": null
+  },
+  {
     "id": 776,
     "categoria": "Almacén",
     "marca": "Sol Azteca",
     "producto": "ACEITE DE SESAMO X 150 CC",
     "presentacion": "150 ml",
     "precio": 4400,
+    "imagen": null
+  },
+  {
+    "id": 1650,
+    "categoria": "Almacén",
+    "marca": "Sol Azteca",
+    "producto": "ACEITE DE SESAMO X 250 CC",
+    "presentacion": "250 ml",
+    "precio": 6900,
     "imagen": null
   },
   {
@@ -7103,7 +11927,7 @@ const RAW_PRODUCTS = [
     "marca": "Equilibrio",
     "producto": "PASTA DE PISTACHO X 200 GMS",
     "presentacion": "1 un",
-    "precio": 28900,
+    "precio": 29400,
     "imagen": null
   },
   {
@@ -7158,249 +11982,6 @@ const RAW_PRODUCTS = [
     "producto": "SEMILLA DE SESAMO TRITURADO X 1K",
     "presentacion": "1 un",
     "precio": 3600,
-    "imagen": null
-  },
-  {
-    "id": 796,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Spiruline",
-    "producto": "SPIRULINA ARMONIZANTE ANTIESTRES X 100 CAPSULAS",
-    "presentacion": "1 un",
-    "precio": 12900,
-    "imagen": null
-  },
-  {
-    "id": 797,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Spiruline",
-    "producto": "SPIRULINA ARTICULAR X 100 CAPSULAS",
-    "presentacion": "1 un",
-    "precio": 12900,
-    "imagen": null
-  },
-  {
-    "id": 798,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Spiruline",
-    "producto": "SPIRULINA CLOROFILA PLUS X 100 CAPSULAS",
-    "presentacion": "1 un",
-    "precio": 12900,
-    "imagen": null
-  },
-  {
-    "id": 799,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Spiruline",
-    "producto": "SPIRULINA DETOX X 100 CAPSULAS",
-    "presentacion": "1 un",
-    "precio": 12900,
-    "imagen": null
-  },
-  {
-    "id": 800,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Spiruline",
-    "producto": "SPIRULINA FITO-COL X 100 CAPSULAS",
-    "presentacion": "1 un",
-    "precio": 12900,
-    "imagen": null
-  },
-  {
-    "id": 801,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Spiruline",
-    "producto": "SPIRULINA GLUCOFIT X 100 CAPSULAS",
-    "presentacion": "1 un",
-    "precio": 12900,
-    "imagen": null
-  },
-  {
-    "id": 802,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Spiruline",
-    "producto": "SPIRULINA HARD OPTION X 100 CAPSULAS",
-    "presentacion": "1 un",
-    "precio": 12900,
-    "imagen": null
-  },
-  {
-    "id": 803,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Spiruline",
-    "producto": "SPIRULINA HIERRO X 100 CAPSULAS",
-    "presentacion": "1 un",
-    "precio": 12900,
-    "imagen": null
-  },
-  {
-    "id": 804,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Spiruline",
-    "producto": "SPIRULINA INMUNO-ANTIOXIDANTE X 100 CAPSULAS",
-    "presentacion": "1 un",
-    "precio": 12900,
-    "imagen": null
-  },
-  {
-    "id": 805,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Spiruline",
-    "producto": "SPIRULINA MEGA ANTIOXIDANTE Q10 X 100 CAPSULAS",
-    "presentacion": "1 un",
-    "precio": 12900,
-    "imagen": null
-  },
-  {
-    "id": 806,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Spiruline",
-    "producto": "SPIRULINA MEMORIA X 100 CAPSULAS",
-    "presentacion": "1 un",
-    "precio": 12900,
-    "imagen": null
-  },
-  {
-    "id": 807,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Spiruline",
-    "producto": "SPIRULINA MENOPAUSE X 100 CAPSULAS",
-    "presentacion": "1 un",
-    "precio": 12900,
-    "imagen": null
-  },
-  {
-    "id": 808,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Spiruline",
-    "producto": "SPIRULINA PICOLINATO DE CROMO X 100 CAPSULAS",
-    "presentacion": "1 un",
-    "precio": 12900,
-    "imagen": null
-  },
-  {
-    "id": 809,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Spiruline",
-    "producto": "SPIRULINA POLVO X 40 GRAMOS",
-    "presentacion": "1 un",
-    "precio": 12900,
-    "imagen": null
-  },
-  {
-    "id": 810,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Spiruline",
-    "producto": "SPIRULINA PRODIGEST X 100 CAPSULAS",
-    "presentacion": "1 un",
-    "precio": 12900,
-    "imagen": null
-  },
-  {
-    "id": 811,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Spiruline",
-    "producto": "SPIRULINA PROTECCION CARDIO CIRCULAR X 100 CAPSULAS",
-    "presentacion": "1 un",
-    "precio": 12900,
-    "imagen": null
-  },
-  {
-    "id": 812,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Spiruline",
-    "producto": "SPIRULINA PROTECCION OSEA X 100 CAPSULAS",
-    "presentacion": "1 un",
-    "precio": 12900,
-    "imagen": null
-  },
-  {
-    "id": 813,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Spiruline",
-    "producto": "SPIRULINA PROTECCION URINARIA X 100 CAPSULAS",
-    "presentacion": "1 un",
-    "precio": 12900,
-    "imagen": null
-  },
-  {
-    "id": 814,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Spiruline",
-    "producto": "SPIRULINA PURA MICRO ALGA X 100 CAPSULAS",
-    "presentacion": "1 un",
-    "precio": 12900,
-    "imagen": null
-  },
-  {
-    "id": 815,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Spiruline",
-    "producto": "SPIRULINA REDUCTORA PLUS X 100 CAPSULAS",
-    "presentacion": "1 un",
-    "precio": 12900,
-    "imagen": null
-  },
-  {
-    "id": 816,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Spiruline",
-    "producto": "SPIRULINA REGULADOR SUEÑO X 100 CAPSULAS",
-    "presentacion": "1 un",
-    "precio": 12900,
-    "imagen": null
-  },
-  {
-    "id": 817,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Spiruline",
-    "producto": "SPIRULINA SEXUALITY X 60 CAPSULAS",
-    "presentacion": "1 un",
-    "precio": 12900,
-    "imagen": null
-  },
-  {
-    "id": 818,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Spiruline",
-    "producto": "SPIRULINA SUPER OMEGA COL X 100 CAPSULAS (COLESTEROL",
-    "presentacion": "1 un",
-    "precio": 12900,
-    "imagen": null
-  },
-  {
-    "id": 819,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Spiruline",
-    "producto": "SPIRULINA TYRO-ID X 100 CAPSULAS",
-    "presentacion": "1 un",
-    "precio": 12900,
-    "imagen": null
-  },
-  {
-    "id": 820,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Spiruline",
-    "producto": "SPIRULINA UROPROST X 100 CAPSULAS",
-    "presentacion": "1 un",
-    "precio": 12900,
-    "imagen": null
-  },
-  {
-    "id": 821,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Spiruline",
-    "producto": "SPIRULINA VENOSPLUS X 100 CAPSULAS",
-    "presentacion": "1 un",
-    "precio": 12900,
-    "imagen": null
-  },
-  {
-    "id": 822,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Spiruline",
-    "producto": "SPIRULINA VISION PLUS X 100 CAPSULAS",
-    "presentacion": "1 un",
-    "precio": 12900,
     "imagen": null
   },
   {
@@ -7751,7 +12332,7 @@ const RAW_PRODUCTS = [
     "marca": "Zelfa",
     "producto": "BIZCOCHOS MATEROS - ALTO OLEICO - X 1 KG",
     "presentacion": "1 KG",
-    "precio": 9500,
+    "precio": 10400,
     "imagen": null
   },
   {
@@ -7760,7 +12341,7 @@ const RAW_PRODUCTS = [
     "marca": "Zelfa",
     "producto": "GALLETITAS DULCES INTEGRALES X 1 KG CON ALGARROBA, LINO Y MIEL",
     "presentacion": "1 KG",
-    "precio": 9500,
+    "precio": 10400,
     "imagen": null
   },
   {
@@ -7769,7 +12350,7 @@ const RAW_PRODUCTS = [
     "marca": "Zelfa",
     "producto": "GALLETITAS DULCES INTEGRALES X 1 KG CON ALMENDRA, MIEL Y FRUTA",
     "presentacion": "1 KG",
-    "precio": 9500,
+    "precio": 10400,
     "imagen": null
   },
   {
@@ -7778,7 +12359,7 @@ const RAW_PRODUCTS = [
     "marca": "Zelfa",
     "producto": "GALLETITAS DULCES INTEGRALES X 1 KG CON AVENA, PASAS Y MIEL",
     "presentacion": "1 KG",
-    "precio": 9500,
+    "precio": 10400,
     "imagen": null
   },
   {
@@ -7787,7 +12368,7 @@ const RAW_PRODUCTS = [
     "marca": "Zelfa",
     "producto": "GALLETITAS DULCES INTEGRALES X 1 KG SIN AZUCAR - COCO",
     "presentacion": "1 KG",
-    "precio": 9500,
+    "precio": 10400,
     "imagen": null
   },
   {
@@ -7796,7 +12377,7 @@ const RAW_PRODUCTS = [
     "marca": "Zelfa",
     "producto": "GALLETITAS DULCES INTEGRALES X 1 KG SIN AZUCAR - LIMON",
     "presentacion": "1 KG",
-    "precio": 9500,
+    "precio": 10400,
     "imagen": null
   },
   {
@@ -7805,7 +12386,7 @@ const RAW_PRODUCTS = [
     "marca": "Zelfa",
     "producto": "GALLETITAS DULCES TRADICIONALES X 1 KG C/ CHIPS DE CHOCOLATE",
     "presentacion": "1 KG",
-    "precio": 9500,
+    "precio": 10400,
     "imagen": null
   },
   {
@@ -7814,7 +12395,7 @@ const RAW_PRODUCTS = [
     "marca": "Zelfa",
     "producto": "GALLETITAS DULCES TRADICIONALES X 1 KG PEPAS",
     "presentacion": "1 KG",
-    "precio": 9500,
+    "precio": 10400,
     "imagen": null
   },
   {
@@ -7823,7 +12404,7 @@ const RAW_PRODUCTS = [
     "marca": "Zelfa",
     "producto": "GALLETITAS MARINAS MALTEADAS C/ SEMILLAS Y GLUTEN X 1 KG",
     "presentacion": "1 KG",
-    "precio": 9500,
+    "precio": 10400,
     "imagen": null
   },
   {
@@ -7860,6153 +12441,6 @@ const RAW_PRODUCTS = [
     "producto": "POLVORONES DULCES X 1 KG MARMOLADOS",
     "presentacion": "1 KG",
     "precio": 9500,
-    "imagen": null
-  },
-  {
-    "id": 874,
-    "categoria": "Panificados (Sin TACC)",
-    "marca": "Destaccados",
-    "producto": "Pan s/tacc natural x 500grs",
-    "presentacion": "500g",
-    "precio": 4700,
-    "imagen": "data/images/img_45.jpg"
-  },
-  {
-    "id": 875,
-    "categoria": "Panificados (Sin TACC)",
-    "marca": "Destaccados",
-    "producto": "Pan s/tacc c/semillas x 500grs",
-    "presentacion": "500g",
-    "precio": 5000,
-    "imagen": "data/images/img_45.jpg"
-  },
-  {
-    "id": 876,
-    "categoria": "Panificados y Galletitas",
-    "marca": "La Francia",
-    "producto": "Membrillo y Chía 1KG",
-    "presentacion": "1KG",
-    "precio": 8400,
-    "imagen": "data/images/img_41.jpg"
-  },
-  {
-    "id": 877,
-    "categoria": "Panificados y Galletitas",
-    "marca": "La Francia",
-    "producto": "Algarroba y Membrillo 1KG",
-    "presentacion": "1KG",
-    "precio": 8400,
-    "imagen": null
-  },
-  {
-    "id": 878,
-    "categoria": "Panificados y Galletitas",
-    "marca": "La Francia",
-    "producto": "Batata y Chía 1KG",
-    "presentacion": "1KG",
-    "precio": 8400,
-    "imagen": null
-  },
-  {
-    "id": 879,
-    "categoria": "Panificados y Galletitas",
-    "marca": "La Francia",
-    "producto": "Membrillo y Chía 250G",
-    "presentacion": "250G",
-    "precio": 2530,
-    "imagen": null
-  },
-  {
-    "id": 880,
-    "categoria": "Panificados y Galletitas",
-    "marca": "La Francia",
-    "producto": "Algarroba y Membrillo 250G",
-    "presentacion": "250G",
-    "precio": 2530,
-    "imagen": null
-  },
-  {
-    "id": 881,
-    "categoria": "Panificados y Galletitas",
-    "marca": "La Francia",
-    "producto": "Batata y Chía 250G",
-    "presentacion": "250G",
-    "precio": 2530,
-    "imagen": null
-  },
-  {
-    "id": 882,
-    "categoria": "Panificados y Galletitas",
-    "marca": "La Francia",
-    "producto": "Tradicional 560G",
-    "presentacion": "560G",
-    "precio": 3720,
-    "imagen": null
-  },
-  {
-    "id": 883,
-    "categoria": "Panificados y Galletitas",
-    "marca": "La Francia",
-    "producto": "Multicereal 560G",
-    "presentacion": "560G",
-    "precio": 3720,
-    "imagen": null
-  },
-  {
-    "id": 884,
-    "categoria": "Panificados y Galletitas",
-    "marca": "La Francia",
-    "producto": "Doble Integral 560G",
-    "presentacion": "560G",
-    "precio": 3720,
-    "imagen": null
-  },
-  {
-    "id": 885,
-    "categoria": "Panificados y Galletitas",
-    "marca": "La Francia",
-    "producto": "Doble Salvado 560G",
-    "presentacion": "560G",
-    "precio": 3750,
-    "imagen": "data/images/img_42.jpg"
-  },
-  {
-    "id": 886,
-    "categoria": "Panificados y Galletitas",
-    "marca": "La Francia",
-    "producto": "Sin Sal 560G",
-    "presentacion": "560G",
-    "precio": 3720,
-    "imagen": null
-  },
-  {
-    "id": 887,
-    "categoria": "Panificados y Galletitas",
-    "marca": "La Francia",
-    "producto": "Tres Harinas",
-    "presentacion": "1 un",
-    "precio": 3720,
-    "imagen": null
-  },
-  {
-    "id": 888,
-    "categoria": "Panificados y Galletitas",
-    "marca": "La Francia",
-    "producto": "Selección Boniato y Bechamel",
-    "presentacion": "1 un",
-    "precio": 5150,
-    "imagen": null
-  },
-  {
-    "id": 889,
-    "categoria": "Panificados y Galletitas",
-    "marca": "La Francia",
-    "producto": "Selección Calabaza y Mascabo",
-    "presentacion": "1 un",
-    "precio": 5150,
-    "imagen": null
-  },
-  {
-    "id": 890,
-    "categoria": "Panificados y Galletitas",
-    "marca": "La Francia",
-    "producto": "Selección Zapallo y Curcuma",
-    "presentacion": "1 un",
-    "precio": 5150,
-    "imagen": null
-  },
-  {
-    "id": 891,
-    "categoria": "Panificados y Galletitas",
-    "marca": "Murke",
-    "producto": "Algarroba y Maní 25OG",
-    "presentacion": "1 un",
-    "precio": 1880,
-    "imagen": null
-  },
-  {
-    "id": 892,
-    "categoria": "Panificados y Galletitas",
-    "marca": "Murke",
-    "producto": "Algarroba y Maní 1000G",
-    "presentacion": "1000G",
-    "precio": 7250,
-    "imagen": null
-  },
-  {
-    "id": 893,
-    "categoria": "Panificados y Galletitas",
-    "marca": "Murke",
-    "producto": "Coco 250G",
-    "presentacion": "250G",
-    "precio": 1830,
-    "imagen": null
-  },
-  {
-    "id": 894,
-    "categoria": "Panificados y Galletitas",
-    "marca": "Murke",
-    "producto": "Coco 1000G",
-    "presentacion": "1000G",
-    "precio": 7150,
-    "imagen": null
-  },
-  {
-    "id": 895,
-    "categoria": "Panificados y Galletitas",
-    "marca": "Murke",
-    "producto": "Corazones de Jengibre y Miel 250G",
-    "presentacion": "250G",
-    "precio": 1880,
-    "imagen": null
-  },
-  {
-    "id": 896,
-    "categoria": "Panificados y Galletitas",
-    "marca": "Murke",
-    "producto": "Corazones de Jengibre y Miel 1000G",
-    "presentacion": "1000G",
-    "precio": 7250,
-    "imagen": null
-  },
-  {
-    "id": 897,
-    "categoria": "Panificados y Galletitas",
-    "marca": "Murke",
-    "producto": "Limón 250G",
-    "presentacion": "250G",
-    "precio": 1830,
-    "imagen": null
-  },
-  {
-    "id": 898,
-    "categoria": "Panificados y Galletitas",
-    "marca": "Murke",
-    "producto": "Limón 1000G",
-    "presentacion": "1000G",
-    "precio": 7150,
-    "imagen": null
-  },
-  {
-    "id": 899,
-    "categoria": "Panificados y Galletitas",
-    "marca": "Murke",
-    "producto": "Naranja 250G",
-    "presentacion": "250G",
-    "precio": 1830,
-    "imagen": null
-  },
-  {
-    "id": 900,
-    "categoria": "Panificados y Galletitas",
-    "marca": "Murke",
-    "producto": "Naranja 1000G",
-    "presentacion": "1000G",
-    "precio": 7150,
-    "imagen": null
-  },
-  {
-    "id": 901,
-    "categoria": "Panificados y Galletitas",
-    "marca": "Murke",
-    "producto": "Muesli 250G",
-    "presentacion": "250G",
-    "precio": 2050,
-    "imagen": null
-  },
-  {
-    "id": 902,
-    "categoria": "Panificados y Galletitas",
-    "marca": "Murke",
-    "producto": "Muesli 1000G",
-    "presentacion": "1000G",
-    "precio": 7750,
-    "imagen": null
-  },
-  {
-    "id": 903,
-    "categoria": "Panificados y Galletitas",
-    "marca": "Murke",
-    "producto": "Palitos de Anís 250G",
-    "presentacion": "250G",
-    "precio": 1830,
-    "imagen": null
-  },
-  {
-    "id": 904,
-    "categoria": "Panificados y Galletitas",
-    "marca": "Murke",
-    "producto": "Palitos de Anís 1000G",
-    "presentacion": "1000G",
-    "precio": 7150,
-    "imagen": null
-  },
-  {
-    "id": 905,
-    "categoria": "Panificados y Galletitas",
-    "marca": "Murke",
-    "producto": "Pepas Integrales 250G",
-    "presentacion": "250G",
-    "precio": 1830,
-    "imagen": null
-  },
-  {
-    "id": 906,
-    "categoria": "Panificados y Galletitas",
-    "marca": "Murke",
-    "producto": "Pepas Integrales 1000G",
-    "presentacion": "1000G",
-    "precio": 7150,
-    "imagen": null
-  },
-  {
-    "id": 907,
-    "categoria": "Panificados y Galletitas",
-    "marca": "Murke",
-    "producto": "Galletas Integrales Con Sal 250G",
-    "presentacion": "250G",
-    "precio": 1830,
-    "imagen": null
-  },
-  {
-    "id": 908,
-    "categoria": "Panificados y Galletitas",
-    "marca": "Murke",
-    "producto": "Galletas Integrales Sin Sal 250G",
-    "presentacion": "250G",
-    "precio": 1830,
-    "imagen": null
-  },
-  {
-    "id": 909,
-    "categoria": "Panificados y Galletitas",
-    "marca": "Murke",
-    "producto": "Grisines de Gluten Con Sal 200G",
-    "presentacion": "200G",
-    "precio": 1830,
-    "imagen": null
-  },
-  {
-    "id": 910,
-    "categoria": "Panificados y Galletitas",
-    "marca": "Murke",
-    "producto": "Grisines de Gluten Sin Sal 200G",
-    "presentacion": "200G",
-    "precio": 1830,
-    "imagen": null
-  },
-  {
-    "id": 911,
-    "categoria": "Panificados y Galletitas",
-    "marca": "Murke",
-    "producto": "Avena, Germen de Trigo y Lino 200G",
-    "presentacion": "200G",
-    "precio": 2750,
-    "imagen": null
-  },
-  {
-    "id": 912,
-    "categoria": "Panificados y Galletitas",
-    "marca": "Murke",
-    "producto": "Galletitas de Gluten sabor Vainilla 200G",
-    "presentacion": "200G",
-    "precio": 2480,
-    "imagen": null
-  },
-  {
-    "id": 913,
-    "categoria": "Panificados y Galletitas",
-    "marca": "Murke",
-    "producto": "Muesli  0% Azúcar, 0% Grasas Trans 200G",
-    "presentacion": "200G",
-    "precio": 3150,
-    "imagen": null
-  },
-  {
-    "id": 914,
-    "categoria": "Panificados y Galletitas",
-    "marca": "Murke",
-    "producto": "Alfajores Int 0% Azúcar 0% Grasas Trans 12UNID",
-    "presentacion": "12unidades",
-    "precio": 12000,
-    "imagen": null
-  },
-  {
-    "id": 915,
-    "categoria": "Panificados y Galletitas",
-    "marca": "Murke",
-    "producto": "Alfajores Int Chocolate 0% Azúcar 0%  Grasas Trans 12UNID",
-    "presentacion": "12unidades",
-    "precio": 16000,
-    "imagen": null
-  },
-  {
-    "id": 916,
-    "categoria": "Panificados y Galletitas",
-    "marca": "Murke",
-    "producto": "Budín 0% Azúcar, 0% Grasas Trans C/Frutas 230G",
-    "presentacion": "230G",
-    "precio": 3200,
-    "imagen": null
-  },
-  {
-    "id": 917,
-    "categoria": "Panificados y Galletitas",
-    "marca": "Murke",
-    "producto": "Budín 0% Azúcar, 0% Grasas Trans S/Frutas 230G",
-    "presentacion": "230G",
-    "precio": 3200,
-    "imagen": null
-  },
-  {
-    "id": 918,
-    "categoria": "Panificados y Galletitas",
-    "marca": "Murke",
-    "producto": "Pan integral",
-    "presentacion": "1 un",
-    "precio": 2950,
-    "imagen": null
-  },
-  {
-    "id": 919,
-    "categoria": "Panificados y Galletitas",
-    "marca": "Murke",
-    "producto": "Pan Multicereal",
-    "presentacion": "1 un",
-    "precio": 2950,
-    "imagen": null
-  },
-  {
-    "id": 920,
-    "categoria": "Panificados y Galletitas",
-    "marca": "Murke",
-    "producto": "Pre-Pizza Integral 350G",
-    "presentacion": "350G",
-    "precio": 1760,
-    "imagen": null
-  },
-  {
-    "id": 921,
-    "categoria": "Panificados y Galletitas",
-    "marca": "Murke",
-    "producto": "Pre-Pizzeta Integral 150G",
-    "presentacion": "150G",
-    "precio": 1050,
-    "imagen": null
-  },
-  {
-    "id": 922,
-    "categoria": "Panificados y Galletitas",
-    "marca": "Murke",
-    "producto": "Bollitos con Pasas de Uvas y Miel 500G",
-    "presentacion": "500G",
-    "precio": 3100,
-    "imagen": null
-  },
-  {
-    "id": 923,
-    "categoria": "Almacén",
-    "marca": "Murke",
-    "producto": "Tagliatelle Integrales 100% 400G",
-    "presentacion": "400G",
-    "precio": 2650,
-    "imagen": null
-  },
-  {
-    "id": 924,
-    "categoria": "Almacén",
-    "marca": "Murke",
-    "producto": "Tagliatelle Integrales de Espinaca 400G",
-    "presentacion": "400G",
-    "precio": 3050,
-    "imagen": null
-  },
-  {
-    "id": 925,
-    "categoria": "Panificados y Galletitas",
-    "marca": "Murke",
-    "producto": "Barra de chocolate S/ Azúcar Agregado C/Almendras x 85 g 1U",
-    "presentacion": "85 g",
-    "precio": 3420,
-    "imagen": null
-  },
-  {
-    "id": 926,
-    "categoria": "Panificados y Galletitas",
-    "marca": "Murke",
-    "producto": "Barra de chocolate S/ Azúcar Agregado C/Nueces x 85 g 1U",
-    "presentacion": "85 g",
-    "precio": 3200,
-    "imagen": null
-  },
-  {
-    "id": 927,
-    "categoria": "Panificados y Galletitas",
-    "marca": "Murke",
-    "producto": "Barra de chocolate S/ Azúcar Agregado C/Maní x 85 g 1U",
-    "presentacion": "85 g",
-    "precio": 2900,
-    "imagen": null
-  },
-  {
-    "id": 928,
-    "categoria": "Panificados y Galletitas",
-    "marca": "Murke",
-    "producto": "Tableta de chocolate S/ Azúcar Agregado x 77 g 1U",
-    "presentacion": "77 g",
-    "precio": 3050,
-    "imagen": null
-  },
-  {
-    "id": 929,
-    "categoria": "Panificados y Galletitas",
-    "marca": "Murke",
-    "producto": "Barrita Arroz Chocolate Blanco S/Azúcar SIN TACC 24U",
-    "presentacion": "1 un",
-    "precio": 18600,
-    "imagen": null
-  },
-  {
-    "id": 930,
-    "categoria": "Panificados y Galletitas",
-    "marca": "Murke",
-    "producto": "Barrita Arroz Chocolate  S/Azúcar SIN TACC 24U",
-    "presentacion": "1 un",
-    "precio": 18600,
-    "imagen": null
-  },
-  {
-    "id": 931,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Jalea real (envase 10 grs c/cucharita",
-    "presentacion": "10 g",
-    "precio": 4500,
-    "imagen": null
-  },
-  {
-    "id": 932,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Miel a granel Sólida de Alfalfa",
-    "presentacion": "1 kg",
-    "precio": 3279,
-    "imagen": null
-  },
-  {
-    "id": 933,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Miel a granel Líquida de Alfalfa",
-    "presentacion": "1 kg",
-    "precio": 3279,
-    "imagen": null
-  },
-  {
-    "id": 934,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Miel fraccionada con envase de 1KG",
-    "presentacion": "1KG",
-    "precio": 4900,
-    "imagen": null
-  },
-  {
-    "id": 935,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Miel fraccionada con envase de 1/2KG",
-    "presentacion": "2KG",
-    "precio": 3600,
-    "imagen": null
-  },
-  {
-    "id": 936,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Miel fraccionada con envase de 1/4KG",
-    "presentacion": "4KG",
-    "precio": 2900,
-    "imagen": null
-  },
-  {
-    "id": 937,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Polen Multifloral x kg",
-    "presentacion": "1 kg",
-    "precio": 34000,
-    "imagen": null
-  },
-  {
-    "id": 938,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Polen reconvertido Crinway x 5U",
-    "presentacion": "1 un",
-    "precio": 6200,
-    "imagen": null
-  },
-  {
-    "id": 939,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Propoleo bebible BIOBEE x 125 CC",
-    "presentacion": "125 ml",
-    "precio": 6900,
-    "imagen": null
-  },
-  {
-    "id": 940,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Propoleo bebible al 10 % x 60CC",
-    "presentacion": "60ml",
-    "precio": 7600,
-    "imagen": null
-  },
-  {
-    "id": 941,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "PALITO MIELERO X UN.",
-    "presentacion": "1 un",
-    "precio": 800,
-    "imagen": null
-  },
-  {
-    "id": 942,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Arroz Bco. doble Carolina x KG (MIN 2KG",
-    "presentacion": "2KG",
-    "precio": 2650,
-    "imagen": null
-  },
-  {
-    "id": 943,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Arroz Bco. largo fino 00000 x KG (MIN 2KG",
-    "presentacion": "2KG",
-    "precio": 1100,
-    "imagen": null
-  },
-  {
-    "id": 944,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Arroz Basmati x kg (Nacional",
-    "presentacion": "1 kg",
-    "precio": 3290,
-    "imagen": null
-  },
-  {
-    "id": 945,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Arroz Carnaroli x KG (MIN 2KG",
-    "presentacion": "2KG",
-    "precio": 5100,
-    "imagen": null
-  },
-  {
-    "id": 946,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Arroz Mochi x KG (MIN 2KG",
-    "presentacion": "2KG",
-    "precio": 2300,
-    "imagen": null
-  },
-  {
-    "id": 947,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Arroz Negro x KG (MIN 2KG",
-    "presentacion": "2KG",
-    "precio": 4000,
-    "imagen": null
-  },
-  {
-    "id": 948,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Arroz Koshihari (p/sushix KG (MIN 2KG",
-    "presentacion": "2KG",
-    "precio": 2850,
-    "imagen": null
-  },
-  {
-    "id": 949,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Arroz Integral Largo Fino (B.B.x KG (MIN 2KG",
-    "presentacion": "2KG",
-    "precio": 1550,
-    "imagen": null
-  },
-  {
-    "id": 950,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Arroz integral Yamaní x KG (MIN 2KG",
-    "presentacion": "2KG",
-    "precio": 1950,
-    "imagen": null
-  },
-  {
-    "id": 951,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Azúcar integral / Mascabo (MIN 2 KG",
-    "presentacion": "2 KG",
-    "precio": 4800,
-    "imagen": null
-  },
-  {
-    "id": 952,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Azúcar integral / Mascabo x 10KG",
-    "presentacion": "10KG",
-    "precio": 46000,
-    "imagen": null
-  },
-  {
-    "id": 953,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Azúcar de Coco x 180gms",
-    "presentacion": "1 un",
-    "precio": 4750,
-    "imagen": null
-  },
-  {
-    "id": 954,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Azúcar de Caña Orgánica Oasis x 500GMS",
-    "presentacion": "1 un",
-    "precio": 4700,
-    "imagen": null
-  },
-  {
-    "id": 955,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Azúcar rubia x KG (MIN 2KG",
-    "presentacion": "2KG",
-    "precio": 2300,
-    "imagen": null
-  },
-  {
-    "id": 956,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Azúcar rubia x 10KG",
-    "presentacion": "10KG",
-    "precio": 20500,
-    "imagen": null
-  },
-  {
-    "id": 957,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Eritritol x kg",
-    "presentacion": "1 kg",
-    "precio": 24300,
-    "imagen": null
-  },
-  {
-    "id": 958,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Arándano granulado x 1KG",
-    "presentacion": "1KG",
-    "precio": 13200,
-    "imagen": null
-  },
-  {
-    "id": 959,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Betacaroteno granulado x 1KG",
-    "presentacion": "1KG",
-    "precio": 15000,
-    "imagen": null
-  },
-  {
-    "id": 960,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Lecitina de soja granulada x 1KG",
-    "presentacion": "1KG",
-    "precio": 20000,
-    "imagen": null
-  },
-  {
-    "id": 961,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Sal marina fina x 500GR Fruto de mi tierra",
-    "presentacion": "500GR",
-    "precio": 1460,
-    "imagen": null
-  },
-  {
-    "id": 962,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Sal marina gruesa x 500GR Fruto de mi tierra",
-    "presentacion": "500GR",
-    "precio": 1460,
-    "imagen": null
-  },
-  {
-    "id": 963,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Sal rosada fina suelta x KG",
-    "presentacion": "1 kg",
-    "precio": 3800,
-    "imagen": null
-  },
-  {
-    "id": 964,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Sal rosada gruesa suelta x KG",
-    "presentacion": "1 kg",
-    "precio": 3800,
-    "imagen": null
-  },
-  {
-    "id": 965,
-    "categoria": "Almacén",
-    "marca": "Lafor",
-    "producto": "Almohaditas 2 Salvados x 1,5KG",
-    "presentacion": "1,5KG",
-    "precio": 8200,
-    "imagen": null
-  },
-  {
-    "id": 966,
-    "categoria": "Almacén",
-    "marca": "Lafor",
-    "producto": "Almohaditas rellenas avellana x 2,5KG",
-    "presentacion": "2,5KG",
-    "precio": 22000,
-    "imagen": null
-  },
-  {
-    "id": 967,
-    "categoria": "Almacén",
-    "marca": "Lafor",
-    "producto": "Almohaditas rellenas chocolate x 2,5KG",
-    "presentacion": "2,5KG",
-    "precio": 22000,
-    "imagen": null
-  },
-  {
-    "id": 968,
-    "categoria": "Almacén",
-    "marca": "Lafor",
-    "producto": "Almohaditas rellenas chocolate blanco x 2,5KG",
-    "presentacion": "2,5KG",
-    "precio": 22000,
-    "imagen": null
-  },
-  {
-    "id": 969,
-    "categoria": "Almacén",
-    "marca": "Lafor",
-    "producto": "Almohaditas rellenas frutilla x 2,5KG",
-    "presentacion": "2,5KG",
-    "precio": 20000,
-    "imagen": null
-  },
-  {
-    "id": 970,
-    "categoria": "Almacén",
-    "marca": "Lafor",
-    "producto": "Almohaditas rellenas limón x 2,5KG",
-    "presentacion": "2,5KG",
-    "precio": 20000,
-    "imagen": null
-  },
-  {
-    "id": 971,
-    "categoria": "Almacén",
-    "marca": "Lafor",
-    "producto": "Almohaditas rellenas maní x 2,5KG",
-    "presentacion": "2,5KG",
-    "precio": 20000,
-    "imagen": null
-  },
-  {
-    "id": 972,
-    "categoria": "Almacén",
-    "marca": "Lafor",
-    "producto": "Anillitos avena y miel x 2KG",
-    "presentacion": "2KG",
-    "precio": 11300,
-    "imagen": null
-  },
-  {
-    "id": 973,
-    "categoria": "Almacén",
-    "marca": "Lafor",
-    "producto": "Anillitos frutales x 2.5 KG",
-    "presentacion": "2.5 KG",
-    "precio": 18000,
-    "imagen": "data/images/img_72.jpg"
-  },
-  {
-    "id": 974,
-    "categoria": "Almacén",
-    "marca": "Lafor",
-    "producto": "Bastoncitos de salvado x 2,5KG",
-    "presentacion": "2,5KG",
-    "precio": 12300,
-    "imagen": "data/images/img_80.jpg"
-  },
-  {
-    "id": 975,
-    "categoria": "Almacén",
-    "marca": "Lafor",
-    "producto": "Bolita de chocolate x 2KG",
-    "presentacion": "2KG",
-    "precio": 13000,
-    "imagen": "data/images/img_81.jpg"
-  },
-  {
-    "id": 976,
-    "categoria": "Almacén",
-    "marca": "Lafor",
-    "producto": "Copos de maiz azucarados x 2,5KG",
-    "presentacion": "2,5KG",
-    "precio": 13600,
-    "imagen": null
-  },
-  {
-    "id": 977,
-    "categoria": "Almacén",
-    "marca": "Lafor",
-    "producto": "Copos de maiz sin azucarados x 3,5KG",
-    "presentacion": "3,5KG",
-    "precio": 13500,
-    "imagen": null
-  },
-  {
-    "id": 978,
-    "categoria": "Almacén",
-    "marca": "Lafor",
-    "producto": "Cuadricopos sin azúcar x 2KG",
-    "presentacion": "2KG",
-    "precio": 10500,
-    "imagen": null
-  },
-  {
-    "id": 979,
-    "categoria": "Almacén",
-    "marca": "Lafor",
-    "producto": "Osito de avena y miel x 2KG",
-    "presentacion": "2KG",
-    "precio": 13000,
-    "imagen": "data/images/img_71.jpg"
-  },
-  {
-    "id": 980,
-    "categoria": "Almacén",
-    "marca": "Lafor",
-    "producto": "Osito de frutilla x 2 kg",
-    "presentacion": "2 kg",
-    "precio": 13000,
-    "imagen": "data/images/img_70.jpg"
-  },
-  {
-    "id": 981,
-    "categoria": "Almacén",
-    "marca": "Lafor",
-    "producto": "Osito de chocolate x 2,5 kg",
-    "presentacion": "2,5 kg",
-    "precio": 13000,
-    "imagen": null
-  },
-  {
-    "id": 982,
-    "categoria": "Almacén",
-    "marca": "Ying Yang",
-    "producto": "Quinoa pop x kg",
-    "presentacion": "1 kg",
-    "precio": 8500,
-    "imagen": null
-  },
-  {
-    "id": 983,
-    "categoria": "Almacén",
-    "marca": "Ying Yang",
-    "producto": "Quinoa pop x 3kg",
-    "presentacion": "3kg",
-    "precio": 24000,
-    "imagen": "data/images/img_79.jpg"
-  },
-  {
-    "id": 984,
-    "categoria": "Almacén",
-    "marca": "Ying Yang",
-    "producto": "Quinoa pop C/Algarroba x Kg",
-    "presentacion": "1 kg",
-    "precio": 8200,
-    "imagen": null
-  },
-  {
-    "id": 985,
-    "categoria": "Almacén",
-    "marca": "Ying Yang",
-    "producto": "Quinoa pop C/Algarroba x 3Kg",
-    "presentacion": "3Kg",
-    "precio": 24000,
-    "imagen": "data/images/img_78.jpg"
-  },
-  {
-    "id": 986,
-    "categoria": "Almacén",
-    "marca": "Ying Yang",
-    "producto": "Quinoa pop C/Frutos rojos x Kg",
-    "presentacion": "1 kg",
-    "precio": 8200,
-    "imagen": null
-  },
-  {
-    "id": 987,
-    "categoria": "Almacén",
-    "marca": "Ying Yang",
-    "producto": "Quinoa pop C/Frutos rojos x 3Kg",
-    "presentacion": "3Kg",
-    "precio": 24000,
-    "imagen": null
-  },
-  {
-    "id": 988,
-    "categoria": "Almacén",
-    "marca": "Ying Yang",
-    "producto": "Quinoa pop C/ Algarroba x 100GM",
-    "presentacion": "1 un",
-    "precio": 950,
-    "imagen": null
-  },
-  {
-    "id": 989,
-    "categoria": "Almacén",
-    "marca": "Ying Yang",
-    "producto": "Quinoa pop x 100GM",
-    "presentacion": "1 un",
-    "precio": 980,
-    "imagen": null
-  },
-  {
-    "id": 990,
-    "categoria": "Almacén",
-    "marca": "Ying Yang",
-    "producto": "Quinoa pop Kids x 80GM",
-    "presentacion": "1 un",
-    "precio": 550,
-    "imagen": null
-  },
-  {
-    "id": 991,
-    "categoria": "Almacén",
-    "marca": "Ying Yang",
-    "producto": "Harina de maiz blanca p/ arepas x 500GM",
-    "presentacion": "1 un",
-    "precio": 1650,
-    "imagen": null
-  },
-  {
-    "id": 992,
-    "categoria": "Almacén",
-    "marca": "Ying Yang",
-    "producto": "Polenta organica",
-    "presentacion": "1 un",
-    "precio": 1450,
-    "imagen": null
-  },
-  {
-    "id": 993,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Maíz inflado (Tutucax KG",
-    "presentacion": "1 un",
-    "precio": 5000,
-    "imagen": null
-  },
-  {
-    "id": 994,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Maíz inflado diet (Tutucax 800grs",
-    "presentacion": "800g",
-    "precio": 5000,
-    "imagen": null
-  },
-  {
-    "id": 995,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Arroz inflado x Kg",
-    "presentacion": "1 kg",
-    "precio": 7800,
-    "imagen": null
-  },
-  {
-    "id": 996,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Bolitas frutales de maiz x Kg",
-    "presentacion": "1 kg",
-    "precio": 6000,
-    "imagen": null
-  },
-  {
-    "id": 997,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Balon de cereal C/chocolate x kg",
-    "presentacion": "1 kg",
-    "precio": 31000,
-    "imagen": null
-  },
-  {
-    "id": 998,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Hojuelas de arroz Patagonia G. S/ TACC x 500GM Avellanas",
-    "presentacion": "1 un",
-    "precio": 4200,
-    "imagen": null
-  },
-  {
-    "id": 999,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Equilibrio",
-    "producto": "Hojuelas de arroz Patagonia G. S/TACC x 500GM Limon",
-    "presentacion": "1 un",
-    "precio": 4200,
-    "imagen": null
-  },
-  {
-    "id": 1000,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Equilibrio",
-    "producto": "Hojuelas de arroz Patagonia G. S/TACC x 500GM Futilla",
-    "presentacion": "1 un",
-    "precio": 4200,
-    "imagen": null
-  },
-  {
-    "id": 1001,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Equilibrio",
-    "producto": "Hojuelas de arroz Patagonia G. S/TACC x 500 GM Chocolate",
-    "presentacion": "1 un",
-    "precio": 4200,
-    "imagen": null
-  },
-  {
-    "id": 1002,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Coco en escamas x KG",
-    "presentacion": "1 kg",
-    "precio": 26000,
-    "imagen": null
-  },
-  {
-    "id": 1003,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Coco rallado",
-    "presentacion": "1 un",
-    "precio": 10000,
-    "imagen": null
-  },
-  {
-    "id": 1004,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Harina de coco x KG",
-    "presentacion": "1 kg",
-    "precio": 7500,
-    "imagen": null
-  },
-  {
-    "id": 1005,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Leche de coco en polvo x KG",
-    "presentacion": "1 kg",
-    "precio": 40000,
-    "imagen": null
-  },
-  {
-    "id": 1006,
-    "categoria": "Repostería",
-    "marca": "Equilibrio",
-    "producto": "Almendras con chocolate x KG",
-    "presentacion": "1 kg",
-    "precio": 33000,
-    "imagen": null
-  },
-  {
-    "id": 1007,
-    "categoria": "Repostería",
-    "marca": "Equilibrio",
-    "producto": "Almendras con chocolate blanco x KG",
-    "presentacion": "1 kg",
-    "precio": 24830,
-    "imagen": null
-  },
-  {
-    "id": 1008,
-    "categoria": "Repostería",
-    "marca": "Equilibrio",
-    "producto": "Avellanas con chocolate x KG",
-    "presentacion": "1 kg",
-    "precio": 23300,
-    "imagen": null
-  },
-  {
-    "id": 1009,
-    "categoria": "Repostería",
-    "marca": "Equilibrio",
-    "producto": "Garrapiñada de girasol x KG",
-    "presentacion": "1 kg",
-    "precio": 9300,
-    "imagen": null
-  },
-  {
-    "id": 1010,
-    "categoria": "Repostería",
-    "marca": "Equilibrio",
-    "producto": "Garrapiñada de maní x KG",
-    "presentacion": "1 kg",
-    "precio": 9700,
-    "imagen": null
-  },
-  {
-    "id": 1011,
-    "categoria": "Repostería",
-    "marca": "Equilibrio",
-    "producto": "Garrapiñada de almendras x KG",
-    "presentacion": "1 kg",
-    "precio": 24500,
-    "imagen": null
-  },
-  {
-    "id": 1012,
-    "categoria": "Repostería",
-    "marca": "Equilibrio",
-    "producto": "Pasas de uva con chocolate x KG",
-    "presentacion": "1 kg",
-    "precio": 24800,
-    "imagen": null
-  },
-  {
-    "id": 1013,
-    "categoria": "Repostería",
-    "marca": "Equilibrio",
-    "producto": "Mani con chocolate x KG",
-    "presentacion": "1 kg",
-    "precio": 18800,
-    "imagen": null
-  },
-  {
-    "id": 1014,
-    "categoria": "Repostería",
-    "marca": "Equilibrio",
-    "producto": "Maíz frito y salado x KG",
-    "presentacion": "1 kg",
-    "precio": 14500,
-    "imagen": null
-  },
-  {
-    "id": 1015,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Almendras Guara x kg",
-    "presentacion": "1 kg",
-    "precio": 22000,
-    "imagen": null
-  },
-  {
-    "id": 1016,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Almendras NonpareilxKG",
-    "presentacion": "1 un",
-    "precio": 25800,
-    "imagen": null
-  },
-  {
-    "id": 1017,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Ananá en rodajas x KG",
-    "presentacion": "1 kg",
-    "precio": 25000,
-    "imagen": null
-  },
-  {
-    "id": 1018,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Ananá en cubos x KG Natural",
-    "presentacion": "1 kg",
-    "precio": 20500,
-    "imagen": null
-  },
-  {
-    "id": 1019,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Ananá en cubos x KG Verde",
-    "presentacion": "1 kg",
-    "precio": 20500,
-    "imagen": null
-  },
-  {
-    "id": 1020,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Ananá en cubos x KG Rojo",
-    "presentacion": "1 kg",
-    "precio": 20500,
-    "imagen": null
-  },
-  {
-    "id": 1021,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Arándano deshidratado Rojo x KG",
-    "presentacion": "1 kg",
-    "precio": 19350,
-    "imagen": null
-  },
-  {
-    "id": 1022,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Avellanas peladas x KG",
-    "presentacion": "1 kg",
-    "precio": 39990,
-    "imagen": null
-  },
-  {
-    "id": 1023,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Banana deshidratada x KG",
-    "presentacion": "1 kg",
-    "precio": 13500,
-    "imagen": null
-  },
-  {
-    "id": 1024,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Cáscara de naranja glaseada x 2KG",
-    "presentacion": "2KG",
-    "precio": 23500,
-    "imagen": null
-  },
-  {
-    "id": 1025,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Cascara de naranja glaseada x KG",
-    "presentacion": "1 kg",
-    "precio": 12200,
-    "imagen": null
-  },
-  {
-    "id": 1026,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Castañas de cajú naturales x KG",
-    "presentacion": "1 kg",
-    "precio": 18000,
-    "imagen": null
-  },
-  {
-    "id": 1027,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Ciruelas sin carozo bombón ( MIN 2 KG",
-    "presentacion": "2 KG",
-    "precio": 9500,
-    "imagen": null
-  },
-  {
-    "id": 1028,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Ciruelas sin carozo bombón x 5KG",
-    "presentacion": "5KG",
-    "precio": 45500,
-    "imagen": null
-  },
-  {
-    "id": 1029,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Ciruelas Presidente grandes x 5KG Hfrut",
-    "presentacion": "5KG",
-    "precio": 73500,
-    "imagen": null
-  },
-  {
-    "id": 1030,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Ciruelas Presidente grandes (MIN 2KG",
-    "presentacion": "2KG",
-    "precio": 15500,
-    "imagen": null
-  },
-  {
-    "id": 1031,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Datiles Egipcios x kg",
-    "presentacion": "1 kg",
-    "precio": 10500,
-    "imagen": null
-  },
-  {
-    "id": 1032,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Dulce de Membrillo Artesanal Pons x 5KG",
-    "presentacion": "5KG",
-    "precio": 19860,
-    "imagen": null
-  },
-  {
-    "id": 1033,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Dulce de Membrillo Artesanal Pons x 600GR",
-    "presentacion": "600GR",
-    "precio": 3800,
-    "imagen": null
-  },
-  {
-    "id": 1034,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Dulce de Membrillo bocadito Pons x 24UNID",
-    "presentacion": "24unidades",
-    "precio": 11500,
-    "imagen": null
-  },
-  {
-    "id": 1035,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Frutilla desidratada x KG",
-    "presentacion": "1 kg",
-    "precio": 24500,
-    "imagen": null
-  },
-  {
-    "id": 1036,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Frutas Escurridas x 10KG",
-    "presentacion": "10KG",
-    "precio": 52000,
-    "imagen": null
-  },
-  {
-    "id": 1037,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Frutas Escurridas x KG",
-    "presentacion": "1 kg",
-    "precio": 6000,
-    "imagen": null
-  },
-  {
-    "id": 1038,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Frutas Glaseadas Mupay x 2KG",
-    "presentacion": "2KG",
-    "precio": 23000,
-    "imagen": null
-  },
-  {
-    "id": 1039,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Frutas Glaseadas Mupay x KG",
-    "presentacion": "1 kg",
-    "precio": 12000,
-    "imagen": null
-  },
-  {
-    "id": 1040,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Higos Negros x 5 kg",
-    "presentacion": "5 kg",
-    "precio": 68000,
-    "imagen": null
-  },
-  {
-    "id": 1041,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Higos Negros x kg",
-    "presentacion": "1 kg",
-    "precio": 14500,
-    "imagen": null
-  },
-  {
-    "id": 1042,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Jengibre glaseado x kg",
-    "presentacion": "1 kg",
-    "precio": 20600,
-    "imagen": null
-  },
-  {
-    "id": 1043,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Manzana deshidratada x 500GR",
-    "presentacion": "500GR",
-    "precio": 10800,
-    "imagen": null
-  },
-  {
-    "id": 1044,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Medallón de Durazno x kg",
-    "presentacion": "1 kg",
-    "precio": 15500,
-    "imagen": null
-  },
-  {
-    "id": 1045,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Nueces Mariposas extra light  x KG",
-    "presentacion": "1 kg",
-    "precio": 17000,
-    "imagen": null
-  },
-  {
-    "id": 1046,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Nueces Pecan mariposas x KG",
-    "presentacion": "1 kg",
-    "precio": 28500,
-    "imagen": null
-  },
-  {
-    "id": 1047,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Castañas de Para/ Nuez Brasil X KG",
-    "presentacion": "1 kg",
-    "precio": 45800,
-    "imagen": null
-  },
-  {
-    "id": 1048,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Papaya en cubos,trozos o gajos x KG",
-    "presentacion": "1 kg",
-    "precio": 17300,
-    "imagen": null
-  },
-  {
-    "id": 1049,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Pasas de Uva Rubias x KG",
-    "presentacion": "1 kg",
-    "precio": 11400,
-    "imagen": null
-  },
-  {
-    "id": 1050,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Pasas de Uva S/S Jumbo x 10KG",
-    "presentacion": "10KG",
-    "precio": 58600,
-    "imagen": null
-  },
-  {
-    "id": 1051,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Pasas de Uva S/S Jumbo (MIN 2 KG",
-    "presentacion": "2 KG",
-    "precio": 7000,
-    "imagen": null
-  },
-  {
-    "id": 1052,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Pasas de Uva S/S Sultanina x 10KG",
-    "presentacion": "10KG",
-    "precio": 44500,
-    "imagen": null
-  },
-  {
-    "id": 1053,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Pasas de Uva S/S Sultanina( MIN 2 KG",
-    "presentacion": "2 KG",
-    "precio": 4900,
-    "imagen": null
-  },
-  {
-    "id": 1054,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Cerezas Glaseadas x KG",
-    "presentacion": "1 kg",
-    "precio": 20000,
-    "imagen": null
-  },
-  {
-    "id": 1055,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "(PREMIUM",
-    "presentacion": "1 un",
-    "precio": 17000,
-    "imagen": null
-  },
-  {
-    "id": 1056,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Pistachio salado x KG",
-    "presentacion": "1 kg",
-    "precio": 44950,
-    "imagen": null
-  },
-  {
-    "id": 1057,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Pistachio S/Cascara Tostado x KG",
-    "presentacion": "1 kg",
-    "precio": 74500,
-    "imagen": null
-  },
-  {
-    "id": 1058,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Pomelo en cáscara glaseado x KG",
-    "presentacion": "1 kg",
-    "precio": 15500,
-    "imagen": null
-  },
-  {
-    "id": 1059,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Datiles Israel x KG",
-    "presentacion": "1 kg",
-    "precio": 19900,
-    "imagen": null
-  },
-  {
-    "id": 1060,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Mix Frutos Secos (sin pasas, sin mani",
-    "presentacion": "1 un",
-    "precio": 24200,
-    "imagen": null
-  },
-  {
-    "id": 1061,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "nueces, alm. y mani",
-    "presentacion": "1 un",
-    "precio": 11350,
-    "imagen": null
-  },
-  {
-    "id": 1062,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "y mani",
-    "presentacion": "1 un",
-    "precio": 18200,
-    "imagen": null
-  },
-  {
-    "id": 1063,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "avell., nueces, alm.",
-    "presentacion": "1 un",
-    "precio": 15300,
-    "imagen": null
-  },
-  {
-    "id": 1064,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "pasas, mani, anana y ban.",
-    "presentacion": "1 un",
-    "precio": 12000,
-    "imagen": null
-  },
-  {
-    "id": 1065,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "mani salado, semilla zapallo y girasol",
-    "presentacion": "1 un",
-    "precio": 12000,
-    "imagen": null
-  },
-  {
-    "id": 1066,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "mani con choco, almendras, banana",
-    "presentacion": "1 un",
-    "precio": 17500,
-    "imagen": null
-  },
-  {
-    "id": 1067,
-    "categoria": "Almacén",
-    "marca": "Andiamo",
-    "producto": "Fideo moñito de avena y remolacha x 350grs",
-    "presentacion": "350g",
-    "precio": 3700,
-    "imagen": null
-  },
-  {
-    "id": 1068,
-    "categoria": "Almacén",
-    "marca": "Andiamo",
-    "producto": "Fideo tirabuzon de avena y zanahoria x 350grs",
-    "presentacion": "350g",
-    "precio": 3350,
-    "imagen": null
-  },
-  {
-    "id": 1069,
-    "categoria": "Almacén",
-    "marca": "Andiamo",
-    "producto": "Fideo tirabuzon de avena y remolacha x 350grs",
-    "presentacion": "350g",
-    "precio": 3350,
-    "imagen": null
-  },
-  {
-    "id": 1070,
-    "categoria": "Almacén",
-    "marca": "Andiamo",
-    "producto": "Fideo tirabuzon de avena integral x 350grs",
-    "presentacion": "350g",
-    "precio": 3350,
-    "imagen": null
-  },
-  {
-    "id": 1071,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Equilibrio",
-    "producto": "Fideos de arroz fino natural x 280 grs",
-    "presentacion": "280 g",
-    "precio": 2830,
-    "imagen": null
-  },
-  {
-    "id": 1072,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Equilibrio",
-    "producto": "Fideos de arroz fino espinaca x 280 grs",
-    "presentacion": "280 g",
-    "precio": 2830,
-    "imagen": null
-  },
-  {
-    "id": 1073,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Equilibrio",
-    "producto": "Fideos de arroz fino morron x 280 grs",
-    "presentacion": "280 g",
-    "precio": 2830,
-    "imagen": null
-  },
-  {
-    "id": 1074,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Fideos mostacholes de maiz x 350GR",
-    "presentacion": "350GR",
-    "precio": 2800,
-    "imagen": null
-  },
-  {
-    "id": 1075,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Fideos mostacholes de arroz al huevo x 350GR",
-    "presentacion": "350GR",
-    "precio": 2800,
-    "imagen": "data/images/img_87.jpg"
-  },
-  {
-    "id": 1076,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Fideos mostacholes de arroz espinaca x 350GR",
-    "presentacion": "350GR",
-    "precio": 2800,
-    "imagen": "data/images/img_86.jpg"
-  },
-  {
-    "id": 1077,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Fideos mostacholes de arroz morron x 350GR",
-    "presentacion": "350GR",
-    "precio": 2800,
-    "imagen": "data/images/img_89.jpg"
-  },
-  {
-    "id": 1078,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Fideos mostacholes de arroz natural x 350GR",
-    "presentacion": "350GR",
-    "precio": 2800,
-    "imagen": "data/images/img_88.jpg"
-  },
-  {
-    "id": 1079,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Panko X 300 GR",
-    "presentacion": "300 GR",
-    "precio": 4800,
-    "imagen": null
-  },
-  {
-    "id": 1080,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "(para pan",
-    "presentacion": "1 un",
-    "precio": 3350,
-    "imagen": null
-  },
-  {
-    "id": 1081,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Rebozador x 500GR",
-    "presentacion": "500GR",
-    "precio": 1750,
-    "imagen": "data/images/img_91.jpg"
-  },
-  {
-    "id": 1082,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Fécula de maíz x 5 KG",
-    "presentacion": "5 KG",
-    "precio": 9600,
-    "imagen": null
-  },
-  {
-    "id": 1083,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Fécula de mandioca x KG (MIN 2KG",
-    "presentacion": "2KG",
-    "precio": 3200,
-    "imagen": null
-  },
-  {
-    "id": 1084,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Germen de trigo x KG (MIN 2KG",
-    "presentacion": "2KG",
-    "precio": 2000,
-    "imagen": null
-  },
-  {
-    "id": 1085,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Harina de Algarroba x KG",
-    "presentacion": "1 kg",
-    "precio": 4300,
-    "imagen": null
-  },
-  {
-    "id": 1086,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Equilibrio",
-    "producto": "Harina de Almendra x KG Cumana sin tacc",
-    "presentacion": "1 kg",
-    "precio": 33500,
-    "imagen": "data/images/img_190.jpg"
-  },
-  {
-    "id": 1087,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Harina de Almendra C/piel x KG",
-    "presentacion": "1 kg",
-    "precio": 27900,
-    "imagen": null
-  },
-  {
-    "id": 1088,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Harina de Arroz integral x KG (MIN 2KG",
-    "presentacion": "2KG",
-    "precio": 1800,
-    "imagen": null
-  },
-  {
-    "id": 1089,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Harina de Arroz x KG (MIN 2KG",
-    "presentacion": "2KG",
-    "precio": 1700,
-    "imagen": null
-  },
-  {
-    "id": 1090,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Harina de soja ( MIN 2 KG",
-    "presentacion": "2 KG",
-    "precio": 2100,
-    "imagen": null
-  },
-  {
-    "id": 1091,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Harina de Avena x KG (MIN 2KG",
-    "presentacion": "2KG",
-    "precio": 2200,
-    "imagen": null
-  },
-  {
-    "id": 1092,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Harina de Centeno x KG (MIN 2KG",
-    "presentacion": "2KG",
-    "precio": 2400,
-    "imagen": null
-  },
-  {
-    "id": 1093,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Harina de Chía x KG (MIN 2KG",
-    "presentacion": "2KG",
-    "precio": 3200,
-    "imagen": null
-  },
-  {
-    "id": 1094,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Harina de Garbanzos x KG (MIN 2KG",
-    "presentacion": "2KG",
-    "precio": 1800,
-    "imagen": null
-  },
-  {
-    "id": 1095,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Harina de Lino (Linazax KG (MIN 2KG",
-    "presentacion": "2KG",
-    "precio": 4000,
-    "imagen": null
-  },
-  {
-    "id": 1096,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Harina para arepas \"MI PAN\" x KG (MIN 2KG",
-    "presentacion": "2KG",
-    "precio": 2700,
-    "imagen": null
-  },
-  {
-    "id": 1097,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Equilibrio",
-    "producto": "Harina de trigo sarraceno x 500GR (Sin TACC",
-    "presentacion": "500GR",
-    "precio": 3600,
-    "imagen": null
-  },
-  {
-    "id": 1098,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Harina Integral Fina organica (Min 2KG",
-    "presentacion": "2KG",
-    "precio": 1200,
-    "imagen": null
-  },
-  {
-    "id": 1099,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Harina Paraguaya x KG (MIN 2KG",
-    "presentacion": "2KG",
-    "precio": 2350,
-    "imagen": null
-  },
-  {
-    "id": 1100,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Psylium molido x KG",
-    "presentacion": "1 kg",
-    "precio": 45620,
-    "imagen": null
-  },
-  {
-    "id": 1101,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Psylium molido x 500GR",
-    "presentacion": "500GR",
-    "precio": 23000,
-    "imagen": null
-  },
-  {
-    "id": 1102,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Salvado de avena x KG (MIN 2KG",
-    "presentacion": "2KG",
-    "precio": 2300,
-    "imagen": null
-  },
-  {
-    "id": 1103,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Salvado de trigo x KG (MIN 2KG",
-    "presentacion": "2KG",
-    "precio": 1700,
-    "imagen": null
-  },
-  {
-    "id": 1104,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Harina de centeno Costal xKG",
-    "presentacion": "1 un",
-    "precio": 2390,
-    "imagen": null
-  },
-  {
-    "id": 1105,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Semolin x KG (MIN 2KG",
-    "presentacion": "2KG",
-    "precio": 2400,
-    "imagen": null
-  },
-  {
-    "id": 1106,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Harina de arveja X KG",
-    "presentacion": "1 kg",
-    "precio": 1750,
-    "imagen": null
-  },
-  {
-    "id": 1107,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Albumina de huevo X KG",
-    "presentacion": "1 kg",
-    "precio": 46000,
-    "imagen": null
-  },
-  {
-    "id": 1108,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "THAING - Harina de tapioca X 500 grs",
-    "presentacion": "500 g",
-    "precio": 6600,
-    "imagen": null
-  },
-  {
-    "id": 1109,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Avena Instantánea x KG (MIN 2KG",
-    "presentacion": "2KG",
-    "precio": 2100,
-    "imagen": null
-  },
-  {
-    "id": 1110,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Avena Tradicional x KG (MIN 2KG",
-    "presentacion": "2KG",
-    "precio": 2100,
-    "imagen": null
-  },
-  {
-    "id": 1111,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Avena Gruesa x KG (MIN 2KG",
-    "presentacion": "2KG",
-    "precio": 2100,
-    "imagen": null
-  },
-  {
-    "id": 1112,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Equilibrio",
-    "producto": "Avena Cumana x 400GR S/TACC",
-    "presentacion": "400GR",
-    "precio": 2400,
-    "imagen": null
-  },
-  {
-    "id": 1113,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Equilibrio",
-    "producto": "Harina de avena Cumana x 400GM S/TACC",
-    "presentacion": "1 un",
-    "precio": 2400,
-    "imagen": null
-  },
-  {
-    "id": 1114,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Arrope de Chañar x 660GR (Mupay",
-    "presentacion": "660GR",
-    "precio": 5260,
-    "imagen": null
-  },
-  {
-    "id": 1115,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Arrope de Tuna x 660GR (Mupay",
-    "presentacion": "660GR",
-    "precio": 5100,
-    "imagen": null
-  },
-  {
-    "id": 1116,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Tomates disecados 1° calidad x KG",
-    "presentacion": "1 kg",
-    "precio": 18500,
-    "imagen": null
-  },
-  {
-    "id": 1117,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Tomates disecados 1° calidad x 500GR",
-    "presentacion": "500GR",
-    "precio": 11000,
-    "imagen": null
-  },
-  {
-    "id": 1118,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Hongos de pino x KG",
-    "presentacion": "1 kg",
-    "precio": 35000,
-    "imagen": null
-  },
-  {
-    "id": 1119,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Hongos de pino x 500GR",
-    "presentacion": "500GR",
-    "precio": 18500,
-    "imagen": null
-  },
-  {
-    "id": 1120,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Flan dietetico chocolate caja x 48GR",
-    "presentacion": "48GR",
-    "precio": 2837,
-    "imagen": null
-  },
-  {
-    "id": 1121,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Flan dietetico dulce de leche caja x 32GR",
-    "presentacion": "32GR",
-    "precio": 2260,
-    "imagen": null
-  },
-  {
-    "id": 1122,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Flan dietetico vainilla caja x 32GR",
-    "presentacion": "32GR",
-    "precio": 2450,
-    "imagen": null
-  },
-  {
-    "id": 1123,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "pomelo",
-    "presentacion": "1 un",
-    "precio": 2400,
-    "imagen": null
-  },
-  {
-    "id": 1124,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Postre dietetico de chocolate caja x 42GR",
-    "presentacion": "42GR",
-    "precio": 3100,
-    "imagen": null
-  },
-  {
-    "id": 1125,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Postre dietetico de dulce de leche caja x 36GR",
-    "presentacion": "36GR",
-    "precio": 3000,
-    "imagen": null
-  },
-  {
-    "id": 1126,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Postre dietetico de vainilla caja x 36GR",
-    "presentacion": "36GR",
-    "precio": 3000,
-    "imagen": null
-  },
-  {
-    "id": 1127,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Rocio vegetal dietafrit oliva",
-    "presentacion": "1 un",
-    "precio": 7000,
-    "imagen": "data/images/img_215.jpg"
-  },
-  {
-    "id": 1128,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Rocio vegetal dietafrit manteca",
-    "presentacion": "1 un",
-    "precio": 5705,
-    "imagen": "data/images/img_214.jpg"
-  },
-  {
-    "id": 1129,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Rocio vegetal dietafrit girasol",
-    "presentacion": "1 un",
-    "precio": 5850,
-    "imagen": "data/images/img_213.jpg"
-  },
-  {
-    "id": 1130,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Mijo pelado x KG",
-    "presentacion": "1 kg",
-    "precio": 4000,
-    "imagen": null
-  },
-  {
-    "id": 1131,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Mix de semillas x KG (chía, sesamo, girasol tostado y lino",
-    "presentacion": "1 kg",
-    "precio": 4600,
-    "imagen": null
-  },
-  {
-    "id": 1132,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Semillas de Amapola x KG",
-    "presentacion": "1 kg",
-    "precio": 17200,
-    "imagen": null
-  },
-  {
-    "id": 1133,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Semillas de Amaranto x KG",
-    "presentacion": "1 kg",
-    "precio": 4600,
-    "imagen": null
-  },
-  {
-    "id": 1134,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Semillas de Chía x KG",
-    "presentacion": "1 kg",
-    "precio": 8900,
-    "imagen": null
-  },
-  {
-    "id": 1135,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Semillas de Girasol pelado x KG (MIN 2KG",
-    "presentacion": "2KG",
-    "precio": 4300,
-    "imagen": null
-  },
-  {
-    "id": 1136,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Semillas de Lino x KG (MIN 2KG",
-    "presentacion": "2KG",
-    "precio": 3500,
-    "imagen": null
-  },
-  {
-    "id": 1137,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Semillas de Lino Dorado X KG",
-    "presentacion": "1 kg",
-    "precio": 14000,
-    "imagen": null
-  },
-  {
-    "id": 1138,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Semillas de Quinoa ROJA x KG",
-    "presentacion": "1 kg",
-    "precio": 11800,
-    "imagen": null
-  },
-  {
-    "id": 1139,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Semillas de Quinua X KG",
-    "presentacion": "1 kg",
-    "precio": 11800,
-    "imagen": null
-  },
-  {
-    "id": 1140,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Semillas de Zapallo x KG",
-    "presentacion": "1 kg",
-    "precio": 21200,
-    "imagen": null
-  },
-  {
-    "id": 1141,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Semillas Zaragatona o Psyllium x KG",
-    "presentacion": "1 kg",
-    "precio": 22000,
-    "imagen": null
-  },
-  {
-    "id": 1142,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Sesamo negro x KG",
-    "presentacion": "1 kg",
-    "precio": 10700,
-    "imagen": null
-  },
-  {
-    "id": 1143,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Sésamo blanco pelado x KG",
-    "presentacion": "1 kg",
-    "precio": 7850,
-    "imagen": null
-  },
-  {
-    "id": 1144,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Sésamo Integral x KG",
-    "presentacion": "1 kg",
-    "precio": 3950,
-    "imagen": null
-  },
-  {
-    "id": 1145,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Arveja verde partida x KG (MIN 2KG",
-    "presentacion": "2KG",
-    "precio": 1400,
-    "imagen": null
-  },
-  {
-    "id": 1146,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Arveja verde entera x KG (MIN 2KG",
-    "presentacion": "2KG",
-    "precio": 1100,
-    "imagen": null
-  },
-  {
-    "id": 1147,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Garbanzo mediano 9MM x KG (MIN 2KG",
-    "presentacion": "2KG",
-    "precio": 3000,
-    "imagen": null
-  },
-  {
-    "id": 1148,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Lenteja nacional x KG (MIN 2KG",
-    "presentacion": "2KG",
-    "precio": 2700,
-    "imagen": null
-  },
-  {
-    "id": 1149,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Lentejón nacional 6MM x KG (MIN 2KG",
-    "presentacion": "2KG",
-    "precio": 2900,
-    "imagen": null
-  },
-  {
-    "id": 1150,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Lentejas turcas x KG (MIN 2KG",
-    "presentacion": "2KG",
-    "precio": 5920,
-    "imagen": null
-  },
-  {
-    "id": 1151,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Lupines x KG (MIN 2KG",
-    "presentacion": "2KG",
-    "precio": 5000,
-    "imagen": null
-  },
-  {
-    "id": 1152,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Maíz pisado blanco x KG (MIN 2KG",
-    "presentacion": "2KG",
-    "precio": 3000,
-    "imagen": null
-  },
-  {
-    "id": 1153,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Maíz pisado colorado x KG (MIN 2KG",
-    "presentacion": "2KG",
-    "precio": 1400,
-    "imagen": null
-  },
-  {
-    "id": 1154,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Maíz pisingallo x KG (MIN 2KG",
-    "presentacion": "2KG",
-    "precio": 1950,
-    "imagen": null
-  },
-  {
-    "id": 1155,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Poroto Adzuki x KG (MIN 2KG",
-    "presentacion": "2KG",
-    "precio": 4500,
-    "imagen": null
-  },
-  {
-    "id": 1156,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Poroto Alubia x KG (MIN 2KG",
-    "presentacion": "2KG",
-    "precio": 3870,
-    "imagen": null
-  },
-  {
-    "id": 1157,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Poroto Colorado x KG (MIN 2KG",
-    "presentacion": "2KG",
-    "precio": 3800,
-    "imagen": null
-  },
-  {
-    "id": 1158,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Poroto de Soja entera  x KG (MIN 2KG",
-    "presentacion": "2KG",
-    "precio": 1300,
-    "imagen": null
-  },
-  {
-    "id": 1159,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Poroto manteca x KG (MIN 2KG",
-    "presentacion": "2KG",
-    "precio": 4100,
-    "imagen": null
-  },
-  {
-    "id": 1160,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Poroto Mung x KG (MIN 2KG",
-    "presentacion": "2KG",
-    "precio": 1950,
-    "imagen": null
-  },
-  {
-    "id": 1161,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Poroto Negro x KG (MIN 2KG",
-    "presentacion": "2KG",
-    "precio": 3000,
-    "imagen": null
-  },
-  {
-    "id": 1162,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Poroto Pallares x KG (MIN 2KG",
-    "presentacion": "2KG",
-    "precio": 6000,
-    "imagen": null
-  },
-  {
-    "id": 1163,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Trigo burgol fino x KG (MIN 2KG",
-    "presentacion": "2KG",
-    "precio": 3200,
-    "imagen": null
-  },
-  {
-    "id": 1164,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Equilibrio",
-    "producto": "Trigo sarraceno x 500GR Sin Tacc",
-    "presentacion": "500GR",
-    "precio": 4200,
-    "imagen": null
-  },
-  {
-    "id": 1165,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Cous Cous francés x kG",
-    "presentacion": "1 kg",
-    "precio": 11200,
-    "imagen": null
-  },
-  {
-    "id": 1166,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Levadura Nutrileva natural x 500 grs",
-    "presentacion": "500 g",
-    "precio": 13800,
-    "imagen": null
-  },
-  {
-    "id": 1167,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Levadura Nutrileva natural x 200 grs",
-    "presentacion": "200 g",
-    "precio": 7400,
-    "imagen": null
-  },
-  {
-    "id": 1168,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Levadura Nutrileva manzana x 200 grs",
-    "presentacion": "200 g",
-    "precio": 8400,
-    "imagen": null
-  },
-  {
-    "id": 1169,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Levadura Nutrileva queso x 200 grs",
-    "presentacion": "200 g",
-    "precio": 8900,
-    "imagen": null
-  },
-  {
-    "id": 1170,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Levadura Levex Masa Madre caja x 25 sobres",
-    "presentacion": "25 sobres",
-    "precio": 36500,
-    "imagen": null
-  },
-  {
-    "id": 1171,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Levadura Levex caja x 25 sobres",
-    "presentacion": "25 sobres",
-    "precio": 29600,
-    "imagen": null
-  },
-  {
-    "id": 1172,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Levadura Titán x 200 grs",
-    "presentacion": "200 g",
-    "precio": 13400,
-    "imagen": null
-  },
-  {
-    "id": 1173,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Agar Agar x 12 sobres de 10 grs c/u (Cajita exhibidora",
-    "presentacion": "12 sobres",
-    "precio": 25600,
-    "imagen": null
-  },
-  {
-    "id": 1174,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Algas Kombu x 100grs",
-    "presentacion": "100g",
-    "precio": 8900,
-    "imagen": null
-  },
-  {
-    "id": 1175,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Algas Nory en escamas x 100 grs",
-    "presentacion": "100 g",
-    "precio": 6200,
-    "imagen": null
-  },
-  {
-    "id": 1176,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Caldo de verdura con sal x 10 sobres",
-    "presentacion": "10 sobres",
-    "precio": 1350,
-    "imagen": null
-  },
-  {
-    "id": 1177,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Caldo de verdura con sal x kg",
-    "presentacion": "1 kg",
-    "precio": 7700,
-    "imagen": null
-  },
-  {
-    "id": 1178,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Caldo de verdura sin sal x 10 sobres",
-    "presentacion": "10 sobres",
-    "precio": 1350,
-    "imagen": null
-  },
-  {
-    "id": 1179,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Caldo de verdura sin sal x kg",
-    "presentacion": "1 kg",
-    "precio": 7700,
-    "imagen": null
-  },
-  {
-    "id": 1180,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Sal marina fina Macrozen x 500 grs",
-    "presentacion": "500 g",
-    "precio": 2050,
-    "imagen": "data/images/img_186.jpg"
-  },
-  {
-    "id": 1181,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Sal marina gruesa Macrozen x 500 grs",
-    "presentacion": "500 g",
-    "precio": 2050,
-    "imagen": "data/images/img_187.jpg"
-  },
-  {
-    "id": 1182,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Sal sin sodio 4 pimientas x 70 grs",
-    "presentacion": "70 g",
-    "precio": 3380,
-    "imagen": null
-  },
-  {
-    "id": 1183,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Sal sin sodio con apio x 70 grs",
-    "presentacion": "70 g",
-    "precio": 3380,
-    "imagen": null
-  },
-  {
-    "id": 1184,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Sal sin sodio con especias x 70 grs",
-    "presentacion": "70 g",
-    "precio": 3380,
-    "imagen": null
-  },
-  {
-    "id": 1185,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Sal sin sodio con hierbas x 70 grs",
-    "presentacion": "70 g",
-    "precio": 3380,
-    "imagen": null
-  },
-  {
-    "id": 1186,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Sal sin sodio natural x 70 grs",
-    "presentacion": "70 g",
-    "precio": 3380,
-    "imagen": null
-  },
-  {
-    "id": 1187,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Sal rosada del Himalaya x 500 grs",
-    "presentacion": "500 g",
-    "precio": 3100,
-    "imagen": null
-  },
-  {
-    "id": 1188,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Sopa crema x 5 Sobres",
-    "presentacion": "5 Sobres",
-    "precio": 1550,
-    "imagen": null
-  },
-  {
-    "id": 1189,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Sopa juliana x kG",
-    "presentacion": "1 kg",
-    "precio": 19200,
-    "imagen": null
-  },
-  {
-    "id": 1190,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Algas Nori planchas x 6 un",
-    "presentacion": "6 un",
-    "precio": 9000,
-    "imagen": null
-  },
-  {
-    "id": 1191,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Algas Nori planchas x 12 un",
-    "presentacion": "12 un",
-    "precio": 16250,
-    "imagen": null
-  },
-  {
-    "id": 1192,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Esterillas de bambú para sushi",
-    "presentacion": "1 un",
-    "precio": 3100,
-    "imagen": null
-  },
-  {
-    "id": 1193,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Arroz Koshihari (para sushix kg (mínimo 2 kg",
-    "presentacion": "2 kg",
-    "precio": 2370,
-    "imagen": null
-  },
-  {
-    "id": 1194,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Vinagre de arroz CHI HOUSE x 250 CC",
-    "presentacion": "250 ml",
-    "precio": 5200,
-    "imagen": null
-  },
-  {
-    "id": 1195,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Aceite de chía Nutrasen x 250 ml",
-    "presentacion": "250 ml",
-    "precio": 10800,
-    "imagen": null
-  },
-  {
-    "id": 1196,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Aceite de coco Cosaco x 360 ml (Neutro",
-    "presentacion": "360 ml",
-    "precio": 6450,
-    "imagen": null
-  },
-  {
-    "id": 1197,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Aceite de lino organico x 250 cc Nutrasen",
-    "presentacion": "250 ml",
-    "precio": 6400,
-    "imagen": null
-  },
-  {
-    "id": 1198,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Aceite de Oliva extra virgen x 500 cc Olivi (PET",
-    "presentacion": "500 ml",
-    "precio": 10700,
-    "imagen": null
-  },
-  {
-    "id": 1199,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Aceite de Oliva extra virgen x 500 cc Olivi (vidrio",
-    "presentacion": "500 ml",
-    "precio": 14000,
-    "imagen": null
-  },
-  {
-    "id": 1200,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Aceite de Sésamo x 250 cc Nutrasen",
-    "presentacion": "250 ml",
-    "precio": 6850,
-    "imagen": null
-  },
-  {
-    "id": 1201,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Aceite de Palta Extra x 250 CC",
-    "presentacion": "250 ml",
-    "precio": 12400,
-    "imagen": null
-  },
-  {
-    "id": 1202,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Aceite de Uva x 500 cc Olivi (vidrio",
-    "presentacion": "500 ml",
-    "precio": 6700,
-    "imagen": null
-  },
-  {
-    "id": 1203,
-    "categoria": "Almacén",
-    "marca": "Casalta",
-    "producto": "Aceto balsámico ahumado x 400 ml",
-    "presentacion": "400 ml",
-    "precio": 3300,
-    "imagen": null
-  },
-  {
-    "id": 1204,
-    "categoria": "Almacén",
-    "marca": "Casalta",
-    "producto": "Aceto balsámico clásico x 400 ml",
-    "presentacion": "400 ml",
-    "precio": 5300,
-    "imagen": null
-  },
-  {
-    "id": 1205,
-    "categoria": "Almacén",
-    "marca": "Casalta",
-    "producto": "Aceto balsámico reducción x 400 ml",
-    "presentacion": "400 ml",
-    "precio": 6900,
-    "imagen": null
-  },
-  {
-    "id": 1206,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Salsa de soja Fumeiga x 500 ml",
-    "presentacion": "500 ml",
-    "precio": 4600,
-    "imagen": null
-  },
-  {
-    "id": 1207,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Salsa de soja bajo sodio Fumeiga x 500 ml",
-    "presentacion": "500 ml",
-    "precio": 4600,
-    "imagen": null
-  },
-  {
-    "id": 1208,
-    "categoria": "Almacén",
-    "marca": "Sakanashi",
-    "producto": "Salsa de soja x 450cc",
-    "presentacion": "450ml",
-    "precio": 4600,
-    "imagen": null
-  },
-  {
-    "id": 1209,
-    "categoria": "Almacén",
-    "marca": "Napus",
-    "producto": "Neutro x 360 cc",
-    "presentacion": "360 ml",
-    "precio": 7180,
-    "imagen": null
-  },
-  {
-    "id": 1210,
-    "categoria": "Almacén",
-    "marca": "Napus",
-    "producto": "Neutro x 660 cc",
-    "presentacion": "660 ml",
-    "precio": 9970,
-    "imagen": null
-  },
-  {
-    "id": 1211,
-    "categoria": "Almacén",
-    "marca": "Napus",
-    "producto": "Virgen x 200 cc",
-    "presentacion": "200 ml",
-    "precio": 7452,
-    "imagen": null
-  },
-  {
-    "id": 1212,
-    "categoria": "Almacén",
-    "marca": "Napus",
-    "producto": "Virgen x 360 cc",
-    "presentacion": "360 ml",
-    "precio": 11300,
-    "imagen": null
-  },
-  {
-    "id": 1213,
-    "categoria": "Almacén",
-    "marca": "Entrenuts",
-    "producto": "Neutro x 200 cc",
-    "presentacion": "200 ml",
-    "precio": 3900,
-    "imagen": null
-  },
-  {
-    "id": 1214,
-    "categoria": "Almacén",
-    "marca": "Entrenuts",
-    "producto": "Neutro x 360 cc",
-    "presentacion": "360 ml",
-    "precio": 6200,
-    "imagen": "data/images/img_224.jpg"
-  },
-  {
-    "id": 1215,
-    "categoria": "Almacén",
-    "marca": "Entrenuts",
-    "producto": "Virgen x 200 cc",
-    "presentacion": "200 ml",
-    "precio": 6900,
-    "imagen": "data/images/img_223.jpg"
-  },
-  {
-    "id": 1216,
-    "categoria": "Almacén",
-    "marca": "Entrenuts",
-    "producto": "Virgen x 360 cc",
-    "presentacion": "360 ml",
-    "precio": 11800,
-    "imagen": null
-  },
-  {
-    "id": 1217,
-    "categoria": "Almacén",
-    "marca": "Integra",
-    "producto": "surtidos x 12 unid.",
-    "presentacion": "12 unidades",
-    "precio": 21350,
-    "imagen": null
-  },
-  {
-    "id": 1218,
-    "categoria": "Almacén",
-    "marca": "Integra",
-    "producto": "Bocaditos de higo c/nuez x 36 unid. (apto celiacos",
-    "presentacion": "36 unidades",
-    "precio": 23500,
-    "imagen": null
-  },
-  {
-    "id": 1219,
-    "categoria": "Almacén",
-    "marca": "Integra",
-    "producto": "Bocaditos de higo bañado en chocolate x 36 unid.",
-    "presentacion": "36 unidades",
-    "precio": 23500,
-    "imagen": null
-  },
-  {
-    "id": 1220,
-    "categoria": "Almacén",
-    "marca": "Integra",
-    "producto": "Trufas Integrales de chocolate x 36 unid.",
-    "presentacion": "36 unidades",
-    "precio": 32600,
-    "imagen": null
-  },
-  {
-    "id": 1221,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Caramelos ácidos x 750 grs",
-    "presentacion": "750 g",
-    "precio": 5800,
-    "imagen": null
-  },
-  {
-    "id": 1222,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Caramelos Ambay x 750 grs",
-    "presentacion": "750 g",
-    "precio": 8900,
-    "imagen": null
-  },
-  {
-    "id": 1223,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Caramelos arándanos x 750 grs",
-    "presentacion": "750 g",
-    "precio": 8800,
-    "imagen": null
-  },
-  {
-    "id": 1224,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Caramelos caramentol x 750 grs",
-    "presentacion": "750 g",
-    "precio": 8800,
-    "imagen": null
-  },
-  {
-    "id": 1225,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Caramelos Caramiel x 750 grs",
-    "presentacion": "750 g",
-    "precio": 7700,
-    "imagen": null
-  },
-  {
-    "id": 1226,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Caramelos Garganprol x 750 grs",
-    "presentacion": "750 g",
-    "precio": 13500,
-    "imagen": null
-  },
-  {
-    "id": 1227,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Caramelos jengibre x 750 grs",
-    "presentacion": "750 g",
-    "precio": 7300,
-    "imagen": null
-  },
-  {
-    "id": 1228,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Caramelos manzanilla y miel x 750 grs",
-    "presentacion": "750 g",
-    "precio": 4260,
-    "imagen": null
-  },
-  {
-    "id": 1229,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Caramelos tilo x 750 grs",
-    "presentacion": "750 g",
-    "precio": 9450,
-    "imagen": null
-  },
-  {
-    "id": 1230,
-    "categoria": "Almacén",
-    "marca": "Dulri",
-    "producto": "Stevia en polvo x 90 grs",
-    "presentacion": "90 g",
-    "precio": 5880,
-    "imagen": "data/images/img_75.jpg"
-  },
-  {
-    "id": 1231,
-    "categoria": "Almacén",
-    "marca": "Dulri",
-    "producto": "Stevia líquida x 120 cc",
-    "presentacion": "120 ml",
-    "precio": 4600,
-    "imagen": "data/images/img_76.jpg"
-  },
-  {
-    "id": 1232,
-    "categoria": "Almacén",
-    "marca": "Dulri",
-    "producto": "Stevia caja x 60 grs especial para cocinar",
-    "presentacion": "60 g",
-    "precio": 4660,
-    "imagen": null
-  },
-  {
-    "id": 1233,
-    "categoria": "Almacén",
-    "marca": "Dulri",
-    "producto": "Stevia en sobresitos (cajas por 50 un.",
-    "presentacion": "50 un",
-    "precio": 2700,
-    "imagen": null
-  },
-  {
-    "id": 1234,
-    "categoria": "Almacén",
-    "marca": "Dulri",
-    "producto": "Stevia en sobresitos (cajas por 100 un.",
-    "presentacion": "100 un",
-    "precio": 3900,
-    "imagen": "data/images/img_74.jpg"
-  },
-  {
-    "id": 1235,
-    "categoria": "Almacén",
-    "marca": "Dulri",
-    "producto": "Stevia en sobresitos cristalizada (cajas por 30 un.",
-    "presentacion": "30 un",
-    "precio": 3400,
-    "imagen": null
-  },
-  {
-    "id": 1236,
-    "categoria": "Almacén",
-    "marca": "Dulri",
-    "producto": "Stevia cristalizada x 300 grs",
-    "presentacion": "300 g",
-    "precio": 9350,
-    "imagen": null
-  },
-  {
-    "id": 1237,
-    "categoria": "Almacén",
-    "marca": "Yeruti",
-    "producto": "Bloques de fruta Nro. 1 x 100 Un. de 9,5 grs. c/u",
-    "presentacion": "100 Un",
-    "precio": 17660,
-    "imagen": null
-  },
-  {
-    "id": 1238,
-    "categoria": "Almacén",
-    "marca": "Yeruti",
-    "producto": "Bloques de fruta Nro. 1 x UNIDAD",
-    "presentacion": "1 un",
-    "precio": 260,
-    "imagen": null
-  },
-  {
-    "id": 1239,
-    "categoria": "Almacén",
-    "marca": "Yeruti",
-    "producto": "Torta de Fruta",
-    "presentacion": "15 Un",
-    "precio": 26200,
-    "imagen": null
-  },
-  {
-    "id": 1240,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Entrenuts",
-    "producto": "Pasta de maní Yeruti x 380 grs (Vegana y sin TACC",
-    "presentacion": "380 g",
-    "precio": 3445,
-    "imagen": null
-  },
-  {
-    "id": 1241,
-    "categoria": "Almacén",
-    "marca": "Entrenuts",
-    "producto": "Pasta de maní nutrasem x350 grs",
-    "presentacion": "350 g",
-    "precio": 3830,
-    "imagen": null
-  },
-  {
-    "id": 1242,
-    "categoria": "Almacén",
-    "marca": "Entrenuts",
-    "producto": "Pasta de sésamo Nutrasem x 350 grs",
-    "presentacion": "350 g",
-    "precio": 6000,
-    "imagen": null
-  },
-  {
-    "id": 1243,
-    "categoria": "Almacén",
-    "marca": "Entrenuts",
-    "producto": "Pasta de tahini Nutrasem x 350 gms",
-    "presentacion": "1 un",
-    "precio": 9500,
-    "imagen": null
-  },
-  {
-    "id": 1244,
-    "categoria": "Almacén",
-    "marca": "Entrenuts",
-    "producto": "Pasta de mani",
-    "presentacion": "1 un",
-    "precio": 3300,
-    "imagen": null
-  },
-  {
-    "id": 1245,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Maní boliviano con cascara tostado x 1 kg",
-    "presentacion": "1 kg",
-    "precio": 6400,
-    "imagen": null
-  },
-  {
-    "id": 1246,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Maní crudo x kg",
-    "presentacion": "1 kg",
-    "precio": 3500,
-    "imagen": null
-  },
-  {
-    "id": 1247,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Maní japones x kg",
-    "presentacion": "1 kg",
-    "precio": 6600,
-    "imagen": null
-  },
-  {
-    "id": 1248,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Maní repelado con sal x kg",
-    "presentacion": "1 kg",
-    "precio": 3500,
-    "imagen": null
-  },
-  {
-    "id": 1249,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Maní repelado sin sal x kg",
-    "presentacion": "1 kg",
-    "precio": 3500,
-    "imagen": null
-  },
-  {
-    "id": 1250,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Equilibrio",
-    "producto": "Mermelada Singluko Arándano, Frutilla (Con SplendaSin tacc",
-    "presentacion": "1 un",
-    "precio": 5350,
-    "imagen": null
-  },
-  {
-    "id": 1251,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Equilibrio",
-    "producto": "Mermelada Singluko naranja, higo, durazno, (Con SplendaSin tacc",
-    "presentacion": "1 un",
-    "precio": 3700,
-    "imagen": null
-  },
-  {
-    "id": 1252,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Equilibrio",
-    "producto": "Mermelada Singluko C/STEVIA (Higo, Durazno, Naranja, Ciruela, ZapalloSin tacc",
-    "presentacion": "1 un",
-    "precio": 3700,
-    "imagen": null
-  },
-  {
-    "id": 1253,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Equilibrio",
-    "producto": "Mermelada Singluko C/STEVIA (Arándano y FrutillaSin tacc",
-    "presentacion": "1 un",
-    "precio": 5350,
-    "imagen": null
-  },
-  {
-    "id": 1254,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Equilibrio",
-    "producto": "Dulce de leche Singluko C/STEVIA x 440 gs Sin tacc",
-    "presentacion": "440 g",
-    "precio": 6100,
-    "imagen": null
-  },
-  {
-    "id": 1255,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Equilibrio",
-    "producto": "Dulce de leche Singluko con Splenda x 440 gs Sin tacc",
-    "presentacion": "440 g",
-    "precio": 6100,
-    "imagen": null
-  },
-  {
-    "id": 1256,
-    "categoria": "Hierbas Medicinales",
-    "marca": "Oasis",
-    "producto": "Extracto de café verde x 66 cc.",
-    "presentacion": "66 ml",
-    "precio": 4300,
-    "imagen": null
-  },
-  {
-    "id": 1257,
-    "categoria": "Hierbas Medicinales",
-    "marca": "Oasis",
-    "producto": "Tintura madre de Arándano x 66 cc.",
-    "presentacion": "66 ml",
-    "precio": 3600,
-    "imagen": null
-  },
-  {
-    "id": 1258,
-    "categoria": "Hierbas Medicinales",
-    "marca": "Oasis",
-    "producto": "Tintura madre de Cardo Mariano x 66 cc.",
-    "presentacion": "66 ml",
-    "precio": 5350,
-    "imagen": null
-  },
-  {
-    "id": 1259,
-    "categoria": "Hierbas Medicinales",
-    "marca": "Oasis",
-    "producto": "Tintura madre de Carqueja x 66 cc.",
-    "presentacion": "66 ml",
-    "precio": 3170,
-    "imagen": "data/images/img_244.jpg"
-  },
-  {
-    "id": 1260,
-    "categoria": "Hierbas Medicinales",
-    "marca": "Oasis",
-    "producto": "Tintura madre de Centella Asiatica x 66 cc.",
-    "presentacion": "66 ml",
-    "precio": 3200,
-    "imagen": null
-  },
-  {
-    "id": 1261,
-    "categoria": "Hierbas Medicinales",
-    "marca": "Oasis",
-    "producto": "Tintura madre de Cola de caballo x 66 cc.",
-    "presentacion": "66 ml",
-    "precio": 3600,
-    "imagen": null
-  },
-  {
-    "id": 1262,
-    "categoria": "Hierbas Medicinales",
-    "marca": "Oasis",
-    "producto": "Tintura madre de Curcuma x 66 cc.",
-    "presentacion": "66 ml",
-    "precio": 3850,
-    "imagen": null
-  },
-  {
-    "id": 1263,
-    "categoria": "Hierbas Medicinales",
-    "marca": "Oasis",
-    "producto": "Tintura madre de Damiana x 66 cc",
-    "presentacion": "66 ml",
-    "precio": 3850,
-    "imagen": null
-  },
-  {
-    "id": 1264,
-    "categoria": "Hierbas Medicinales",
-    "marca": "Oasis",
-    "producto": "Tintura madre de Diente de León x 66 cc",
-    "presentacion": "66 ml",
-    "precio": 3600,
-    "imagen": null
-  },
-  {
-    "id": 1265,
-    "categoria": "Hierbas Medicinales",
-    "marca": "Oasis",
-    "producto": "Tintura madre de Fucus x 66 cc.",
-    "presentacion": "66 ml",
-    "precio": 3400,
-    "imagen": "data/images/img_244.jpg"
-  },
-  {
-    "id": 1266,
-    "categoria": "Hierbas Medicinales",
-    "marca": "Oasis",
-    "producto": "Tintura madre de Garcinia x 66 cc.",
-    "presentacion": "66 ml",
-    "precio": 5350,
-    "imagen": null
-  },
-  {
-    "id": 1267,
-    "categoria": "Hierbas Medicinales",
-    "marca": "Oasis",
-    "producto": "Tintura madre de Ginko Biloba x 66 cc.",
-    "presentacion": "66 ml",
-    "precio": 4300,
-    "imagen": "data/images/img_244.jpg"
-  },
-  {
-    "id": 1268,
-    "categoria": "Hierbas Medicinales",
-    "marca": "Oasis",
-    "producto": "Tintura madre de Ginseng x 66 cc.",
-    "presentacion": "66 ml",
-    "precio": 3850,
-    "imagen": null
-  },
-  {
-    "id": 1269,
-    "categoria": "Hierbas Medicinales",
-    "marca": "Oasis",
-    "producto": "Tintura madre de Hisopo x 66 cc.",
-    "presentacion": "66 ml",
-    "precio": 3400,
-    "imagen": null
-  },
-  {
-    "id": 1270,
-    "categoria": "Hierbas Medicinales",
-    "marca": "Oasis",
-    "producto": "Tintura madre de Jengibre x 66 cc.",
-    "presentacion": "66 ml",
-    "precio": 4300,
-    "imagen": null
-  },
-  {
-    "id": 1271,
-    "categoria": "Hierbas Medicinales",
-    "marca": "Oasis",
-    "producto": "Tintura madre de Lapacho x 66 cc.",
-    "presentacion": "66 ml",
-    "precio": 3600,
-    "imagen": null
-  },
-  {
-    "id": 1272,
-    "categoria": "Hierbas Medicinales",
-    "marca": "Oasis",
-    "producto": "Tintura madre de Malva x 66 cc.",
-    "presentacion": "66 ml",
-    "precio": 3850,
-    "imagen": null
-  },
-  {
-    "id": 1273,
-    "categoria": "Hierbas Medicinales",
-    "marca": "Oasis",
-    "producto": "Tintura madre de Manzanilla x 66 cc",
-    "presentacion": "66 ml",
-    "precio": 3600,
-    "imagen": null
-  },
-  {
-    "id": 1274,
-    "categoria": "Hierbas Medicinales",
-    "marca": "Oasis",
-    "producto": "Tintura Melena de Leon x 66 cc",
-    "presentacion": "66 ml",
-    "precio": 10730,
-    "imagen": null
-  },
-  {
-    "id": 1275,
-    "categoria": "Hierbas Medicinales",
-    "marca": "Oasis",
-    "producto": "Tintura madre de Melisa x 66 cc.",
-    "presentacion": "66 ml",
-    "precio": 3800,
-    "imagen": null
-  },
-  {
-    "id": 1276,
-    "categoria": "Hierbas Medicinales",
-    "marca": "Oasis",
-    "producto": "Tintura madre de Ortiga x 66 cc.",
-    "presentacion": "66 ml",
-    "precio": 3600,
-    "imagen": null
-  },
-  {
-    "id": 1277,
-    "categoria": "Hierbas Medicinales",
-    "marca": "Oasis",
-    "producto": "Tintura madre de Pasionaria x 66 cc.",
-    "presentacion": "66 ml",
-    "precio": 4270,
-    "imagen": null
-  },
-  {
-    "id": 1278,
-    "categoria": "Hierbas Medicinales",
-    "marca": "Oasis",
-    "producto": "Tintura madre de Regaliz x 66 cc.",
-    "presentacion": "66 ml",
-    "precio": 2586,
-    "imagen": null
-  },
-  {
-    "id": 1279,
-    "categoria": "Hierbas Medicinales",
-    "marca": "Oasis",
-    "producto": "Tintura madre de Sen x 66 cc.",
-    "presentacion": "66 ml",
-    "precio": 4300,
-    "imagen": null
-  },
-  {
-    "id": 1280,
-    "categoria": "Hierbas Medicinales",
-    "marca": "Oasis",
-    "producto": "Tintura madre de Spirulina x 66 cc.",
-    "presentacion": "66 ml",
-    "precio": 5350,
-    "imagen": null
-  },
-  {
-    "id": 1281,
-    "categoria": "Hierbas Medicinales",
-    "marca": "Oasis",
-    "producto": "Tintura madre de Tilo x 66 cc",
-    "presentacion": "66 ml",
-    "precio": 4270,
-    "imagen": null
-  },
-  {
-    "id": 1282,
-    "categoria": "Hierbas Medicinales",
-    "marca": "Oasis",
-    "producto": "Tintura madre de Uva ursi x 66 cc.",
-    "presentacion": "66 ml",
-    "precio": 4300,
-    "imagen": null
-  },
-  {
-    "id": 1283,
-    "categoria": "Hierbas Medicinales",
-    "marca": "Oasis",
-    "producto": "Tintura madre de Valeriana x 66 cc.",
-    "presentacion": "66 ml",
-    "precio": 5350,
-    "imagen": null
-  },
-  {
-    "id": 1284,
-    "categoria": "Hierbas Medicinales",
-    "marca": "Oasis",
-    "producto": "Tintura madre de Yacon x 66 cc.",
-    "presentacion": "66 ml",
-    "precio": 5350,
-    "imagen": null
-  },
-  {
-    "id": 1285,
-    "categoria": "Almacén",
-    "marca": "Cuarto Creciente",
-    "producto": "Jugo de arándano x 1,5 lts. c/stevia (apto celiacos",
-    "presentacion": "1,5 L",
-    "precio": 2380,
-    "imagen": "data/images/img_228.jpg"
-  },
-  {
-    "id": 1286,
-    "categoria": "Almacén",
-    "marca": "Cuarto Creciente",
-    "producto": "Jugo de arándano c/chía x 1,5 lts. c/stevia (apto",
-    "presentacion": "1,5 L",
-    "precio": 2380,
-    "imagen": null
-  },
-  {
-    "id": 1287,
-    "categoria": "Almacén",
-    "marca": "Cuarto Creciente",
-    "producto": "Mermelada de arandano con stevia x 280 grs",
-    "presentacion": "280 g",
-    "precio": 4950,
-    "imagen": null
-  },
-  {
-    "id": 1288,
-    "categoria": "Almacén",
-    "marca": "Cuarto Creciente",
-    "producto": "Mermelada de durazno con stevia x 280 grs",
-    "presentacion": "280 g",
-    "precio": 4500,
-    "imagen": null
-  },
-  {
-    "id": 1289,
-    "categoria": "Almacén",
-    "marca": "Cuarto Creciente",
-    "producto": "Mermelada de higo con stevia x 280 grs",
-    "presentacion": "280 g",
-    "precio": 4500,
-    "imagen": "data/images/img_230.jpg"
-  },
-  {
-    "id": 1290,
-    "categoria": "Almacén",
-    "marca": "Cuarto Creciente",
-    "producto": "Mermelada de ciruela con stevia x 280 grs",
-    "presentacion": "280 g",
-    "precio": 4500,
-    "imagen": null
-  },
-  {
-    "id": 1291,
-    "categoria": "Almacén",
-    "marca": "Cuarto Creciente",
-    "producto": "Mermelada de frutos rojos con stevia x 280 grs",
-    "presentacion": "280 g",
-    "precio": 4950,
-    "imagen": null
-  },
-  {
-    "id": 1292,
-    "categoria": "Almacén",
-    "marca": "Cuarto Creciente",
-    "producto": "Mermelada de frutilla con stevia x 280 grs",
-    "presentacion": "280 g",
-    "precio": 4200,
-    "imagen": "data/images/img_229.jpg"
-  },
-  {
-    "id": 1293,
-    "categoria": "Almacén",
-    "marca": "Cuarto Creciente",
-    "producto": "Mermelada de durazno con semillas dietéticas x 400 grs",
-    "presentacion": "400 g",
-    "precio": 3900,
-    "imagen": null
-  },
-  {
-    "id": 1294,
-    "categoria": "Almacén",
-    "marca": "Cuarto Creciente",
-    "producto": "Mermelada de higo con semillas dietéticas x 400 grs",
-    "presentacion": "400 g",
-    "precio": 3900,
-    "imagen": null
-  },
-  {
-    "id": 1295,
-    "categoria": "Almacén",
-    "marca": "Cuarto Creciente",
-    "producto": "Mermelada de ciruela con semillas dietéticas x 400 grs",
-    "presentacion": "400 g",
-    "precio": 3900,
-    "imagen": null
-  },
-  {
-    "id": 1296,
-    "categoria": "Almacén",
-    "marca": "Cuarto Creciente",
-    "producto": "Mermelada de frutos rojos con semillas dietéticas x 400 grs",
-    "presentacion": "400 g",
-    "precio": 4300,
-    "imagen": null
-  },
-  {
-    "id": 1297,
-    "categoria": "Almacén",
-    "marca": "Cuarto Creciente",
-    "producto": "Mermelada de frutilla con semillas dietéticas x 400 grs",
-    "presentacion": "400 g",
-    "precio": 4300,
-    "imagen": null
-  },
-  {
-    "id": 1298,
-    "categoria": "Almacén",
-    "marca": "Cuarto Creciente",
-    "producto": "Mermelada de arandanocon semillas dietéticas x 400 grs",
-    "presentacion": "400 g",
-    "precio": 4300,
-    "imagen": "data/images/img_232.jpg"
-  },
-  {
-    "id": 1299,
-    "categoria": "Almacén",
-    "marca": "Lens",
-    "producto": "Humo líquido x 120 ml",
-    "presentacion": "120 ml",
-    "precio": 5300,
-    "imagen": null
-  },
-  {
-    "id": 1300,
-    "categoria": "Almacén",
-    "marca": "Lens",
-    "producto": "Humo líquido x 500 ml",
-    "presentacion": "500 ml",
-    "precio": 7530,
-    "imagen": null
-  },
-  {
-    "id": 1301,
-    "categoria": "Infusiones",
-    "marca": "Equilibrio",
-    "producto": "Té verde BAN - CHA x 100 grs.",
-    "presentacion": "100 g",
-    "precio": 3450,
-    "imagen": null
-  },
-  {
-    "id": 1302,
-    "categoria": "Infusiones",
-    "marca": "Equilibrio",
-    "producto": "Té verde MATCHA x 50 grs.",
-    "presentacion": "50 g",
-    "precio": 4600,
-    "imagen": null
-  },
-  {
-    "id": 1303,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Harina de vino x 50 grs.",
-    "presentacion": "50 g",
-    "precio": 3000,
-    "imagen": null
-  },
-  {
-    "id": 1304,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Capsulas de graviola + noni x 90 comp.",
-    "presentacion": "90 comprimidos",
-    "precio": 11490,
-    "imagen": "data/images/img_286.jpg"
-  },
-  {
-    "id": 1305,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Capsulas de graviola x 90 comp.",
-    "presentacion": "90 comprimidos",
-    "precio": 11490,
-    "imagen": null
-  },
-  {
-    "id": 1306,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Capsulas de maca + polen x 90 comp.",
-    "presentacion": "90 comprimidos",
-    "precio": 11490,
-    "imagen": null
-  },
-  {
-    "id": 1307,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Capsulas de maca x 90 comp.",
-    "presentacion": "90 comprimidos",
-    "precio": 11490,
-    "imagen": null
-  },
-  {
-    "id": 1308,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Capsulas de moringa x 90 comp.",
-    "presentacion": "90 comprimidos",
-    "precio": 11490,
-    "imagen": "data/images/img_291.jpg"
-  },
-  {
-    "id": 1309,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Capsulas de noni x 90 comp.",
-    "presentacion": "90 comprimidos",
-    "precio": 11490,
-    "imagen": null
-  },
-  {
-    "id": 1310,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Capsulas de prostasan x 90 comp.",
-    "presentacion": "90 comprimidos",
-    "precio": 11490,
-    "imagen": "data/images/img_285.jpg"
-  },
-  {
-    "id": 1311,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Capsulas de uña de gato x 90 comp.",
-    "presentacion": "90 comprimidos",
-    "precio": 11490,
-    "imagen": null
-  },
-  {
-    "id": 1312,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Capsulas de uña de gato + cartilago x 90 comp.",
-    "presentacion": "90 comprimidos",
-    "precio": 11490,
-    "imagen": null
-  },
-  {
-    "id": 1313,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Capsulas de yacon x 90 comp.",
-    "presentacion": "90 comprimidos",
-    "precio": 11490,
-    "imagen": "data/images/img_288.jpg"
-  },
-  {
-    "id": 1314,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Cartílago de tiburón x 100 grs",
-    "presentacion": "100 g",
-    "precio": 1060,
-    "imagen": null
-  },
-  {
-    "id": 1315,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Colágeno en polvo x 100 grs",
-    "presentacion": "100 g",
-    "precio": 1060,
-    "imagen": null
-  },
-  {
-    "id": 1316,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Graviola en polvo x 90 grs",
-    "presentacion": "90 g",
-    "precio": 1060,
-    "imagen": null
-  },
-  {
-    "id": 1317,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Harina de coca en polvo 150 grs",
-    "presentacion": "150 g",
-    "precio": 1060,
-    "imagen": null
-  },
-  {
-    "id": 1318,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Jarabe de graviola x 500 ml.",
-    "presentacion": "500 ml",
-    "precio": 15800,
-    "imagen": null
-  },
-  {
-    "id": 1319,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Maca Kalpa x 500 grs",
-    "presentacion": "500 g",
-    "precio": 3000,
-    "imagen": null
-  },
-  {
-    "id": 1320,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Maca Negra x 150 grs",
-    "presentacion": "150 g",
-    "precio": 2800,
-    "imagen": null
-  },
-  {
-    "id": 1321,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Moringa en polvo x un",
-    "presentacion": "1 un",
-    "precio": 1060,
-    "imagen": null
-  },
-  {
-    "id": 1322,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "CANNABIS POLVO",
-    "presentacion": "1 un",
-    "precio": 1380,
-    "imagen": null
-  },
-  {
-    "id": 1323,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "natural x 500 grs. x un.",
-    "presentacion": "500 g",
-    "precio": 2800,
-    "imagen": null
-  },
-  {
-    "id": 1324,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "natural x 500 grs. pack x 12 un",
-    "presentacion": "500 g",
-    "precio": 32000,
-    "imagen": null
-  },
-  {
-    "id": 1325,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Yerba antiácida \"Ajedrez\" x 500 grs. x un.",
-    "presentacion": "500 g",
-    "precio": 2500,
-    "imagen": null
-  },
-  {
-    "id": 1326,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Yerba antiácida \"Ajedrez\" x 500 grs. x Pack x 10 un.",
-    "presentacion": "500 g",
-    "precio": 21800,
-    "imagen": null
-  },
-  {
-    "id": 1327,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Yerba Organica Taihang x 500 grs. x un.",
-    "presentacion": "500 g",
-    "precio": 4300,
-    "imagen": null
-  },
-  {
-    "id": 1328,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Yerba Organica Taihang x 500 grs. x Pack x 10 un.",
-    "presentacion": "500 g",
-    "precio": 33122,
-    "imagen": null
-  },
-  {
-    "id": 1329,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Yerba antiácida Sin palos, solo hoja \"Ajedrez\" x 500 grs. x un.",
-    "presentacion": "500 g",
-    "precio": 2500,
-    "imagen": null
-  },
-  {
-    "id": 1330,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Yerba antiácida Sin palos, solo hoja \"Ajedrez\" x 500 grs. pack x 10 un.",
-    "presentacion": "500 g",
-    "precio": 21800,
-    "imagen": null
-  },
-  {
-    "id": 1331,
-    "categoria": "Almacén",
-    "marca": "Oasis",
-    "producto": "Yerba mate Compuesta con cedron y stevia x 500 grs",
-    "presentacion": "500 g",
-    "precio": 4000,
-    "imagen": null
-  },
-  {
-    "id": 1332,
-    "categoria": "Almacén",
-    "marca": "Oasis",
-    "producto": "Yerba mate Con Arándano x 500 grs",
-    "presentacion": "500 g",
-    "precio": 4100,
-    "imagen": null
-  },
-  {
-    "id": 1333,
-    "categoria": "Almacén",
-    "marca": "Oasis",
-    "producto": "Yerba mate Detox x 500 grs",
-    "presentacion": "500 g",
-    "precio": 4000,
-    "imagen": null
-  },
-  {
-    "id": 1334,
-    "categoria": "Almacén",
-    "marca": "Oasis",
-    "producto": "Yerba mate Orgánica x 500 grs",
-    "presentacion": "500 g",
-    "precio": 5900,
-    "imagen": null
-  },
-  {
-    "id": 1335,
-    "categoria": "Almacén",
-    "marca": "Oasis",
-    "producto": "Yerba mate Tostada (Antiácida.x 500 grs.",
-    "presentacion": "500 g",
-    "precio": 4780,
-    "imagen": null
-  },
-  {
-    "id": 1336,
-    "categoria": "Almacén",
-    "marca": "Oasis",
-    "producto": "Yerba mate Dieta x 500 grs.",
-    "presentacion": "500 g",
-    "precio": 4000,
-    "imagen": null
-  },
-  {
-    "id": 1337,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Yerba mate c/palo x 10kg Ajedrez",
-    "presentacion": "10kg",
-    "precio": 37000,
-    "imagen": null
-  },
-  {
-    "id": 1338,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Yerba mate s/palo x 10kg Ajedrez",
-    "presentacion": "10kg",
-    "precio": 43000,
-    "imagen": null
-  },
-  {
-    "id": 1339,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Yerba mate orgánica Tucanguá x 500grs",
-    "presentacion": "500g",
-    "precio": 4400,
-    "imagen": null
-  },
-  {
-    "id": 1340,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Yerba mate Tucanguá x 1 kg",
-    "presentacion": "1 kg",
-    "precio": 4650,
-    "imagen": null
-  },
-  {
-    "id": 1341,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Yerba mate Tucanguá x 500grs",
-    "presentacion": "500g",
-    "precio": 2750,
-    "imagen": null
-  },
-  {
-    "id": 1342,
-    "categoria": "Infusiones",
-    "marca": "Oasis",
-    "producto": "Te África x 25 saq. (Melisa, coriandro, tomillo, cedrón",
-    "presentacion": "25 saq",
-    "precio": 3900,
-    "imagen": null
-  },
-  {
-    "id": 1343,
-    "categoria": "Infusiones",
-    "marca": "Oasis",
-    "producto": "Te Arabia x 25 saq. (Jengibre, menta, limón, cáscara de naranja",
-    "presentacion": "25 saq",
-    "precio": 3900,
-    "imagen": null
-  },
-  {
-    "id": 1344,
-    "categoria": "Infusiones",
-    "marca": "Oasis",
-    "producto": "Te Asia x 20 saq. (Té verde, Anís y jengibre",
-    "presentacion": "20 saq",
-    "precio": 4500,
-    "imagen": null
-  },
-  {
-    "id": 1345,
-    "categoria": "Infusiones",
-    "marca": "Oasis",
-    "producto": "Té Citricos x 20 saq. (Cáscara de naranja, Pomelo y Limón",
-    "presentacion": "20 saq",
-    "precio": 3900,
-    "imagen": null
-  },
-  {
-    "id": 1346,
-    "categoria": "Infusiones",
-    "marca": "Oasis",
-    "producto": "Te de Arándano x 20 saq.",
-    "presentacion": "20 saq",
-    "precio": 3900,
-    "imagen": "data/images/img_243.jpg"
-  },
-  {
-    "id": 1347,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "(Nuevo",
-    "presentacion": "1 un",
-    "precio": 3120,
-    "imagen": null
-  },
-  {
-    "id": 1348,
-    "categoria": "Infusiones",
-    "marca": "Equilibrio",
-    "producto": "Te de Frutilla x 20 saq.",
-    "presentacion": "20 saq",
-    "precio": 3900,
-    "imagen": null
-  },
-  {
-    "id": 1349,
-    "categoria": "Infusiones",
-    "marca": "Equilibrio",
-    "producto": "Té de Jazmín x 20 saq.",
-    "presentacion": "20 saq",
-    "precio": 3900,
-    "imagen": null
-  },
-  {
-    "id": 1350,
-    "categoria": "Infusiones",
-    "marca": "Equilibrio",
-    "producto": "Té de Manzana, Canela y Miel x 20 saq.",
-    "presentacion": "20 saq",
-    "precio": 3900,
-    "imagen": null
-  },
-  {
-    "id": 1351,
-    "categoria": "Infusiones",
-    "marca": "Equilibrio",
-    "producto": "Té de Vainilla y Coco x 20 saq.",
-    "presentacion": "20 saq",
-    "precio": 3900,
-    "imagen": null
-  },
-  {
-    "id": 1352,
-    "categoria": "Infusiones",
-    "marca": "Equilibrio",
-    "producto": "Te Encuentros x 20 saq. (Naranja, Canela y Pimienta de Jamaica",
-    "presentacion": "20 saq",
-    "precio": 3900,
-    "imagen": null
-  },
-  {
-    "id": 1353,
-    "categoria": "Infusiones",
-    "marca": "Equilibrio",
-    "producto": "Té Flores Rojas x 20 saq. (Pétalos de Rosa y Rosa Mosqueta",
-    "presentacion": "20 saq",
-    "precio": 3900,
-    "imagen": null
-  },
-  {
-    "id": 1354,
-    "categoria": "Infusiones",
-    "marca": "Equilibrio",
-    "producto": "Té Frutos Amarillos x 20 saq. (Ananá, Durazno y Maracuyá",
-    "presentacion": "20 saq",
-    "precio": 3900,
-    "imagen": null
-  },
-  {
-    "id": 1355,
-    "categoria": "Infusiones",
-    "marca": "Equilibrio",
-    "producto": "Té Frutos Azules x 20 saq. (Arándano, Cassis, Sauco y Calafate",
-    "presentacion": "20 saq",
-    "precio": 3900,
-    "imagen": null
-  },
-  {
-    "id": 1356,
-    "categoria": "Infusiones",
-    "marca": "Equilibrio",
-    "producto": "Té Frutos Rojos x 20 saq. (Frutilla y Frambuesa",
-    "presentacion": "20 saq",
-    "precio": 3900,
-    "imagen": null
-  },
-  {
-    "id": 1357,
-    "categoria": "Infusiones",
-    "marca": "Equilibrio",
-    "producto": "Te India x 25 saq. (Jengibre, cardamomo, canela",
-    "presentacion": "25 saq",
-    "precio": 3900,
-    "imagen": null
-  },
-  {
-    "id": 1358,
-    "categoria": "Infusiones",
-    "marca": "Equilibrio",
-    "producto": "Te Jamaica x 25 saq. (Melisa, hibisco, cascara de naranja",
-    "presentacion": "25 saq",
-    "precio": 3900,
-    "imagen": null
-  },
-  {
-    "id": 1359,
-    "categoria": "Infusiones",
-    "marca": "Equilibrio",
-    "producto": "Te Verde con Maracuyá x 20 saq.",
-    "presentacion": "20 saq",
-    "precio": 2280,
-    "imagen": null
-  },
-  {
-    "id": 1360,
-    "categoria": "Infusiones",
-    "marca": "Oasis",
-    "producto": "Café verde x 25 saq.",
-    "presentacion": "25 saq",
-    "precio": 5300,
-    "imagen": null
-  },
-  {
-    "id": 1361,
-    "categoria": "Infusiones",
-    "marca": "Oasis",
-    "producto": "Dieta fruta x 25 saq.",
-    "presentacion": "25 saq",
-    "precio": 3900,
-    "imagen": null
-  },
-  {
-    "id": 1362,
-    "categoria": "Infusiones",
-    "marca": "Oasis",
-    "producto": "Mate Cocido Orgánico x 25 saq.",
-    "presentacion": "25 saq",
-    "precio": 3140,
-    "imagen": null
-  },
-  {
-    "id": 1363,
-    "categoria": "Infusiones",
-    "marca": "Oasis",
-    "producto": "Stevia en saquitos x 25 un",
-    "presentacion": "25 un",
-    "precio": 2070,
-    "imagen": null
-  },
-  {
-    "id": 1364,
-    "categoria": "Infusiones",
-    "marca": "Oasis",
-    "producto": "Té Detox x 25 saq. (moringa,  diente de leon, anis, hinojo y regaliz",
-    "presentacion": "25 saq",
-    "precio": 3000,
-    "imagen": null
-  },
-  {
-    "id": 1365,
-    "categoria": "Infusiones",
-    "marca": "Oasis",
-    "producto": "Té de alcachofa x 25 saq.",
-    "presentacion": "25 saq",
-    "precio": 2270,
-    "imagen": null
-  },
-  {
-    "id": 1366,
-    "categoria": "Infusiones",
-    "marca": "Oasis",
-    "producto": "Té de boldo x 25 saq.",
-    "presentacion": "25 saq",
-    "precio": 2270,
-    "imagen": null
-  },
-  {
-    "id": 1367,
-    "categoria": "Infusiones",
-    "marca": "Oasis",
-    "producto": "Té de carqueja x 25 saq.",
-    "presentacion": "25 saq",
-    "precio": 2270,
-    "imagen": null
-  },
-  {
-    "id": 1368,
-    "categoria": "Infusiones",
-    "marca": "Oasis",
-    "producto": "Té de canela x 25 saq.",
-    "presentacion": "25 saq",
-    "precio": 3150,
-    "imagen": null
-  },
-  {
-    "id": 1369,
-    "categoria": "Infusiones",
-    "marca": "Oasis",
-    "producto": "Té de cedrón x 25 saq.",
-    "presentacion": "25 saq",
-    "precio": 2270,
-    "imagen": null
-  },
-  {
-    "id": 1370,
-    "categoria": "Infusiones",
-    "marca": "Oasis",
-    "producto": "Té de jengibre x 25 saq.",
-    "presentacion": "25 saq",
-    "precio": 3200,
-    "imagen": null
-  },
-  {
-    "id": 1371,
-    "categoria": "Infusiones",
-    "marca": "Oasis",
-    "producto": "Té de manzanilla x 25 saq.",
-    "presentacion": "25 saq",
-    "precio": 2270,
-    "imagen": null
-  },
-  {
-    "id": 1372,
-    "categoria": "Infusiones",
-    "marca": "Oasis",
-    "producto": "Té de melisa x 25 saq.",
-    "presentacion": "25 saq",
-    "precio": 2900,
-    "imagen": null
-  },
-  {
-    "id": 1373,
-    "categoria": "Infusiones",
-    "marca": "Oasis",
-    "producto": "Té de menta x 25 saq.",
-    "presentacion": "25 saq",
-    "precio": 2270,
-    "imagen": null
-  },
-  {
-    "id": 1374,
-    "categoria": "Infusiones",
-    "marca": "Oasis",
-    "producto": "Té de moringa x 25 saq.",
-    "presentacion": "25 saq",
-    "precio": 3000,
-    "imagen": null
-  },
-  {
-    "id": 1375,
-    "categoria": "Infusiones",
-    "marca": "Oasis",
-    "producto": "Té de pasionaria x 25 saq.",
-    "presentacion": "25 saq",
-    "precio": 2270,
-    "imagen": null
-  },
-  {
-    "id": 1376,
-    "categoria": "Infusiones",
-    "marca": "Oasis",
-    "producto": "Té de rosa mosqueta x 25 saq.",
-    "presentacion": "25 saq",
-    "precio": 3300,
-    "imagen": null
-  },
-  {
-    "id": 1377,
-    "categoria": "Infusiones",
-    "marca": "Oasis",
-    "producto": "Té de spirulina + naranja x 25 saq.",
-    "presentacion": "25 saq",
-    "precio": 2350,
-    "imagen": null
-  },
-  {
-    "id": 1378,
-    "categoria": "Infusiones",
-    "marca": "Oasis",
-    "producto": "Té de tilo x 25 saq.",
-    "presentacion": "25 saq",
-    "precio": 2350,
-    "imagen": null
-  },
-  {
-    "id": 1379,
-    "categoria": "Infusiones",
-    "marca": "Oasis",
-    "producto": "Té mezcla Nro.  1 x 25 saq. (Sedante",
-    "presentacion": "25 saq",
-    "precio": 3700,
-    "imagen": "data/images/img_242.jpg"
-  },
-  {
-    "id": 1380,
-    "categoria": "Infusiones",
-    "marca": "Oasis",
-    "producto": "Té mezcla Nro.  2 x 25 saq. (Adelgazante",
-    "presentacion": "25 saq",
-    "precio": 3700,
-    "imagen": "data/images/img_241.jpg"
-  },
-  {
-    "id": 1381,
-    "categoria": "Infusiones",
-    "marca": "Oasis",
-    "producto": "Té mezcla Nro.  3 x 25 saq. (Digestivo",
-    "presentacion": "25 saq",
-    "precio": 3700,
-    "imagen": null
-  },
-  {
-    "id": 1382,
-    "categoria": "Infusiones",
-    "marca": "Oasis",
-    "producto": "Té mezcla Nro.  4 x 25 saq. (Anticelulitico",
-    "presentacion": "25 saq",
-    "precio": 3700,
-    "imagen": null
-  },
-  {
-    "id": 1383,
-    "categoria": "Infusiones",
-    "marca": "Oasis",
-    "producto": "Té mezcla Nro.  5 x 25 saq. (Circulatorio",
-    "presentacion": "25 saq",
-    "precio": 3700,
-    "imagen": null
-  },
-  {
-    "id": 1384,
-    "categoria": "Infusiones",
-    "marca": "Oasis",
-    "producto": "Té mezcla Nro.  6 x 25 saq. (Energizante",
-    "presentacion": "25 saq",
-    "precio": 3700,
-    "imagen": null
-  },
-  {
-    "id": 1385,
-    "categoria": "Infusiones",
-    "marca": "Oasis",
-    "producto": "Té mezcla Nro.  7 x 25 saq. (Est. Sexual",
-    "presentacion": "25 saq",
-    "precio": 3700,
-    "imagen": null
-  },
-  {
-    "id": 1386,
-    "categoria": "Infusiones",
-    "marca": "Oasis",
-    "producto": "Té mezcla Nro.  8 x 25 saq. (Antigripal",
-    "presentacion": "25 saq",
-    "precio": 3700,
-    "imagen": null
-  },
-  {
-    "id": 1387,
-    "categoria": "Infusiones",
-    "marca": "Oasis",
-    "producto": "Té mezcla Nro.  9 x 25 saq. (Artritis",
-    "presentacion": "25 saq",
-    "precio": 3700,
-    "imagen": null
-  },
-  {
-    "id": 1388,
-    "categoria": "Infusiones",
-    "marca": "Oasis",
-    "producto": "Té mezcla Nro. 10 x 25 saq. (Diurético",
-    "presentacion": "25 saq",
-    "precio": 3700,
-    "imagen": null
-  },
-  {
-    "id": 1389,
-    "categoria": "Infusiones",
-    "marca": "Oasis",
-    "producto": "Té mezcla Nro. 11 x 25 saq. (Colesterol",
-    "presentacion": "25 saq",
-    "precio": 3700,
-    "imagen": null
-  },
-  {
-    "id": 1390,
-    "categoria": "Infusiones",
-    "marca": "Oasis",
-    "producto": "Té mezcla Nro. 12 x 25 saq. (Antidiabético",
-    "presentacion": "25 saq",
-    "precio": 3700,
-    "imagen": null
-  },
-  {
-    "id": 1391,
-    "categoria": "Infusiones",
-    "marca": "Oasis",
-    "producto": "Té mezcla Nro. 13 x 25 saq. (Presión alta",
-    "presentacion": "25 saq",
-    "precio": 3700,
-    "imagen": null
-  },
-  {
-    "id": 1392,
-    "categoria": "Infusiones",
-    "marca": "Oasis",
-    "producto": "Té mezcla Nro. 14 x 25 saq. (Laxante suave",
-    "presentacion": "25 saq",
-    "precio": 3800,
-    "imagen": null
-  },
-  {
-    "id": 1393,
-    "categoria": "Infusiones",
-    "marca": "Oasis",
-    "producto": "Té mezcla Nro. 15 x 25 saq. (Dejar de fumar",
-    "presentacion": "25 saq",
-    "precio": 3200,
-    "imagen": null
-  },
-  {
-    "id": 1394,
-    "categoria": "Infusiones",
-    "marca": "Oasis",
-    "producto": "Té negro Orgánico x 25 saq.",
-    "presentacion": "25 saq",
-    "precio": 3450,
-    "imagen": "data/images/img_240.jpg"
-  },
-  {
-    "id": 1395,
-    "categoria": "Infusiones",
-    "marca": "Oasis",
-    "producto": "Té rojo x 25 saq.",
-    "presentacion": "25 saq",
-    "precio": 2270,
-    "imagen": null
-  },
-  {
-    "id": 1396,
-    "categoria": "Infusiones",
-    "marca": "Oasis",
-    "producto": "Te verde Orgánico x 25 saq.",
-    "presentacion": "25 saq",
-    "precio": 3400,
-    "imagen": "data/images/img_246.jpg"
-  },
-  {
-    "id": 1397,
-    "categoria": "Infusiones",
-    "marca": "Oasis",
-    "producto": "Té verde x 25 saq.",
-    "presentacion": "25 saq",
-    "precio": 2460,
-    "imagen": null
-  },
-  {
-    "id": 1398,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Granola x kg con /sin pasas NE",
-    "presentacion": "1 kg",
-    "precio": 14500,
-    "imagen": null
-  },
-  {
-    "id": 1399,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Granola con copos de maiz y coco",
-    "presentacion": "1 un",
-    "precio": 14500,
-    "imagen": null
-  },
-  {
-    "id": 1400,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Granola Bulka c/ chocolate",
-    "presentacion": "1 un",
-    "precio": 10000,
-    "imagen": null
-  },
-  {
-    "id": 1401,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Granola Bulka c/ banana",
-    "presentacion": "1 un",
-    "precio": 10000,
-    "imagen": null
-  },
-  {
-    "id": 1402,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Granola Bulka varias",
-    "presentacion": "1 un",
-    "precio": 9200,
-    "imagen": null
-  },
-  {
-    "id": 1403,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Granola granomax x kilo",
-    "presentacion": "1 un",
-    "precio": 13000,
-    "imagen": null
-  },
-  {
-    "id": 1404,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "MIEL 300gr Nosellas",
-    "presentacion": "300gr",
-    "precio": 2750,
-    "imagen": null
-  },
-  {
-    "id": 1405,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "MIEL 500gr Nosellas",
-    "presentacion": "500gr",
-    "precio": 3840,
-    "imagen": null
-  },
-  {
-    "id": 1406,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "MIEL 1 Kg Nosellas",
-    "presentacion": "1 Kg",
-    "precio": 6840,
-    "imagen": null
-  },
-  {
-    "id": 1407,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Tostadas de arroz original",
-    "presentacion": "1 un",
-    "precio": 2100,
-    "imagen": null
-  },
-  {
-    "id": 1408,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Tostadas de arroz con sal",
-    "presentacion": "1 un",
-    "precio": 2100,
-    "imagen": null
-  },
-  {
-    "id": 1409,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Tostadas de arroz sin sal",
-    "presentacion": "1 un",
-    "precio": 2100,
-    "imagen": null
-  },
-  {
-    "id": 1410,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Galleta de arroz con sal",
-    "presentacion": "1 un",
-    "precio": 1450,
-    "imagen": null
-  },
-  {
-    "id": 1411,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Galleta de arroz sin sal",
-    "presentacion": "1 un",
-    "precio": 1450,
-    "imagen": null
-  },
-  {
-    "id": 1412,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Galleta de arroz dulce",
-    "presentacion": "1 un",
-    "precio": 1450,
-    "imagen": null
-  },
-  {
-    "id": 1413,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Mayonesa Organica x 290grs",
-    "presentacion": "290g",
-    "precio": 5410,
-    "imagen": null
-  },
-  {
-    "id": 1414,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Salsa barbacoa premiun x 300grs",
-    "presentacion": "300g",
-    "precio": 3700,
-    "imagen": null
-  },
-  {
-    "id": 1415,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Salsa sweet chilli x 310grs",
-    "presentacion": "310g",
-    "precio": 5200,
-    "imagen": null
-  },
-  {
-    "id": 1416,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Salsa teriyaki C/vino x 285grs",
-    "presentacion": "285g",
-    "precio": 5100,
-    "imagen": null
-  },
-  {
-    "id": 1417,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Mostaza y Miel organica x 300grs",
-    "presentacion": "300g",
-    "precio": 6800,
-    "imagen": null
-  },
-  {
-    "id": 1418,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Vinagre de manzana organico x 250cc",
-    "presentacion": "250ml",
-    "precio": 7300,
-    "imagen": null
-  },
-  {
-    "id": 1419,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Aceite de oliva Identidad X 500cc",
-    "presentacion": "500ml",
-    "precio": 10500,
-    "imagen": null
-  },
-  {
-    "id": 1420,
-    "categoria": "Almacén",
-    "marca": "Oasis",
-    "producto": "Aceite de Almendra x 30 cc.",
-    "presentacion": "30 ml",
-    "precio": 3880,
-    "imagen": null
-  },
-  {
-    "id": 1421,
-    "categoria": "Almacén",
-    "marca": "Oasis",
-    "producto": "Aceite de Argan x 30 cc.",
-    "presentacion": "30 ml",
-    "precio": 6200,
-    "imagen": null
-  },
-  {
-    "id": 1422,
-    "categoria": "Almacén",
-    "marca": "Oasis",
-    "producto": "Aceite de Coco x 150 cc.",
-    "presentacion": "150 ml",
-    "precio": 5200,
-    "imagen": null
-  },
-  {
-    "id": 1423,
-    "categoria": "Almacén",
-    "marca": "Oasis",
-    "producto": "Aceite de Germen de Trigo x 30 cc.",
-    "presentacion": "30 ml",
-    "precio": 3800,
-    "imagen": null
-  },
-  {
-    "id": 1424,
-    "categoria": "Almacén",
-    "marca": "Oasis",
-    "producto": "Aceite de Jojoba x 30 cc",
-    "presentacion": "30 ml",
-    "precio": 5150,
-    "imagen": null
-  },
-  {
-    "id": 1425,
-    "categoria": "Almacén",
-    "marca": "Oasis",
-    "producto": "Aceite de Rosa Mosqueta x 15 cc.",
-    "presentacion": "15 ml",
-    "precio": 4300,
-    "imagen": null
-  },
-  {
-    "id": 1426,
-    "categoria": "Almacén",
-    "marca": "Oasis",
-    "producto": "Aceite de Uva x 15 cc",
-    "presentacion": "15 ml",
-    "precio": 4300,
-    "imagen": null
-  },
-  {
-    "id": 1427,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Mermelada light S/AZ  x 360g Arándano",
-    "presentacion": "360g",
-    "precio": 4250,
-    "imagen": null
-  },
-  {
-    "id": 1428,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Mermelada light S/AZ  x 360g Durazno",
-    "presentacion": "360g",
-    "precio": 3300,
-    "imagen": null
-  },
-  {
-    "id": 1429,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Mermelada light S/AZ  x 360g Higo",
-    "presentacion": "360g",
-    "precio": 3300,
-    "imagen": null
-  },
-  {
-    "id": 1430,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Mermelada light S/AZ  x 360g Naranja",
-    "presentacion": "360g",
-    "precio": 3300,
-    "imagen": null
-  },
-  {
-    "id": 1431,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Mermelada light S/AZ  x 360g frutilla",
-    "presentacion": "360g",
-    "precio": 4250,
-    "imagen": null
-  },
-  {
-    "id": 1432,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Dulce de leche S/AZ - c/stevia x 454grs",
-    "presentacion": "454g",
-    "precio": 5200,
-    "imagen": null
-  },
-  {
-    "id": 1433,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Fideos integrales C/Espinaca x 400grs",
-    "presentacion": "400g",
-    "precio": 2000,
-    "imagen": null
-  },
-  {
-    "id": 1434,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Fideos integrales C/Morrón x 4000grs",
-    "presentacion": "4000g",
-    "precio": 2000,
-    "imagen": null
-  },
-  {
-    "id": 1435,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Fideos integrales x 400grs",
-    "presentacion": "400g",
-    "precio": 2000,
-    "imagen": null
-  },
-  {
-    "id": 1436,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Galletitas algarroba x 185grs",
-    "presentacion": "185g",
-    "precio": 2270,
-    "imagen": null
-  },
-  {
-    "id": 1437,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Galletitas ciruelas, pasas y nueces x 185grs",
-    "presentacion": "185g",
-    "precio": 2270,
-    "imagen": null
-  },
-  {
-    "id": 1438,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Galletitas naranja y limón x 200grs",
-    "presentacion": "200g",
-    "precio": 2270,
-    "imagen": null
-  },
-  {
-    "id": 1439,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Galletitas nueces y pasas x 185grs",
-    "presentacion": "185g",
-    "precio": 2270,
-    "imagen": null
-  },
-  {
-    "id": 1440,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Citrato de magnesio x 100 GS",
-    "presentacion": "100 g",
-    "precio": 8250,
-    "imagen": null
-  },
-  {
-    "id": 1441,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Zeolita Micronizada x 100 GS",
-    "presentacion": "100 g",
-    "precio": 8250,
-    "imagen": null
-  },
-  {
-    "id": 1442,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Aceite de oregano x 20 CM3",
-    "presentacion": "20 ml",
-    "precio": 11900,
-    "imagen": null
-  },
-  {
-    "id": 1443,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Probiotoco Kyojin",
-    "presentacion": "1 un",
-    "precio": 13700,
-    "imagen": null
-  },
-  {
-    "id": 1444,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Aceite de canabis 5% x 10ML",
-    "presentacion": "10ML",
-    "precio": 5600,
-    "imagen": null
-  },
-  {
-    "id": 1445,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Cookies Algarroba y coco x 160grs",
-    "presentacion": "160g",
-    "precio": 1660,
-    "imagen": null
-  },
-  {
-    "id": 1446,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Cookies Almendra y nuez x 160grs",
-    "presentacion": "160g",
-    "precio": 1660,
-    "imagen": null
-  },
-  {
-    "id": 1447,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Cookies Chips y  avena x 160grs",
-    "presentacion": "160g",
-    "precio": 1660,
-    "imagen": null
-  },
-  {
-    "id": 1448,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Cookies Pasas y avena x 160grs",
-    "presentacion": "160g",
-    "precio": 1660,
-    "imagen": null
-  },
-  {
-    "id": 1449,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Cookies Jenjibre y avena x 160grs",
-    "presentacion": "160g",
-    "precio": 1660,
-    "imagen": null
-  },
-  {
-    "id": 1450,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Cookies Proteicas x 150grs",
-    "presentacion": "150g",
-    "precio": 1950,
-    "imagen": null
-  },
-  {
-    "id": 1451,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Hongo Melena de Leon x KG",
-    "presentacion": "1 kg",
-    "precio": 62000,
-    "imagen": null
-  },
-  {
-    "id": 1452,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Hongo Reishi x KG",
-    "presentacion": "1 kg",
-    "precio": 72000,
-    "imagen": null
-  },
-  {
-    "id": 1453,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Tirabuzon al huevo x 250grs",
-    "presentacion": "250g",
-    "precio": 2360,
-    "imagen": null
-  },
-  {
-    "id": 1454,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Tirabuzon de arvejas x 250grs",
-    "presentacion": "250g",
-    "precio": 2360,
-    "imagen": null
-  },
-  {
-    "id": 1455,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Tirabuzon de garbanzo x 250grs",
-    "presentacion": "250g",
-    "precio": 2360,
-    "imagen": null
-  },
-  {
-    "id": 1456,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Tirabuzon de lenteja x 250grs",
-    "presentacion": "250g",
-    "precio": 2360,
-    "imagen": null
-  },
-  {
-    "id": 1457,
-    "categoria": "Repostería",
-    "marca": "Equilibrio",
-    "producto": "Cacao x 200grs",
-    "presentacion": "200g",
-    "precio": 2200,
-    "imagen": null
-  },
-  {
-    "id": 1458,
-    "categoria": "Repostería",
-    "marca": "Equilibrio",
-    "producto": "Cacao x 450grs",
-    "presentacion": "450g",
-    "precio": 4000,
-    "imagen": null
-  },
-  {
-    "id": 1459,
-    "categoria": "Repostería",
-    "marca": "Equilibrio",
-    "producto": "Cacao x 900grs",
-    "presentacion": "900g",
-    "precio": 5200,
-    "imagen": null
-  },
-  {
-    "id": 1460,
-    "categoria": "Almacén",
-    "marca": "Masabia",
-    "producto": "Harina Organica x 800grs",
-    "presentacion": "800g",
-    "precio": 970,
-    "imagen": null
-  },
-  {
-    "id": 1461,
-    "categoria": "Almacén",
-    "marca": "Masabia",
-    "producto": "Fideos Tubitos x 500grs",
-    "presentacion": "500g",
-    "precio": 1260,
-    "imagen": null
-  },
-  {
-    "id": 1462,
-    "categoria": "Almacén",
-    "marca": "Masabia",
-    "producto": "Fideos Tirabuzon x 500grs",
-    "presentacion": "500g",
-    "precio": 1260,
-    "imagen": null
-  },
-  {
-    "id": 1463,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Papel de Arroz x 300grs",
-    "presentacion": "300g",
-    "precio": 9700,
-    "imagen": null
-  },
-  {
-    "id": 1464,
-    "categoria": "Almacén",
-    "marca": "Integra",
-    "producto": "Tostadas clasicas x 210grs",
-    "presentacion": "210g",
-    "precio": 1540,
-    "imagen": null
-  },
-  {
-    "id": 1465,
-    "categoria": "Almacén",
-    "marca": "Integra",
-    "producto": "Tostadas S/sal x 210grs",
-    "presentacion": "210g",
-    "precio": 1540,
-    "imagen": null
-  },
-  {
-    "id": 1466,
-    "categoria": "Almacén",
-    "marca": "Integra",
-    "producto": "Tostadas Dulces x 220grs",
-    "presentacion": "220g",
-    "precio": 1540,
-    "imagen": null
-  },
-  {
-    "id": 1467,
-    "categoria": "Almacén",
-    "marca": "Integra",
-    "producto": "Tostadas Integrales x 220grs",
-    "presentacion": "220g",
-    "precio": 1540,
-    "imagen": null
-  },
-  {
-    "id": 1468,
-    "categoria": "Almacén",
-    "marca": "Integra",
-    "producto": "Tostadas Multisemillas x 210grs",
-    "presentacion": "210g",
-    "precio": 1680,
-    "imagen": null
-  },
-  {
-    "id": 1469,
-    "categoria": "Almacén",
-    "marca": "Integra",
-    "producto": "Marineritas Clasicas x 150grs",
-    "presentacion": "150g",
-    "precio": 1200,
-    "imagen": null
-  },
-  {
-    "id": 1470,
-    "categoria": "Almacén",
-    "marca": "Integra",
-    "producto": "Marineritas S/sal x 150grs",
-    "presentacion": "150g",
-    "precio": 1200,
-    "imagen": null
-  },
-  {
-    "id": 1471,
-    "categoria": "Almacén",
-    "marca": "Integra",
-    "producto": "Marineritas con lino y girasol x 150grs",
-    "presentacion": "150g",
-    "precio": 1200,
-    "imagen": null
-  },
-  {
-    "id": 1472,
-    "categoria": "Almacén",
-    "marca": "Integra",
-    "producto": "Marineritas Con lino y girasol S/sal x 150grs",
-    "presentacion": "150g",
-    "precio": 1200,
-    "imagen": null
-  },
-  {
-    "id": 1473,
-    "categoria": "Almacén",
-    "marca": "Integra",
-    "producto": "CHIQUI LIGHT - Galletita Limon x 190grs",
-    "presentacion": "190g",
-    "precio": 1600,
-    "imagen": null
-  },
-  {
-    "id": 1474,
-    "categoria": "Almacén",
-    "marca": "Integra",
-    "producto": "CHIQUI LIGHT - Galletita Vainilla x 190grs",
-    "presentacion": "190g",
-    "precio": 1600,
-    "imagen": null
-  },
-  {
-    "id": 1475,
-    "categoria": "Almacén",
-    "marca": "Integra",
-    "producto": "CHIQUI LIGHT - Galletita Coco x 190grs",
-    "presentacion": "190g",
-    "precio": 1600,
-    "imagen": null
-  },
-  {
-    "id": 1476,
-    "categoria": "Almacén",
-    "marca": "Integra",
-    "producto": "CHIQUI LIGHT - Galletita Naranja x 190grs",
-    "presentacion": "190g",
-    "precio": 1600,
-    "imagen": null
-  },
-  {
-    "id": 1477,
-    "categoria": "Almacén",
-    "marca": "Integra",
-    "producto": "CHIQUI LIGHT - Galletita Frutilla x 190grs",
-    "presentacion": "190g",
-    "precio": 1600,
-    "imagen": null
-  },
-  {
-    "id": 1478,
-    "categoria": "Almacén",
-    "marca": "Integra",
-    "producto": "CHIQUI LIGHT - Galletita Manzana x 190grs",
-    "presentacion": "190g",
-    "precio": 1600,
-    "imagen": null
-  },
-  {
-    "id": 1479,
-    "categoria": "Almacén",
-    "marca": "Integra",
-    "producto": "CHIQUI LIGHT - Galletita C/Arandano x 190grs",
-    "presentacion": "190g",
-    "precio": 1750,
-    "imagen": null
-  },
-  {
-    "id": 1480,
-    "categoria": "Almacén",
-    "marca": "Integra",
-    "producto": "CHIQUI LIGHT - Galletita C/Chips chocolate x 190grs",
-    "presentacion": "190g",
-    "precio": 1750,
-    "imagen": null
-  },
-  {
-    "id": 1481,
-    "categoria": "Almacén",
-    "marca": "Integra",
-    "producto": "CHIQUI LIGHT - Galletita Cacao x 190grs",
-    "presentacion": "190g",
-    "precio": 1750,
-    "imagen": null
-  },
-  {
-    "id": 1482,
-    "categoria": "Almacén",
-    "marca": "Integra",
-    "producto": "CHIQUI LIGHT - Galletita Algarroba x 190grs",
-    "presentacion": "190g",
-    "precio": 1750,
-    "imagen": null
-  },
-  {
-    "id": 1483,
-    "categoria": "Almacén",
-    "marca": "Integra",
-    "producto": "Mini Galletitas C/stevia Algarroba y mani x 190grs",
-    "presentacion": "190g",
-    "precio": 1930,
-    "imagen": null
-  },
-  {
-    "id": 1484,
-    "categoria": "Almacén",
-    "marca": "Integra",
-    "producto": "Mini Galletitas C/stevia Cascarilla Cacao y Nueces x 190grs",
-    "presentacion": "190g",
-    "precio": 1930,
-    "imagen": null
-  },
-  {
-    "id": 1485,
-    "categoria": "Almacén",
-    "marca": "Integra",
-    "producto": "Mini Galletitas C/stevia Avena y coco rallado x 190grs",
-    "presentacion": "190g",
-    "precio": 1930,
-    "imagen": null
-  },
-  {
-    "id": 1486,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Manteca ghee x 200 ML",
-    "presentacion": "200 ML",
-    "precio": 4200,
-    "imagen": null
-  },
-  {
-    "id": 1487,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Manteca ghee x 350 ML",
-    "presentacion": "350 ML",
-    "precio": 7200,
-    "imagen": null
-  },
-  {
-    "id": 1488,
-    "categoria": "Almacén",
-    "marca": "Copani",
-    "producto": "Chocolate al 100%",
-    "presentacion": "1 un",
-    "precio": 6400,
-    "imagen": null
-  },
-  {
-    "id": 1489,
-    "categoria": "Almacén",
-    "marca": "Copani",
-    "producto": "Chocolate al 80%",
-    "presentacion": "1 un",
-    "precio": 5000,
-    "imagen": null
-  },
-  {
-    "id": 1490,
-    "categoria": "Almacén",
-    "marca": "Copani",
-    "producto": "Chocolate al 70%",
-    "presentacion": "1 un",
-    "precio": 5000,
-    "imagen": null
-  },
-  {
-    "id": 1491,
-    "categoria": "Almacén",
-    "marca": "Copani",
-    "producto": "Chocolate al 70% C/stevia/C coco",
-    "presentacion": "1 un",
-    "precio": 5200,
-    "imagen": null
-  },
-  {
-    "id": 1492,
-    "categoria": "Almacén",
-    "marca": "Copani",
-    "producto": "Cacao en polvo al 100% x 200grs",
-    "presentacion": "200g",
-    "precio": 8300,
-    "imagen": null
-  },
-  {
-    "id": 1493,
-    "categoria": "Almacén",
-    "marca": "Copani",
-    "producto": "LECHE DE CABRA -LA PRIMERA (en polvo entera/descremada",
-    "presentacion": "1 un",
-    "precio": 12300,
-    "imagen": null
-  },
-  {
-    "id": 1494,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Cascara Sagrada+ Magnesio X 100 COMP.",
-    "presentacion": "100 comprimidos",
-    "precio": 23500,
-    "imagen": null
-  },
-  {
-    "id": 1495,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Bacalao Max X 100CAPS.",
-    "presentacion": "100cápsulas",
-    "precio": 42500,
-    "imagen": null
-  },
-  {
-    "id": 1496,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Citrato de magnesio x 100 CAPS.",
-    "presentacion": "100 cápsulas",
-    "precio": 25700,
-    "imagen": null
-  },
-  {
-    "id": 1497,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Valeriana X 100 COMP.",
-    "presentacion": "100 comprimidos",
-    "precio": 23500,
-    "imagen": null
-  },
-  {
-    "id": 1498,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Curcuma y Pimienta Negra X 100CAPS.",
-    "presentacion": "100 cápsulas",
-    "precio": 23500,
-    "imagen": null
-  },
-  {
-    "id": 1499,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Colageno H+VIT E X 100 CAPS.",
-    "presentacion": "100 cápsulas",
-    "precio": 23500,
-    "imagen": null
-  },
-  {
-    "id": 1500,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Cartilago de Tiburon X 100 CAPS.",
-    "presentacion": "100 cápsulas",
-    "precio": 23500,
-    "imagen": "data/images/img_287.jpg"
-  },
-  {
-    "id": 1501,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Ginkgo 100+ Magnesio X 100COMP.",
-    "presentacion": "100 comprimidos",
-    "precio": 23500,
-    "imagen": null
-  },
-  {
-    "id": 1502,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Avenitas  x Kilo",
-    "presentacion": "1 un",
-    "precio": 9700,
-    "imagen": null
-  },
-  {
-    "id": 1503,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Avena y chip de chocolate x Kilo",
-    "presentacion": "1 un",
-    "precio": 9700,
-    "imagen": null
-  },
-  {
-    "id": 1504,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Galletitas saladas C/Chia x Kilo",
-    "presentacion": "1 un",
-    "precio": 9700,
-    "imagen": null
-  },
-  {
-    "id": 1505,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Galletitas saladas C/Lino x Kilo",
-    "presentacion": "1 un",
-    "precio": 9700,
-    "imagen": null
-  },
-  {
-    "id": 1506,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Galletitas saladas C/Sesamo x Kilo",
-    "presentacion": "1 un",
-    "precio": 9700,
-    "imagen": null
-  },
-  {
-    "id": 1507,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Pepas integrales C/Membrillo x Kilo",
-    "presentacion": "1 un",
-    "precio": 10000,
-    "imagen": null
-  },
-  {
-    "id": 1508,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Natuzen",
-    "producto": "Natuzen Premezcla p/pan/ reposteria X 1KG",
-    "presentacion": "1 Kg",
-    "precio": 5200,
-    "imagen": null
-  },
-  {
-    "id": 1509,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Natuzen",
-    "producto": "Natuzen Premezcla p/ bizcohuelo X 450 G",
-    "presentacion": "450 G",
-    "precio": 3000,
-    "imagen": null
-  },
-  {
-    "id": 1510,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Natuzen",
-    "producto": "Natuzen Almidon de Maiz X 1 kilo",
-    "presentacion": "1 un",
-    "precio": 2700,
-    "imagen": null
-  },
-  {
-    "id": 1511,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Natuzen",
-    "producto": "Natuzen Galletitas limon/naranja/ coco X 200 G",
-    "presentacion": "200 G",
-    "precio": 2200,
-    "imagen": null
-  },
-  {
-    "id": 1512,
-    "categoria": "Almacén",
-    "marca": "Sanamundi",
-    "producto": "Premezcla universal con proteina vegetal x 500 grs",
-    "presentacion": "500 g",
-    "precio": 4100,
-    "imagen": null
-  },
-  {
-    "id": 1513,
-    "categoria": "Almacén",
-    "marca": "Dicomere",
-    "producto": "Bicarbonato de sodio x 200 GM",
-    "presentacion": "1 un",
-    "precio": 1700,
-    "imagen": null
-  },
-  {
-    "id": 1514,
-    "categoria": "Almacén",
-    "marca": "Dicomere",
-    "producto": "Cacao Amargo 100 % x 200 GM",
-    "presentacion": "1 un",
-    "precio": 3900,
-    "imagen": null
-  },
-  {
-    "id": 1515,
-    "categoria": "Almacén",
-    "marca": "Dicomere",
-    "producto": "Arveja Texturizada X 350GM",
-    "presentacion": "1 un",
-    "precio": 2200,
-    "imagen": null
-  },
-  {
-    "id": 1516,
-    "categoria": "Almacén",
-    "marca": "Dicomere",
-    "producto": "Fecula de Papa x 450GM",
-    "presentacion": "1 un",
-    "precio": 3500,
-    "imagen": null
-  },
-  {
-    "id": 1517,
-    "categoria": "Almacén",
-    "marca": "Dicomere",
-    "producto": "Harina de Caju x 180GM",
-    "presentacion": "1 un",
-    "precio": 4900,
-    "imagen": null
-  },
-  {
-    "id": 1518,
-    "categoria": "Almacén",
-    "marca": "Dicomere",
-    "producto": "Harina de Trigo Sarraceno x 450GM",
-    "presentacion": "1 un",
-    "precio": 3900,
-    "imagen": null
-  },
-  {
-    "id": 1519,
-    "categoria": "Almacén",
-    "marca": "Dicomere",
-    "producto": "Harina de Lentejas x 450GM",
-    "presentacion": "1 un",
-    "precio": 2700,
-    "imagen": null
-  },
-  {
-    "id": 1520,
-    "categoria": "Almacén",
-    "marca": "Dicomere",
-    "producto": "Polenta Organica x 450GM",
-    "presentacion": "1 un",
-    "precio": 1500,
-    "imagen": null
-  },
-  {
-    "id": 1521,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Premezcla Proteica Harina de Avena Sabor Chocolate",
-    "presentacion": "1 un",
-    "precio": 7300,
-    "imagen": null
-  },
-  {
-    "id": 1522,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Premezcla Proteica Harina de Avena sabor Vainilla",
-    "presentacion": "1 un",
-    "precio": 7300,
-    "imagen": null
-  },
-  {
-    "id": 1523,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Premezcla Proteica Harina de Arroz sabor Chocolate",
-    "presentacion": "1 un",
-    "precio": 6400,
-    "imagen": null
-  },
-  {
-    "id": 1524,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Premezcla Proteica Harina de Arroz sabor vainilla",
-    "presentacion": "1 un",
-    "precio": 6400,
-    "imagen": null
-  },
-  {
-    "id": 1525,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Premezcla Proteica Harina de Almendras sabor Chocolate/ Vainilla",
-    "presentacion": "1 un",
-    "precio": 11000,
-    "imagen": null
-  },
-  {
-    "id": 1526,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Alfajor Vento DDL B/N X 6 unidades",
-    "presentacion": "6 unidadesades",
-    "precio": 15500,
-    "imagen": null
-  },
-  {
-    "id": 1527,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Pan para hamburguesas X 2 unidades",
-    "presentacion": "2 unidadesades",
-    "precio": 4500,
-    "imagen": "data/images/img_53.jpg"
-  },
-  {
-    "id": 1528,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Prepizzaetas X 4 unidades",
-    "presentacion": "4 unidadesades",
-    "precio": 4645,
-    "imagen": "data/images/img_55.jpg"
-  },
-  {
-    "id": 1529,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Pan Chip X 4 unidades",
-    "presentacion": "4 unidadesades",
-    "precio": 4500,
-    "imagen": "data/images/img_54.jpg"
-  },
-  {
-    "id": 1530,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Minicoco X 150GMS",
-    "presentacion": "1 un",
-    "precio": 4400,
-    "imagen": "data/images/img_56.jpg"
-  },
-  {
-    "id": 1531,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Minibombon X 150 GMS",
-    "presentacion": "1 un",
-    "precio": 4400,
-    "imagen": "data/images/img_57.jpg"
-  },
-  {
-    "id": 1532,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Pastafrola X 90GMS",
-    "presentacion": "1 un",
-    "precio": 3350,
-    "imagen": "data/images/img_60.jpg"
-  },
-  {
-    "id": 1533,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Brownie X 90 GMS",
-    "presentacion": "1 un",
-    "precio": 3800,
-    "imagen": "data/images/img_59.jpg"
-  },
-  {
-    "id": 1534,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Coquitos X 90GMS",
-    "presentacion": "1 un",
-    "precio": 3800,
-    "imagen": "data/images/img_58.jpg"
-  },
-  {
-    "id": 1535,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Alfajor de Maizena X 60GMS",
-    "presentacion": "1 un",
-    "precio": 2800,
-    "imagen": "data/images/img_61.jpg"
-  },
-  {
-    "id": 1536,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Crakers X 80 GMS",
-    "presentacion": "1 un",
-    "precio": 3000,
-    "imagen": "data/images/img_62.jpg"
-  },
-  {
-    "id": 1537,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Kefir poleo-naranja-pomelo",
-    "presentacion": "1 un",
-    "precio": 7000,
-    "imagen": null
-  },
-  {
-    "id": 1538,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Kefir aguaribay-jengibre -miel",
-    "presentacion": "1 un",
-    "precio": 7000,
-    "imagen": null
-  },
-  {
-    "id": 1539,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Kefir frutos rojos",
-    "presentacion": "1 un",
-    "precio": 7000,
-    "imagen": null
-  },
-  {
-    "id": 1540,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Kombucha tradicional",
-    "presentacion": "1 un",
-    "precio": 7000,
-    "imagen": null
-  },
-  {
-    "id": 1541,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Kombucha flor de jamaica(hibiscus",
-    "presentacion": "1 un",
-    "precio": 7000,
-    "imagen": null
-  },
-  {
-    "id": 1542,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Kombucha cedron-naranja-pomelo",
-    "presentacion": "1 un",
-    "precio": 7000,
-    "imagen": null
-  },
-  {
-    "id": 1543,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Kombucha limon-jemgibre",
-    "presentacion": "1 un",
-    "precio": 7000,
-    "imagen": null
-  },
-  {
-    "id": 1544,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Suero LacticoNeutro X 1 litro",
-    "presentacion": "1 un",
-    "precio": 10000,
-    "imagen": null
-  },
-  {
-    "id": 1545,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Proteina- Neutra X 500 ml",
-    "presentacion": "500 ml",
-    "precio": 8000,
-    "imagen": null
-  },
-  {
-    "id": 1546,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Vinagre de sidra de manzana organico X 250CC",
-    "presentacion": "250ml",
-    "precio": 7000,
-    "imagen": null
-  },
-  {
-    "id": 1547,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Nodulo de Kefir de Agua X 5gms",
-    "presentacion": "1 un",
-    "precio": 7200,
-    "imagen": null
-  },
-  {
-    "id": 1548,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Nodulo de Kefir de Leche X 5gms",
-    "presentacion": "1 un",
-    "precio": 7200,
-    "imagen": null
-  },
-  {
-    "id": 1549,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Baked Chip- Horneados X 50gms (consultar sabores disponobles",
-    "presentacion": "1 un",
-    "precio": 1000,
-    "imagen": null
-  },
-  {
-    "id": 1550,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Green Crops -Horneados X 45gms (consultar sabores disponibles",
-    "presentacion": "1 un",
-    "precio": 1100,
-    "imagen": null
-  },
-  {
-    "id": 1551,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Nuestros Sabores - Chips X 50 gms (consultar sabores disponibles",
-    "presentacion": "1 un",
-    "precio": 1560,
-    "imagen": null
-  },
-  {
-    "id": 1552,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Ajo negro (x dos cabezas",
-    "presentacion": "1 un",
-    "precio": 4440,
-    "imagen": null
-  },
-  {
-    "id": 1553,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Plata coloidal x 125 ml",
-    "presentacion": "125 ml",
-    "precio": 6000,
-    "imagen": null
-  },
-  {
-    "id": 1554,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Soja texturizada x kg",
-    "presentacion": "1 kg",
-    "precio": 2200,
-    "imagen": null
-  },
-  {
-    "id": 1555,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Barritas Granola Real ( ex mayas x 60 grs",
-    "presentacion": "60 g",
-    "precio": 1200,
-    "imagen": null
-  },
-  {
-    "id": 1556,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Pan rallado Aldana X 380 grs",
-    "presentacion": "380 g",
-    "precio": 5300,
     "imagen": null
   },
   {
@@ -14116,6 +12550,15 @@ const RAW_PRODUCTS = [
     "presentacion": "10kg",
     "precio": 38000,
     "imagen": "data/images/img_354.jpg"
+  },
+  {
+    "id": 39,
+    "categoria": "Repostería",
+    "marca": "Arco de Oro",
+    "producto": "Dulce de membrillo",
+    "presentacion": "5kg",
+    "precio": 14700,
+    "imagen": "data/images/img_338.jpg"
   },
   {
     "id": 1569,
@@ -14431,429 +12874,6 @@ const RAW_PRODUCTS = [
     "presentacion": "1 kg",
     "precio": 5000,
     "imagen": null
-  },
-  {
-    "id": 1604,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Fruta Nevada x 2KG",
-    "presentacion": "2KG",
-    "precio": 18000,
-    "imagen": null
-  },
-  {
-    "id": 1605,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Harina La Picara X 10 KG (ORGANICA",
-    "presentacion": "10 KG",
-    "precio": 9600,
-    "imagen": null
-  },
-  {
-    "id": 1606,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Psylium molido x 1 KG",
-    "presentacion": "1 KG",
-    "precio": 45620,
-    "imagen": null
-  },
-  {
-    "id": 1607,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Mermelada Singluko C/STEVIA Arándano",
-    "presentacion": "1 un",
-    "precio": 5350,
-    "imagen": null
-  },
-  {
-    "id": 1608,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Mermelada Singluco C/STEVIA Frutilla",
-    "presentacion": "1 un",
-    "precio": 4300,
-    "imagen": null
-  },
-  {
-    "id": 1609,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "ALGA DIET (plus maxX 100 COMP.",
-    "presentacion": "100 comprimidos",
-    "precio": 24000,
-    "imagen": null
-  },
-  {
-    "id": 1610,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Magnesio 600 X 100 CAPS.",
-    "presentacion": "100 cápsulas",
-    "precio": 14500,
-    "imagen": null
-  },
-  {
-    "id": 1611,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Natuzen",
-    "producto": "Natuzen Premezcla p/ bizcohuelo X 450 grs",
-    "presentacion": "450 g",
-    "precio": 3000,
-    "imagen": null
-  },
-  {
-    "id": 1612,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Natuzen",
-    "producto": "Natuzen Almidon de Maiz X 1 kg",
-    "presentacion": "1 kg",
-    "precio": 4300,
-    "imagen": null
-  },
-  {
-    "id": 1613,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Natuzen",
-    "producto": "Natuzen Galletitas limon/naranja/ coco X 200 grs",
-    "presentacion": "200 g",
-    "precio": 2200,
-    "imagen": null
-  },
-  {
-    "id": 1614,
-    "categoria": "Almacén",
-    "marca": "Dicomere",
-    "producto": "Bicarbonato de sodio x 200 grs",
-    "presentacion": "200 g",
-    "precio": 1700,
-    "imagen": null
-  },
-  {
-    "id": 1615,
-    "categoria": "Almacén",
-    "marca": "Dicomere",
-    "producto": "Cacao Amargo 100 % x 200 grs",
-    "presentacion": "200 g",
-    "precio": 3900,
-    "imagen": null
-  },
-  {
-    "id": 1616,
-    "categoria": "Almacén",
-    "marca": "Dicomere",
-    "producto": "Arveja Texturizada X 350 grs",
-    "presentacion": "350 g",
-    "precio": 2200,
-    "imagen": null
-  },
-  {
-    "id": 1617,
-    "categoria": "Almacén",
-    "marca": "Dicomere",
-    "producto": "Fecula de Papa x 450 grs",
-    "presentacion": "450 g",
-    "precio": 3500,
-    "imagen": null
-  },
-  {
-    "id": 1618,
-    "categoria": "Almacén",
-    "marca": "Dicomere",
-    "producto": "Harina de Caju x 180 grs",
-    "presentacion": "180 g",
-    "precio": 4900,
-    "imagen": null
-  },
-  {
-    "id": 1619,
-    "categoria": "Almacén",
-    "marca": "Dicomere",
-    "producto": "Harina de Trigo Sarraceno x 450 grs",
-    "presentacion": "450 g",
-    "precio": 3900,
-    "imagen": null
-  },
-  {
-    "id": 1620,
-    "categoria": "Almacén",
-    "marca": "Dicomere",
-    "producto": "Harina de Lentejas x 450 grs",
-    "presentacion": "450 g",
-    "precio": 2700,
-    "imagen": null
-  },
-  {
-    "id": 1621,
-    "categoria": "Almacén",
-    "marca": "Dicomere",
-    "producto": "Polenta Organica x 450 grs",
-    "presentacion": "450 g",
-    "precio": 1500,
-    "imagen": null
-  },
-  {
-    "id": 1622,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Minicoco X 150 grs",
-    "presentacion": "150 g",
-    "precio": 4400,
-    "imagen": "data/images/img_56.jpg"
-  },
-  {
-    "id": 1623,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Minibombon X 150 grs",
-    "presentacion": "150 g",
-    "precio": 4400,
-    "imagen": "data/images/img_57.jpg"
-  },
-  {
-    "id": 1624,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Pastafrola X 90 grs",
-    "presentacion": "90 g",
-    "precio": 3350,
-    "imagen": "data/images/img_60.jpg"
-  },
-  {
-    "id": 1625,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Brownie X 90 grs",
-    "presentacion": "90 g",
-    "precio": 3800,
-    "imagen": "data/images/img_59.jpg"
-  },
-  {
-    "id": 1626,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Coquitos X 90 grs",
-    "presentacion": "90 g",
-    "precio": 3800,
-    "imagen": "data/images/img_58.jpg"
-  },
-  {
-    "id": 1627,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Alfajor de Maizena X 60 grs",
-    "presentacion": "60 g",
-    "precio": 2800,
-    "imagen": "data/images/img_61.jpg"
-  },
-  {
-    "id": 1628,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Crakers X 80 grs",
-    "presentacion": "80 g",
-    "precio": 3000,
-    "imagen": "data/images/img_62.jpg"
-  },
-  {
-    "id": 1629,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Premezcla Kapac Panaderia y Reposteria X 500 gms",
-    "presentacion": "1 un",
-    "precio": 3000,
-    "imagen": null
-  },
-  {
-    "id": 1630,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Premezcla Kapac para Pizza X 500 gms",
-    "presentacion": "1 un",
-    "precio": 4000,
-    "imagen": null
-  },
-  {
-    "id": 1631,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Vainillas Kapac X  300gms",
-    "presentacion": "1 un",
-    "precio": 4800,
-    "imagen": null
-  },
-  {
-    "id": 1632,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Tostadas Ceral con Chia X 200 gms",
-    "presentacion": "1 un",
-    "precio": 1900,
-    "imagen": null
-  },
-  {
-    "id": 1633,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Tostadas Ceral Dulce X 200 gms",
-    "presentacion": "1 un",
-    "precio": 1750,
-    "imagen": null
-  },
-  {
-    "id": 1634,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Tostadas Ceral de Mesa X 200 gms",
-    "presentacion": "1 un",
-    "precio": 1750,
-    "imagen": null
-  },
-  {
-    "id": 1635,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Tostadas Ceral Sin Sal X 200 gms",
-    "presentacion": "1 un",
-    "precio": 1750,
-    "imagen": null
-  },
-  {
-    "id": 1636,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Marineras Ceral con Sal X 200 gms",
-    "presentacion": "1 un",
-    "precio": 7800,
-    "imagen": null
-  },
-  {
-    "id": 1637,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Marineras Ceral Sin Sal X 200 gms",
-    "presentacion": "1 un",
-    "precio": 1800,
-    "imagen": null
-  },
-  {
-    "id": 1638,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Galletitas Ceral de Coco X 190 gms",
-    "presentacion": "1 un",
-    "precio": 1900,
-    "imagen": null
-  },
-  {
-    "id": 1639,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Galletitas Ceral de Limon X 190 gms",
-    "presentacion": "1 un",
-    "precio": 1900,
-    "imagen": null
-  },
-  {
-    "id": 1640,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Galletitas Ceral de Vainilla X 190 gms",
-    "presentacion": "1 un",
-    "precio": 1900,
-    "imagen": null
-  },
-  {
-    "id": 1641,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Galletitas Ceral de Naranja X 190 gms",
-    "presentacion": "1 un",
-    "precio": 1900,
-    "imagen": null
-  },
-  {
-    "id": 1642,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Pastas Tirabuzon Integral Natural Ceral X 300 gms",
-    "presentacion": "1 un",
-    "precio": 2660,
-    "imagen": null
-  },
-  {
-    "id": 1643,
-    "categoria": "Almacén",
-    "marca": "Equilibrio",
-    "producto": "Pastas Tirabuzon Integral Espinaca Ceral X 300 gms",
-    "presentacion": "1 un",
-    "precio": 2660,
-    "imagen": null
-  },
-  {
-    "id": 1644,
-    "categoria": "Hierbas Medicinales",
-    "marca": "Hierbas Y",
-    "producto": "ACEITE ESENCIAL LAVANDA - 10 CC",
-    "presentacion": "10 ml",
-    "precio": 18300,
-    "imagen": null
-  },
-  {
-    "id": 1645,
-    "categoria": "Almacén",
-    "marca": "Kony",
-    "producto": "EDULCORANTE LIQUIDO X 500 ML",
-    "presentacion": "500 ML",
-    "precio": 6700,
-    "imagen": "data/images/img_166.jpg"
-  },
-  {
-    "id": 1646,
-    "categoria": "Almacén",
-    "marca": "Kony",
-    "producto": "EDULCORANTE X 100 SOBRES",
-    "presentacion": "100 SOBRES",
-    "precio": 4300,
-    "imagen": "data/images/img_168.jpg"
-  },
-  {
-    "id": 1647,
-    "categoria": "Almacén",
-    "marca": "Kony",
-    "producto": "EDULCORANTE X 50 SOBRES",
-    "presentacion": "50 SOBRES",
-    "precio": 3400,
-    "imagen": "data/images/img_167.jpg"
-  },
-  {
-    "id": 1648,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Kony",
-    "producto": "KONY LIFE - EDULCORANTE 100% STEVIA X 100 ML - SIN TACC",
-    "presentacion": "100 ML",
-    "precio": 4900,
-    "imagen": null
-  },
-  {
-    "id": 1649,
-    "categoria": "Almacén (Sin TACC)",
-    "marca": "Sol Azteca",
-    "producto": "ACEITE DE SEMILLAS DE CALABAZA X 100 CC - SIN TACC",
-    "presentacion": "100 ml",
-    "precio": 19000,
-    "imagen": null
-  },
-  {
-    "id": 1650,
-    "categoria": "Almacén",
-    "marca": "Sol Azteca",
-    "producto": "ACEITE DE SESAMO X 250 CC",
-    "presentacion": "250 ml",
-    "precio": 6900,
-    "imagen": null
   }
 ];
 
@@ -14925,7 +12945,4 @@ const ARS_FORMATTER = new Intl.NumberFormat('es-AR', {
 
 function formatPrice(amount) {
   return ARS_FORMATTER.format(amount);
-}
-if (typeof window !== 'undefined') {
-  window.formatPrice = formatPrice;
 }
